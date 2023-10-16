@@ -33,7 +33,7 @@ width:100%;
 }
 
 #aboutUs{
-  /* background-image: url(./images/WhatsApp\ Image\ 2023-09-28\ at\ 1.11.08\ PM.jpg); */
+  background-image: url(./images/WhatsApp\ Image\ 2023-09-28\ at\ 1.11.08\ PM.jpg);
   height:100vh;
 background-size: cover;
 color: black;
@@ -109,10 +109,11 @@ a {
   width: 100%;
   height: 100vh;
   animation: animate 16s ease-in-out infinite;
+  background-image:url('../../client/src/images/blue\ moon7.jpg')
 }
 
 @keyframes animate {
   0%, 100%{
-    background-image:url('../src/images/homepageimg2.jpg');
+    background-image:url('../src/images/blue\ moon7.jpg');
   }
 }
