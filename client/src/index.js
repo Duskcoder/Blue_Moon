@@ -5,7 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

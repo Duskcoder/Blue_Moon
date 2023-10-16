@@ -1,21 +1,47 @@
-import React from 'react'
+import React from 'react';
+
 
 export const AboutUs = () => {
-  return (
-    <>
-    <div  id='aboutUs'>
-        <div className='container'>
-    <div class="card col-lg-6" >
-  <div class="card-body">
-    <h5 class="card-title">About Us</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    return (
+        <>
+            <div id='aboutUs'>
+                <div className='container '>
+                    <div className='row d-flex justify-content-center'>
+                        <div class="card first-card col-lg-6" >
+                            <div class="card-body">
+                                <div className='hello mt-5' ></div>
+                                <h2 class="card-title text-center mt-5" style={{color:'#2a919d'}}> About Us</h2>
+                                <h3 class="card-subtitle mt-4 text-center">Experience A Stay<br /> Like Never Before</h3>
+                                <div className='mt-5 text-center'>
+                                    <p class="card-text">We will help your experience life in its true sense  </p>
+                                    <p>With us. from living among the residents you are </p>
+                                    <p> sure to walk home with memories and wonderful </p>
+                                    <p> moments.</p>
+                                </div>
+                                <div  className='hello mt-5 mb-5'></div>
 
-  </div>
-</div>
 
-</div>  
-    </div>
-    </>
-  )
+                            </div>
+                        </div>
+
+                        <div class="card hello1 col-lg-6" >
+                            <div class="card-body mt-5 mb-5 text-center">
+
+                                <p class="card-text1 mt-5">We are a well renowned, providing a sensational</p>
+                                <p>staying experience eith prolific services. We give </p>
+                                <p>you the warmest of welcome and all the personal</p>
+                                <p>attention at our homestay to ensure your</p>
+                                <p>comfort and contentment. We are  the first choice </p>
+                                <p>option for the one who are looking to explore </p>
+                                <p>the local areas and beautiful places in</p>
+                                <p>Puducherry.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </>
+    )
 }

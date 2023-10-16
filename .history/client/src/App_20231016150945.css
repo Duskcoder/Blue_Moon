@@ -102,6 +102,7 @@ a {
   font-family: 'fontaswome';
 }
 
+<<<<<<< HEAD
 .home-bg{
   background-size:cover;
   left: 0;
@@ -116,6 +117,7 @@ a {
     background-image:url('../src/images/homepageimg2.jpg');
   }
 }
+=======
 
 .first-card{
   top:25vh;
@@ -144,3 +146,4 @@ a {
 .card-text1{
   top:10vh;
 }
+>>>>>>> 1220609148e0e27544662500a62f8fc570d13a43

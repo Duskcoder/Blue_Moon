@@ -9,6 +9,7 @@ import Home from "./Component/Home";
 
 function App() {
   return (
+<<<<<<< HEAD
     <div>
       <BrowserRouter>
         <Routes>
@@ -16,6 +17,16 @@ function App() {
           <Route path="/home" element={<Home/>} />
         </Routes>
       </BrowserRouter>
+=======
+    <div >
+    <BrowserRouter>
+    <Routes>
+      <Route path='/about' element={<AboutUs/>}/>
+      {/* <Footer/> */}
+    </Routes>
+    
+    </BrowserRouter>
+>>>>>>> 1220609148e0e27544662500a62f8fc570d13a43
     </div>
   );
 }
