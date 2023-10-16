@@ -6,13 +6,14 @@ import { AboutUs } from './Component/AboutUs';
 import "./App.css"
 import Footer from './Component/Footer';
 
+
 function App() {
   return (
     <div >
     <BrowserRouter>
     <Routes>
       <Route path='/about' element={<AboutUs/>}/>
-      <Footer/>
+      {/* <Footer/> */}
     </Routes>
     
     </BrowserRouter>
