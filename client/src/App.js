@@ -5,18 +5,22 @@ import { AboutUs } from './Component/AboutUs';
 // import  AboutUs from "./Component/AboutUs"
 import "./App.css"
 import Footer from './Component/Footer';
+import { ContactUs } from './Component/ContactUs';
 
 
 function App() {
   return (
     <div >
+      <Header/>
     <BrowserRouter>
     <Routes>
       <Route path='/about' element={<AboutUs/>}/>
+      <Route path='/contact' element={<ContactUs/>}/>
       {/* <Footer/> */}
     </Routes>
     
-    </BrowserRouter>
+    </BrowserRouter> 
+    <Footer/>
     </div>
   );
 }
