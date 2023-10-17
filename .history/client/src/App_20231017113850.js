@@ -5,7 +5,6 @@ import { AboutUs } from "./Component/AboutUs";
 import "./App.css"
 import Footer from './Component/Footer';
 import { ContactUs } from './Component/ContactUs';
-import Home from "./Component/Home";
 
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
     <Routes>
       <Route path='/about' element={<AboutUs/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
-      <Route path="/home" element={<Home/>} />
+      <Route path=
       {/* <Footer/> */}
     </Routes>
     
