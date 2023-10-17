@@ -2,9 +2,9 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="home-bg position-absolute">
-        <div className='container position-relative text-white home-text-center'>
-            <div className='text-align-center'>
+    <div className="home-bg">
+        <div className='container '>
+            <div>
                 <div>
                     <h1>YOUR HOME</h1>
                 </div>
@@ -12,9 +12,7 @@ function Home() {
                     <h3>Away</h3>
                 </div>
                 <div>
-                    <h1>
-                        FROM HOME                    
-                    </h1>
+                    <h1>asdfg</h1>
                 </div>
             </div>
         </div>

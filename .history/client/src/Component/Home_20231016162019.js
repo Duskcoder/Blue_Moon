@@ -2,9 +2,9 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="home-bg position-absolute">
-        <div className='container position-relative text-white home-text-center'>
-            <div className='text-align-center'>
+    <div className="home-bg">
+        <div className='container '>
+            <div className='text-'>
                 <div>
                     <h1>YOUR HOME</h1>
                 </div>
