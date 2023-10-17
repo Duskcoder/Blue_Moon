@@ -6,7 +6,7 @@ export const Header = () => {
 
     <div className='hello'>
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid ">
           <div className='col-lg-2'></div>
           <a class="navbar-brand" href="#">Navbar</a>
@@ -39,7 +39,7 @@ export const Header = () => {
 
             <button class="btn btn-head" type="submit">BlueMoon HomeStay</button>
           </form>
-          <div className='col-lg-1'></div>
+          <div className='col-lg-2'></div>
         </div>
       </nav>
     </div>

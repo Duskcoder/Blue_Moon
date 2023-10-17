@@ -3,7 +3,7 @@ import footerimg from "../images/blue moon bungalow logo1.jpg";
 
 function Footer() {
   return (
-    <div className="container text-white">
+    <div className=" text-white">
       <div className="row  d-flex   m-auto" id="footer-bg-img">
         <div className="container col-lg-8  m-l-25px text-whites ">
           <div className="mt-4">
