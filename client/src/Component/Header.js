@@ -1,7 +1,7 @@
 import React from 'react';
 // import Logo from '../images/blue moon7.jpg'
-
-export const Header = () => {
+import { Link } from 'react-router-dom';
+const Header = () => {
   return (
 
     <div className='hello'>
@@ -17,19 +17,19 @@ export const Header = () => {
             <div className='col-lg-1'></div>
             <ul class="navbar-nav me-auto ">
               <li class="nav-item">
-                <a class="nav-link move" aria-current="page" href="#">Home</a>
+                <Link to='/' class="nav-link move" aria-current="page">Home</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link move" href="#">About Us</a>
+                <Link to='/about' class="nav-link move">About Us</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link move" href="#">Rooms</a>
+                <Link to='/rooms' class="nav-link move">Rooms</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link move" href="#">Contact Us</a>
+                <Link to='/contact' class="nav-link move" >Contact Us</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link move" href="#">Amenities</a>
+                <Link to='/amenities' class="nav-link move">Amenities</Link>
               </li>
 
             </ul>
@@ -46,3 +46,5 @@ export const Header = () => {
 
   )
 }
+
+export default Header
