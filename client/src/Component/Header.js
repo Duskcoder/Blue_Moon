@@ -1,51 +1,47 @@
-import React from 'react';
+import React from "react";
 // import Logo from '../images/blue moon7.jpg'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import blueMoonIMG from "../images/blue moon7.jpg";
 const Header = () => {
+
+
+
   return (
-
-    <div className='hello'>
-
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container">
-          {/* <div className='col-lg-2'></div> */}
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        
-            <ul class="navbar-nav me-auto ">
-              <li class="nav-item">
-                <Link to='/' class="nav-link move" aria-current="page">Home</Link>
-              </li>
-              <li class="nav-item">
-                <Link to='/about' class="nav-link move">About Us</Link>
-              </li>
-              <li class="nav-item">
-                <Link to='/rooms' class="nav-link move">Rooms</Link>
-              </li>
-              <li class="nav-item">
-                <Link to='/contact' class="nav-link move" >Contact Us</Link>
-              </li>
-              <li class="nav-item">
-                <Link to='/amenities' class="nav-link move">Amenities</Link>
-              </li>
-
-            </ul>
-
+    <div className="hello">
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container className="justify-content-lg-center">
+        <div className="d-lg-flex " >
+          <Navbar.Brand href="#" >
+            <img src={blueMoonIMG} alt="" width={80} height={80} />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="" />
+          <Navbar.Collapse id="">
+            <Nav
+              className="me-auto my-2 my-lg-0"
+              style={{ maxHeight: "100px" }}
+              
+            >
+              <Nav.Link href="#action1">Home</Nav.Link>
+              <Nav.Link href="#action2">About Us</Nav.Link>
+              <Nav.Link href="#action2">Rooms</Nav.Link>
+              <Nav.Link href="#action2">Contact Us</Nav.Link>
+              <Nav.Link href="#action2">Amenities</Nav.Link>
+            </Nav>
+            <Form >
+              <Button variant="outline-success">BLUEMOON HOMESTAY</Button>
+            </Form>
+          </Navbar.Collapse>
           </div>
-          <form class="d-flex" role="search">
-
-            <button class="btn btn-head" type="submit">BlueMoon HomeStay</button>
-          </form>
-          {/* <div className='col-lg-2'></div> */}
-        </div>
-      </nav>
+        </Container>
+      </Navbar>
     </div>
+  );
+};
 
-  )
-}
-
-export default Header
+export default Header;

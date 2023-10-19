@@ -9,6 +9,10 @@ import { Amenities } from "./Component/Amenities";
 import Home from "./Component/Home";
 
 
+import Rooms from './Component/Rooms/Rooms';
+
+
+
 function App() {
   return (
     <div >
@@ -19,6 +23,7 @@ function App() {
       <Route path='/contact' element={<ContactUs/>}/>
       <Route path="/amenities" element={<Amenities/>}/>
       <Route path="/home" element={<Home/>} />
+      <Route path='/room' element={<Rooms/>}/>
       {/* <Footer/> */}
     </Routes>
     
