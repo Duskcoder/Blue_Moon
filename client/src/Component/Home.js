@@ -4,6 +4,8 @@ import White1 from "../images/white1.jpg";
 import whitever from "../images/white eversest gold logo1.jpg";
 import white from "../images/white.jpg";
 import butha from "../images/butha.jpg";
+import reception from "../images/reception.jpg";
+import kitchen from "../images/kitchen.jpg";
 
 function Home() {
   return (
@@ -23,23 +25,17 @@ function Home() {
           </div>
         </div>
       </div>
-      <div class="row justify-content-evenly j mb-5  mt-5">
-        <div class="col-3  text-center  pt-5 ">
-          <div className="home-room-button fflot-inlineend ">
-            <div className="m-r-75px">
-              <h4 className="ms-4 ">Rooms</h4>
-            </div>
-            <br />
-            <div>
-              <br />
-              <button className="mt-4">View ALL</button>
-            </div>
-          </div>
+
+      <div className="row justify-content-evenly  mb-5  mt-5 room-booking">
+        <div class="col-3 pt-5 m-auto">
+          <h4 className="mt-5 justify-content-center d-flex">Rooms</h4>
+
+          <button className="mt-2 mx-auto d-flex">View ALL</button>
         </div>
-        <div class="col-3   text-white fs-2    home-room">
+        <div class="col-lg-4   text-white fs-2    home-room">
           <p className="mt-40px d-flex justify-content-center">Mercury Room</p>
         </div>
-        <div class="col-3  text-white  fs-2 home-rooms">
+        <div class="col-lg-4  text-white  fs-2 home-rooms">
           <p className="mt-40px d-flex justify-content-center">Uranus Room</p>
         </div>
       </div>
@@ -69,7 +65,7 @@ function Home() {
           <div class="col-sm-3">
             <div class="card">
               <div class="card-body">
-                <img src={whitever} alt="" width={250}/>
+                <img src={whitever} alt="" width={250} />
                 <p class="card-text">
                   With supporting text below as a natural lead-in to additional
                   content.
@@ -107,6 +103,31 @@ function Home() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mt-5">
+        <h2 className="trun mb-5 text-center text-info">
+          <b>Blue moon bungalow gallery </b>
+        </h2>
+        <div className="row ">
+          <div className="rooter col-12 col-lg-6  text-end mt-2">
+            <img
+              className="img-responsive"
+              src={kitchen}
+              alt=""
+              width="70%"
+              height="60%"
+            />
+          </div>
+          <div className="rooters col-12 col-lg-6 mt-5 mt-md-2">
+            <img
+              className="img-responsive"
+              src={reception}
+              alt=""
+              width="70%"
+              height="60%"
+            />
           </div>
         </div>
       </div>
