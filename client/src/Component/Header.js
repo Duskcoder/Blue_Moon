@@ -27,11 +27,11 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">About Us</Nav.Link>
-              <Nav.Link href="#action2">Rooms</Nav.Link>
-              <Nav.Link href="#action2">Contact Us</Nav.Link>
-              <Nav.Link href="#action2">Amenities</Nav.Link>
+              <Nav.Link href="/home">Home</Nav.Link>
+              <Nav.Link href="/about">About Us</Nav.Link>
+              <Nav.Link href="/room">Rooms</Nav.Link>
+              <Nav.Link href="/contact">Contact Us</Nav.Link>
+              <Nav.Link href="/amenities">Amenities</Nav.Link>
             </Nav>
             <Form >
               <Button variant="outline-success">BLUEMOON HOMESTAY</Button>

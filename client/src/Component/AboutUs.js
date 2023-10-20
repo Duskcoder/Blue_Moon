@@ -6,10 +6,10 @@ export const AboutUs = () => {
         <>
             <div id='aboutUs'>
                 <div className='container pt-5'>
-                    <div className='row justify-content-center'>
-                        <div class="card  hello2  mt-5    col-lg-6 col-12" data-aos='fade-right' data-aos-duration='1500'>
+                    <div className='row '>
+                        <div class="card  hello2  mt-5 col-lg-6 col-12" data-aos='fade-right' data-aos-duration='1500'>
                             <div class="card-body">
-                                <div className='hello22 mt-5'  data-aos='fade-right'  data-aos-duration='1000'></div>
+                                <div className='hello22 mt-5'data-aos-duration='1000'></div>
                                 <h2 class="card-title text-center mt-5"  data-aos='fade-right'  data-aos-duration='500' style={{color:'#2a919d'}}> About Us</h2>
                                 <h3 class="card-subtitle mt-4 text-center">Experience A Stay<br /> Like Never Before</h3>
                                 <div className='mt-5 text-center'  data-aos='fade-right'  data-aos-duration='500'> 
@@ -24,7 +24,7 @@ export const AboutUs = () => {
                             </div>
                         </div>
 
-                        <div class="card hello1  col-lg-6 col-12 border border-danger" data-aos='fade-left'  data-aos-duration='1500'>
+                        <div class="card hello1  col-lg-6 col-12 " data-aos='fade-left'  data-aos-duration='1500'>
                             <div class="card-body mt-5 mb-5 text-center" data-aos='fade-left' data-aos-duration='1000'>
 
                                 <p class="card-text1 mt-5">We are a well renowned, providing a sensational</p>

@@ -117,14 +117,14 @@ export const Amenities = () => {
             </div>
             <div className='container mb-4'>
                 <div className='enquiry
-                mt-5 d-flex align-items-center justify-content-between'>
+                mt-5'>
                     <div style={{ color: '#294f70' }}>
                         <h2 >Others Perks & Facilities</h2>
                         <p className='col-lg-6'>Looking for now? Well, we believe that every guest walks into our homestay for the best experince. And, we are determined to do that. </p>
 
                     </div>
                     <div className='w-20 mb-5'>
-                        <button className='amen-btn'>Get Enquiry</button>
+                        <button className='amen-btn mb-4'>Get Enquiry</button>
                     </div>
                 </div>
             </div>
