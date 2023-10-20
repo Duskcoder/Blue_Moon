@@ -3,7 +3,8 @@ import footerimg from "../images/blue moon bungalow logo1.jpg";
 
 function Footer() {
   return (
-    <div className=" text-white mt-5">
+    <div className=" text-white overflow-hidden  mt-5">
+
       <div className="row  d-flex   m-auto" id="footer-bg-img">
         <div className="container col-lg-8  m-l-25px text-whites ">
           <div className="mt-4">
@@ -107,8 +108,8 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="m-auto col-lg-4 d-flex justify-content-end  font-30">
-                <button className="fw-bold">
+              <div className=" col-lg-4 font-30 ">
+                <button className="direction fw-bold">
                   <strong>
                     <i class="fa fa-solid fa-diamond-turn-right"></i>
                     <a href="#!">Get Direction</a>

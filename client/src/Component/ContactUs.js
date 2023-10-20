@@ -8,8 +8,9 @@ export const
     <div>
         {/* <Header/> */}
         <div id='contactus' className='contactus'>  
-        <div className='contact'>
-        <div className='mt-4'>
+        
+        <div className='contact col-sm-12 pt-3'>
+        <div className=''>
             <h1 className='text-center' style={{color:' #2a919d'}} data-aos='fade-left' data-aos-duration='500'>Contact Us</h1>
             </div>
             <div className='mt-4 line' data-aos='fade-left' data-aos-duration='500'></div>
