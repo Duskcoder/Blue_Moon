@@ -70,7 +70,7 @@ export const Amenities = () => {
                     <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
                         <div class="card card-amen">
                             <div className='card-image'>
-                                <img className='img-butha' src={require('../images/butha.jpg')} alt="" width='100%' height='50%' />
+                                <img className='image-responsive' src={require('../images/butha.jpg')} alt="" width='100%' height='195px' />
                             </div>
                             <div class="card-body text-center">
                                 <h4>Water Fountain</h4>
@@ -116,14 +116,15 @@ export const Amenities = () => {
                 </div>
             </div>
             <div className='container mb-4'>
-                <div className='mt-5 d-flex align-items-center justify-content-between'>
+                <div className='enquiry
+                mt-5'>
                     <div style={{ color: '#294f70' }}>
                         <h2 >Others Perks & Facilities</h2>
                         <p className='col-lg-6'>Looking for now? Well, we believe that every guest walks into our homestay for the best experince. And, we are determined to do that. </p>
 
                     </div>
                     <div className='w-20 mb-5'>
-                        <button className='amen-btn'>Get Enquiry</button>
+                        <button className='amen-btn mb-4'>Get Enquiry</button>
                     </div>
                 </div>
             </div>
@@ -159,7 +160,7 @@ export const Amenities = () => {
                     <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
                         <div class="card card-amen">
                             <div className='card-image'>
-                            <img className='img-butha' src={require('../images/side.jpg')} alt="" width='100%' height='100%' />
+                            <img className='img-butha' src={require('../images/side.jpg')} alt="" width='100%' height='195px' />
                             </div>
                             <div class="card-body text-center">
                                 <h4>Parking Area</h4>
