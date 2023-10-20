@@ -7,7 +7,7 @@ function Rooms() {
 
     <div className='overflow-hidden'>
       <div className='head  '>
-        <div className='room col-6 col-lg-12 htagsMob mx-5 pt-5  '>
+        <div className='room col-6 col-lg-12 htagsMob mx-5   '>
           <h1 className='text-white htagr'>Rooms</h1>
           <p className='ptag text-white'>If you are looking for a home away from home, just walk in here.<br/> You can get both, an incredible and relaxing experience while you are on a holiday</p>
         </div>
@@ -26,7 +26,7 @@ function Rooms() {
         <div className='col-12 col-lg-6 rooma '>
         <img className='img-responsive invisible   ' src={require('../../images/rooma.jpg')} alt='' width='100%' />
           </div>
-          <div className='col-12 col-lg-6 jupiter m-auto  '  data-aos="zoom-out" >
+          <div className='col-12 col-lg-6 jupiter m-auto  '  data-aos="fade-left" >
             <h3 className=' htag'>Jupiter Room</h3>
             <p className='ptag'>Queen Beds(2) Bathtub with hand shower free WIFI and Towel 
            Cupboard table, and chair water bottles </p> 
@@ -45,7 +45,7 @@ function Rooms() {
        <div className='row'>
      
       
-         <div className='col-12 col-lg-6 Mercury m-auto  '  data-aos="zoom-out" >
+         <div className='col-12 col-lg-6 Mercury m-auto  ' data-aos="fade-right" >
            <h3 className=' htag'>Mercury Room</h3>
            <p className='ptag'>Queen Beds(2) Bathtub with hand shower Cupboard,table, and  
           Chair Free towels free WIFI facility </p>
@@ -68,7 +68,7 @@ function Rooms() {
        <div className='col-12 col-lg-6 roomc '>
        <img className='img-responsive invisible imgs ' src={require('../../images/rooma.jpg')} alt='' width='100%' />
          </div>
-         <div className='col-12 col-lg-6 mars m-auto  '  data-aos="zoom-out" >
+         <div className='col-12 col-lg-6 mars m-auto  '  data-aos="fade-left" >
            <h3 className=' htag'>Mars Room</h3>
            <p className='ptag'>Free WIFI Guests also enjoy premier modern amenties such as 
          high-speed Internet, flat screen TV, and In-rooms. Cupboard
@@ -88,12 +88,12 @@ function Rooms() {
        <div className='row'>
      
      
-         <div className='col-12 col-lg-6 saturn m-auto  '  data-aos="zoom-out" >
+         <div className='col-12 col-lg-6 saturn m-auto  'data-aos="fade-right" >
            <h3 className='htag '>Saturn Room</h3>
            <p className='ptag'>The Love Nest room has all you need for the perfect romantic
-           getaway weekend
+           getaway weekend</p>
        
-          Beds: 1 Queen(s)</p> 
+         <p> Beds: 1 Queen(s)</p> 
            <p>Bathtub :N/A</p>
            <p>Adults:<span className='text-secondary'> 2</span></p>
         
@@ -112,7 +112,7 @@ function Rooms() {
        <img className='img-responsive invisible imgs ' src={require('../../images/rooma.jpg')} alt='' width='100%' />
          </div>
      
-         <div className='col-12 col-lg-6 saturn m-auto   '  data-aos="zoom-out" >
+         <div className='col-12 col-lg-6 saturn m-auto   '  data-aos="fade-left" >
            <h3 className='htag '>Uranus Room</h3>
            <p className='ptag'>The Family room provides the warmth, cleanliness, and extra space 
 
@@ -134,7 +134,7 @@ function Rooms() {
        <div className='row'>
        
      
-         <div className='col-12 col-lg-6 saturn m-auto   '  data-aos="zoom-out" >
+         <div className='col-12 col-lg-6 saturn m-auto   '  data-aos="fade-right" >
            <h3 className='htag '>Neptune Room</h3>
            <p className='ptag'>Designed for comfort and convenience, the Comfort Room spares no expense</p>
 

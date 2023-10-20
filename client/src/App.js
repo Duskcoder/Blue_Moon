@@ -10,6 +10,7 @@ import Home from "./Component/Home";
 
 
 import Rooms from './Component/Rooms/Rooms';
+import RoomStay from "./Component/RoomStay/RoomStay";
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <Route path="/amenities" element={<Amenities/>}/>
       <Route path="/home" element={<Home/>} />
       <Route path='/room' element={<Rooms/>}/>
+      <Route path='/stay' element={<RoomStay/>}/>
       {/* <Footer/> */}
     </Routes>
     

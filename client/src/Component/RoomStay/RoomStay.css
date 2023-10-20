@@ -407,6 +407,8 @@ p {
 /*mobile view for room page*/
 
 @media (min-width: 300px) and (max-width: 766px) {
+
+    
     .htag {
         font-family: 'EB Garamond', sans-serif;
         font-size: 30px;
@@ -419,9 +421,9 @@ p {
     }
     .htagr{
         font-family: 'EB Garamond', sans-serif;
-        font-size: 30px;
+        font-size: 5px;
         color: #117CA1;
-        text-align: center;
+     
     }
 
     .ptag {
@@ -461,7 +463,8 @@ p {
     }
 
     .room h1 {
-        font-size: 70px;
+        font-size: 60px;
+        text-align: center;
     }
 
     .rooma {
@@ -507,4 +510,19 @@ p {
     display: none;
 }
 }
+
+
+@media (min-width: 300px) and (max-width: 400px){
+.dataSys{
+    display: none;
+}
+
+}
+
+@media (min-width: 700px) and (max-width: 4000px){
+    .dataMob{
+        display: none;
+    }
+    
+    }
 
