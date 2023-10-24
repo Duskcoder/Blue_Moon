@@ -191,6 +191,7 @@ card-text1{
   text-align: center;
   margin: auto;
   display: flex;
+  overflow: hidden !important;
   justify-content: center;
   align-items: center;
   height: 100vh;
