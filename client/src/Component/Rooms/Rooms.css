@@ -436,8 +436,9 @@ p {
     }
 
     .btns {
-        display: flex;
+        display: flex !important;
         margin: auto;
+        margin-bottom: 13px;
 
     }
 

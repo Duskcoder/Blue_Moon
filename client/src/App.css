@@ -316,6 +316,7 @@ card-text1{
 .card-image:hover img{
   transform: scale(1.5);
 }
+ 
   
 
 
@@ -482,6 +483,27 @@ color: white !important;
   }
 
 
+}
+
+.card-amen {
+  border: none !important;
+  color: #294f70 !important;
+}
+
+.card-image {
+  overflow: hidden;
+}
+
+.card-image img {
+  transition-duration: 400ms;
+  /* transition-property: all; */
+}
+
+.card-image:hover img {
+  transform: scale(1.5);
+}
+.roos-home-card{
+  margin-right: 2.888rem;
 }
 .grid-item {
   /* background-color: rgba(255, 255, 255, 0.8); */
