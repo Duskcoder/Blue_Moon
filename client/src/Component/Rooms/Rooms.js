@@ -91,9 +91,9 @@ function Rooms() {
          <div className='col-12 col-lg-6 saturn m-auto  'data-aos="fade-right" >
            <h3 className='htag '>Saturn Room</h3>
            <p className='ptag'>The Love Nest room has all you need for the perfect romantic
-           getaway weekend</p>
+           getaway weekend
        
-         <p> Beds: 1 Queen(s)</p> 
+          Beds: 1 Queen(s)</p> 
            <p>Bathtub :N/A</p>
            <p>Adults:<span className='text-secondary'> 2</span></p>
         
