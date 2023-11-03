@@ -32,10 +32,10 @@ function Home() {
 
           <button className="mt-2 mx-auto d-flex">View ALL</button>
         </div>
-        <div class="col-lg-4   text-white fs-2 roos-home-card   home-room">
+        <div class="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
           <p className="mt-40px d-flex justify-content-center">Mercury Room</p>
         </div>
-        <div class="col-lg-4  text-white  fs-2 home-rooms">
+        <div class="col-lg-4 col-12  text-white  fs-2 home-rooms">
           <p className="mt-40px d-flex justify-content-center">Uranus Room</p>
         </div>
       </div>
