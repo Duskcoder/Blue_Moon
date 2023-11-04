@@ -25,8 +25,8 @@ function RoomStay() {
           <p className='ptag'>Pick any of our rooms to experience the delightful decor, complemented with modern amenties for a comfortable stay</p>
         </div>
         <div className='col-12 col-lg-6 rooma '>
-        <img className='img-responsive invisiblex' src={require('../../images/rooma.jpg')} alt='' width='100%' />
-          </div>
+       <img className='img-responsive invisible imgs m-auto' src={require('../../images/rooma.jpg')} alt='' width='100%' />
+         </div>
           <div className='col-12 col-lg-6 jupiter m-auto  '  data-aos="fade-up" >
             <h3 className=' htag'>Standard Room 1</h3>
             <p className='ptag'>Designed for comfort and convenience,the Comfort Room spares no expense</p> 

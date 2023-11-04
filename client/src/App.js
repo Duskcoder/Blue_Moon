@@ -11,7 +11,8 @@ import Home from "./Component/Home";
 
 import Rooms from './Component/Rooms/Rooms';
 import RoomStay from "./Component/RoomStay/RoomStay";
-
+import HomeStay from "./Component/HomeStay/HomeStay";
+import ViewDev from "./Component/ViewAll/ViewDev";
 
 
 function App() {
@@ -25,12 +26,14 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path='/room' element={<Rooms />} />
         <Route path='/stay' element={<RoomStay />} />
+        <Route path='/homestay' element={<HomeStay />} />
+        <Route path='/viewdev' element={<ViewDev />} />
+        
         {/* <Footer/> */}
       </Routes>
 
       <Footer />
-    
- 
+      
     </div>
   );
 }

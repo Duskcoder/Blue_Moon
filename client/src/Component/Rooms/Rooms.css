@@ -370,6 +370,15 @@
     color: #0c617d;
 
 }
+.ptags {
+    text-wrap: balance;
+    justify-content: space-between;
+    font-family: 'EB Garamond', sans-serif;
+ 
+    font-size: 15px;
+    color: #0c617d;
+
+}
 
 p {
 
@@ -412,6 +421,7 @@ p {
         font-size: 30px;
         color: #117CA1;
         text-align: center;
+        justify-content: center;
         
     }
     .htags{
@@ -426,11 +436,12 @@ p {
 
     .ptag {
         text-wrap: stable;
+
         font-size: 20px;
-        justify-content: space-between;
+
+       
         font-family: 'EB Garamond', sans-serif;
 
-        text-align: center;
         color: #0c617d;
 
     }
@@ -447,6 +458,7 @@ p {
         color: #0c617d;
         text-align: center;
         font-size: 15px;
+        
 
     }
 

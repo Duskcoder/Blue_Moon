@@ -1,0 +1,178 @@
+@keyframes hunt{
+  0%,
+    100% {
+        background-image: url('../../images/o.jpg');
+        background-size: 50% 50%;
+        /* / Initial size / */
+        background-repeat: no-repeat;
+    }
+
+    25% {
+        background-image: url('../../images/p.jpg');
+        background-size: 50% 50%;
+        /* / Initial size / */
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-image: url('../../images/r.jpg');
+        background-size: 50% 50%;
+        /* / Initial size / */
+        background-repeat: no-repeat;
+    }
+
+    75% {
+        background-image: url('../../images/s.jpg');
+        background-size: 50% 50%;
+        /* / Initial size / */
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes hunt0{
+  0%,
+    100% {
+        background-image: url('../../images/carner.jpg');
+        background-size: 50% 50%;
+        /* / Initial size / */
+        background-repeat: no-repeat;
+    }
+
+    25% {
+        background-image: url('../../images/room.jpg');
+        background-size: 50% 50%;
+        /* / Initial size / */
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-image: url('../../images/e.jpg');
+        background-size: 50% 50%;
+        /* / Initial size / */
+        background-repeat: no-repeat;
+    }
+
+    75% {
+        background-image: url('../../images/i.jpg');
+        background-size: 50% 50%;
+        /* / Initial size / */
+        background-repeat: no-repeat;
+    }
+}
+.parentned{
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+}
+.parentned:hover .child{
+  transform: scale(1.2);
+}
+.tiger h2{
+  color: #117CA1;
+}
+.tiger button{
+  color: #CCD4D7;
+  background-color: white;
+  /* overflow: hidden; */
+
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+  border: none;
+  width: 30%;
+  padding: 10px;
+}
+.bg-one{
+  height: 300px !important;
+    object-fit: cover;
+
+    background-size: cover !important;
+    background-position: center;
+    animation-name: hunt;
+    animation-duration: 30s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    transition: step-end;
+    width: 37%;
+    background-size: cover;
+    transition: all 1.1s;
+    
+}
+
+.bg-two{
+  height: 300px !important;
+    object-fit: cover;
+
+    background-size: cover !important;
+    background-position: center;
+    animation-name: hunt0;
+    animation-duration: 30s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    transition: step-end;
+    background-size: cover;
+    transition: all 1.1s;
+
+
+
+}
+.parentned{
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+}
+@media only screen and (max-width:600px){
+  .even{
+    display: block!important;
+  }
+  .add{
+    display: none;
+  } 
+  .tiger h2{
+    text-align: center;
+  }
+  .tiger button{
+    margin: auto;
+    display: flex;
+  }
+ .parentned{
+  width: 100%;
+  margin: auto;
+}
+.parentned{
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+}
+.use{
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+}
+.sound{
+  display:  block !important;
+}
+
+.wrapper{
+  display:  block !important;
+  
+}
+.sound {
+  display: block;
+}
+.use {
+  display: block!important;
+}}

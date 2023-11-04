@@ -27,7 +27,7 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               
             >
-              <Nav.Link href="/home">Home</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/about">About Us</Nav.Link>
               <Nav.Link href="/room">Rooms</Nav.Link>
               <Nav.Link href="/contact">Contact Us</Nav.Link>
