@@ -1,14 +1,19 @@
 import React from "react";
-import { AboutUs } from "./AboutUs";
+// import { AboutUs } from "./AboutUs";
 import White1 from "../images/white1.jpg";
 import whitever from "../images/white eversest gold logo1.jpg";
 import white from "../images/white.jpg";
 import butha from "../images/butha.jpg";
 import reception from "../images/reception.jpg";
 import kitchen from "../images/kitchen.jpg";
+import Header from "./Header";
+import Footer from "./Footer";
+import { About } from "./About/About";
 
 function Home() {
   return (
+    <>
+    <Header/>
     <div>
       <div className="home-bg ">
         <div className="container position-relative text-white home-text-center">
@@ -41,7 +46,7 @@ function Home() {
       </div>
 
       <div>
-        <AboutUs />
+        <About/>
       </div>
       <div className="container mt-4 mb-5">
         <div className="d-flex justify-content-center text-primary">
@@ -156,6 +161,8 @@ function Home() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

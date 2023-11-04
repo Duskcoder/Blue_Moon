@@ -1,10 +1,13 @@
 import React from 'react'
 import '../../Component/Rooms/Rooms.css'
+import Footer from '../Footer'
+import Header from '../Header'
 
 
 function Rooms() {
   return (
-
+       <>
+       <Header/>
     <div className='overflow-hidden'>
       <div className='head  '>
         <div className='room col-6 col-lg-12 htagsMob mx-5   '>
@@ -153,6 +156,8 @@ function Rooms() {
 
 
     </div>
+    <Footer/>
+    </>
   )
 }
 
