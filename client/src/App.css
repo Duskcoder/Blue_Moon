@@ -512,3 +512,31 @@ color: white !important;
   font-size: 30px;
   text-align: center;
      }
+
+
+#aboutUs1{
+  
+    background-image: url(./images/night.jpeg);
+    height: 120vh;
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+    opacity: 0.8;
+  
+  
+}
+#contactus1 {
+  background-image: url(./images/night.jpeg);
+  height: 120vh;
+  background-size: cover;
+  color: black;
+  /* background-attachment: fixed; */
+  opacity: 1.2;
+
+}
+
+.card-bodys p{
+  color: white !important;
+}
+
+

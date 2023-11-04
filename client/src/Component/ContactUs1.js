@@ -1,13 +1,13 @@
 import React from 'react';
-import  Header  from './Header';
+import { Header } from './Header';
 import Footer from './Footer';
 
 export const 
- ContactUs= () => {
+ ContactUs1= () => {
   return (
     <div>
-        <Header/>
-        <div id='contactus' className='contactus'>  
+        {/* <Header/> */}
+        <div id='contactus1' className='contactus'>  
         
         <div className='contact col-sm-12 pt-3'>
         <div className=''>
@@ -24,13 +24,13 @@ export const
         <div className='mobile ' >
             <div className='detail mt-5'>
             <p className='number text-center' data-aos='fade-left' data-aos-duration='1000'>+91 8754041119</p>
-             <h5 className='text-center' data-aos='fade-right' data-aos-duration='1000'>bluemoonbungalow2022@gmail.com</h5>
+             <h5 className='text-center' data-aos='fade-right' data-aos-duration='1000'>bluemoonhomestay19@gmail.com</h5>
              </div>
         </div>
               
         </div>
 
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }
