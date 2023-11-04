@@ -8,22 +8,28 @@ import { ContactUs } from "./Component/ContactUs";
 import { Amenities } from "./Component/Amenities";
 import Home from "./Component/Home";
 
-import Rooms from "./Component/Rooms/Rooms";
+
+import Rooms from './Component/Rooms/Rooms';
+import RoomStay from "./Component/RoomStay/RoomStay";
+
+
 
 function App() {
   return (
     <div>
       <Header />
       <Routes>
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path='/about' element={<AboutUs />} />
+        <Route path='/contact' element={<ContactUs />} />
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/room" element={<Rooms />} />
+        <Route path='/room' element={<Rooms />} />
+        <Route path='/stay' element={<RoomStay />} />
         {/* <Footer/> */}
       </Routes>
 
       <Footer />
+      
     </div>
   );
 }
