@@ -25,7 +25,7 @@ const Header = () => {
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: "100px" }}
               >
-                <Nav.Link href="/home">Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/about">About Us</Nav.Link>
                 <Nav.Link href="/room">Rooms</Nav.Link>
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
@@ -34,7 +34,6 @@ const Header = () => {
               <Form>
                 <Button variant="outline-success">BLUEMOON HOMESTAY</Button>
               </Form>
-            
           </div>
         </Container>
       </Navbar>

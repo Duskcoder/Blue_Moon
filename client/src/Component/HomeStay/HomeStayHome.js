@@ -134,7 +134,7 @@ function HomeStayHome() {
         <div className="rooter col-12 col-lg-6  text-end mt-2">
           <img
             className="img-responsive"
-            src={kitchen}
+            // src={kitchen}
             alt=""
             width="70%"
             height="60%"
@@ -143,7 +143,7 @@ function HomeStayHome() {
         <div className="rooters col-12 col-lg-6 mt-5 mt-md-2">
           <img
             className="img-responsive"
-            src={reception}
+            // src={reception}
             alt=""
             width="70%"
             height="60%"
