@@ -6,7 +6,7 @@
     background-size: cover !important;
     background-position: center;
     animation-name: animate;
-    animation-duration: 20s;
+    animation-duration: 30s;
 
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -14,7 +14,10 @@
     transition: step-end;
 
 }
-
+.btn{
+    background-color: #0c617d !important;
+    color: white !important;
+}
 
 .room h1 {
 
@@ -30,34 +33,33 @@
 
 
 
-
 @keyframes animate {
 
     0%,
     100% {
-        background-image: url('../../images/Uranus.jpg');
-        background-size: 90% 90%;
+        background-image: url('../../images/love.png');
+        background-size: 70% 70%;
         /* Initial size */
         background-repeat: no-repeat;
     }
 
     25% {
-        background-image: url('../../images/Saturn.jpg');
-        background-size: 90% 90%;
+        background-image: url('../../images/open.jpg');
+        background-size: 70% 70%;
         /* Initial size */
         background-repeat: no-repeat;
     }
 
     50% {
-        background-image: url('../../images/Neptune.jpg');
-        background-size: 90% 90%;
+        background-image: url('../../images/red.jpg');
+        background-size: 70% 70%;
         /* Initial size */
         background-repeat: no-repeat;
     }
 
     75% {
-        background-image: url('../../images/Uranus.jpg');
-        background-size: 90% 90%;
+        background-image: url('../../images/blue.png');
+        background-size: 70% 70%;
         /* Initial size */
         background-repeat: no-repeat;
     }
@@ -77,7 +79,7 @@
 
 @keyframes example {
     0% {
-        background-image: url('../../images/heater.jpeg');
+        background-image: url('../../images/stda.png');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
@@ -85,7 +87,7 @@
     }
 
     25% {
-        background-image: url('../../images/bathroom.jpeg');
+        background-image: url('../../images/stdb.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -93,7 +95,7 @@
     }
 
     50% {
-        background-image: url('../../images/balcony.jpg');
+        background-image: url('../../images/stdc.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -101,7 +103,7 @@
     }
 
     75% {
-        background-image: url('../../images/yellowbed.jpg');
+        background-image: url('../../images/stdd.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -109,7 +111,7 @@
     }
 
     100% {
-        background-image: url('../../images/heater.jpeg');
+        background-image: url('../../images/stda.png');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -131,7 +133,7 @@
 
 @keyframes examples {
     0% {
-        background-image: url('../../images/mercurya.png');
+        background-image: url('../../images/stde.jpeg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
@@ -139,7 +141,7 @@
     }
 
     25% {
-        background-image: url('../../images/mercuryb.png');
+        background-image: url('../../images/stdf.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -147,7 +149,7 @@
     }
 
     50% {
-        background-image: url('../../images/mercury.jpg');
+        background-image: url('../../images/stdg.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -155,7 +157,7 @@
     }
 
     75% {
-        background-image: url('../../images/sunflower.jpg');
+        background-image: url('../../images/stde.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -163,7 +165,7 @@
     }
 
     100% {
-        background-image: url('../../images/mercurya.png');
+        background-image: url('../../images/stdf.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -185,7 +187,7 @@
 @keyframes examplec {
 
     0% {
-        background-image: url('../../images/lefts.jpg');
+        background-image: url('../../images/threea.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -193,7 +195,7 @@
     }
 
     50% {
-        background-image: url('../../images/balc.jpg');
+        background-image: url('../../images/threeb.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -201,7 +203,7 @@
     }
 
     75% {
-        background-image: url('../../images/rights.jpg');
+        background-image: url('../../images/threec.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -209,7 +211,7 @@
     }
 
     100% {
-        background-image: url('../../images/lefts.jpg');
+        background-image: url('../../images/threed.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -231,7 +233,7 @@
 
 @keyframes exampled {
     0% {
-        background-image: url('../../images/saturna.jpeg');
+        background-image: url('../../images/grounda.jpg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
@@ -239,7 +241,7 @@
     }
 
     50% {
-        background-image: url('../../images/saturnc.jpeg');
+        background-image: url('../../images/groundb.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -247,7 +249,7 @@
     }
 
     75% {
-        background-image: url('../../images/saturnd.jpeg');
+        background-image: url('../../images/groundc.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -255,7 +257,7 @@
     }
 
     100% {
-        background-image: url('../../images/saturna.jpeg');
+        background-image: url('../../images/groundd.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -263,7 +265,7 @@
     }
 }
 
-.roome {
+.roomx {
     /* background-image: url("../../images/rooma.jpg"); */
 
     animation-name: examplee;
@@ -276,7 +278,7 @@
 
 @keyframes examplee {
     0% {
-        background-image: url('../../images/uranusa.jpeg');
+        background-image: url('../../images/firsta.jpg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
@@ -284,7 +286,7 @@
     }
 
     25% {
-        background-image: url('../../images/uranausb.jpeg');
+        background-image: url('../../images/firstb.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -292,7 +294,7 @@
     }
 
     50% {
-        background-image: url('../../images/uranusc.jpeg');
+        background-image: url('../../images/firstc.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -300,7 +302,7 @@
     }
 
     75% {
-        background-image: url('../../images/uranusd.jpeg');
+        background-image: url('../../images/firstd.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -383,6 +385,14 @@ p {
     color: #117CA1;
 }
 
+.htage {
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #117CA1;
+    text-align: center;
+}
+
 .htags {
     font-family: 'EB Garamond', sans-serif;
     font-weight: 500;
@@ -399,15 +409,62 @@ p {
     background-color: 2px solid red;
 }
 
-.btns {
-    color: #117CA1;
-}
+
 
 
 /*mobile view for room page*/
 
 @media (min-width: 300px) and (max-width: 766px) {
+    .head {
 
+        height: 600px !important;
+        
+        object-fit: cover;
+    
+        background-size: cover !important;
+        background-position: center;
+        animation-name: animate;
+        animation-duration: 30s;
+    
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transition: step-end;
+    
+    }
+    @keyframes animate {
+
+        0%,
+        100% {
+            background-image: url('../../images/love.png');
+            background-size: 70% 70%;
+            /* Initial size */
+            background-repeat: no-repeat;
+        }
+    
+        25% {
+            background-image: url('../../images/open.jpg');
+            background-size: 70% 70%;
+            /* Initial size */
+            background-repeat: no-repeat;
+        }
+    
+        50% {
+            background-image: url('../../images/red.jpg');
+            background-size: 70% 70%;
+            /* Initial size */
+            background-repeat: no-repeat;
+        }
+    
+        75% {
+            background-image: url('../../images/blue.png');
+            background-size: 70% 70%;
+            /* Initial size */
+            background-repeat: no-repeat;
+        }
+    }
+    
+    
     
     .htag {
         font-family: 'EB Garamond', sans-serif;
@@ -426,22 +483,61 @@ p {
      
     }
 
-    .ptag {
-        text-wrap: stable;
-        font-size: 20px;
-        justify-content: space-between;
+ .jupiter .ptag {
+    
+    
         font-family: 'EB Garamond', sans-serif;
 
-        text-align: center;
+        text-align:start;
+        font-size: 13px ;
+        font-weight:normal;
         color: #0c617d;
 
     }
+    
+ .mars .ptag {
+    
+    
+    font-family: 'EB Garamond', sans-serif;
 
+    text-align:start;
+    color: #0c617d;
+    font-size: 13px ;
+    font-weight:normal;
+
+}
+
+.Mercury .ptag {
+    
+    
+    font-family: 'EB Garamond', sans-serif;
+
+    text-align:start;
+    color: #0c617d;
+    font-size: 13px ;
+    font-weight:normal;
+
+}
+.saturn .ptag {
+    
+    font-size: 12px ;
+    
+  
+    font-family: 'EB Garamond', sans-serif;
+
+    text-align:start;
+    color: #0c617d;
+
+}
     .btns {
         display: flex !important;
         margin: auto;
         margin-bottom: 13px;
-
+        background-color: #0c617d !important;
+color: white !important;
+width: 75%;
+text-align: center;
+justify-content: center;
     }
 
     p {
@@ -502,6 +598,11 @@ p {
 
 
     }
+    .roomx {
+        margin-left: 17px;
+
+
+    }
 }
 
 
@@ -512,10 +613,19 @@ p {
 }
 
 
-@media (min-width: 300px) and (max-width: 400px){
+@media (min-width: 320px) and (max-width: 400px){
 .dataSys{
     display: none;
 }
+
+/* .stay .Mercury{
+    display: none;
+}
+.stay .imgs{
+    display: none;
+    background-color: white;
+} */
+
 
 }
 
@@ -523,6 +633,80 @@ p {
     .dataMob{
         display: none;
     }
-    
+   
     }
-
+  
+        @media (min-width:300px) and (max-width: 500px){
+       .head{
+     display: flex;
+     margin: auto;
+        width: 90%;
+       }
+       .room h1{
+       font-size:44px;
+       margin-top: 20px;
+       }
+       .come{
+      display: block;
+      width: 100%;
+       }
+       .rooma{
+        display: flex;
+  
+        height: 182px;
+  
+       }
+       .roomb{
+        display: flex;
+  
+        height: 182px;
+  
+       }
+       .roomc{
+        display: flex;
+  
+        height: 182px;
+  
+       }
+       .roomd{
+        display: flex;
+  
+        height: 182px;
+  
+       }
+       .roome{
+        display: flex;
+  
+        height: 182px;
+  
+       }
+       .roomx{
+        display: flex;
+  
+        height: 182px;
+  
+       }
+       .htag{
+   
+        font-size: 24px;
+        display: flex;
+     
+       }
+      
+       .system{
+        display: none;
+       }
+  
+            
+            }
+            @media (min-width: 400px) and (max-width: 4000px){
+                .dataMob{
+                    display: none;
+                }
+                .systems{
+                    display: none;
+                }
+              
+                
+                }
+    

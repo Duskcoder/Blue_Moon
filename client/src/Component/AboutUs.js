@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
 
 export const AboutUs = () => {
     return (
         <>
+        <Header/>
             <div id='aboutUs'>
                 <div className='container pt-5'>
                     <div className='row '>
@@ -42,6 +45,7 @@ export const AboutUs = () => {
 
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

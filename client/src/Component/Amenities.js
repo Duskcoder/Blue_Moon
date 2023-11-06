@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from './Header'
+import Footer from './Footer'
 
 export const Amenities = () => {
     return (
         <>
+        <Header/>
             <div id='Amenities' className='d-flex align-items-center'>
                 <div className='container  '>
                     <h1 className='' data-aos='fade-left' data-aos-duration='1000'>Amenities & Facilities</h1>
@@ -185,6 +188,7 @@ export const Amenities = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Header } from './Header';
+import  Header  from './Header';
 import Footer from './Footer';
 
 export const 
  ContactUs= () => {
   return (
     <div>
-        {/* <Header/> */}
+        <Header/>
         <div id='contactus' className='contactus'>  
         
         <div className='contact col-sm-12 pt-3'>
@@ -30,7 +30,7 @@ export const
               
         </div>
 
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }
