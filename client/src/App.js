@@ -11,6 +11,8 @@ import Home from "./Component/Home";
 
 import Rooms from './Component/Rooms/Rooms';
 import RoomStay from "./Component/RoomStay/RoomStay";
+import HomeStay from "./Component/HomeStay/HomeStay";
+import ViewDev from "./Component/ViewAll/ViewDev";
 import { ContactUs1 } from "./Component/ContactUs1";
 import { AboutUs1 } from "./Component/AboutUs1";
 import Adminpanel from "./Component/Admin/adminpanel";
@@ -29,6 +31,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/room' element={<Rooms />} />
         <Route path='/stay' element={<RoomStay />} />
+        <Route path='/homestay' element={<HomeStay />} />
+        <Route path='/viewdev' element={<ViewDev />} />
+        
         <Route path='/contact1' element={<ContactUs1/>}/>
         <Route path='/about1' element={<AboutUs1/>}/>
         <Route path='/Admin' element={<Adminpanel/>}/>
