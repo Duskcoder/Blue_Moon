@@ -244,7 +244,8 @@ function Adminpanel(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        BlueMoon
+                         
+                                      
                     </Typography>
 
 

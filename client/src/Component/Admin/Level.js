@@ -371,7 +371,7 @@ function Level(props) {
                     <Table sx={{ minWidth: 700 }} aria-label="customized table">
                         <TableHead>
                             <TableRow>
-                                <StyledTableCell align="center">Membership Type</StyledTableCell>
+                                <StyledTableCell align="center">Room_Name</StyledTableCell>
                                 <StyledTableCell align="center">Membership Level</StyledTableCell>
                                 <StyledTableCell align="center">Stage</StyledTableCell>
                                 <StyledTableCell align="center">Amount</StyledTableCell>
