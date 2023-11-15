@@ -362,12 +362,12 @@ function Level(props) {
                         onChange={handleFilter}
                         placeholder="Search "
                     />
-                    <select className="selcetoption"
+                    {/* <select className="selcetoption"
                         onChange={handleFilters}>
                         <option value="super_deal">HomeStay</option>
                         <option value="kingdom">Bangalow</option>
                        
-                    </select>
+                    </select> */}
                     <Table sx={{ minWidth: 700 }} aria-label="customized table">
                         <TableHead>
                             <TableRow>

@@ -244,7 +244,7 @@ function Adminpanel(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                         
+                      BlueMoon   
                                       
                     </Typography>
 
@@ -324,7 +324,7 @@ function Adminpanel(props) {
                         <ListItemButton>
                             <ListItemIcon onClick={() => { navigate("/Level") }}>
                                 <h4 className="dashboard-h4">
-                                    <b>Level</b>
+                                    <b>Rooms</b>
                                 </h4>
                             </ListItemIcon>
                             <ListItemText />
@@ -359,13 +359,15 @@ function Adminpanel(props) {
                     <Table sx={{ minWidth: 700 }} aria-label="customized table">
                         <TableHead>
                             <TableRow>
-                                <StyledTableCell align="center">Name</StyledTableCell>
-                                <StyledTableCell align="center">Email</StyledTableCell>
-                                <StyledTableCell align="center">Number</StyledTableCell>
-                                <StyledTableCell align="center">User_address</StyledTableCell>
-                                <StyledTableCell align="center">Referal id</StyledTableCell>
-                                <StyledTableCell align="center">discount</StyledTableCell>
-                                <StyledTableCell align="center">Wallet</StyledTableCell>
+                                <StyledTableCell align="center">cover_img</StyledTableCell>
+                                <StyledTableCell align="center">name</StyledTableCell>
+                                {/* <StyledTableCell align="center">description</StyledTableCell> */}
+                                <StyledTableCell align="center">beds</StyledTableCell>
+                                <StyledTableCell align="center">restrooms</StyledTableCell>
+                                <StyledTableCell align="center">bathtub</StyledTableCell>
+                                <StyledTableCell align="center">adult</StyledTableCell>
+                                <StyledTableCell align="center">status</StyledTableCell>
+                                <StyledTableCell align="center">price</StyledTableCell>
                                 <StyledTableCell align="center">Action</StyledTableCell>
                             </TableRow>
                         </TableHead>

@@ -19,6 +19,7 @@ router.post("/room", upload.single("image"),  roomController.NewRoom);
 
 router.post('/room', roomController.NewRoom);
 
+router.get('/showroom',roomController.country);
 
 
 module.exports = router;

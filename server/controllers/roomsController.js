@@ -16,32 +16,18 @@ exports.NewRoom = async (req,res)=>{
 }
 
 
-// exports.UpImage= async (req, res) => {
-    
 
-//     const imageName = req.file.filename;
 
-//     console.log(imageName, "sfasdfadfadfasf");
-
-//     try {
-//       const developer = await Rooms.create(
-        
-//         { $push: { cover_img: imageName } }, // Push the updated project data into the addProject array
-//         { new: true } // To return the updated document
-//       );
-
-//       if (!developer) {
-//         return res.status(404).json({ success: false, msg: "User not found" });
-//       }
-
-//       return res.status(200).json({
-//         success: true,
-//         msg: "Uploaded successfully",
-//         data: developer,
-//       });
-//     } catch (error) {
-//       console.error("Error:", error);
-//       return res.status(500).json({ error: error.message });
-//     }
-//   }
-
+exports.country = async (req, res) => {
+    try {
+      console.log("heeeeeellllo")
+      const roomList = await Rooms.findAll();
+      console.log(roomList, "hhhhhhh");
+      res.status(200).json(roomList);
+    } catch (error) {
+      // console.error('Error during country:', error);
+      console.error('Error stack trace:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  };
+  
