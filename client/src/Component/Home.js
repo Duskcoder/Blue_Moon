@@ -9,13 +9,14 @@ import kitchen from "../images/kitchen.jpg";
 import Header from "./Header";
 import Footer from "./Footer";
 import { About } from "./About/About";
+import '../Component/Home.css'
 
 function Home() {
   return (
     <>
     <Header/>
-    <div>
-      <div className="home-bg ">
+    <div className="overflow-hidden">
+      <div className="home-bg  col-12 overflow-hidden ">
         <div className="container position-relative text-white home-text-center">
           <div className="text-align-center">
             <div data-aos="fade-right" data-aos-duration="1000">
@@ -33,9 +34,12 @@ function Home() {
 
       <div className="row justify-content-evenly  mb-5  mt-5 room-booking">
         <div class="col-3 pt-5 m-auto">
-          <h4 className="mt-5 justify-content-center d-flex">Rooms</h4>
+        <h4 className="mt-5 justify-content-center d-flex" style={{ color: '#0c617d' }}>
+  Rooms
+</h4>
 
-          <button className="mt-2 mx-auto d-flex">View ALL</button>
+
+          <button className="mt-2 mx-auto d-flex mb-2 view ">View ALL</button>
         </div>
         <div class="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
           <p className="mt-40px d-flex justify-content-center">Mercury Room</p>

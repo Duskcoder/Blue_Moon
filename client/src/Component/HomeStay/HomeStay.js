@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../Component/HomeStay/HomeStay.css'
-import { AboutUs } from '../AboutUs'
+
 import ViewDev from '../ViewAll/ViewDev'
 import CardBox from '../Gallery/Gallery'
 import { useNavigate } from 'react-router-dom'
@@ -27,7 +27,7 @@ function HomeStay() {
         
       </div>
       <ViewDev/>
-      <AboutUs/>
+   
       <CardBox/>
       
       </div>
@@ -47,7 +47,7 @@ function HomeStay() {
     
         
       <ViewDev/>
-      <AboutUs/>
+  
       <CardBox/>
     </div>
  

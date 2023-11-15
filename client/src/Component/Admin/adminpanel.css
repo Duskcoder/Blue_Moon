@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+    .sys {
+        display: none;
+    }
+    .mob{
+        margin-top: 47px;
+    }
+}
+@media  (min-width:700px){
+   .mob{
+    display: none;
+   }
+}

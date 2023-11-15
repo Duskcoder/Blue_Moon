@@ -1,0 +1,21 @@
+.view{
+  display: flex !important;
+  margin: auto;
+  margin-bottom: 13px;
+  background-color: #ffffff !important;
+color: #0c617d!important;
+width: 25%;
+box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+text-align: center;
+justify-content: center;
+  
+
+}
+@media (max-width: 767px) {
+  .view {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
