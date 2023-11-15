@@ -170,18 +170,20 @@ a {
   background-color: black !important;
   opacity: 0.8 !important;
 }
-.hello2{
-  width:35% !important;
+
+.hello2 {
+  width: 35% !important;
   margin-top: 40px !important;
-  margin-bottom: 20px!important;
+  margin-bottom: 20px !important;
   /* width: 44% !important; */
   left: 15%;
 
-background-color: rgb(255, 253, 253) !important;
-/* opacity:0.6 !important; */
-/* z-index: 1 !important; */
-color: rgb(19, 18, 18) !important;
+  background-color: rgb(255, 253, 253) !important;
+  /* opacity:0.6 !important; */
+  /* z-index: 1 !important; */
+  color: rgb(19, 18, 18) !important;
 }
+
 /* 
 card-text1{
   top:10vh;
@@ -268,7 +270,8 @@ card-text1{
   /* background-color: #2196F3; */
   padding: 10px;
 }
-#Amenities{
+
+#Amenities {
   background-image: url(./images/IMG_20220810_110120.jpg);
   height: 70vh;
   background-size: cover;
@@ -277,43 +280,47 @@ card-text1{
   opacity: 1.2;
 }
 
-.amen-btn{
+.amen-btn {
   border: none;
-  height:40px;
-  padding-left:17px;
+  height: 40px;
+  padding-left: 17px;
   padding-right: 17px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.enquiry{
+
+.enquiry {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 
-  #aboutUs {
-    background-image: url(./images/hall1.jpg);
-    height: auto!important;
-    background-size: cover;
-    color: black;
-    background-attachment: fixed;
-    opacity: 0.8;
-  }
-
-
-
-.card-amen{
-  border: none !important;
-  color:#294f70 !important;
+#aboutUs {
+  background-image: url(./images/hall1.jpg);
+  height: auto !important;
+  background-size: cover;
+  color: black;
+  background-attachment: fixed;
+  opacity: 0.8;
 }
-.card-image{
+
+
+
+.card-amen {
+  border: none !important;
+  color: #294f70 !important;
+}
+
+.card-image {
   overflow: hidden;
 }
-.card-image img{
+
+.card-image img {
   transition-duration: 400ms;
   /* transition-property: all; */
 }
-.card-image:hover img{
+
+.card-image:hover img {
   transform: scale(1.5);
 }
  
@@ -327,9 +334,9 @@ card-text1{
   animation: animatesroom 16s ease-in-out infinite;
 }
 
-.mt-40px {
+/* .mt-40px {
   margin-top: 15.063rem !important;
-}
+} */
 
 @keyframes animatesroom {
 
@@ -341,7 +348,7 @@ card-text1{
   25% {
     background-image: url('../src/images/Uranus.jpg');
   }
-  
+
   50% {
     background-image: url("../src/images/mercury.jpg");
   }
@@ -350,7 +357,7 @@ card-text1{
     background-image: url("../src/images/Neptune.jpg");
   }
 }
- 
+
 /* .hello1{
   width:100% !important;
 margin-top: 20px!important;
@@ -362,48 +369,65 @@ color: white !important;
 } */
 
 
-@media screen and (max-width:360px){
-  .btn-head{
+@media screen and (max-width:360px) {
+  .btn-head {
     display: none !important;
   }
- 
-  .line{
+
+  .mt-40px {
+    margin-top: 0 !important;
+  }
+
+  .home-rooms {
+    margin-top: 10px !important
+  }
+
+  .line {
     display: none;
   }
-  .mobile{
+
+  .mobile {
     width: 100%;
   }
-  .detail{
+
+  .detail {
     left: 20px;
   }
-  .direction{
 
-    left:20px;
+  .direction {
+
+    left: 20px;
   }
-  .first-card{
-    width:100% !important;
+
+  .first-card {
+    width: 100% !important;
     height: 50vh !important;
-  
+
   }
-  .enquiry{
+
+  .enquiry {
     display: contents !important;
     text-align: center !important;
   }
-  .contact{
+
+  .contact {
     padding-left: 24px;
     padding-right: 24px;
   }
-  .img-butha{
+
+  .img-butha {
     object-fit: cover !important;
   }
-.hello2{
-  width: 100% !important;
-  left: 0;
-}
-.hello1{
-  width:100% !important;
-  left: 0;
-}
+
+  .hello2 {
+    width: 100% !important;
+    left: 0;
+  }
+
+  .hello1 {
+    width: 100% !important;
+    left: 0;
+  }
 
 
 }
@@ -411,7 +435,7 @@ color: white !important;
 .home-rooms {
   background-size: cover;
   width: 100%;
-  height: 300%;
+  height: 300px;
   animation: animatesroomshome 16s ease-in-out infinite;
 }
 
@@ -464,6 +488,10 @@ color: white !important;
     align-items: center
   }
 
+  .home-rooms {
+    margin-top: 10px
+  }
+
   .home-text-center h1 {
     font-size: 60px;
   }
@@ -502,16 +530,49 @@ color: white !important;
 .card-image:hover img {
   transform: scale(1.5);
 }
-.roos-home-card{
+
+.roos-home-card {
   margin-right: 2.888rem;
 }
+
 .grid-item {
   /* background-color: rgba(255, 255, 255, 0.8); */
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
-     }
+}
+
+.home-bg-homestay {
+  /* width: 100%; */
+  /* height: 100vh; */
+  animation: animatehomestay 16s ease-in-out infinite;
+
+}
+
+@keyframes animatehomestay {
+
+  100% {
+    background-size: 100% 100% !important;
+    background-image: url('../src/images/hall1.jpg');
+  }
+
+  25% {
+    background-size: 100% 100% !important;
+    background-image: url('../src/images/stairs1.jpg');
+  }
+
+  50% {
+    background-size: 100% 100% !important;
+    background-image: url("../src/images/stairs.jpg");
+  }
+
+  75% {
+    background-size: 100% 100% !important;
+    background-image: url("../src/images/hall.jpg");
+  }
+}
+     
 
 
 
