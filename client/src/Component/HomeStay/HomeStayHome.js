@@ -5,7 +5,7 @@ import White1 from "";
 
 function HomeStayHome() {
   return (
-    <div>
+    <div >
     <div className="home-bg ">
       <div className="container position-relative text-white home-text-center">
         <div className="text-align-center">
@@ -17,6 +17,7 @@ function HomeStayHome() {
           </div>
           <div data-aos="fade-left" data-aos-duration="1000">
             <h1>FROM HOME</h1>
+            
           </div>
         </div>
       </div>
@@ -24,10 +25,10 @@ function HomeStayHome() {
 
     <div className="row justify-content-evenly  mb-5  mt-5 room-booking">
       <div class="col-3 pt-5 m-auto">
-        <h4 className="mt-5 justify-content-center d-flex">Rooms</h4>
+        <h4 className="mt-5 justify-content-center d-flex border border-primaryx">Rooms </h4>
 
         <button className="mt-2 mx-auto d-flex">View ALL</button>
-      </div>
+      </div>sas
       <div class="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
         <p className="mt-40px d-flex justify-content-center">Mercury Room</p>
       </div>
@@ -56,7 +57,7 @@ function HomeStayHome() {
               />
             </div>
             <div class="card-body text-center">
-              <h4>Selfie Spot</h4>
+              <h4>Selfie Spo  t</h4>
               <p class="card-text">
                 Cherish Each and every moment and make those moments
                 memorable.
@@ -96,7 +97,7 @@ function HomeStayHome() {
               />
             </div>
             <div class="card-body text-center">
-              <h4>Hut</h4>
+              <h4>Huts</h4>
               <p class="card-text">
                 A space for solitude seekers peace lovers and nature lovers.
               </p>

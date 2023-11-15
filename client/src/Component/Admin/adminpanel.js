@@ -30,6 +30,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import axios from "axios";
 import Pagination from "react-js-pagination"; // Import Pagination component
+import '../../Component/Admin/adminpanel.css'
 
 
 const drawerWidth = 240;
@@ -244,8 +245,8 @@ function Adminpanel(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                         
-                                      
+
+
                     </Typography>
 
 
@@ -341,7 +342,7 @@ function Adminpanel(props) {
                 <h2>Dashboard</h2>
                 <button
                     className="btn btn-success btn-xs ms-3 mb-3"
-                  
+
                     data-toggle="modal"
                     onClick={() => { navigate("/addrooms") }}
 
@@ -356,8 +357,9 @@ function Adminpanel(props) {
                         placeholder="Search "
                     />
 
-                    <Table sx={{ minWidth: 700 }} aria-label="customized table">
-                        <TableHead>
+                   <div className='sys'>
+                   <Table  sx={{ minWidth: 700 }} aria-label="customized table">
+                        <TableHead className="sys">
                             <TableRow>
                                 <StyledTableCell align="center">Name</StyledTableCell>
                                 <StyledTableCell align="center">Email</StyledTableCell>
@@ -369,7 +371,10 @@ function Adminpanel(props) {
                                 <StyledTableCell align="center">Action</StyledTableCell>
                             </TableRow>
                         </TableHead>
+                        <div>
 
+
+                        </div>
                         <TableBody>
                             {filteredData.length === 0 ? (
                                 <TableRow>
@@ -437,7 +442,50 @@ function Adminpanel(props) {
                             )}
                         </TableBody>
                     </Table>
+                   </div>
+                    <div className='container mob'>
+                    <div className='row'>
+                    <TableHead className="col-6">
+                            <TableRow>
+                                <StyledTableCell align="center">Name</StyledTableCell>
 
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Email</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Number</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">User_address</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Referal id</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">discount</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Wallet</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Action</StyledTableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableRow className="col-6">
+                            <TableCell className="d-flex align-items-center">
+                                No data available in this table
+                            </TableCell>
+                        </TableRow>
+                    </div>
+                       
+                    </div>
 
 
                     <div className="pagination-container">

@@ -31,7 +31,7 @@ const Header = () => {
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
                 <Nav.Link href="/amenities">Amenities</Nav.Link>
               </Nav>
-              <Form>
+              <Form className=''>
                 <Button variant="outline-success">BLUEMOON HOMESTAY</Button>
               </Form>
           </div>
