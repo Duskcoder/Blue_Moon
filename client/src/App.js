@@ -18,6 +18,8 @@ import { AboutUs1 } from "./Component/AboutUs1";
 import Adminpanel from "./Component/Admin/adminpanel";
 import Level from "./Component/Admin/Level";
 import Addrooms from "./Component/Admin/Addrooms";
+import HomeStayHome from "./Component/HomeStay/HomeStayHome";
+import CardBox from "./Component/Gallery/Gallery";
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
         <Route path='/Admin' element={<Adminpanel/>}/>
         <Route path='/level' element={<Level/>}/>
         <Route path="/addrooms" element={<Addrooms/>}/>
+        <Route path="/homeStayHome" element={<HomeStayHome/>}/>
+        <Route path="/Gallery" element={<CardBox/>}/>
         {/* <Footer/> */}
       </Routes>
 

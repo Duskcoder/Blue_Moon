@@ -8,9 +8,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import blueMoonIMG from "../images/blue moon7.jpg";
+import { useNavigate } from "react-router-dom";
 const Header1 = () => {
 
-
+const navigate=useNavigate()
 
   return (
     <div className="hello">
@@ -27,15 +28,16 @@ const Header1 = () => {
               style={{ maxHeight: "100px" }}
               
             >
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/homeStayHome">Home</Nav.Link>
               <Nav.Link href="/about">About Us</Nav.Link>
-              <Nav.Link href="/stay">Rooms</Nav.Link>
-              <Nav.Link href="/room">Gallery</Nav.Link>
+              <Nav.Link href="/Room">Rooms</Nav.Link>
+              <Nav.Link href="/Gallery">Gallery</Nav.Link>
               <Nav.Link href="/contact">Contact Us</Nav.Link>
     
             </Nav>
             <Form >
-              <Button variant="outline-success">BLUEMOON BANGALOW</Button>
+              {/* <Button variant="outline-success" onClick={()=>navigate('/')}>BLUEMOON BANGALOW</Button> */}
+              <Link to='/'>BLUEMOON BANGALOW</Link>
             </Form>
           </Navbar.Collapse>
           </div>
@@ -45,4 +47,4 @@ const Header1 = () => {
   );
 };
 
-export default Header;
+export default Header1;
