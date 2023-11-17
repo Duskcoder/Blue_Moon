@@ -7,7 +7,7 @@ import "./App.css";
 import { ContactUs } from "./Component/ContactUs";
 import { Amenities } from "./Component/Amenities";
 import Home from "./Component/Home";
-
+import Details from './Component/Admin/Details'
 
 import Rooms from './Component/Rooms/Rooms';
 import RoomStay from "./Component/RoomStay/RoomStay";
@@ -37,12 +37,12 @@ function App() {
         <Route path='/viewdev' element={<ViewDev />} />
         
         <Route path='/contact1' element={<ContactUs1/>}/>
+        <Route path="/HomeStayHome" element={<HomeStayHome/>}/>
         <Route path='/about1' element={<AboutUs1/>}/>
         <Route path='/Admin' element={<Adminpanel/>}/>
         <Route path='/level' element={<Level/>}/>
         <Route path="/addrooms" element={<Addrooms/>}/>
-        <Route path="/homeStayHome" element={<HomeStayHome/>}/>
-        <Route path="/Gallery" element={<CardBox/>}/>
+        <Route path="/details" element={<Details/>}/>
         {/* <Footer/> */}
       </Routes>
 

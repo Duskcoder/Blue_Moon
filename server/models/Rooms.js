@@ -2,31 +2,46 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config');
 
-const Rooms = sequelize.define('User', {
+const Rooms = sequelize.define('Room', {
+  cover_img: {
+    type: DataTypes.STRING,
+    allowNull: true,
+    unique: true,
+  },
   name: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
     unique: true,
   },
   description: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   beds: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   restrooms: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   bathtub: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   adults: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
+  }, 
+  status: {
+    type: DataTypes.BOOLEAN,
+    allowNull: true,
+    
+  },
+  price: {
+    type: DataTypes.STRING,
+    allowNull: true,
+    
   },
 },
   {

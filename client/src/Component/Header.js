@@ -1,12 +1,12 @@
 import React,{useState} from "react";
 // import Logo from '../images/blue moon7.jpg'
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import blueMoonIMG from "../images/blue moon7.jpg";
 import { Navigate } from "react-router-dom";
 const Header = () => {
@@ -34,7 +34,7 @@ const Header = () => {
               >
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/about">About Us</Nav.Link>
-                <Nav.Link href="/stay">Rooms</Nav.Link>
+                <Nav.Link href="/Room">Rooms</Nav.Link>
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
                 <Nav.Link href="/amenities">Amenities</Nav.Link>
               </Nav>

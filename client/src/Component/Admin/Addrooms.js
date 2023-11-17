@@ -36,6 +36,7 @@ import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
 import Input from '@mui/material/Input';
 import InputLabel from '@mui/material/InputLabel';
+import Details from "./Details";
 import OutlinedInput from '@mui/material/OutlinedInput';
 
 const drawerWidth = 240;
@@ -361,7 +362,8 @@ function Addrooms(props) {
                 <DrawerHeader />
 
                 <h2>AddRooms</h2>
-                <Box
+                <Details/>
+                {/* <Box
       component="form"
       sx={{
         '& > :not(style)': { m: 3 },
@@ -376,12 +378,12 @@ function Addrooms(props) {
       
      
      
-    </Box>
+    </Box> */}
             </Main>
 
 
 
-            <form onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}>
                 <div className="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
@@ -405,7 +407,7 @@ function Addrooms(props) {
                         </div>
                     </div>
                 </div>
-            </form>
+            </form> */}
 
 
         </Box>

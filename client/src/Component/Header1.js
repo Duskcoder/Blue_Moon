@@ -36,8 +36,8 @@ const navigate=useNavigate()
     
             </Nav>
             <Form >
-              {/* <Button variant="outline-success" onClick={()=>navigate('/')}>BLUEMOON BANGALOW</Button> */}
-              <Link to='/'>BLUEMOON BANGALOW</Link>
+              <Button variant="outline-success" onClick={()=>navigate('/')}>BLUEMOON BANGALOW</Button>
+              {/* <Link to='/'>BLUEMOON BANGALOW</Link> */}
             </Form>
           </Navbar.Collapse>
           </div>
