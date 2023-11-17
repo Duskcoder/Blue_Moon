@@ -34,8 +34,9 @@ const Rooms = sequelize.define('Room', {
     allowNull: true,
   }, 
   status: {
-    type: DataTypes.BOOLEAN,
+    type: DataTypes.STRING,
     allowNull: true,
+    unique: true
     
   },
   price: {
