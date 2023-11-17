@@ -116,23 +116,23 @@ function Addrooms(props) {
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
 
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/level`); // Replace with your API endpoint
-                if (response.status === 200) {
-                    const jsonData = response.data;
-                    setData(jsonData);
-                    setFilteredData(jsonData)
-                    console.log(jsonData)
-                }
-            } catch (err) {
-                console.error('Error:', err);
-            }
-        }
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         try {
+    //             const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/level`); // Replace with your API endpoint
+    //             if (response.status === 200) {
+    //                 const jsonData = response.data;
+    //                 setData(jsonData);
+    //                 setFilteredData(jsonData)
+    //                 console.log(jsonData)
+    //             }
+    //         } catch (err) {
+    //             console.error('Error:', err);
+    //         }
+    //     }
 
-        fetchData();
-    }, []);
+    //     fetchData();
+    // }, []);
 
 
 
@@ -170,85 +170,85 @@ function Addrooms(props) {
         navigate("/");
     };
 
-    const [currentpage, setCurrentPage] = useState(1);
-    const recordsPerPage = 10;
-    const firstIndex = (currentpage - 1) * recordsPerPage;
-    const lastIndex = currentpage * recordsPerPage;
+    // const [currentpage, setCurrentPage] = useState(1);
+    // const recordsPerPage = 10;
+    // const firstIndex = (currentpage - 1) * recordsPerPage;
+    // const lastIndex = currentpage * recordsPerPage;
 
 
-    const handleFilter = (event) => {
-        const query = event.target.value.toLowerCase();
-        const filtered = data.filter((item) => {
-            return (
-                (typeof item.membership_type === 'string' && item.membership_type.toLowerCase().includes(query)) ||
-                (typeof item.membership_level === 'string' && item.membership_level.toLowerCase().includes(query)) ||
-                (typeof item.stages === 'string' && item.stages.toLowerCase().includes(query)) ||
-                (typeof item.amount === 'string' && item.amount.toLowerCase().includes(query))
-            );
-        });
-        setFilteredData(filtered);
-    };
-
-
-
-
-    const handlePageChange = (pageNumber) => {
-        setCurrentPage(pageNumber);
-    };
-
-
-    const handleFilters = (event) => {
-        const query = event.target.value.toLowerCase();
-        const filtered = data.filter((item) => {
-            return (
-                item.membership_type.toLowerCase().includes(query)
-            );
-        });
-        setFilteredData(filtered);
-    };
-    console.log(filteredData, "dev")
+    // const handleFilter = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             (typeof item.membership_type === 'string' && item.membership_type.toLowerCase().includes(query)) ||
+    //             (typeof item.membership_level === 'string' && item.membership_level.toLowerCase().includes(query)) ||
+    //             (typeof item.stages === 'string' && item.stages.toLowerCase().includes(query)) ||
+    //             (typeof item.amount === 'string' && item.amount.toLowerCase().includes(query))
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+    // };
 
 
 
-    const [record, setRecord] = useState({
-        membership_type: '',
-        membership_level: '',
-        stages: '',
-        amount: ''
-    });
 
-    const showDetail = async (si_no) => {
-        await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/adminlevelview/${si_no}`)
-            .then((response) => {
-                setRecord(response.data);
-                setValue(si_no)
+    // const handlePageChange = (pageNumber) => {
+    //     setCurrentPage(pageNumber);
+    // };
 
-                setNewAmount(response.data[0].amount)
-                console.log(response.data[0].amount, "ammout")
-            })
-            .catch((error) => {
-                console.error(error);
-            });
-    }
 
-    const [newamount, setNewAmount] = useState("");
-    const [value, setValue] = useState("")
+    // const handleFilters = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             item.membership_type.toLowerCase().includes(query)
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+    // };
+    // console.log(filteredData, "dev")
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const response = await axios.put(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/adminlevelview/edit/${value}`, { newamount });
-            console.log(newamount, "john")
-            if (response.status === 200) {
-                window.location.reload();
-                // You can redirect to another page or update the UI as needed.
-            }
-        } catch (error) {
-            console.error(error);
-        }
-    };
 
-    console.log(newamount, "kjvjkhv")
+
+    // const [record, setRecord] = useState({
+    //     membership_type: '',
+    //     membership_level: '',
+    //     stages: '',
+    //     amount: ''
+    // });
+
+    // const showDetail = async (si_no) => {
+    //     await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/adminlevelview/${si_no}`)
+    //         .then((response) => {
+    //             setRecord(response.data);
+    //             setValue(si_no)
+
+    //             setNewAmount(response.data[0].amount)
+    //             console.log(response.data[0].amount, "ammout")
+    //         })
+    //         .catch((error) => {
+    //             console.error(error);
+    //         });
+    // }
+
+    // const [newamount, setNewAmount] = useState("");
+    // const [value, setValue] = useState("")
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     try {
+    //         const response = await axios.put(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/adminlevelview/edit/${value}`, { newamount });
+    //         console.log(newamount, "john")
+    //         if (response.status === 200) {
+    //             window.location.reload();
+    //             // You can redirect to another page or update the UI as needed.
+    //         }
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
+
+    // console.log(newamount, "kjvjkhv")
     return (
         <Box sx={{ display: "flex" }}>
             <CssBaseline />

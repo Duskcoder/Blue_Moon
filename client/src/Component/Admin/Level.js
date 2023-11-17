@@ -410,7 +410,7 @@ function Level(props) {
 
                                                 }
                                             >
-                                                <i className="fas fa-pencil-alt me-2"></i>Edit
+                                                <i className="fas fa-pencil-alt me-2"></i>Check In
                                             </button>
                                         </StyledTableCell>
                                     </StyledTableRow>
@@ -437,7 +437,7 @@ function Level(props) {
 
 
 
-            <form onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}>
                 <div className="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
@@ -461,7 +461,7 @@ function Level(props) {
                         </div>
                     </div>
                 </div>
-            </form>
+            </form> */}
 
 
         </Box>

@@ -15,9 +15,9 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.post("/room", upload.single("image"),  roomController.NewRoom);
+router.post("/room", upload.single("cover_img"),  roomController.NewRoom);
 
-router.post('/room', roomController.NewRoom);
+// router.post('/room', roomController.NewRoom);
 
 router.get('/showroom',roomController.country);
 

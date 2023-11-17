@@ -8,10 +8,23 @@ exports.NewRoom = async (req,res)=>{
         const rooms = await Rooms.create({
             name,description,beds,restrooms,  bathtub, adults,status,  price,
             cover_img:imageName,
+            
         });
+        console.log(req.body,'ergeg');
+        console.log(req.file,'gegag')
         res.status(200).json(rooms);
-    } catch (error) {
-        res.status(500).json({ error: error.message });
+    }catch (error) {
+      if (error.name === 'SequelizeValidationError') {
+        // Sequelize validation error handling
+        const validationErrors = error.errors.map(err => ({
+          field: err.path,
+          message: err.message,
+        }));
+        return res.status(422).json({ validationErrors });
+      }
+  
+      console.error(error);
+      res.status(500).json({ error: 'Internal Server Error' });
     }
 }
 
