@@ -24,11 +24,13 @@ const Details = () => {
 
 
   })
+
+ 
   
   const [selectedImage, setSelectedImage] = useState(null);
   
-  const HandleSubmit = async (e) => {
-    e.preventDefault();
+  const HandleSubmit = async (   ) => {
+    // e.preventDefault();
     // Simple validation
     if (
       !data.name ||
@@ -66,6 +68,20 @@ const Details = () => {
     try {
       const response = await axios.post('http://localhost:5000/api/new/room', formData, config);
       console.log(response,'ergaer');
+
+    //   setData({
+    //   name: '',
+    //   description: '',
+    //   restrooms: '',
+    //   beds: '',
+    //   bathtub: '',
+    //   adults: '',
+    //   price: '',
+    //   status: '',
+    // });
+
+    // // Clear the selected image
+    // setSelectedImage(null);
     } catch (error) {
       console.error('Error submitting data:', error.response);
     }

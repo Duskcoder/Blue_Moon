@@ -106,26 +106,26 @@ function Level(props) {
         },
     }));
 
-    const [data, setData] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
+    // const [data, setData] = useState([]);
+    // const [filteredData, setFilteredData] = useState([]);
 
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/level`); // Replace with your API endpoint
-                if (response.status === 200) {
-                    const jsonData = response.data;
-                    setData(jsonData);
-                    setFilteredData(jsonData)
-                    console.log(jsonData)
-                }
-            } catch (err) {
-                console.error('Error:', err);
-            }
-        }
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         try {
+    //             const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/level`); // Replace with your API endpoint
+    //             if (response.status === 200) {
+    //                 const jsonData = response.data;
+    //                 setData(jsonData);
+    //                 setFilteredData(jsonData)
+    //                 console.log(jsonData)
+    //             }
+    //         } catch (err) {
+    //             console.error('Error:', err);
+    //         }
+    //     }
 
-        fetchData();
-    }, []);
+    //     fetchData();
+    // }, []);
 
 
 
@@ -169,18 +169,18 @@ function Level(props) {
     const lastIndex = currentpage * recordsPerPage;
 
 
-    const handleFilter = (event) => {
-        const query = event.target.value.toLowerCase();
-        const filtered = data.filter((item) => {
-            return (
-                (typeof item.membership_type === 'string' && item.membership_type.toLowerCase().includes(query)) ||
-                (typeof item.membership_level === 'string' && item.membership_level.toLowerCase().includes(query)) ||
-                (typeof item.stages === 'string' && item.stages.toLowerCase().includes(query)) ||
-                (typeof item.amount === 'string' && item.amount.toLowerCase().includes(query))
-            );
-        });
-        setFilteredData(filtered);
-    };
+    // const handleFilter = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             (typeof item.membership_type === 'string' && item.membership_type.toLowerCase().includes(query)) ||
+    //             (typeof item.membership_level === 'string' && item.membership_level.toLowerCase().includes(query)) ||
+    //             (typeof item.stages === 'string' && item.stages.toLowerCase().includes(query)) ||
+    //             (typeof item.amount === 'string' && item.amount.toLowerCase().includes(query))
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+    // };
 
 
 
@@ -190,58 +190,58 @@ function Level(props) {
     };
 
 
-    const handleFilters = (event) => {
-        const query = event.target.value.toLowerCase();
-        const filtered = data.filter((item) => {
-            return (
-                item.membership_type.toLowerCase().includes(query)
-            );
-        });
-        setFilteredData(filtered);
-    };
-    console.log(filteredData, "dev")
+    // const handleFilters = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             item.membership_type.toLowerCase().includes(query)
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+    // };
+    // console.log(filteredData, "dev")
 
 
 
-    const [record, setRecord] = useState({
-        membership_type: '',
-        membership_level: '',
-        stages: '',
-        amount: ''
-    });
+    // const [record, setRecord] = useState({
+    //     membership_type: '',
+    //     membership_level: '',
+    //     stages: '',
+    //     amount: ''
+    // });
 
-    const showDetail = async (si_no) => {
-        await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/adminlevelview/${si_no}`)
-            .then((response) => {
-                setRecord(response.data);
-                setValue(si_no)
+    // const showDetail = async (si_no) => {
+    //     await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/adminlevelview/${si_no}`)
+    //         .then((response) => {
+    //             setRecord(response.data);
+    //             setValue(si_no)
 
-                setNewAmount(response.data[0].amount)
-                console.log(response.data[0].amount, "ammout")
-            })
-            .catch((error) => {
-                console.error(error);
-            });
-    }
+    //             setNewAmount(response.data[0].amount)
+    //             console.log(response.data[0].amount, "ammout")
+    //         })
+    //         .catch((error) => {
+    //             console.error(error);
+    //         });
+    // }
 
-    const [newamount, setNewAmount] = useState("");
-    const [value, setValue] = useState("")
+    // const [newamount, setNewAmount] = useState("");
+    // const [value, setValue] = useState("")
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const response = await axios.put(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/adminlevelview/edit/${value}`,  { newamount });
-            console.log(newamount,"john")
-            if (response.status === 200) {
-                window.location.reload();
-                // You can redirect to another page or update the UI as needed.
-            }
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     try {
+    //         const response = await axios.put(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/adminlevelview/edit/${value}`,  { newamount });
+    //         console.log(newamount,"john")
+    //         if (response.status === 200) {
+    //             window.location.reload();
+    //             // You can redirect to another page or update the UI as needed.
+    //         }
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
 
-    console.log(newamount, "kjvjkhv")
+    // console.log(newamount, "kjvjkhv")
     return (
         <Box sx={{ display: "flex" }}>
             <CssBaseline />
@@ -359,7 +359,7 @@ function Level(props) {
                     <input
                         type="text"
                         className="float-end mb-3 searchbar"
-                        onChange={handleFilter}
+                        // onChange={handleFilter}
                         placeholder="Search "
                     />
                     {/* <select className="selcetoption"
@@ -379,7 +379,7 @@ function Level(props) {
                             </TableRow>
                         </TableHead>
 
-                        <TableBody>
+                        {/* <TableBody>
                             {filteredData.length === 0 ? (
                                 <TableRow>
                                     <TableCell colSpan={8} align="center">
@@ -406,9 +406,7 @@ function Level(props) {
                                             <button
                                                 className="btn btn-primary btn-xs ms-1"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                                onClick={(e) => showDetail(items.si_no)
-
-                                                }
+                            
                                             >
                                                 <i className="fas fa-pencil-alt me-2"></i>Check In
                                             </button>
@@ -416,7 +414,7 @@ function Level(props) {
                                     </StyledTableRow>
                                 ))
                             )}
-                        </TableBody>
+                        </TableBody> */}
                     </Table>
 
 
@@ -424,7 +422,7 @@ function Level(props) {
                     <Pagination
                         activePage={currentpage}
                         itemsCountPerPage={recordsPerPage}
-                        totalItemsCount={filteredData.length}
+                        // totalItemsCount={filteredData.length}
                         pageRangeDisplayed={3}
                         className="mt-5"
                         onChange={handlePageChange}

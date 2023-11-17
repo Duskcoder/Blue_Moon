@@ -108,26 +108,26 @@ function Adminpanel(props) {
     }));
 
 
-    const [data, setData] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
+    // const [data, setData] = useState([]);
+    // const [filteredData, setFilteredData] = useState([]);
 
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/users/users`); // Replace with your API endpoint
-                if (response.status === 200) {
-                    const jsonData = response.data;
-                    setData(jsonData);
-                    setFilteredData(jsonData)
-                    console.log(jsonData)
-                }
-            } catch (err) {
-                console.error('Error:', err);
-            }
-        }
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         try {
+    //             const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/users/users`); // Replace with your API endpoint
+    //             if (response.status === 200) {
+    //                 const jsonData = response.data;
+    //                 setData(jsonData);
+    //                 setFilteredData(jsonData)
+    //                 console.log(jsonData)
+    //             }
+    //         } catch (err) {
+    //             console.error('Error:', err);
+    //         }
+    //     }
 
-        fetchData();
-    }, []);
+    //     fetchData();
+    // }, []);
 
 
 
@@ -178,47 +178,47 @@ function Adminpanel(props) {
     };
 
 
-    const location = window.location;
-    const handeldelete = (id) => {
-        axios
-            .delete(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/delete/${id}`)
-            .then((res) => {
+    // const location = window.location;
+    // const handeldelete = (id) => {
+    //     axios
+    //         .delete(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/delete/${id}`)
+    //         .then((res) => {
 
-                location.reload();
-                console.log(res, "john")
-                console.log("deleted succussfully")
-            })
-            .catch((err) => {
-                console.log(err, "williams")
-            })
-    }
+    //             location.reload();
+    //             console.log(res, "john")
+    //             console.log("deleted succussfully")
+    //         })
+    //         .catch((err) => {
+    //             console.log(err, "williams")
+    //         })
+    // }
 
 
-    const handleFilter = (event) => {
-        const query = event.target.value.toLowerCase();
-        const filtered = data.filter((item) => {
-            return (
-                item.name?.toLowerCase()?.includes(query) ||
-                item.email?.toLowerCase()?.includes(query) ||
-                item.user_address?.toLowerCase()?.includes(query) ||
-                item.ref_id?.toLowerCase()?.includes(query) ||
-                item.discount_point?.toLowerCase()?.includes(query) ||
-                item.phone?.toLowerCase()?.includes(query)
-            );
-        });
-        setFilteredData(filtered);
+    // const handleFilter = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             item.name?.toLowerCase()?.includes(query) ||
+    //             item.email?.toLowerCase()?.includes(query) ||
+    //             item.user_address?.toLowerCase()?.includes(query) ||
+    //             item.ref_id?.toLowerCase()?.includes(query) ||
+    //             item.discount_point?.toLowerCase()?.includes(query) ||
+    //             item.phone?.toLowerCase()?.includes(query)
+    //         );
+    //     });
+    //     setFilteredData(filtered);
 
-    };
+    // };
 
-    const handleFilters = (event) => {
-        const query = event.target.value.toLowerCase();
-        const filtered = data.filter((item) => {
-            return (
-                item.name.toLowerCase().includes(query)
-            );
-        });
-        setFilteredData(filtered);
-    };
+    // const handleFilters = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             item.name.toLowerCase().includes(query)
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+    // };
 
 
 
@@ -353,7 +353,7 @@ function Adminpanel(props) {
                     <input
                         type="text"
                         className="float-end mb-3 searchbar"
-                        onChange={handleFilter}
+                        // onChange={handleFilter}
                         placeholder="Search "
                     />
 
@@ -377,7 +377,7 @@ function Adminpanel(props) {
 
 
                         </div>
-                        <TableBody>
+                        {/* <TableBody>
                             {filteredData.length === 0 ? (
                                 <TableRow>
                                     <TableCell colSpan={8} align="center">
@@ -442,7 +442,7 @@ function Adminpanel(props) {
                                     </StyledTableRow>
                                 ))
                             )}
-                        </TableBody>
+                        </TableBody> */}
                     </Table>
                    </div>
                     <div className='container mob'>
@@ -494,7 +494,7 @@ function Adminpanel(props) {
                         <Pagination
                             activePage={currentpage}
                             itemsCountPerPage={recordsPerPage}
-                            totalItemsCount={filteredData.length}
+                            // totalItemsCount={filteredData.length}
                             pageRangeDisplayed={2}
                             className="mt-3"
                             onChange={handlePageChange}

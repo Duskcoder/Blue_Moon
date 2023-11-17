@@ -36,7 +36,7 @@ const Rooms = sequelize.define('Room', {
   status: {
     type: DataTypes.STRING,
     allowNull: true,
-    unique: true
+  
     
   },
   price: {
