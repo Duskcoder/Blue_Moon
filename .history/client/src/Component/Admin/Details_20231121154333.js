@@ -218,5 +218,5 @@ const Details = () => {
     </Container>
   );
 };
-}
+
 export default Details;

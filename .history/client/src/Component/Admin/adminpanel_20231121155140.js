@@ -331,7 +331,7 @@ function Adminpanel(props) {
               <ListItemText />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding className="mt-3">
+          <ListItem disablePadding className="mt-1">
             <ListItemButton className="bg-panel-color">
               <ListItemIcon
                 onClick={() => {

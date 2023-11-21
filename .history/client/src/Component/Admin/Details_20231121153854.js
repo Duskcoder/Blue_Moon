@@ -21,10 +21,12 @@ const Details = () => {
     status: "",
   });
 
+<<<<<<< HEAD
   const [selectedImage, setSelectedImage] = useState(null);
 
   const HandleSubmit = async (e) => {
     e.preventDefault();
+=======
 
   const [data, setData]=useState({
     name: '',
@@ -45,6 +47,7 @@ const Details = () => {
   
   const HandleSubmit = async (   ) => {
     // e.preventDefault();
+>>>>>>> b43da358309fb6b76be873a62d3fa79945374b93
     // Simple validation
     if (
       !data.name ||
@@ -80,12 +83,31 @@ const Details = () => {
     };
 
     try {
+<<<<<<< HEAD
       const response = await axios.post(
         "http://localhost:5000/api/new/room",
         formData,
         config
       );
       console.log(response, "ergaer");
+=======
+      const response = await axios.post('http://localhost:5000/api/new/room', formData, config);
+      console.log(response,'ergaer');
+
+    //   setData({
+    //   name: '',
+    //   description: '',
+    //   restrooms: '',
+    //   beds: '',
+    //   bathtub: '',
+    //   adults: '',
+    //   price: '',
+    //   status: '',
+    // });
+
+    // // Clear the selected image
+    // setSelectedImage(null);
+>>>>>>> b43da358309fb6b76be873a62d3fa79945374b93
     } catch (error) {
       console.error("Error submitting data:", error.response);
     }
@@ -218,5 +240,5 @@ const Details = () => {
     </Container>
   );
 };
-}
+
 export default Details;

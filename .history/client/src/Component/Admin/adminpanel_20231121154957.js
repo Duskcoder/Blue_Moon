@@ -1,4 +1,4 @@
-import * as React from "react";
+import *,{useState} as React from "react";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
@@ -117,7 +117,7 @@ function Adminpanel(props) {
     window !== undefined ? () => window().document.body : undefined;
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
-      backgroundColor: "#305931",
+      backgroundColor: "#5B40E1",
       color: theme.palette.common.white,
     },
     [`&.${tableCellClasses.body}`]: {
@@ -154,6 +154,90 @@ function Adminpanel(props) {
         console.error("Error:", err);
       }
     }
+    // const [data, setData] = useState([]);
+    // const [filteredData, setFilteredData] = useState([]);
+
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         try {
+    //             const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/users/users`); // Replace with your API endpoint
+    //             if (response.status === 200) {
+    //                 const jsonData = response.data;
+    //                 setData(jsonData);
+    //                 setFilteredData(jsonData)
+    //                 console.log(jsonData)
+    //             }
+    //         } catch (err) {
+    //             console.error('Error:', err);
+    //         }
+    //     }
+
+    //     fetchData();
+    // }, []);
+
+
+
+
+
+    const theme = useTheme();
+
+    const handleDrawerOpen = () => {
+        setOpen(true);
+    };
+
+    const handleDrawerClose = () => {
+        setOpen(false);
+    };
+    const handleMenu = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const myprofile = () => {
+        navigate("/myprofile");
+    };
+
+    const logout = () => {
+        localStorage.clear();
+        navigate("/");
+    };
+
+    const [currentpage, setCurrentPage] = useState(1);
+    const recordsPerPage = 10;
+    const firstIndex = (currentpage - 1) * recordsPerPage;
+    const lastIndex = currentpage * recordsPerPage;
+
+
+
+
+    const handlePageChange = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
+
+
+    // const location = window.location;
+    // const handeldelete = (id) => {
+    //     axios
+    //         .delete(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/delete/${id}`)
+    //         .then((res) => {
+
+    //             location.reload();
+    //             console.log(res, "john")
+    //             console.log("deleted succussfully")
+    //         })
+    //         .catch((err) => {
+    //             console.log(err, "williams")
+    //         })
+    // }
 
     fetchData();
   }, []);
@@ -170,6 +254,31 @@ function Adminpanel(props) {
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
+    // const handleFilter = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             item.name?.toLowerCase()?.includes(query) ||
+    //             item.email?.toLowerCase()?.includes(query) ||
+    //             item.user_address?.toLowerCase()?.includes(query) ||
+    //             item.ref_id?.toLowerCase()?.includes(query) ||
+    //             item.discount_point?.toLowerCase()?.includes(query) ||
+    //             item.phone?.toLowerCase()?.includes(query)
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+
+    // };
+
+    // const handleFilters = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             item.name.toLowerCase().includes(query)
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+    // };
 
   const handleClose = () => {
     setAnchorEl(null);
@@ -331,7 +440,7 @@ function Adminpanel(props) {
               <ListItemText />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding className="mt-3">
+          <ListItem disablePadding className="mt-1">
             <ListItemButton className="bg-panel-color">
               <ListItemIcon
                 onClick={() => {

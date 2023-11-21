@@ -102,6 +102,7 @@ function Adminpanel(props) {
   //   fetchData();
   // }, []);
 
+<<<<<<< HEAD
   // const fetchData = async () => {
   //   try {
   //     const response = await fetch("http://localhost:5000/api/new/showroom");
@@ -117,7 +118,7 @@ function Adminpanel(props) {
     window !== undefined ? () => window().document.body : undefined;
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
-      backgroundColor: "#305931",
+      backgroundColor: "#5B40E1",
       color: theme.palette.common.white,
     },
     [`&.${tableCellClasses.body}`]: {
@@ -154,10 +155,97 @@ function Adminpanel(props) {
         console.error("Error:", err);
       }
     }
+=======
+    // const [data, setData] = useState([]);
+    // const [filteredData, setFilteredData] = useState([]);
+
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         try {
+    //             const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/users/users`); // Replace with your API endpoint
+    //             if (response.status === 200) {
+    //                 const jsonData = response.data;
+    //                 setData(jsonData);
+    //                 setFilteredData(jsonData)
+    //                 console.log(jsonData)
+    //             }
+    //         } catch (err) {
+    //             console.error('Error:', err);
+    //         }
+    //     }
+
+    //     fetchData();
+    // }, []);
+
+
+
+
+
+    const theme = useTheme();
+
+    const handleDrawerOpen = () => {
+        setOpen(true);
+    };
+
+    const handleDrawerClose = () => {
+        setOpen(false);
+    };
+    const handleMenu = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const myprofile = () => {
+        navigate("/myprofile");
+    };
+
+    const logout = () => {
+        localStorage.clear();
+        navigate("/");
+    };
+
+    const [currentpage, setCurrentPage] = useState(1);
+    const recordsPerPage = 10;
+    const firstIndex = (currentpage - 1) * recordsPerPage;
+    const lastIndex = currentpage * recordsPerPage;
+
+
+
+
+    const handlePageChange = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
+
+
+    // const location = window.location;
+    // const handeldelete = (id) => {
+    //     axios
+    //         .delete(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/delete/${id}`)
+    //         .then((res) => {
+
+    //             location.reload();
+    //             console.log(res, "john")
+    //             console.log("deleted succussfully")
+    //         })
+    //         .catch((err) => {
+    //             console.log(err, "williams")
+    //         })
+    // }
+>>>>>>> b43da358309fb6b76be873a62d3fa79945374b93
 
     fetchData();
   }, []);
 
+<<<<<<< HEAD
   const theme = useTheme();
 
   const handleDrawerOpen = () => {
@@ -170,6 +258,33 @@ function Adminpanel(props) {
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
+=======
+    // const handleFilter = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             item.name?.toLowerCase()?.includes(query) ||
+    //             item.email?.toLowerCase()?.includes(query) ||
+    //             item.user_address?.toLowerCase()?.includes(query) ||
+    //             item.ref_id?.toLowerCase()?.includes(query) ||
+    //             item.discount_point?.toLowerCase()?.includes(query) ||
+    //             item.phone?.toLowerCase()?.includes(query)
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+
+    // };
+
+    // const handleFilters = (event) => {
+    //     const query = event.target.value.toLowerCase();
+    //     const filtered = data.filter((item) => {
+    //         return (
+    //             item.name.toLowerCase().includes(query)
+    //         );
+    //     });
+    //     setFilteredData(filtered);
+    // };
+>>>>>>> b43da358309fb6b76be873a62d3fa79945374b93
 
   const handleClose = () => {
     setAnchorEl(null);
@@ -331,7 +446,7 @@ function Adminpanel(props) {
               <ListItemText />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding className="mt-3">
+          <ListItem disablePadding className="mt-1">
             <ListItemButton className="bg-panel-color">
               <ListItemIcon
                 onClick={() => {
@@ -369,6 +484,7 @@ function Adminpanel(props) {
             placeholder="Search "
           />
 
+<<<<<<< HEAD
           <div className="sys">
             <Table sx={{ minWidth: 700 }} aria-label="customized table">
               <TableHead className="sys">
@@ -406,6 +522,176 @@ function Adminpanel(props) {
                           alt="loading"
                           width={80}
                           height={60}
+=======
+                </List>
+                <Divider />
+            </Drawer>
+            <Main open={open}>
+                <DrawerHeader />
+
+                <h2>Dashboard</h2>
+                <button
+                    className="btn btn-success btn-xs ms-3 mb-3"
+
+                    data-toggle="modal"
+                    onClick={() => { navigate("/addrooms") }}
+
+                >Add
+
+                </button>
+                <TableContainer component={Paper}>
+                    <input
+                        type="text"
+                        className="float-end mb-3 searchbar"
+                        // onChange={handleFilter}
+                        placeholder="Search "
+                    />
+
+                   <div className='sys'>
+                   <Table  sx={{ minWidth: 700 }} aria-label="customized table">
+                        <TableHead className="sys">
+                            <TableRow>
+                                <StyledTableCell align="center">cover_img</StyledTableCell>
+                                <StyledTableCell align="center">name</StyledTableCell>
+                                {/* <StyledTableCell align="center">description</StyledTableCell> */}
+                                <StyledTableCell align="center">beds</StyledTableCell>
+                                <StyledTableCell align="center">restrooms</StyledTableCell>
+                                <StyledTableCell align="center">bathtub</StyledTableCell>
+                                <StyledTableCell align="center">adult</StyledTableCell>
+                                <StyledTableCell align="center">status</StyledTableCell>
+                                <StyledTableCell align="center">price</StyledTableCell>
+                                <StyledTableCell align="center">Action</StyledTableCell>
+                            </TableRow>
+                        </TableHead>
+                        <div>
+
+
+                        </div>
+                        {/* <TableBody>
+                            {filteredData.length === 0 ? (
+                                <TableRow>
+                                    <TableCell colSpan={8} align="center">
+                                        No data available in this table
+                                    </TableCell>
+                                </TableRow>
+                            ) : (
+                                filteredData.slice(firstIndex, lastIndex).map((items) => (
+                                    <StyledTableRow key={items.id}>
+                                        <StyledTableCell component="th" scope="row" align="center">
+                                            {items.name}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.email}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.phone}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.user_address}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.ref_id}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.discount_point}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.wallet}
+                                        </StyledTableCell>
+
+                                        <StyledTableCell align="center">
+                                            <button
+                                                className="btn btn-primary btn-xs"
+                                                data-title="Edit"
+                                                data-toggle="modal"
+                                                data-target="#edit"
+                                                onClick={() => navigate(`edit/${items.id}`)}
+
+                                            >
+                                                <i className="fas fa-pencil-alt"></i>
+                                            </button>
+                                            <button
+                                                className="btn btn-danger btn-xs ms-3"
+                                                data-title="Delete"
+                                                data-toggle="modal"
+                                                data-target="#delete"
+                                                onClick={() =>
+                                                    handeldelete(items.id)
+                                                }
+
+                                            >
+                                                <i className="fas fa-trash"></i>
+                                            </button>
+                                            <button
+                                                className="btn btn-info btn-xs ms-3"
+                                                onClick={() => { navigate(`view/${items.id}`) }}
+                                            >
+                                                <i className="fas fa-eye"></i>
+                                            </button>
+                                        </StyledTableCell>
+                                    </StyledTableRow>
+                                ))
+                            )}
+                        </TableBody> */}
+                    </Table>
+                   </div>
+                    <div className='container mob'>
+                    <div className='row'>
+                    <TableHead className="col-6">
+                            <TableRow>
+                                <StyledTableCell align="center">Name</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Email</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Number</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">User_address</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Referal id</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">discount</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Wallet</StyledTableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <StyledTableCell align="center">Action</StyledTableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableRow className="col-6">
+                            <TableCell className="d-flex align-items-center">
+                                No data available in this table
+                            </TableCell>
+                        </TableRow>
+                    </div>
+                       
+                    </div>
+
+
+                    <div className="pagination-container">
+                        <Pagination
+                            activePage={currentpage}
+                            itemsCountPerPage={recordsPerPage}
+                            // totalItemsCount={filteredData.length}
+                            pageRangeDisplayed={2}
+                            className="mt-3"
+                            onChange={handlePageChange}
+                            itemclassName="page-item"
+                            linkclassName="page-link"
+                            innerclassName="pagination"
+>>>>>>> b43da358309fb6b76be873a62d3fa79945374b93
                         />
                         {/* {items.cover_img} */}
                       </StyledTableCell>
