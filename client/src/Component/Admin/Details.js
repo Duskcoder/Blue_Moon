@@ -1,32 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Input from '@mui/material/Input';
-import axios from 'axios';
-import Typography from '@mui/material/Typography';
-import '../Admin/Details.css'
-import { shadows } from '@mui/system';
+import React, { useEffect, useState } from "react";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Input from "@mui/material/Input";
+import axios from "axios";
+import Typography from "@mui/material/Typography";
+import "../Admin/Details.css";
+import { shadows } from "@mui/system";
 
 const Details = () => {
+  const [data, setData] = useState({
+    name: "",
+    description: "",
+    restrooms: "",
+    beds: "",
+    bathtub: "",
+    adults: "",
+    price: "",
+    status: "",
+  });
 
-
-  const [data, setData]=useState({
-    name: '',
-    description: '',
-    restrooms: '',
-    beds: '',
-    bathtub: '',
-    adults: '',
-    price: '',
-    status: '',
-
-
-  })
-  
   const [selectedImage, setSelectedImage] = useState(null);
-  
+
   const HandleSubmit = async (e) => {
     e.preventDefault();
     // Simple validation
@@ -43,158 +39,159 @@ const Details = () => {
       // Handle validation error, set appropriate state or show an error message
       return;
     }
-  
+
     const formData = new FormData();
-    formData.append('name', data.name);
-    formData.append('description', data.description);
-    formData.append('restrooms', data.restrooms);
-    formData.append('beds', data.beds);
-    formData.append('bathtub', data.bathtub);
-    formData.append('adults', data.adults);
-    formData.append('price', data.price);
-    formData.append('status', data.status);
-    formData.append('cover_img', selectedImage);
-  
-    console.log('Form Data:', formData); // Add this line
-  // console.log(data,'data')
+    formData.append("name", data.name);
+    formData.append("description", data.description);
+    formData.append("restrooms", data.restrooms);
+    formData.append("beds", data.beds);
+    formData.append("bathtub", data.bathtub);
+    formData.append("adults", data.adults);
+    formData.append("price", data.price);
+    formData.append("status", data.status);
+    formData.append("cover_img", selectedImage);
+
+    console.log("Form Data:", formData); // Add this line
+    // console.log(data,'data')
     const config = {
       headers: {
-        'Content-Type': 'multipart/form-data',
+        "Content-Type": "multipart/form-data",
       },
     };
-  
+
     try {
-      const response = await axios.post('http://localhost:5000/api/new/room', formData, config);
-      console.log(response,'ergaer');
+      const response = await axios.post(
+        "http://localhost:5000/api/new/room",
+        formData,
+        config
+      );
+      console.log(response, "ergaer");
     } catch (error) {
-      console.error('Error submitting data:', error.response);
+      console.error("Error submitting data:", error.response);
     }
   };
-  
-  
-  
+
   const handleChange = (e) => {
     setData({
       ...data,
       [e.target.name]: e.target.value,
     });
   };
-  
+
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     setSelectedImage(file);
   };
 
-
   return (
-    <Container maxWidth="xl" className='mt-5'>
-      <Typography variant="h4" gutterBottom>
-
-      </Typography>
-      <form onSubmit={HandleSubmit} >
+    <Container maxWidth="xl" className="mt-5">
+      <Typography variant="h4" gutterBottom></Typography>
+      <form onSubmit={HandleSubmit}>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} className=''>
-
+          <Grid item xs={12} sm={6} className="">
             <TextField
-placeholder='Room Name'
+              placeholder="Room Name"
               label="Room_Name"
-              name='name'
+              name="name"
               fullWidth
               variant="outlined"
-              
-              type='text'
+              type="text"
               onChange={handleChange}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               label="Description"
-              placeholder='Description'
-              name='description'
+              placeholder="Description"
+              name="description"
               fullWidth
               variant="outlined"
-
-              type='text'
+              type="text"
               onChange={handleChange}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               label="Restroom"
-              placeholder='Restroom'
+              placeholder="Restroom"
               fullWidth
               variant="outlined"
-             name='restrooms'
-              type='text'
+              name="restrooms"
+              type="text"
               onChange={handleChange}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               label="Bed Count"
-              placeholder='Bed_Count'
+              placeholder="Bed_Count"
               fullWidth
               variant="outlined"
-                name='beds'
-              type='text'
+              name="beds"
+              type="text"
               onChange={handleChange}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               label="Bathtub"
-              placeholder='Bathtub'
+              placeholder="Bathtub"
               fullWidth
               variant="outlined"
-                name='bathtub'
-              type='text'
+              name="bathtub"
+              type="text"
               onChange={handleChange}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               label="Adults"
-              placeholder='no.of adults'
+              placeholder="no.of adults"
               fullWidth
               variant="outlined"
-                name='adults'
-              type='text'
+              name="adults"
+              type="text"
               onChange={handleChange}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               label="Pricing"
-              placeholder='Pricing'
+              placeholder="Pricing"
               fullWidth
               variant="outlined"
-              name='price'
-              type='text'
+              name="price"
+              type="text"
               onChange={handleChange}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               label="Room availability"
-              placeholder='Room_Availability'
+              placeholder="Room_Availability"
               fullWidth
               variant="outlined"
-             name='status'
-              type='text'
+              name="status"
+              type="text"
               onChange={handleChange}
             />
           </Grid>
-          <Grid item xs={12} sm={12} className='d-flex justify-content-center'>
+          <Grid item xs={12} sm={12} className="d-flex justify-content-center">
             <TextField
-placeholder='photo'
+              placeholder="photo"
               onChange={handleImageUpload}
-              type='file'
-              name='cover_img'
-              accept='image/*'
+              type="file"
+              name="cover_img"
+              accept="image/*"
             />
           </Grid>
         </Grid>
-        <Button variant="contained" color="primary" type="submit" className='m-auto d-flex mt-3'>
+        <Button
+          variant="contained"
+          color="primary"
+          type="submit"
+          className="m-auto d-flex mt-3"
+        >
           Submit
         </Button>
       </form>

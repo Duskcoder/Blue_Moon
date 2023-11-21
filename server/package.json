@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
@@ -21,7 +21,7 @@
     "joi": "^17.10.2",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
-    "mysql2": "^3.6.1",
+    "mysql2": "^3.6.3",
     "nodemailer": "^6.9.5",
     "nodemon": "^3.0.1",
     "otp-generator": "^4.0.1",

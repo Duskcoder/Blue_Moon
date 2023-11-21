@@ -16,6 +16,7 @@ app.use(cors(' '));
 app.use(express.json()); // Parse JSON request bodies
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('uploads/'));
 // Include routes
 app.use('/api/users', userRoutes); // Example base URL for user-related routes
 app.use('/api/forgots', forgotRoutes);

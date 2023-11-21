@@ -88,7 +88,7 @@ function Level(props) {
         window !== undefined ? () => window().document.body : undefined;
     const StyledTableCell = styled(TableCell)(({ theme }) => ({
         [`&.${tableCellClasses.head}`]: {
-            backgroundColor: "#305931",
+            backgroundColor: "#5B40E1",
             color: theme.palette.common.white,
         },
         [`&.${tableCellClasses.body}`]: {
@@ -249,7 +249,7 @@ function Level(props) {
                 position="fixed"
                 className="dashboard-bar"
                 open={open}
-                style={{ backgroundColor: "#FFD700" }}
+                style={{ backgroundColor: "#5B40E1" }}
             >
                 <Toolbar>
                     <IconButton
