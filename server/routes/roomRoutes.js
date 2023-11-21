@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+const     router = express.Router();
 const roomController = require('../controllers/roomsController');
 const multer = require('multer')
 
@@ -20,6 +20,6 @@ router.post("/room", upload.single("cover_img"),  roomController.NewRoom);
 // router.post('/room', roomController.NewRoom);
 
 router.get('/showroom',roomController.country);
-
+router.put('/room/:id',roomController.OldtoNew)
 
 module.exports = router;

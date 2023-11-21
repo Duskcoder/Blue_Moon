@@ -7,46 +7,7 @@ const saltRounds = 10;
 const User = require('../models/userModel');
 const Forget = require('../models/forgotModel');
 
-exports.register = async (req, res) => {
-  try {
-    let password = '';
     
-    bcrypt.hash(req.body.password, saltRounds, async (err, hash) => {
-        if (err) {
-          console.error('Error hashing password:', err);
-    res.status(400).json("error");
-
-          return;
-        }
-        password = hash;
-        req.body.password = password;
-
-        const users=req.body
-        console.log(users,"jhxzchkhckjzhkcjhzxck")
-        const newUser = await User.create(users);
-
-         
-        const userId = newUser.id; 
-        const customId = `CW${userId.toString().padStart(4, '0')}`;
-  
-        // Update the user with the custom ID
-        await newUser.update({user_address:customId});
-      
-      let jwtSecretKey = process.env.JWT_SECRET_KEY;
-    let data = {
-        time: Date(),
-        userId: newUser.id,
-    }
-    
-    const token = jwt.sign(data, jwtSecretKey);
-      res.status(201).json({user_detail:newUser, token:token});
-        // Store 'hash' in the database
-      });
-      
-  } catch (error) {
-    res.status(400).json("error");
-  }
-};
 
 exports.getAllUsers = async (req, res) => {
   try {

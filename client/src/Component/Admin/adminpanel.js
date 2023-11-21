@@ -494,7 +494,7 @@ function Adminpanel(props) {
                         <Pagination
                             activePage={currentpage}
                             itemsCountPerPage={recordsPerPage}
-                            // totalItemsCount={filteredData.length}
+                            // totalItemsCount={filteredData.length}  
                             pageRangeDisplayed={2}
                             className="mt-3"
                             onChange={handlePageChange}

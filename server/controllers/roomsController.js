@@ -10,7 +10,7 @@ exports.NewRoom = async (req,res)=>{
             cover_img:imageName,
             
         });
-        console.log(req.body,'ergeg');
+        console.log(req.body,'ergeg'); 
         console.log(req.file,'gegag')
         res.status(200).json(rooms);
     }catch (error) {
@@ -20,7 +20,7 @@ exports.NewRoom = async (req,res)=>{
           field: err.path,
           message: err.message,
         }));
-        return res.status(422).json({ validationErrors });
+        return res.status(200).json({ validationErrors });
       }
   
       console.error(error);
@@ -44,3 +44,16 @@ exports.country = async (req, res) => {
     }
   };
   
+
+
+exports.OldtoNew = async (req,res)=>{
+       try {
+        const {id} = req.pramas;
+        const result = await Rooms.update({where:{id:id}})
+        res.status(200).json(result)
+        
+       } catch(error){
+        console.error('Error stack trace:', error);
+        res.status(500).json({ error: 'Internal server error' });
+       }
+  }
