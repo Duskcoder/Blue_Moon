@@ -84,7 +84,6 @@ function Rooms() {
                 </div>
               </div>
             </div>
-
             <div className=" container stay ">
               <div className="row">
                 <div
@@ -292,44 +291,34 @@ function Rooms() {
             </div>
           </div>
         ) : (
-          Rooms.map((item) => (
-            <div key={item.id}>
-              <div className=" container stay ">
-                <div className="row">
-                  <div
-                    className="col-12 col-lg-6 Mercury m-auto  "
-                    data-aos="fade-right"
-                  >
-                    <h3 className=" htag">{item.name}</h3>
-                    <p className="ptags">
-                      {item.description}
-                    </p>
-                    <p>{item.beds}</p>
-                    <p>
-                      Adults:<span className="text-secondary"> 
-                      {item.adults}
-                      </span>
-                    </p>
-
-                    <button className="btn btn-white shadow btns">
-                      
-                      Book Now
-                    </button>
-                  </div>
-                  <div className="col-12 col-lg-6 roomb ">
-                    <img
-                      className="img-responsive invisible imgs m-auto"
-                      src={require("../../images/rooma.jpg")}
-                      alt=""
-                      width="100%"
-                    />
-                  </div>
+          <div>
+          {Rooms.map((item, index) => (
+            <div key={item.id} className={`container stay ${index % 2 === 0 ? 'even-room' : 'odd-room'}`}>
+              <div className="row">
+                <div
+                  className={`col-12 col-lg-6 ${index % 2 === 0 ? 'Mercury' : 'jupiter'} m-auto`}
+                  data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
+                >
+                  <h3 className="htag">{item.name}</h3>
+                  <p className="ptags">{item.description}</p>
+                  <p>{item.beds}</p>
+                  <p>
+                    Adults:<span className="text-secondary">{item.adults}</span>
+                  </p>
+                  <button className="btn btn-white shadow btns">Book Now</button>
+                </div>
+                <div className={`col-12 col-lg-6 ${index % 2 === 0 ? 'roomb' : 'Mercury'}`}>
+                  <img
+                    className="img-responsive invisible imgs m-auto"
+                    src={require("../../images/rooma.jpg")}
+                    alt=""
+                    width="100%"
+                  />
                 </div>
               </div>
-              
-              
             </div>
-          ))
+          ))}
+        </div>
           
           
         )}

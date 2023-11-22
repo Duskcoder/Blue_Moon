@@ -330,8 +330,6 @@ function Rooms() {
               
             </div>
           ))
-          
-          
         )}
       </div>
       <Footer />

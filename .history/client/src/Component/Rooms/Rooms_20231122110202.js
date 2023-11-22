@@ -16,10 +16,6 @@ function Rooms() {
 
       .catch((err) => console.log(err));
   }, []);
-
-  const evenRooms = Rooms.filter((room) => room % 2 === 0);
-  const oddRooms = Rooms.filter((room) => room % 2 !== 0);
-  
   console.log(Rooms, "gjhg");
 
   return (
@@ -293,26 +289,25 @@ function Rooms() {
           </div>
         ) : (
           Rooms.map((item) => (
-            <div key={item.id}>
+            <div key={items.id}>
               <div className=" container stay ">
                 <div className="row">
                   <div
                     className="col-12 col-lg-6 Mercury m-auto  "
                     data-aos="fade-right"
                   >
-                    <h3 className=" htag">{item.name}</h3>
+                    <h3 className=" htag">Mercury Room</h3>
                     <p className="ptags">
-                      {item.description}
+                      Queen Beds(2) Bathtub with hand shower Cupboard,table, and
+                      Chair Free towels free WIFI facility{" "}
                     </p>
-                    <p>{item.beds}</p>
+                    <p>Beds: 2 Queen(s)</p>
                     <p>
-                      Adults:<span className="text-secondary"> 
-                      {item.adults}
-                      </span>
+                      Adults:<span className="text-secondary"> 6</span>
                     </p>
 
                     <button className="btn btn-white shadow btns">
-                      
+                      {" "}
                       Book Now
                     </button>
                   </div>
@@ -326,12 +321,143 @@ function Rooms() {
                   </div>
                 </div>
               </div>
-              
-              
+              <div className=" container stay ">
+                <div className="row">
+                  <div className="col-12 col-lg-6 roomc ">
+                    <img
+                      className="img-responsive invisible imgs "
+                      src={require("../../images/rooma.jpg")}
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                  <div
+                    className="col-12 col-lg-6 mars m-auto  "
+                    data-aos="fade-left"
+                  >
+                    <h3 className=" htag">Mars Room</h3>
+                    <p className="ptags">
+                      Free WIFI Guests also enjoy premier modern amenties such
+                      as high-speed Internet, flat screen TV, and In-rooms.
+                      Cupboard table with chair
+                    </p>
+                    <p>Beds: 2 Queen(s)</p>
+                    <p>Restroom :N/A</p>
+                    <p>
+                      Adults:<span className="text-secondary"> 4</span>
+                    </p>
+
+                    <button className="btn btn-white shadow btns">
+                      {" "}
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className=" container stay ">
+                <div className="row">
+                  <div
+                    className="col-12 col-lg-6 saturn m-auto  "
+                    data-aos="fade-right"
+                  >
+                    <h3 className="htag ">Saturn Room</h3>
+                    <p className="ptags">
+                      The Love Nest room has all you need for the perfect
+                      romantic getaway weekend Beds: 1 Queen(s)
+                    </p>
+                    <p>Bathtub :N/A</p>
+                    <p>
+                      Adults:<span className="text-secondary"> 2</span>
+                    </p>
+
+                    <button className="btn btn-white shadow btns">
+                      {" "}
+                      Book Now
+                    </button>
+                  </div>
+
+                  <div className="col-12 col-lg-6 roomd ">
+                    <img
+                      className="img-responsive invisible imgs  "
+                      src={require("../../images/rooma.jpg")}
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className=" container stay ">
+                <div className="row">
+                  <div className="col-12 col-lg-6 roome ">
+                    <img
+                      className="img-responsive invisible imgs "
+                      src={require("../../images/rooma.jpg")}
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+
+                  <div
+                    className="col-12 col-lg-6 saturn m-auto   "
+                    data-aos="fade-left"
+                  >
+                    <h3 className="htag ">Uranus Room</h3>
+                    <p className="ptags">
+                      The Family room provides the warmth, cleanliness, and
+                      extra space your family needs for a perfect holiday
+                      experience. Free WIFI
+                    </p>
+
+                    <p> Beds: 2 Queen(s)</p>
+
+                    <p>
+                      {" "}
+                      Adults:<span className="text-secondary"> 2</span>
+                    </p>
+
+                    <button className="btn btn-white shadow btns">
+                      {" "}
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className=" container stay ">
+                <div className="row">
+                  <div
+                    className="col-12 col-lg-6 saturn m-auto   "
+                    data-aos="fade-right"
+                  >
+                    <h3 className="htag ">Neptune Room</h3>
+                    <p className="ptags">
+                      Designed for comfort and convenience, the Comfort Room
+                      spares no expense
+                    </p>
+
+                    <p> Beds: 2 Queen(s)</p>
+
+                    <p>
+                      {" "}
+                      Adults:<span className="text-secondary"> 4</span>
+                    </p>
+
+                    <button className="btn btn-white shadow btns">
+                      {" "}
+                      Book Now
+                    </button>
+                  </div>
+                  <div className="col-12 col-lg-6 roomf ">
+                    <img
+                      className="img-responsive invisible imgs "
+                      src={require("../../images/rooma.jpg")}
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           ))
-          
-          
         )}
       </div>
       <Footer />

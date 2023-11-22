@@ -16,10 +16,6 @@ function Rooms() {
 
       .catch((err) => console.log(err));
   }, []);
-
-  const evenRooms = Rooms.filter((room) => room % 2 === 0);
-  const oddRooms = Rooms.filter((room) => room % 2 !== 0);
-  
   console.log(Rooms, "gjhg");
 
   return (
@@ -307,7 +303,7 @@ function Rooms() {
                     <p>{item.beds}</p>
                     <p>
                       Adults:<span className="text-secondary"> 
-                      {item.adults}
+                      {ite}
                       </span>
                     </p>
 
@@ -327,11 +323,8 @@ function Rooms() {
                 </div>
               </div>
               
-              
             </div>
           ))
-          
-          
         )}
       </div>
       <Footer />

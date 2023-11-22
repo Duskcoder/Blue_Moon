@@ -292,7 +292,7 @@ function Rooms() {
             </div>
           </div>
         ) : (
-          Rooms.map((item) => (
+          add.map((item) => (
             <div key={item.id}>
               <div className=" container stay ">
                 <div className="row">
@@ -326,7 +326,39 @@ function Rooms() {
                   </div>
                 </div>
               </div>
-              
+              <div className=" container stay ">
+              <div className="row">
+                <div className="col-12 col-lg-6 roomc ">
+                  <img
+                    className="img-responsive invisible imgs "
+                    src={require("../../images/rooma.jpg")}
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div
+                  className="col-12 col-lg-6 mars m-auto  "
+                  data-aos="fade-left"
+                >
+                  <h3 className=" htag">Mars Room</h3>
+                  <p className="ptags">
+                    Free WIFI Guests also enjoy premier modern amenties such as
+                    high-speed Internet, flat screen TV, and In-rooms. Cupboard
+                    table with chair
+                  </p>
+                  <p>Beds: 2 Queen(s)</p>
+                  <p>Restroom :N/A</p>
+                  <p>
+                    Adults:<span className="text-secondary"> 4</span>
+                  </p>
+
+                  <button className="btn btn-white shadow btns">
+                    {" "}
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
               
             </div>
           ))

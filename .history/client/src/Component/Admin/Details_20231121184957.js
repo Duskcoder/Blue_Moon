@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import "../Admin/Details.css";
 import { shadows } from "@mui/system";
 
-const Details = () => {
+const Details1 = () => {
     const [data, setData] = useState({
         name: "",
         description: "",
@@ -204,4 +204,4 @@ const Details = () => {
     );
 
 }
-export default Details;
+export default Details1;

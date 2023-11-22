@@ -16,10 +16,6 @@ function Rooms() {
 
       .catch((err) => console.log(err));
   }, []);
-
-  const evenRooms = Rooms.filter((room) => room % 2 === 0);
-  const oddRooms = Rooms.filter((room) => room % 2 !== 0);
-  
   console.log(Rooms, "gjhg");
 
   return (
@@ -300,15 +296,14 @@ function Rooms() {
                     className="col-12 col-lg-6 Mercury m-auto  "
                     data-aos="fade-right"
                   >
-                    <h3 className=" htag">{item.name}</h3>
+                    <h3 className=" htag">{}</h3>
                     <p className="ptags">
-                      {item.description}
+                      Queen Beds(2) Bathtub with hand shower Cupboard,table, and
+                      Chair Free towels free WIFI facility{" "}
                     </p>
-                    <p>{item.beds}</p>
+                    <p>Beds: 2 Queen(s)</p>
                     <p>
-                      Adults:<span className="text-secondary"> 
-                      {item.adults}
-                      </span>
+                      Adults:<span className="text-secondary"> 6</span>
                     </p>
 
                     <button className="btn btn-white shadow btns">
@@ -327,11 +322,8 @@ function Rooms() {
                 </div>
               </div>
               
-              
             </div>
           ))
-          
-          
         )}
       </div>
       <Footer />

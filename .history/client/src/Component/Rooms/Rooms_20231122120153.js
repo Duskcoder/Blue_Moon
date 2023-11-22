@@ -19,7 +19,7 @@ function Rooms() {
 
   const evenRooms = Rooms.filter((room) => room % 2 === 0);
   const oddRooms = Rooms.filter((room) => room % 2 !== 0);
-  
+
   console.log(Rooms, "gjhg");
 
   return (
@@ -84,7 +84,6 @@ function Rooms() {
                 </div>
               </div>
             </div>
-
             <div className=" container stay ">
               <div className="row">
                 <div
@@ -292,8 +291,8 @@ function Rooms() {
             </div>
           </div>
         ) : (
-          Rooms.map((item) => (
-            <div key={item.id}>
+          oddRooms.map((item, index) => (
+            <div key={index}>
               <div className=" container stay ">
                 <div className="row">
                   <div
@@ -327,10 +326,8 @@ function Rooms() {
                 </div>
               </div>
               
-              
             </div>
           ))
-          
           
         )}
       </div>
