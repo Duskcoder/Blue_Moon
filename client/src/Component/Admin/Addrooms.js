@@ -36,8 +36,8 @@ import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
 import Input from '@mui/material/Input';
 import InputLabel from '@mui/material/InputLabel';
-import Details from "./Details";
 import OutlinedInput from '@mui/material/OutlinedInput';
+import Details1 from "./Details1";
 
 const drawerWidth = 240;
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
@@ -95,7 +95,7 @@ function Addrooms(props) {
         window !== undefined ? () => window().document.body : undefined;
     const StyledTableCell = styled(TableCell)(({ theme }) => ({
         [`&.${tableCellClasses.head}`]: {
-            backgroundColor: "#305931",
+            backgroundColor: "#5B40E1",
             color: theme.palette.common.white,
         },
         [`&.${tableCellClasses.body}`]: {
@@ -249,6 +249,7 @@ function Addrooms(props) {
     // };
 
     // console.log(newamount, "kjvjkhv")
+    
     return (
         <Box sx={{ display: "flex" }}>
             <CssBaseline />
@@ -256,7 +257,7 @@ function Addrooms(props) {
                 position="fixed"
                 className="dashboard-bar"
                 open={open}
-                style={{ backgroundColor: "#FFD700" }}
+                style={{ backgroundColor: "#5B40E1" }}
             >
                 <Toolbar>
                     <IconButton
@@ -362,7 +363,6 @@ function Addrooms(props) {
                 <DrawerHeader />
 
                 <h2>AddRooms</h2>
-                <Details/>
                 {/* <Box
       component="form"
       sx={{
@@ -379,8 +379,10 @@ function Addrooms(props) {
      
      
     </Box> */}
+    
+<Details1/>
             </Main>
-
+            
 
 
             {/* <form onSubmit={handleSubmit}>

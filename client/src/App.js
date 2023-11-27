@@ -7,7 +7,6 @@ import "./App.css";
 import { ContactUs } from "./Component/ContactUs";
 import { Amenities } from "./Component/Amenities";
 import Home from "./Component/Home";
-import Details from './Component/Admin/Details'
 
 import Rooms from './Component/Rooms/Rooms';
 import RoomStay from "./Component/RoomStay/RoomStay";
@@ -18,6 +17,10 @@ import { AboutUs1 } from "./Component/AboutUs1";
 import Adminpanel from "./Component/Admin/adminpanel";
 import Level from "./Component/Admin/Level";
 import Addrooms from "./Component/Admin/Addrooms";
+import HomeStayHome from "./Component/HomeStay/HomeStayHome";
+import CardBox from "./Component/Gallery/Gallery";
+import Details1 from "./Component/Admin/Details1";
+import UpdateRoom from "./Component/Admin/UpdateRoom";
 
 
 function App() {
@@ -33,13 +36,17 @@ function App() {
         <Route path='/stay' element={<RoomStay />} />
         <Route path='/homestay' element={<HomeStay />} />
         <Route path='/viewdev' element={<ViewDev />} />
+
         
         <Route path='/contact1' element={<ContactUs1/>}/>
+        <Route path="/HomeStayHome" element={<HomeStayHome/>}/>
         <Route path='/about1' element={<AboutUs1/>}/>
         <Route path='/Admin' element={<Adminpanel/>}/>
         <Route path='/level' element={<Level/>}/>
+        <Route path="/details" element={<Details1/>}/>
+        <Route path="/updateroom/:id" element={<UpdateRoom/>}/>
         <Route path="/addrooms" element={<Addrooms/>}/>
-        <Route path="/details" element={<Details/>}/>
+        {/* <Route path="/details" element={<Details/>}/> */}
         {/* <Footer/> */}
       </Routes>
 

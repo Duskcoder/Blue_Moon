@@ -20,6 +20,7 @@ router.post("/room", upload.single("cover_img"),  roomController.NewRoom);
 // router.post('/room', roomController.NewRoom);
 
 router.get('/showroom',roomController.country);
+router.get('/showroom/:id',roomController.country1);
 router.put('/room/:id',roomController.OldtoNew)
-
-module.exports = router;
+router.delete('/room/delete/:id',roomController.delRoom)
+module.exports = router;  

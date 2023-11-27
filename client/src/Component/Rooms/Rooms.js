@@ -156,7 +156,7 @@ function Rooms() {
 
 
     </div>
-    <Footer/>
+    <Footer/>   
     </>
   )
 }

@@ -1,4 +1,4 @@
-const Rooms = require('../models/Rooms');
+const Rooms = require("../models/Rooms");
 
 
 exports.NewRoom = async (req,res)=>{
@@ -26,8 +26,10 @@ exports.NewRoom = async (req,res)=>{
       console.error(error);
       res.status(500).json({ error: 'Internal Server Error' });
     }
-}
 
+    console.error(error);
+    res.status(500).json({ error: "Internal Server Error" });
+  };
 
 
 
@@ -43,12 +45,30 @@ exports.country = async (req, res) => {
       res.status(500).json({ error: 'Internal server error' });
     }
   };
+
+
+  exports.country1 = async (req, res) => {
+
+   
+    try {
+      const {id} = req.params;
+      console.log("heeeeeellllo")
+      const roomList = await Rooms.findOne({where:{id:id}});
+      console.log(roomList, "hhhhhhh");
+      res.status(200).json(roomList);
+    } catch (error) {
+      // console.error('Error during country:', error);
+      console.error('Error stack trace:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  };
+  
   
 
 
 exports.OldtoNew = async (req,res)=>{
        try {
-        const {id} = req.pramas;
+        const {id} = req.params;
         const result = await Rooms.update({where:{id:id}})
         res.status(200).json(result)
         
@@ -57,3 +77,16 @@ exports.OldtoNew = async (req,res)=>{
         res.status(500).json({ error: 'Internal server error' });
        }
   }
+
+
+exports.delRoom = async (req,res)=>{
+  try {
+    const {id} = req.params;
+    const result = await Rooms.delete({where:{id:id}})
+    res.status(200).json(result)
+    
+   } catch(error){
+    console.error('Error stack trace:', error);
+    res.status(500).json({ error: 'Internal server error' });
+   }
+}

@@ -13,6 +13,11 @@ const Booking = sequelize.define('Booking', {
     allowNull: true,
 
   },
+  room_name: {
+    type: DataTypes.STRING,
+    allowNull: true,
+
+  },
   adults: {
     type: DataTypes.STRING,
     allowNull: true,

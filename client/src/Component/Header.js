@@ -1,15 +1,22 @@
 import React,{useState} from "react";
 // import Logo from '../images/blue moon7.jpg'
-import { Link } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import blueMoonIMG from "../images/blue moon7.jpg";
+import { Navigate } from "react-router-dom";
 const Header = () => {
   const [open,setOpen]=useState(false)
+  const[user,setUsers]=useState('test')
+
+  if(!user){
+    return <Navigate to='/homeStayHome' replace={true}/>
+  }
+  
   return (
     
     <div className="hello">
@@ -27,12 +34,12 @@ const Header = () => {
               >
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/about">About Us</Nav.Link>
-                <Nav.Link href="/room">Rooms</Nav.Link>
+                <Nav.Link href="/Room">Rooms</Nav.Link>
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
                 <Nav.Link href="/amenities">Amenities</Nav.Link>
               </Nav>
-              <Form className=''>
-                <Button variant="outline-success">BLUEMOON HOMESTAY</Button>
+              <Form>
+                <Button variant="outline-success" onClick={()=>setUsers(null)}>BLUEMOON HOMESTAY</Button>
               </Form>
           </div>
         </Container>
