@@ -21,6 +21,7 @@ import HomeStayHome from "./Component/HomeStay/HomeStayHome";
 import CardBox from "./Component/Gallery/Gallery";
 import Details1 from "./Component/Admin/Details1";
 import UpdateRoom from "./Component/Admin/UpdateRoom";
+import StandardRoom from "./Component/Booking/standardRoom";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Route path="/details" element={<Details1/>}/>
         <Route path="/updateroom/:id" element={<UpdateRoom/>}/>
         <Route path="/addrooms" element={<Addrooms/>}/>
+        <Route path="/booknow" element={<StandardRoom/>}/>
         {/* <Route path="/details" element={<Details/>}/> */}
         {/* <Footer/> */}
       </Routes>

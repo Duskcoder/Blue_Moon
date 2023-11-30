@@ -5,6 +5,6 @@ const bookingController = require('../controllers/bookingController');
 
 
 router.post('/book', bookingController.Booking);
-
+router.get('/customer',bookingController.customer_book)
 
 module.exports = router;

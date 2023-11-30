@@ -106,26 +106,26 @@ function Level(props) {
         },
     }));
 
-    // const [data, setData] = useState([]);
+    const [data, setData] = useState([]);
     // const [filteredData, setFilteredData] = useState([]);
 
-    // useEffect(() => {
-    //     async function fetchData() {
-    //         try {
-    //             const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/level`); // Replace with your API endpoint
-    //             if (response.status === 200) {
-    //                 const jsonData = response.data;
-    //                 setData(jsonData);
-    //                 setFilteredData(jsonData)
-    //                 console.log(jsonData)
-    //             }
-    //         } catch (err) {
-    //             console.error('Error:', err);
-    //         }
-    //     }
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const response = await axios.get("http://localhost:5000/api/new/customer"); // Replace with your API endpoint
+                if (response.status === 200) {
+                    const jsonData = response.data;
+                    setData(jsonData);
+                    // setFilteredData(jsonData)
+                    console.log(jsonData)
+                }
+            } catch (err) {
+                console.error('Error:', err);
+            }
+        }
 
-    //     fetchData();
-    // }, []);
+        fetchData();
+    }, []);
 
 
 
@@ -383,42 +383,55 @@ function Level(props) {
                             </TableRow>
                         </TableHead>
 
-                        {/* <TableBody>
-                            {filteredData.length === 0 ? (
+                        <TableBody>
+                            {data.length === 0 ? (
                                 <TableRow>
                                     <TableCell colSpan={8} align="center">
                                         No data available in this table
                                     </TableCell>
                                 </TableRow>
                             ) : (
-                                filteredData.slice(firstIndex, lastIndex).map((items) => (
+                                data.map((items) => (
                                     <StyledTableRow key={items.id}>
                                         <StyledTableCell component="th" scope="row" align="center">
-                                            {items.membership_type}
+                                            {items.check_in}
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
-                                            {items.membership_level}
+                                            {items.check_out}
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
-                                            {items.stages}
+                                            {items.room_name}
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
-                                            {items.amount}
+                                            {items.adults}
                                         </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.name}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.email}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.phone}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            {items.address}
+                                        </StyledTableCell>
+                                      
 
-                                        <StyledTableCell align="center">
+                                       <StyledTableCell align="center">
                                             <button
                                                 className="btn btn-primary btn-xs ms-1"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal"
                             
                                             >
-                                                <i className="fas fa-pencil-alt me-2"></i>Check In
+                                                <i className="fas fa-pencil-alt me-2"></i>Accept
                                             </button>
                                         </StyledTableCell>
                                     </StyledTableRow>
                                 ))
                             )}
-                        </TableBody> */}
+                        </TableBody>
                     </Table>
 
 
