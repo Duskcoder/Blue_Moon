@@ -92,11 +92,15 @@ function Adminpanel(props) {
   useEffect(() => {
     axios
       .get("http://localhost:5000/api/new/showroom")
-      .then((res) => setRooms(res.data))
+      .then((res)=>{
+        setRooms(res.data)
+        console.log(res.data[0].cover_img,"sdajsdgajsdgahsdhgjhasdhgjasd")
+
+      })
 
       .catch((err) => console.log(err));
   }, []);
-  console.log(Rooms, "gjhg");
+  // console.log(Rooms.cover_img[0], "gjhg");
 
   // useEffect(() => {
   //   fetchData();

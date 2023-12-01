@@ -26,12 +26,12 @@ const UpdateRoom = () => {
         adults: "",
         price: "",
         status: "",
-        cover_img: ""
+        
 
     });
 
     const [selectedImage, setSelectedImage] = useState();
-    const [previousImageName, setPreviousImageName] = useState("");
+    const [previousImageName, setPreviousImageName] = useState();
 
 
     const handleImageNameChange = (e) => {
@@ -49,11 +49,7 @@ const UpdateRoom = () => {
     const handleImageUpload = (e) => {
         const file = e.target.files[0];
         setSelectedImage(file);
-        // const imageName = file ? file.name : '';
-        // setData({
-        //     ...data,
-        //     cover_img: imageName,
-        // });
+    
     };
 
     useEffect(() => {
@@ -103,11 +99,11 @@ const UpdateRoom = () => {
       
         const jsonData = formDataToJson(formData);
       
-        console.log("JSON Data:", jsonData); // Debug statement
+        console.log("JSON Data:", data.cover_img); // Debug statement
       
         const config = {
           headers: {
-            "Content-Type": "application/json", // Adjust the content type
+            "Content-Type": "multipart/form-data", // Adjust the content type
           },
         };
       
@@ -118,7 +114,7 @@ const UpdateRoom = () => {
             config
           );
       
-          navigate('/admin');
+        //   navigate('/admin');
           console.log(response, "ergaer3eeeee");
         } catch (error) {
           console.error("Error submitting data:", error.response);
