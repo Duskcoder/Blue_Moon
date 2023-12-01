@@ -8,14 +8,14 @@ import axios from "axios";
 import Typography from "@mui/material/Typography";
 import "../Admin/Details.css";
 import { shadows } from "@mui/system";
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const UpdateRoom = () => {
 
-    const {id} = useParams();
+    const { id } = useParams();
+    const navigate = useNavigate();
 
-   
-    
+
 
     const [data, setData] = useState({
         name: "",
@@ -26,15 +26,19 @@ const UpdateRoom = () => {
         adults: "",
         price: "",
         status: "",
-        cover_img:" ",
+        cover_img: ""
 
     });
 
-    // const [selectedImage, setSelectedImage] = useState({
-    //     cover_img:" "
-    // });
+    const [selectedImage, setSelectedImage] = useState();
+    const [previousImageName, setPreviousImageName] = useState("");
 
-   
+
+    const handleImageNameChange = (e) => {
+        setPreviousImageName(e.target.value);
+        console.log(setPreviousImageName,"igjehbrighqer")
+      };
+
     const handleChange = (e) => {
         setData({
             ...data,
@@ -42,33 +46,92 @@ const UpdateRoom = () => {
         });
     };
 
-    // const handleImageUpload = (e) => {
-    //     const file = e.target.files[0];
-    //     setSelectedImage(file);
-    // };
+    const handleImageUpload = (e) => {
+        const file = e.target.files[0];
+        setSelectedImage(file);
+        // const imageName = file ? file.name : '';
+        // setData({
+        //     ...data,
+        //     cover_img: imageName,
+        // });
+    };
 
     useEffect(() => {
         axios
-          .get("http://localhost:5000/api/new/showroom/"+id)
-          .then(res =>{
-            const response = res.data;
-            // const cover_img = res.data.cover_img;
+            .get("http://localhost:5000/api/new/showroom/" + id)
+            .then(res => {
+                const response = res.data;
+                // const cover_img = res.data.cover_img;
 
-            console.log(response,'res')
-            setData(response)
-            // setSelectedImage(cover_img)
-            // console.log(data,"data")
-          })
-          .catch((err) => console.log(err));
-      }, []);
+                console.log(response, 'res')
+                setData(response)
+                setPreviousImageName(response.cover_img || "");
+            })
+            .catch((err) => console.log(err));
+    }, []);
 
-   useEffect(()=>{
-    console.log(data,"data##############################")
-   },[])
+    useEffect(() => {
+        console.log(data, "data##############################")
+    }, [])
+
+    const formDataToJson = (formData) => {
+        const jsonData = {};
+        formData.forEach((value, key) => {
+          jsonData[key] = value;
+        });
+        return jsonData;
+      };
+      
+      // ...
+      
+      const handleUpdate = async (e) => {
+        e.preventDefault();
+      
+        // If no new file is selected, use the previous image name
+        const coverImageName = selectedImage ? selectedImage.name : previousImageName;
+      
+        const formData = new FormData();
+        formData.append("name", data.name);
+        formData.append("description", data.description);
+        formData.append("restrooms", data.restrooms);
+        formData.append("beds", data.beds);
+        formData.append("bathtub", data.bathtub);
+        formData.append("adults", data.adults);
+        formData.append("price", data.price);
+        formData.append("status", data.status);
+        formData.append("cover_img", coverImageName);
+      
+        const jsonData = formDataToJson(formData);
+      
+        console.log("JSON Data:", jsonData); // Debug statement
+      
+        const config = {
+          headers: {
+            "Content-Type": "application/json", // Adjust the content type
+          },
+        };
+      
+        try {
+          const response = await axios.put(
+            `http://localhost:5000/api/new/room/${id}`,
+            jsonData,
+            config
+          );
+      
+          navigate('/admin');
+          console.log(response, "ergaer3eeeee");
+        } catch (error) {
+          console.error("Error submitting data:", error.response);
+        }
+      };
+      
+
+
+
     return (
         <Container maxWidth="xl" className="mt-5">
             <Typography variant="h4" gutterBottom></Typography>
-            <form>
+            <form onSubmit={handleUpdate}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={6} className="">
                         <TextField
@@ -169,11 +232,20 @@ const UpdateRoom = () => {
                     <Grid item xs={12} sm={12} className="d-flex justify-content-center">
                         <TextField
                             placeholder="photo"
-                            onChange={handleChange}
+                            type="text"
+                            value={selectedImage ? selectedImage.name : previousImageName}
+                            onChange={handleImageNameChange}
+                        />
+                        <label htmlFor="cover_img" className="file-label">
+                            Choose File
+                        </label>
+                        <input
+                            id="cover_img"
                             type="file"
                             name="cover_img"
-                            // value={data.cover_img}
                             accept="image/*"
+                            onChange={handleImageUpload}
+                            className="file-input"
                         />
                     </Grid>
                 </Grid>
@@ -181,7 +253,7 @@ const UpdateRoom = () => {
                     variant="contained"
                     color="primary"
                     type="submit"
-                    className="m-auto d-flex mt-3"                    
+                    className="m-auto d-flex mt-3"
                 >
                     Update
                 </Button>

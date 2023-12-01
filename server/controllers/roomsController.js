@@ -69,7 +69,9 @@ exports.country = async (req, res) => {
 exports.OldtoNew = async (req,res)=>{
        try {
         const {id} = req.params;
-        const result = await Rooms.update({where:{id:id}})
+
+        console.log(req.body,"dfsdfsdfhgsdfg")
+        const result = await Rooms.update(req.body,{where:{id:id}})
         res.status(200).json(result)
         
        } catch(error){

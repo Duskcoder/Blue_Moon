@@ -1406,4 +1406,25 @@ color: white !important;
   color: white !important;
 }
 
+.file-input {
+  display: none;
+}
+
+.file-label {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.file-input + .file-label {
+  margin-left: 10px;
+}
+
+.file-label:hover {
+  background-color: #2980b9;
+}
+
+
 
