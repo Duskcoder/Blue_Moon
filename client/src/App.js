@@ -22,7 +22,7 @@ import CardBox from "./Component/Gallery/Gallery";
 import Details1 from "./Component/Admin/Details1";
 import UpdateRoom from "./Component/Admin/UpdateRoom";
 import StandardRoom from "./Component/Booking/standardRoom";
-
+import SignIn from "./Component/loginValidation/login_Form";
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
         <Route path='/homestay' element={<HomeStay />} />
         <Route path='/viewdev' element={<ViewDev />} />
 
-        
+        <Route path='/login_Form' element={<SignIn/>} />
         <Route path='/contact1' element={<ContactUs1/>}/>
         <Route path="/HomeStayHome" element={<HomeStayHome/>}/>
         <Route path='/about1' element={<AboutUs1/>}/>
