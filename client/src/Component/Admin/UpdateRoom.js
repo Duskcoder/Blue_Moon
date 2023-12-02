@@ -7,8 +7,10 @@ import Input from "@mui/material/Input";
 import axios from "axios";
 import Typography from "@mui/material/Typography";
 import "../Admin/Details.css";
+import { BsCloudArrowUp } from 'react-icons/bs';
 import { shadows } from "@mui/system";
 import { useNavigate, useParams } from 'react-router-dom';
+import { ImageUploader } from '../Admin/ImageUploader';
 
 const UpdateRoom = () => {
 
@@ -18,26 +20,25 @@ const UpdateRoom = () => {
 
 
     const [data, setData] = useState({
-        name: "",
-        description: "",
-        restrooms: "",
-        beds: "",
-        bathtub: "",
-        adults: "",
-        price: "",
-        status: "",
-        
-
+        name: '',
+        description: '',
+        restrooms: '',
+        beds: '',
+        bathtub: '',
+        adults: '',
+        price: '',
+        status: '',
+        cover_img: '',
     });
 
-    const [selectedImage, setSelectedImage] = useState();
-    const [previousImageName, setPreviousImageName] = useState();
+    // const [selectedImage, setSelectedImage] = useState();
+    // const [previousImageName, setPreviousImageName] = useState();
 
 
-    const handleImageNameChange = (e) => {
-        setPreviousImageName(e.target.value);
-        console.log(setPreviousImageName,"igjehbrighqer")
-      };
+    // const handleImageUpload = (e) => {
+    //     setSelectedImage(e.target.files[0]);
+    //     // console.log(setPreviousImageName,"igjehbrighqer")
+    // };
 
     const handleChange = (e) => {
         setData({
@@ -46,11 +47,6 @@ const UpdateRoom = () => {
         });
     };
 
-    const handleImageUpload = (e) => {
-        const file = e.target.files[0];
-        setSelectedImage(file);
-    
-    };
 
     useEffect(() => {
         axios
@@ -61,67 +57,62 @@ const UpdateRoom = () => {
 
                 console.log(response, 'res')
                 setData(response)
-                setPreviousImageName(response.cover_img || "");
+                // setPreviousImageName(response.cover_img || "");
             })
             .catch((err) => console.log(err));
     }, []);
 
     useEffect(() => {
-        console.log(data, "data##############################")
+        // console.log(data, "data##############################")
     }, [])
 
-    const formDataToJson = (formData) => {
-        const jsonData = {};
-        formData.forEach((value, key) => {
-          jsonData[key] = value;
-        });
-        return jsonData;
-      };
-      
-      // ...
-      
-      const handleUpdate = async (e) => {
-        e.preventDefault();
-      
-        // If no new file is selected, use the previous image name
-        const coverImageName = selectedImage ? selectedImage.name : previousImageName;
-      
-        const formData = new FormData();
-        formData.append("name", data.name);
-        formData.append("description", data.description);
-        formData.append("restrooms", data.restrooms);
-        formData.append("beds", data.beds);
-        formData.append("bathtub", data.bathtub);
-        formData.append("adults", data.adults);
-        formData.append("price", data.price);
-        formData.append("status", data.status);
-        formData.append("cover_img", coverImageName);
-      
-        const jsonData = formDataToJson(formData);
-      
-        console.log("JSON Data:", data.cover_img); // Debug statement
-      
-        const config = {
-          headers: {
-            "Content-Type": "multipart/form-data", // Adjust the content type
-          },
-        };
-      
-        try {
-          const response = await axios.put(
-            `http://localhost:5000/api/new/room/${id}`,
-            jsonData,
-            config
-          );
-      
-        //   navigate('/admin');
-          console.log(response, "ergaer3eeeee");
-        } catch (error) {
-          console.error("Error submitting data:", error.response);
-        }
-      };
-      
+    // const formDataToJson = (formData) => {
+    //     const jsonData = {};
+    //     formData.forEach((value, key) => {
+    //       jsonData[key] = value;
+    //     });
+    //     return jsonData;
+    //   };
 
+    // ...
+
+    const handleUpdate = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await axios.put(
+                `http://localhost:5000/api/new/room/${id}`,
+                data
+            );
+
+            navigate('/admin');
+            console.log(response, "ergaer3eeeee");
+        } catch (error) {
+            console.error("Error submitting data:", error.response);
+        }
+    };
+    const imageUpload = async (e) => {
+        e.preventDefault();
+        const file = e.target.files[0];
+        try {
+            const imageData = await ImageUploader(file);
+            const formData = new FormData();
+            formData.append('cover_img', file)
+            const response = await axios.put(
+                `http://localhost:5000/api/new/image/update/${id}`, formData
+            );
+            setData((prev) => {
+                return {
+                    ...prev,
+                    imagepath: response.data.imagePath,
+                    imageData: imageData,
+                }
+            })
+        } catch (error) {
+            console.error('Error uploading image: ', error);
+        }
+
+    }
 
 
     return (
@@ -225,25 +216,22 @@ const UpdateRoom = () => {
                             onChange={handleChange}
                         />
                     </Grid>
-                    <Grid item xs={12} sm={12} className="d-flex justify-content-center">
-                        <TextField
-                            placeholder="photo"
-                            type="text"
-                            value={selectedImage ? selectedImage.name : previousImageName}
-                            onChange={handleImageNameChange}
-                        />
-                        <label htmlFor="cover_img" className="file-label">
-                            Choose File
+                    <label className='p-3  d-flex  justify-content-center mt-4 border' for="image" >
+                            <div>
+                                <b>Image Upload</b>
+                                <div className=' fs-1  w-full bg-white d-flex text-dark justify-content-center align-item-center'>
+                                    {data.cover_img ? (
+                                                <img src={`http://localhost:5000/${data.cover_img}`} width={"25%"} />
+                                    ) : (
+                                        <span className=' '>
+                                            <BsCloudArrowUp />
+                                        </span>
+                                    )}
+                                    <input type={"file"} id="image" accept='image/*' hidden onChange={imageUpload} name="image" />
+
+                                </div>
+                            </div>
                         </label>
-                        <input
-                            id="cover_img"
-                            type="file"
-                            name="cover_img"
-                            accept="image/*"
-                            onChange={handleImageUpload}
-                            className="file-input"
-                        />
-                    </Grid>
                 </Grid>
                 <Button
                     variant="contained"

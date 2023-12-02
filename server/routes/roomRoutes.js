@@ -1,5 +1,5 @@
 const express = require('express');
-const     router = express.Router();
+const  router = express.Router();
 const roomController = require('../controllers/roomsController');
 const multer = require('multer')
 
@@ -21,6 +21,7 @@ router.post("/room", upload.single("cover_img"),  roomController.NewRoom);
 
 router.get('/showroom',roomController.country);
 router.get('/showroom/:id',roomController.country1);
-router.put('/room/:id',roomController.OldtoNew)
+router.put('/room/:id' ,roomController.OldtoNew)
+router.put('/image/update/:id',upload.single("cover_img"),roomController.ImageUpdate)
 router.delete('/room/delete/:id',roomController.delRoom)
 module.exports = router;  

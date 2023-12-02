@@ -27,7 +27,7 @@ exports.NewRoom = async (req,res)=>{
       res.status(500).json({ error: 'Internal Server Error' });
     }
 
-    console.error(error);
+    // console.error(error);
     res.status(500).json({ error: "Internal Server Error" });
   };
 
@@ -66,19 +66,52 @@ exports.country = async (req, res) => {
   
 
 
-exports.OldtoNew = async (req,res)=>{
-       try {
-        const {id} = req.params;
+  exports.OldtoNew = async (req, res) => {
+    try {
+      const { id } = req.params; // Use req.params.id directly, no need for destructuring
+      const { name, description, beds, restrooms, bathtub, adults, status, price } = req.body;
+  
+      // Update the room using Sequelize's update method
+      const result = await Rooms.update(
+        {
+          name,
+          description,
+          beds,
+          restrooms,
+          bathtub,
+          adults,
+          status,
+          price,
+        },
+        {
+          where: {
+            id: id,
+          },
+        }
+      );
+  
+      res.status(200).json(result);
+      console.log(result, "wrjgfqievuygw4loyu2o");
+    } catch (error) {
+      console.error('Error stack trace:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  };
+  
 
-        console.log(req.body,"dfsdfsdfhgsdfg")
-        const result = await Rooms.update(req.body,{where:{id:id}})
-        res.status(200).json(result)
-        
-       } catch(error){
-        console.error('Error stack trace:', error);
-        res.status(500).json({ error: 'Internal server error' });
-       }
+  exports.ImageUpdate = async (req,res)=>{
+    try {
+      const {id} = req.params;
+      const coverImageName = req.file.filename;
+      const result = await Rooms.update({cover_img:coverImageName},{where:{id:id}})
+      res.status(200).json(result)
+    } catch (error) {
+      console.error('Error stack trace:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
   }
+
+
 
 
 exports.delRoom = async (req,res)=>{

@@ -94,7 +94,7 @@ function Adminpanel(props) {
       .get("http://localhost:5000/api/new/showroom")
       .then((res)=>{
         setRooms(res.data)
-        console.log(res.data[0].cover_img,"sdajsdgajsdgahsdhgjhasdhgjasd")
+        console.log(res.data,"sdajsdgajsdgahsdhgjhasdhgjasd")
 
       })
 

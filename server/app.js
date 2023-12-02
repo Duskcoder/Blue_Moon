@@ -33,4 +33,5 @@ sequelize.sync({ force: false }) // Synchronize Sequelize with the database
   })
   .catch((error) => {
     console.error('Database connection error:', error);
+    
   });
