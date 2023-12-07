@@ -78,56 +78,7 @@ function StandardRoom() {
     setcount(newObj)
   }
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   console.log("Current Data:", data);
-
-  //   if (
-  //     !data.check_in ||
-  //     !data.check_out ||
-  //     !data.room_name ||
-  //     !data.adults ||
-  //     !data.name ||
-  //     !data.email ||
-  //     !data.phone ||
-  //     !data.address
-  //   ) {
-  //     // Handle validation error, set appropriate state or show an error message
-  //     return console.log("error insert data");
-  //   } else {
-  //     const jsonData = {
-  //       check_in: data.check_in,
-  //       check_out: data.check_out,
-  //       room_name: data.room_name,
-  //       adults: data.adults,
-  //       name: data.name,
-  //       email: data.email,
-  //       phone: data.phone,
-  //       address: data.address,
-  //     };
-
-  //     console.log("JSON Data:", jsonData);
-
-  //     const config = {
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     };
-
-  //     try {
-  //       const response = await axios.post(
-  //         "http://localhost:5000/api/new/book",
-  //         jsonData,
-  //         config
-  //       );
-  //       console.log(response, "ergaer");
-  //     } catch (error) {
-  //       console.error("Error submitting data:", error.response);
-  //     }
-  //   }
-  // };
-
+ 
 
 
   return (

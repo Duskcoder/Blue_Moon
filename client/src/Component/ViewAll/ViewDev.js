@@ -15,10 +15,10 @@ function ViewDev() {
                         </div>
                     </div>
                     <div className='parentned col-lg-4 col-md-12'>
-                        <div className='child bg-one'></div>
+                        <div className='child bg-one'>Standard Room 1</div>
                     </div>
                     <div className='parentned col-lg-4 col-md-12'>
-                        <div className='child bg-two'></div>
+                        <div className='child bg-two'>Double BedRoom Apartment ground Floor</div>
                     </div>
                 </div>
             </div>

@@ -189,7 +189,6 @@ function HomeStayHome() {
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-                {" "}
                 Book Now
               </button>
             </div>

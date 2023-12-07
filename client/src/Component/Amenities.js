@@ -1,8 +1,13 @@
 import React from 'react'
 import Header from './Header'
-import Footer from './Footer'
+import Footer from './Footer';
+import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+
 
 export const Amenities = () => {
+    const navigate = useNavigate();
+
     return (
         <>
         <Header/>
@@ -19,7 +24,9 @@ export const Amenities = () => {
                         <h2 style={{ color: '#294f70' }}>Amenities</h2>
                     </div>
                     <div className='w-20'>
-                        <button className='amen-btn'>Get Bookings</button>
+                        <button className='amen-btn'
+                        
+                        ><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Bookings</a></button>
                     </div>
                 </div>
             </div>
@@ -127,7 +134,10 @@ export const Amenities = () => {
 
                     </div>
                     <div className='w-20 mb-5'>
-                        <button className='amen-btn mb-4'>Get Enquiry</button>
+                    {/* <Link to="https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0" className='amen-btn mb-4'>
+                    Get Enquiry
+                    </Link> */}
+                        <button className='amen-btn mb-4'><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Enquiry</a></button>
                     </div>
                 </div>
             </div>

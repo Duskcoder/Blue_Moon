@@ -23,6 +23,9 @@ import Details1 from "./Component/Admin/Details1";
 import UpdateRoom from "./Component/Admin/UpdateRoom";
 import StandardRoom from "./Component/Booking/standardRoom";
 import SignIn from "./Component/loginValidation/login_Form";
+import Gallery1 from "./Component/Gallery/Gallery1";
+import { About } from "./Component/About/About";
+import { About1 } from "./Component/About/About1";
 
 function App() {
   return (
@@ -30,23 +33,27 @@ function App() {
       {/* <Header /> */}
       <Routes>
         <Route path="*" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/about1" element={<About1 />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/" element={<Home />} />
         <Route path="/stay" element={<RoomStay />} />
+        <Route path="/gallery" element={<CardBox/>} />
         <Route path="/homestay" element={<HomeStay />} />
         <Route path="/viewdev" element={<ViewDev />} />
         <Route path="/login_Form" element={<SignIn />} />
         <Route path="/contact1" element={<ContactUs1 />} />
         <Route path="/HomeStayHome" element={<HomeStayHome />} />
         <Route path="/about1" element={<AboutUs1 />} />
+        <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/Admin" element={<Adminpanel />} />
         <Route path="/level" element={<Level />} />
         <Route path="/details" element={<Details1 />} />
         <Route path="/updateroom/:id" element={<UpdateRoom />} />
         <Route path="/addrooms" element={<Addrooms />} />
         <Route path="/room" element={<Rooms />}/>
+        <Route path="/Gallery1" element={<Gallery1/>} />
          
         
         <Route path="/booknow" element={<StandardRoom />} />

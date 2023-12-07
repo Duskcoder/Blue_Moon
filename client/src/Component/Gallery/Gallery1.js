@@ -1,10 +1,11 @@
 import React from "react";
-import "../CardBox/CardBox.css";
 import Header1 from "../Header1";
+import Footer1 from "../HomeStay/Footer1";
 
-function CardBox() {
+function Gallery1() {
   return (
     <>
+      <Header1 />
       <div className="container mt-4">
         <img
           className="img-responsive"
@@ -56,8 +57,9 @@ function CardBox() {
           </div>
         </div>
       </div>
+      <Footer1 />
     </>
   );
 }
 
-export default CardBox;
+export default Gallery1;

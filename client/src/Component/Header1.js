@@ -29,10 +29,10 @@ const navigate=useNavigate()
               
             >
               <Nav.Link href="/homeStayHome">Home</Nav.Link>
-              <Nav.Link href="/about">About Us</Nav.Link>
-              <Nav.Link href="/Room">Rooms</Nav.Link>
-              <Nav.Link href="/Gallery">Gallery</Nav.Link>
-              <Nav.Link href="/contact">Contact Us</Nav.Link>
+              <Nav.Link href="/aboutus">About Us</Nav.Link>
+              <Nav.Link href="/stay">Rooms</Nav.Link>
+              <Nav.Link href="/Gallery1">Gallery</Nav.Link>
+              <Nav.Link href="/aboutus">Contact Us</Nav.Link>
     
             </Nav>
             <Form >
