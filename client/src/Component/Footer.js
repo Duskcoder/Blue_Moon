@@ -1,5 +1,8 @@
 import React from "react";
 import footerimg from "../images/blue moon bungalow logo1.jpg";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 
 function Footer() {
   return (
@@ -88,14 +91,17 @@ function Footer() {
                       Contact no:8754041119
                     </a>
                   </li>
-                  <li className="mt-3">
-                    <a
-                      href="#!"
-                      className="text-whites text-decoration-none footer-textsize-follow"
-                    >
-                      Follow Us
-                    </a>
-                  </li>
+                  <div className="col-lg-6 col-sm-12 pt-5 mx-2">
+                  <a
+                    href="#!"
+                    className="text-whites text-decoration-none footer-textsize-follow d-block"
+                  >
+                    Follow Us
+                  </a>
+                  <FaFacebook className="footericon" />&nbsp;<FaInstagram className="footericon" />&nbsp;<RiTwitterXLine className="footericon" />
+
+
+                </div>
                   <li className="mt-4">
                     <a
                       href="#!"

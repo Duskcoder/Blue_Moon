@@ -41,7 +41,7 @@ function App() {
         <Route path="/contact1" element={<ContactUs1 />} />
         <Route path="/HomeStayHome" element={<HomeStayHome />} />
         <Route path="/about1" element={<AboutUs1 />} />
-        <Route path="/Admin" element={<Adminpanel />} />
+        <Route path="/admin" element={<Adminpanel />} />
         <Route path="/level" element={<Level />} />
         <Route path="/details" element={<Details1 />} />
         <Route path="/updateroom/:id" element={<UpdateRoom />} />

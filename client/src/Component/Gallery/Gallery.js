@@ -1,11 +1,12 @@
 import React from 'react'
-import '../CardBox/CardBox.css'
+
 
 function CardBox() {
     return (
         <div className='container mt-4'>
             <h2></h2>
-              <img className='img-responsive' src={require('../../images/z.jpg.png')} alt='' width="100%" height="50%" />
+       <img className='img-responsive' id='amenities' src={require('../../images/z.jpg.png')} alt='' width="100%" height="50%" />
+      
             <div className='row d-flex justify-content-evenly'>
                 <div className='wrapper'>
                 <h2 className='htag'>Gallery</h2>

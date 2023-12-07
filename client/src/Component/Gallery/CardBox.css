@@ -669,3 +669,9 @@
     margin: auto;
   }
   }
+
+  /* mobile view for icons */
+
+#amenities{
+  background-color: red;
+}

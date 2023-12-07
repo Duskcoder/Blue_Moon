@@ -224,6 +224,7 @@ card-text1{
   height: 120vh;
   background-size: cover;
   color: black;
+
   /* background-attachment: fixed; */
   opacity: 1.2;
 
@@ -231,7 +232,7 @@ card-text1{
 
 .contact {
   background-color: white;
-  height: 35vh;
+
   margin-top: 20px;
 }
 
@@ -1387,10 +1388,10 @@ color: white !important;
             background-repeat: no-repeat;
         }
     }
-#aboutUs1{
+.aboutUs1{
   
     background-image: url(./images/night.jpeg);
-    height: 120vh;
+  
     background-size: cover;
     color: black;
     background-attachment: fixed;
@@ -1439,4 +1440,26 @@ color: white !important;
 
 .guer{
   text-align: center;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  box-shadow: 5px 5px 10px #888888; 
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+
+}
+#dropdownMenuButton{
+box-shadow: 5px 5px 10px #888888; 
+}
+
+
+
+@media screen and (max-width: 300px) {
+  #amenities {
+    display: none !important;
+  }
 }

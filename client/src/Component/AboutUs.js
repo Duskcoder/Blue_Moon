@@ -21,14 +21,14 @@ export const AboutUs = () => {
                                     <p> sure to walk home with memories and wonderful </p>
                                     <p> moments.</p>
                                 </div>
-                                <div  className='hello22 mt-5 mb-5'  data-aos='fade-right'  data-aos-duration='1000'></div>
-
+                        
 
                             </div>
+                            
                         </div>
 
                         <div class="card hello1  col-lg-6 col-12 " data-aos='fade-left'  data-aos-duration='1500'>
-                            <div class="card-body mt-5 mb-5 text-center" data-aos='fade-left' data-aos-duration='1000'>
+                            <div class="card-body mt-5 mb-5  text-center" data-aos='fade-left' data-aos-duration='1000'>
 
                                 <p class="card-text1 mt-5">We are a well renowned, providing a sensational</p>
                                 <p>staying experience eith prolific services. We give </p>

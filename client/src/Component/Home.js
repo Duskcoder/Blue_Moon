@@ -8,6 +8,9 @@ import reception from "../images/reception.jpg";
 import kitchen from "../images/kitchen.jpg";
 import Header from "./Header";
 import Footer from "./Footer";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 import { About } from "./About/About";
 import '../Component/Home.css'
 
@@ -33,8 +36,8 @@ function Home() {
       </div>
 
       <div className="row justify-content-evenly  mb-5  mt-5 room-booking">
-        <div class="col-3 pt-5 m-auto">
-        <h4 className="mt-5 justify-content-center d-flex" style={{ color: '#0c617d' }}>
+        <div class="col-4 pt-5 col-lg-3 col-sm-1 m-auto">
+        <h4 className="mt-5  justify-content-center d-flex" style={{ color: '#0c617d' }}>
   Rooms
 </h4>
 
