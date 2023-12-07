@@ -7,7 +7,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
-import blueMoonBungalowIMG from "../images/blue moon bungalowlogo1.jpg";
+import blueMoonIMG from "../images/blue moon7.jpg";
 import { Navigate } from "react-router-dom";
 const Header = () => {
   const [open,setOpen]=useState(false)
@@ -24,7 +24,7 @@ const Header = () => {
         <Container className="justify-content-lg-center">
           <div className="d-lg-flex ">
             <Navbar.Brand href="#">
-              <img src={blueMoonBungalowIMG } alt="" width={80} height={80} />
+              <img src={blueMoonIMG} alt="" width={80} height={80} />
             </Navbar.Brand>
            
            

@@ -46,12 +46,8 @@ function App() {
         <Route path="/contact1" element={<ContactUs1 />} />
         <Route path="/HomeStayHome" element={<HomeStayHome />} />
         <Route path="/about1" element={<AboutUs1 />} />
-<<<<<<< HEAD
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/Admin" element={<Adminpanel />} />
-=======
-        <Route path="/admin" element={<Adminpanel />} />
->>>>>>> ea06272a7f4ea6ddd791cd5dd8623612fdd609f7
         <Route path="/level" element={<Level />} />
         <Route path="/details" element={<Details1 />} />
         <Route path="/updateroom/:id" element={<UpdateRoom />} />
