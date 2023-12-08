@@ -1,13 +1,9 @@
 import React from 'react';
-import Footer from '../Footer';
-import Header from '../Header';
 
-
-export const About1 = () => {
+export const About = () => {
     return (
-        <>
-        <Header/>
-            <div id='aboutUs' className='overflow-hidden'>
+        <>        
+            <div id='aboutUs'>
                 <div className='container pt-5'>
                     <div className='row '>
                         <div class="card  hello2  mt-5 col-lg-6 col-12" data-aos='fade-right' data-aos-duration='1500'>
@@ -22,13 +18,11 @@ export const About1 = () => {
                                     <p> moments.</p>
                                 </div>
                                 <div  className='hello22 mt-5 mb-5'  data-aos='fade-right'  data-aos-duration='1000'></div>
-
-
                             </div>
                         </div>
 
                         <div class="card hello1  col-lg-6 col-12 " data-aos='fade-left'  data-aos-duration='1500'>
-                            <div class="card-body card-bodys mt-5 mb-5 text-center" data-aos='fade-left' data-aos-duration='1000'>
+                            <div class="card-body mt-5 mb-5 text-center" data-aos='fade-left' data-aos-duration='1000'>
 
                                 <p class="card-text1 mt-5">We are a well renowned, providing a sensational</p>
                                 <p>staying experience eith prolific services. We give </p>
@@ -45,7 +39,7 @@ export const About1 = () => {
 
                 </div>
             </div>
-            <Footer/>
+            
         </>
     )
 }

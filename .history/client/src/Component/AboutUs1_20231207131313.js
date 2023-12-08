@@ -4,7 +4,7 @@ import Header1 from "./Header1";
 export const AboutUs1 = () => {
   return (
     <>
-      <div id="aboutUs1" className="overflow-hidden">
+      <div id="aboutUs1">
         <div className="container pt-5">
           <div className="row ">
             <div

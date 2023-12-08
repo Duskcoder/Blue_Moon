@@ -1,10 +1,14 @@
 import React from "react";
+// import Header from "./Header";
+// import Footer from "./Footer";
 import Header1 from "./Header1";
+import Footer1 from "./HomeStay/Footer1";
 
-export const AboutUs1 = () => {
+export const AboutUs = () => {
   return (
     <>
-      <div id="aboutUs1" className="overflow-hidden">
+      <Header1/>
+      <div id="aboutUs1">
         <div className="container pt-5">
           <div className="row ">
             <div
@@ -72,6 +76,7 @@ export const AboutUs1 = () => {
           </div>
         </div>
       </div>
+        <Footer1/>
     </>
   );
 };
