@@ -30,7 +30,7 @@ function ViewDev() {
                         <div className='use col-lg-4 col-md-12'>
                             <div className='tiger'>
                                 <h2 className='mt-5'>Rooms</h2>
-                                <button className=''>View All</button>
+                                <button className='btn w-auto'>View All</button>
                             </div>
                         </div>
                         <div className='parentned col-lg-4 col-md-12'>

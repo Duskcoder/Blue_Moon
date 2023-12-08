@@ -401,11 +401,7 @@ color: white !important;
     left: 20px;
   }
 
-  .direction {
-
-    left: 20px;
-  }
-
+ 
   .first-card {
     width: 100% !important;
     height: 50vh !important;
@@ -1568,3 +1564,67 @@ li a {
     display: none !important;
   }
 }
+
+/* Footer homestay */
+#direction{
+
+  width: auto;
+
+  color: #0c617d !important;
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+
+  margin-right: auto
+}
+
+
+/* Amenities page */
+#Amenities h5{
+  font-family: 'EB Garamond', sans-serif;
+  color: white;
+  width: auto;
+}
+.htaga{
+ color: rgb(255, 255, 255);
+ font-size: 45px;
+}
+@media (max-width: 500px) {
+  #Amenities h5 {
+   font-size: 20px;
+  
+  }
+  #systemamen{
+    display: none;
+  }
+ 
+  .htaga{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+   }
+}
+@media (min-width: 700px) {
+  #mobileamen{
+    display: none !important;
+  } 
+
+ 
+}
+
+
+/* Contact us */
+
+@media (min-width:500px){
+  #mobmail{
+    display: none !important;
+  }
+}
+@media (max-width:700px){
+  #sysmail{
+    display: none !important;
+  }
+}
+
+/*  About page*/
+
+

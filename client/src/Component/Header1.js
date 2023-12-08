@@ -138,7 +138,7 @@ function Header1() {
                   >Gallery</NavLink>
               
              
-                  {/* <a href="">Amenines</a> */}
+                  {/* <a href="">Amenities</a> */}
                   <NavLink to={"/aboutus"}
                   style={({ isActive }) => {
                       return  { 
