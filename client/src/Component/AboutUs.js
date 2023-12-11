@@ -8,7 +8,7 @@ export const AboutUs = () => {
   return (
     <>
       <Header1/>
-      <div id="aboutUs1">
+      <div id="aboutUs1" className="overflow-hidden">
         <div className="container pt-5">
           <div className="row ">
             <div

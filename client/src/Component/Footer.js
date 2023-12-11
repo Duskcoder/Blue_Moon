@@ -9,7 +9,7 @@ function Footer() {
     <div className=" text-white overflow-hidden  mt-5">
 
       <div className="row  d-flex   m-auto" id="footer-bg-img">
-        <div className="container col-lg-8  m-l-25px text-whites ">
+        <div className="container col-lg-12  m-l-25px text-whites ">
           <div className="mt-4">
             <img src={footerimg} alt="" height={70} width={70} />
           </div>
@@ -21,7 +21,7 @@ function Footer() {
               <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
                 <h5 className="text-uppercase  mb-4">Menu</h5>
 
-                <ul className="list-unstyled mt-5">
+                <ul className="list-unstyled mt-5  ">
                   <li className="mb-2">
                     <a
                       href="#!"
@@ -67,7 +67,7 @@ function Footer() {
                       href="#!"
                       className="text-whites text-decoration-none footer-textsize"
                     >
-                      Imaportant Information
+                      Important Information
                     </a>
                   </li>
                 </ul>
@@ -114,8 +114,8 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className=" col-lg-4 font-30 ">
-                <button className="direction fw-bold">
+              <div className=" col-lg-2 font-30 d-flex align-items-center  ">
+                <button className="direction fw-bold" id='direction'>
                   <strong>
                     <i class="fa fa-solid fa-diamond-turn-right"></i>
                     <a href="#!">Get Direction</a>

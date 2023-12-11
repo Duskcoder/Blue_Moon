@@ -6,19 +6,21 @@ import { useNavigate } from "react-router-dom";
 
 
 export const Amenities = () => {
+
     const navigate = useNavigate();
+    
 
     return (
         <>
         <Header/>
             <div id='Amenities' className='d-flex align-items-center'>
                 <div className='container  '>
-                    <h1 className='' data-aos='fade-left' data-aos-duration='1000'>Amenities & Facilities</h1>
-                    <h5 className='col-sm-4' data-aos='fade-right' data-aos-duration='1000'>We do not give you just rooms to stay.we give you an environment so you can experience the best while on a holiday with us.Walk into our homestay and enjoy a refreshing,rejuvenating, day off with us. </h5>
+                    <h1 className='htaga' data-aos='fade-left' data-aos-duration='1000'>Amenities & Facilities</h1>
+                    <h5 className='col-sm-4 fs-4 ptaga' data-aos='fade-right' data-aos-duration='1000'>We do not give you just rooms to stay.we give you an environment so you can experience the best while on a holiday with us.Walk into our homestay and enjoy a refreshing,rejuvenating, day off with us. </h5>
                 </div>
 
             </div>
-            <div className='container '>
+            <div className='container 'id='systemamen'>
                 <div className='mt-5 d-flex align-items-center justify-content-between'>
                     <div >
                         <h2 style={{ color: '#294f70' }}>Amenities</h2>
@@ -30,6 +32,19 @@ export const Amenities = () => {
                     </div>
                 </div>
             </div>
+            <div className='container ' id='mobileamen'>
+                <div className='d-flex  justify-content-between'>
+                    <div >
+                        <h2 style={{ color: '#294f70' }}>Amenities</h2>
+                    </div>
+                    <div className='w-20 mt-5'>
+                        <button className='amen-btn'
+                        
+                        ><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Bookings</a></button>
+                    </div>
+                </div>
+            </div>
+            
             <div className="container mt-4 mb-5">
                 <div className="d-flex justify-content-center text-primary">
                     {/* <h3>Amenities & Facilities</h3> */}

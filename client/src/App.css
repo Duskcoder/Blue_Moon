@@ -37,9 +37,8 @@ ul li a {
   /* margin:0 auto; */
   transform: scale(1.5);
   width: 100%;
-
-
 }
+ 
 
 #aboutUs {
   background-image: url(./images/hall1.jpg);
@@ -402,11 +401,7 @@ color: white !important;
     left: 20px;
   }
 
-  .direction {
-
-    left: 20px;
-  }
-
+ 
   .first-card {
     width: 100% !important;
     height: 50vh !important;
@@ -1394,8 +1389,6 @@ color: white !important;
     color: black;
     background-attachment: fixed;
     opacity: 0.8;
-  
-  
 }
 #contactus1 {
   background-image: url(./images/night.jpeg);
@@ -1457,12 +1450,15 @@ box-shadow: 5px 5px 10px #888888;
   display: none;
 }
 
-ul,
-li,
-a {
+.header2 {
+  display: none;
+}
+
+.unoderlist {
 
   gap: 40px;
   list-style: none;
+  text-decoration: none;
   justify-content: space-around;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
@@ -1548,9 +1544,10 @@ li a {
   .num{
     padding: 10px;
   }
+  .num a{
+    color:rgb(39, 187, 216) !important;
 
-
-
+  }
 
 }
 
@@ -1561,3 +1558,76 @@ li a {
     display: none !important;
   }
 }
+
+
+
+
+@media screen and (max-width: 300px) {
+  #amenities {
+    display: none !important;
+  }
+}
+
+/* Footer homestay */
+#direction{
+
+  width: auto;
+
+  color: #0c617d !important;
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+
+  margin-right: auto
+}
+
+
+/* Amenities page */
+#Amenities h5{
+  font-family: 'EB Garamond', sans-serif;
+  color: white;
+  width: auto;
+}
+.htaga{
+ color: rgb(255, 255, 255);
+ font-size: 45px;
+}
+@media (max-width: 500px) {
+  #Amenities h5 {
+   font-size: 20px;
+  
+  }
+  #systemamen{
+    display: none;
+  }
+ 
+  .htaga{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+   }
+}
+@media (min-width: 700px) {
+  #mobileamen{
+    display: none !important;
+  } 
+
+ 
+}
+
+
+/* Contact us */
+
+@media (min-width:500px){
+  #mobmail{
+    display: none !important;
+  }
+}
+@media (max-width:700px){
+  #sysmail{
+    display: none !important;
+  }
+}
+
+/*  About page*/
+
+

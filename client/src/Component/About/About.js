@@ -3,7 +3,7 @@ import React from 'react';
 export const About = () => {
     return (
         <>        
-            <div id='aboutUs'>
+            <div id='aboutUs' className='overflow-hidden'>
                 <div className='container pt-5'>
                     <div className='row '>
                         <div class="card  hello2  mt-5 col-lg-6 col-12" data-aos='fade-right' data-aos-duration='1500'>
