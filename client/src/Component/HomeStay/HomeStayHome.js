@@ -203,7 +203,7 @@ function HomeStayHome() {
 
         <div className="systems">
           <div className="head  ">
-            <div className="room col-6 col-lg-12 pt-5 mx-5">
+            <div className="room col-6 col-lg-12  mx-5">
               <h1
                 className="htagp text-center"
                 data-aos="fade-up"

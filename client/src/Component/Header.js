@@ -135,7 +135,7 @@ function Header() {
                   >Contact Us</NavLink>
               
              
-                  {/* <a href="">Amenines</a> */}
+                  {/* <a href="">Amenities</a> */}
                   <NavLink to={"/amenities"}
                   style={({ isActive }) => {
                       return  { 
@@ -143,7 +143,7 @@ function Header() {
                         color : isActive ? 'rgb(39, 187, 216)' : 'rgb(39, 187, 216)'
                       };
                     }}
-                  >Amenines</NavLink>
+                  >Amenities</NavLink>
               
                 <button
                   type="submit"
@@ -198,7 +198,7 @@ function Header() {
               <a href="/contact">Contact Us</a>
             </li>
             <li class="num">
-              <a href="/amenities">Amenines</a>
+              <a href="/amenities">Amenities</a>
             </li>
             <button
               type="button"
@@ -265,7 +265,7 @@ export default Header;
 //                 <NavLink>Contact Us</NavLink>
 //               </li>
 //               <li>
-//                 <a href="">Amenines</a>
+//                 <a href="">Amenities</a>
 //               </li>
 //               <button type="submit" class="button_style--modify">
 //                 BLUEMOON HOMESTAY
@@ -315,7 +315,7 @@ export default Header;
 //               <a href="">Contact Us</a>
 //             </li>
 //             <li class="num">
-//               <a href="">Amenines</a>
+//               <a href="">Amenities</a>
 //             </li>
 //             <button type="button" class="button_style--modify">
 //               BLUEMOON HOMESTAY

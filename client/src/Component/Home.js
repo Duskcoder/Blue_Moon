@@ -7,6 +7,7 @@ import butha from "../images/butha.jpg";
 import reception from "../images/reception.jpg";
 import kitchen from "../images/kitchen.jpg";
 import Header from "./Header";
+import reception2 from '../images/reception2.png'
 import Footer from "./Footer";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -19,7 +20,7 @@ function Home() {
   const navigate = useNavigate();
   return (
     <>
-    <Header/>
+      <Header />
       <div className="overflow-hidden">
         <div className="home-bg  col-12 overflow-hidden ">
           <div className="container position-relative text-white home-text-center">
@@ -38,22 +39,43 @@ function Home() {
         </div>
 
         <div className="row justify-content-evenly  mb-5  mt-5 room-booking">
-          <div class="col-3 pt-5 m-auto">
-            <h4
-              className="mt-5 justify-content-center d-flex"
-              style={{ color: "#0c617d" }}
-            >
-              Rooms
-            </h4>
+          <div class="col-3 m-auto">
+            <div className="systembutton">
+              <h4
+              
+                className=" justify-content-center d-flex"
+                style={{ color: "#0c617d" }}
+              >
+                Rooms
+              </h4>
 
-            <button 
-            className="mt-2 mx-auto d-flex mb-2 view "
-            onClick={() => navigate("/room")}
+              <button
+                className="mt-2 col-lg-4   mb-2 view "
+                onClick={() => navigate("/room")}
                 data-aos="fade-right"
                 data-aos-duration="3000"
-            >
-            View ALL
-            </button>
+              >
+                View ALL
+              </button>
+            </div>
+
+            <div className="mobilebutton">
+              <h4 id="mobileheading"
+                className=" justify-content-center d-flex"
+                style={{ color: "#0c617d" }}
+              >
+                Rooms
+              </h4>
+
+              <button
+                className="mt-2 col-lg-4   mb-2"id="mobileview"
+                onClick={() => navigate("/room")}
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              >
+                View ALL
+              </button>
+            </div>
           </div>
           <div class="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
             <p className="mt-40px d-flex justify-content-center">
@@ -166,16 +188,16 @@ function Home() {
                 src={kitchen}
                 alt=""
                 width="70%"
-                height="60%"
+        
               />
             </div>
             <div className="rooters col-12 col-lg-6 mt-5 mt-md-2">
               <img
                 className="img-responsive"
-                src={reception}
+              src={reception2}
                 alt=""
-                width="70%"
-                height="60%"
+             
+            
               />
             </div>
           </div>
