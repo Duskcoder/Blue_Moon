@@ -1,14 +1,14 @@
 import React from "react";
-import { useState } from "react";
-// import axios from "axios";
-// import { Navigate, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { Navigate, useNavigate } from "react-router-dom";
 import "../../Component/Rooms/Rooms.css";
 import Footer from "../Footer";
 import Header from "../Header";
 
 function Rooms() {
-  // const [Rooms, setRooms] = useState([]);
-  // const navigate = useNavigate();
+  const [Rooms, setRooms] = useState([]);
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const closePopup = () => setIsVisible(false);
   const handleButtonClick = (link) => {
@@ -23,24 +23,24 @@ function Rooms() {
   //     .catch((err) => console.log(err));
   // }, []);
 
-  // const handleClick = (item) => {
-  //   navigate("/booknow", {
-  //     state: {
-  //       name: item.name,
-  //       price: item.price,
-  //     },
-  //   });
-  // };
+  const handleClick = (item) => {
+    navigate("/booknow", {
+      state: {
+        name: item.name,
+        price: item.price,
+      },
+    });
+  };
 
-  // const evenRooms = Rooms.filter((room) => room % 2 === 0);
-  // const oddRooms = Rooms.filter((room) => room % 2 !== 0);
+  const evenRooms = Rooms.filter((room) => room % 2 === 0);
+  const oddRooms = Rooms.filter((room) => room % 2 !== 0);
 
   // console.log(Rooms, "gjhg");
 
   return (
     <>
       <Header />
-      <form onClick={closePopup}>
+      <form>
         {/* <div className="overflow-hidden">
         <div className="system">
 
@@ -57,7 +57,7 @@ function Rooms() {
           </div>
         </div> */}
       
-          <div className="overflow-hidden" >
+          <div className="overflow-hidden" onClick={closePopup}>
             <div className="system">
               <div className="head  ">
                 <div className="room col-6 col-lg-12 htagsMob mx-5">

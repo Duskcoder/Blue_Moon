@@ -1,14 +1,14 @@
 import React from "react";
-import { useState } from "react";
-// import axios from "axios";
-// import { Navigate, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { Navigate, useNavigate } from "react-router-dom";
 import "../../Component/Rooms/Rooms.css";
 import Footer from "../Footer";
 import Header from "../Header";
 
 function Rooms() {
-  // const [Rooms, setRooms] = useState([]);
-  // const navigate = useNavigate();
+  const [Rooms, setRooms] = useState([]);
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const closePopup = () => setIsVisible(false);
   const handleButtonClick = (link) => {
@@ -23,24 +23,24 @@ function Rooms() {
   //     .catch((err) => console.log(err));
   // }, []);
 
-  // const handleClick = (item) => {
-  //   navigate("/booknow", {
-  //     state: {
-  //       name: item.name,
-  //       price: item.price,
-  //     },
-  //   });
-  // };
+  const handleClick = (item) => {
+    navigate("/booknow", {
+      state: {
+        name: item.name,
+        price: item.price,
+      },
+    });
+  };
 
-  // const evenRooms = Rooms.filter((room) => room % 2 === 0);
-  // const oddRooms = Rooms.filter((room) => room % 2 !== 0);
+  const evenRooms = Rooms.filter((room) => room % 2 === 0);
+  const oddRooms = Rooms.filter((room) => room % 2 !== 0);
 
   // console.log(Rooms, "gjhg");
 
   return (
     <>
       <Header />
-      <form onClick={closePopup}>
+      <form>
         {/* <div className="overflow-hidden">
         <div className="system">
 
@@ -56,8 +56,8 @@ function Rooms() {
             </div>
           </div>
         </div> */}
-      
-          <div className="overflow-hidden" >
+        {Rooms.length === 0 ? (
+          <div className="overflow-hidden" onClick={closePopup}>
             <div className="system">
               <div className="head  ">
                 <div className="room col-6 col-lg-12 htagsMob mx-5">
@@ -554,8 +554,62 @@ function Rooms() {
               <button className="btn btn-white shadow btns"> Book Now</button>
             </div>
           </div>
-        
-              </form>
+        ) : (
+          Rooms.map((item) => (
+            <div key={item.id}>
+              <div className=" container stay ">
+                <div className="row">
+                  <div
+                    className="col-12 col-lg-6 Mercury m-auto  "
+                    data-aos="fade-right"
+                  >
+                    <img
+                      className="mt-3"
+                      src={`http://localhost:5000/${item.cover_img}`}
+                      alt="loading"
+                      width="100%"
+                      height="70%"
+                    />
+                  </div>
+                  <div
+                    className="col-12 col-lg-6 Mercury m-auto  "
+                    data-aos="fade-right"
+                  >
+                    <h3 className=" htag">Room name:{item.name}</h3>
+                    <p>Description:{item.description}</p>
+                    <p>Bed:{item.beds}</p>
+                    <p>
+                      Adults:
+                      <span className="text-secondary">{item.adults}</span>
+                    </p>
+                    <p>
+                      Status:
+                      {item.status === "yes" ? "Available" : "Unavailable"}
+                    </p>
+                    <p>price:{item.price}</p>
+
+                    <button
+                      type="submit"
+                      className="btn btn-white shadow btns"
+                      onClick={() => handleClick(item)}
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                  {/* <div className="col-12 col-lg-6 roomb ">
+                    <img
+                      className="img-responsive invisible imgs m-auto"
+                      src={require("../../images/rooma.jpg")}
+                      alt=""
+                      width="100%"
+                    />
+                  </div> */}
+                </div>
+              </div>
+            </div>
+          ))
+        )}
+      </form>
       <Footer />
     </>
   );

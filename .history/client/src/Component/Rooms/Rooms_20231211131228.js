@@ -40,7 +40,7 @@ function Rooms() {
   return (
     <>
       <Header />
-      <form onClick={closePopup}>
+      <form>
         {/* <div className="overflow-hidden">
         <div className="system">
 
@@ -57,7 +57,7 @@ function Rooms() {
           </div>
         </div> */}
       
-          <div className="overflow-hidden" >
+          <div className="overflow-hidden" onClick={closePopup}>
             <div className="system">
               <div className="head  ">
                 <div className="room col-6 col-lg-12 htagsMob mx-5">
