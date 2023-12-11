@@ -23,7 +23,7 @@
 }
 
 ul li a {
-  color: white !important;
+  color:black !important;
 
 }
 
@@ -1453,7 +1453,106 @@ color: white !important;
 #dropdownMenuButton{
 box-shadow: 5px 5px 10px #888888; 
 }
+.header2 {
+  display: none;
+}
 
+ul,
+li,
+a {
+
+  gap: 40px;
+  list-style: none;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+
+}
+
+li a {
+  text-decoration: none;
+
+}
+.button_style--modify{
+  background-color: #2BB8EE;
+  padding: 5px;
+  color: white;
+  border:3px solid #2BB8EE;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width:600px) {
+  .header {
+      display: none;
+  }
+  .button_style--modify{
+    background-color: #2BB8EE;
+  }
+
+  .header2 {
+      display: block !important;
+  }
+
+  .header2 img {
+      text-align: center;
+  }
+
+  .showmenu {
+      display: block;
+  }
+  .button_style{
+    background-color: #2BB8EE;
+  
+  }
+
+  .orderlist {
+      display: none;
+
+  }
+  .num{
+    padding: 10px;
+  }
+
+
+
+
+}
+@media only screen and (max-width:800px) {
+  .header {
+      display: none;
+  }
+  .button_style--modify{
+    background-color: #2BB8EE;
+  }
+
+  .header2 {
+      display: block !important;
+  }
+
+  .header2 img {
+      text-align: center;
+  }
+
+  .showmenu {
+      display: block;
+  }
+  .button_style{
+    background-color: #2BB8EE;
+  
+  }
+
+  .orderlist {
+      display: none;
+
+  }
+  .num{
+    padding: 10px;
+  }
+
+
+
+
+}
 
 
 
