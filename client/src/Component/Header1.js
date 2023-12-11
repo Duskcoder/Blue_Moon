@@ -151,9 +151,9 @@ function Header1() {
                 <button
                   type="submit"
                   class="button_style--modify"
-                  onClick={()=>navigate('/')}
+                  onClick={()=>navigate(-1)}
                 >
-                  BLUEMOON HOMESTAY
+                  BLUEMOON Bungalow
                 </button>
               </div>
             </div>
@@ -207,7 +207,7 @@ function Header1() {
               type="button"
               class="button_style--modify"
               onClick={()=>navigate('/')}            >
-              BLUEMOON HOMESTAY
+              BLUEMOON BUNGALOW
             </button>
           </ul>
         </div>
