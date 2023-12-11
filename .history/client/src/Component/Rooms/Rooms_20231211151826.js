@@ -115,16 +115,16 @@ function Rooms() {
                     onClick={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
-                      // setIsVisible(!isVisible);
+                      setIsVisible(!isVisible);
                     }}
                   >
                     Book Now
                   </button>
-                  {/* {isVisible && ( */}
+                  {isVisible && (
                     <div
                       className="popup-content modal"
                       id="myModal"
-                      // onClick={(e) => e.stopPropagation()}
+                      onClick={(e) => e.stopPropagation()}
                     >
                       <div className="modal-dialog">
                         <div className="modal-content">
@@ -132,10 +132,7 @@ function Rooms() {
                             please Booking details contact in whatsapp group
                           </p>
                           <div className="modal-footer">
-                            <button 
-                            // onClick={closePopup} 
-                            className="btn btn-danger" 
-                            data-bs-dismiss="modal">
+                            <button onClick={closePopup} className="btn btn-danger" data-bs-dismiss="modal">
                               <IoIosCloseCircleOutline />
                             </button>
                           </div>
@@ -154,7 +151,7 @@ function Rooms() {
                         </button> */}
                       <a href="https://wa.me/message/JYC7L3YOFWSUN1">jhhh</a>
                     </div>
-                  {/* )} */}
+                  )}
                 </div>
               </div>
             </div>
