@@ -5,13 +5,17 @@ import { useState } from "react";
 import "../../Component/Rooms/Rooms.css";
 import Footer from "../Footer";
 import Header from "../Header";
+import { Modal, Button } from "react-bootstrap";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 function Rooms() {
   // const [Rooms, setRooms] = useState([]);
   // const navigate = useNavigate();
-  const [isVisible, setIsVisible] = useState(false);
-  const closePopup = () => setIsVisible(false);
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
 
   // useEffect(() => {
   //   axios
@@ -21,40 +25,13 @@ function Rooms() {
   //     .catch((err) => console.log(err));
   // }, []);
 
-  // const handleClick = (item) => {
-  //   navigate("/booknow", {
-  //     state: {
-  //       name: item.name,
-  //       price: item.price,
-  //     },
-  //   });
-  // };
-
-  // const evenRooms = Rooms.filter((room) => room % 2 === 0);
-  // const oddRooms = Rooms.filter((room) => room % 2 !== 0);
-
-  // console.log(Rooms, "gjhg");
+  const whatsappLink =
+    "https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0";
 
   return (
     <>
       <Header />
-      <form onClick={closePopup}>
-        {/* <div className="overflow-hidden">
-        <div className="system">
-
-        </div>
-          <div className="head  ">
-            <div className="room col-6 col-lg-12 htagsMob mx-5   ">
-              <h1 className="text-white htagr">Rooms</h1>
-              <p className="ptag text-white">
-                If you are looking for a home away from home, just walk in here.
-                <br /> You can get both, an incredible and relaxing experience
-                while you are on a holiday
-              </p>
-            </div>
-          </div>
-        </div> */}
-
+      <form>
         <div className="overflow-hidden">
           <div className="system">
             <div className="head  ">
@@ -107,54 +84,32 @@ function Rooms() {
                   <p>
                     Adults:<span className="text-secondary"> 2</span>
                   </p>
-
-                  <button
-                    className="btn btn-white shadow btns"
-                    data-bs-toggle="modal"
-                    data-bs-target="#myModal"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      // setIsVisible(!isVisible);
-                    }}
-                  >
+                  <Button variant="primary" onClick={handleShow}>
                     Book Now
-                  </button>
-                  {/* {isVisible && ( */}
-                    <div
-                      className="popup-content modal"
-                      id="myModal"
-                      // onClick={(e) => e.stopPropagation()}
-                    >
-                      <div className="modal-dialog">
-                        <div className="modal-content">
-                          <p className="modal-body">
-                            please Booking details contact in whatsapp group
-                          </p>
-                          <div className="modal-footer">
-                            <button 
-                            // onClick={closePopup} 
-                            className="btn btn-danger" 
-                            data-bs-dismiss="modal">
-                              <IoIosCloseCircleOutline />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
+                  </Button>
 
-                      {/* <button
-                          onClick={() =>
-                            handleButtonClick(
-                              " https://wa.me/message/JYC7L3YOFWSUN1"
-                            )
-                          }
-                          className="align-items"
-                        >
-                          jhjjj
-                        </button> */}
-                      <a href="https://wa.me/message/JYC7L3YOFWSUN1">jhhh</a>
-                    </div>
-                  {/* )} */}
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
                 </div>
               </div>
             </div>
@@ -175,10 +130,32 @@ function Rooms() {
                     Adults:<span className="text-secondary"> 2</span>
                   </p>
 
-                  <button className="btn btn-white shadow btns">
-                    {" "}
+                  <Button variant="primary" onClick={handleShow}>
                     Book Now
-                  </button>
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
                 </div>
                 <div className="col-12 col-lg-6 roomb ">
                   <img
@@ -217,10 +194,32 @@ function Rooms() {
                     Adults:<span className="text-secondary"> 2</span>
                   </p>
 
-                  <button className="btn btn-white shadow btns">
-                    {" "}
+                  <Button variant="primary" onClick={handleShow}>
                     Book Now
-                  </button>
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
                 </div>
               </div>
             </div>
@@ -276,10 +275,32 @@ function Rooms() {
                     </tr>
                   </table>
 
-                  <button className="btn btn-white shadow btns">
-                    {" "}
+                  <Button variant="primary" onClick={handleShow}>
                     Book Now
-                  </button>
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
                 </div>
 
                 <div className="col-12 col-lg-6 roomd   ">
@@ -351,10 +372,32 @@ function Rooms() {
                     </tr>
                   </table>
 
-                  <button className="btn btn-white shadow btns">
-                    {" "}
+                  <Button variant="primary" onClick={handleShow}>
                     Book Now
-                  </button>
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
                 </div>
               </div>
             </div>
@@ -396,7 +439,32 @@ function Rooms() {
                   </p>
                 </div>
               </div>
-              <button className="btn btn-white shadow btns"> Book Now</button>
+              <Button variant="primary" onClick={handleShow}>
+                    Book Now
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
             </div>
 
             <div className=" container stay  ">
@@ -422,7 +490,32 @@ function Rooms() {
                   </p>
                 </div>
               </div>
-              <button className="btn btn-white shadow btns"> Book Now</button>
+              <Button variant="primary" onClick={handleShow}>
+                    Book Now
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
             </div>
 
             <div className=" container stay ">
@@ -450,7 +543,32 @@ function Rooms() {
                 </div>
               </div>
 
-              <button className="btn btn-white shadow btns"> Book Now</button>
+              <Button variant="primary" onClick={handleShow}>
+                    Book Now
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
             </div>
             <div className=" container stay ">
               <div className="row">
@@ -506,7 +624,32 @@ function Rooms() {
                 </div>
               </div>
 
-              <button className="btn btn-white shadow btns"> Book Now</button>
+              <Button variant="primary" onClick={handleShow}>
+                    Book Now
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
             </div>
             <div className=" container stay ">
               <div className="row">
@@ -564,7 +707,32 @@ function Rooms() {
               </div>
             </div>
 
-            <button className="btn btn-white shadow btns"> Book Now</button>
+            <Button variant="primary" onClick={handleShow}>
+                    Book Now
+                  </Button>
+
+                  <Modal show={showModal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>
+                        please Booking details contact in whatsapp group
+                      </Modal.Title>
+                    </Modal.Header>
+                    {/* <Modal.Body>Modal content goes here</Modal.Body> */}
+                    <Modal.Footer className="d-flex justify-content-center align-items-center">
+                      <Button variant="secondary" onClick={handleClose}>
+                        Close
+                      </Button>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="primary" onClick={handleClose}>
+                          Whatsapp group
+                        </Button>
+                      </a>
+                    </Modal.Footer>
+                  </Modal>
           </div>
         </div>
       </form>

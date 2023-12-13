@@ -39,7 +39,7 @@ function Home() {
         </div>
 
         <div className="row justify-content-evenly  mb-5  mt-5 room-booking">
-          <div class="col-3 m-auto">
+          <div className="col-3 m-auto">
             <div className="systembutton">
               <h4
               
@@ -77,12 +77,12 @@ function Home() {
               </button>
             </div>
           </div>
-          <div class="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
+          <div className="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
             <p className="mt-40px d-flex justify-content-center">
               Mercury Room
             </p>
           </div>
-          <div class="col-lg-4 col-12  text-white  fs-2 home-rooms">
+          <div className="col-lg-4 col-12  text-white  fs-2 home-rooms">
             <p className="mt-40px d-flex justify-content-center">Uranus Room</p>
           </div>
         </div>
@@ -94,9 +94,9 @@ function Home() {
           <div className="d-flex justify-content-center text-primary">
             {/* <h3>Amenities & Facilities</h3> */}
           </div>
-          <div class="row mt-4">
-            <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-              <div class="card card-amen">
+          <div className="row mt-4">
+            <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+              <div className="card card-amen">
                 <div className="card-image">
                   <img
                     className="img-butha"
@@ -106,17 +106,17 @@ function Home() {
                     height="100%"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div className="card-body text-center">
                   <h4>Selfie Spot</h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     Cherish Each and every moment and make those moments
                     memorable.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-              <div class="card card-amen">
+            <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+              <div className="card card-amen">
                 <div className="card-image">
                   <img
                     className="img-butha"
@@ -126,17 +126,17 @@ function Home() {
                     height="100%"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div className="card-body text-center">
                   <h4>Camp Fire</h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     Gather wood, Build a fire, and Stay up all night with fire &
                     stars. The fire is the main comfort of the camp.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-              <div class="card card-amen">
+            <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+              <div className="card card-amen">
                 <div className="card-image">
                   <img
                     className="img-butha"
@@ -146,16 +146,16 @@ function Home() {
                     height="100%"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div className="card-body text-center">
                   <h4>Hut</h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     A space for solitude seekers peace lovers and nature lovers.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-              <div class="card card-amen">
+            <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+              <div className="card card-amen">
                 <div className="card-image">
                   <img
                     className="image-responsive"
@@ -165,9 +165,9 @@ function Home() {
                     height="195px"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div className="card-body text-center">
                   <h4>Water Fountain</h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     A kind heart is a fountain of gladness, making everything in
                     its vicinity freshen into smiles.
                   </p>

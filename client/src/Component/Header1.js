@@ -80,11 +80,11 @@ function Header1() {
     <>
       <div>
         <div className="header">
-          <div class="d-flex justify-content-center m-auto p-0">
+          <div className="d-flex justify-content-center m-auto p-0">
             <img src={blueMoonIMG} alt="bluemoon img" style={{  padding: "2px", marginLeft: "154px" }} width={80} height={80} />
 
-            <div class="list m-auto p-0">
-              <div class="unoderlist header-color d-flex align-items-center  text-dark">
+            <div className="list m-auto p-0">
+              <div className="unoderlist header-color d-flex align-items-center  text-dark">
               
                   {/* {/ <a href="">Home</a> /} */}
                   <NavLink
@@ -150,7 +150,7 @@ function Header1() {
               
                 <button
                   type="submit"
-                  class="button_style--modify"
+                  className="button_style--modify"
                   onClick={()=>navigate(-1)}
                 >
                   BLUEMOON Bungalow
@@ -160,16 +160,16 @@ function Header1() {
           </div>
         </div>
       </div>
-      <div class=" header2 ">
-        <div class="d-flex justify-content-between p-2">
+      <div className=" header2 ">
+        <div className="d-flex justify-content-between p-2">
           <img
             src={blueMoonIMG}
             alt="bluemoon img"
-            class="rounded"
+            className="rounded"
             style={{ width: "30%" }}
           />
 
-          <div class="toggle mt-4">
+          <div className="toggle mt-4">
             <button
               type="submit"
               className="button_style p-1"
@@ -184,28 +184,28 @@ function Header1() {
             </button>
           </div>
         </div>
-        <div class="list">
+        <div className="list">
           <ul
-            class={state ? "unoderlist text-center" : "orderlist text-center"}
+            className={state ? "unoderlist text-center" : "orderlist text-center"}
           >
-            <li class="num">
+            <li className="num">
               <a href="/homeStayHome">Home</a>
             </li>
-            <li class="num">
+            <li className="num">
               <a href="/aboutus">About Us</a>
             </li>
-            <li class="num">
+            <li className="num">
               <a href="/stay">Room</a>
             </li>
-            <li class="num">
+            <li className="num">
               <a href="/Gallery1">Gallery</a>
             </li>
-            <li class="num">
+            <li className="num">
               <a href="/aboutus">Contact Us</a>
             </li>
             <button
               type="button"
-              class="button_style--modify"
+              className="button_style--modify"
               onClick={()=>navigate('/')}            >
               BLUEMOON BUNGALOW
             </button>

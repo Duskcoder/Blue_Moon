@@ -77,11 +77,11 @@ function Header() {
     <>
       <div>
         <div className="header">
-          <div class="d-flex justify-content-center m-auto p-0">
+          <div className="d-flex justify-content-center m-auto p-0">
             <img src={blue} alt="bluemoon img" style={{  padding: "2px", marginLeft: "154px" }} width={80} height={80} />
 
-            <div class="list m-auto p-0">
-              <div class="unoderlist header-color d-flex align-items-center  text-dark">
+            <div className="list m-auto p-0">
+              <div className="unoderlist header-color d-flex align-items-center  text-dark">
               
                   {/* {/ <a href="">Home</a> /} */}
                   <NavLink
@@ -147,7 +147,7 @@ function Header() {
               
                 <button
                   type="submit"
-                  class="button_style--modify"
+                  className="button_style--modify"
                   onClick={() => setUsers(null)}
                 >
                   BLUEMOON HOMESTAY
@@ -157,16 +157,16 @@ function Header() {
           </div>
         </div>
       </div>
-      <div class=" header2 ">
-        <div class="d-flex justify-content-between p-2">
+      <div className=" header2 ">
+        <div className="d-flex justify-content-between p-2">
           <img
             src={blue}
             alt="bluemoon img"
-            class="rounded"
+            className="rounded"
             style={{ width: "30%" }}
           />
 
-          <div class="toggle mt-4">
+          <div className="toggle mt-4">
             <button
               type="submit"
               className="button_style p-1"
@@ -181,28 +181,28 @@ function Header() {
             </button>
           </div>
         </div>
-        <div class="list">
+        <div className="list">
           <ul
-            class={state ? "unoderlist text-center" : "orderlist text-center"}
+            className={state ? "unoderlist text-center" : "orderlist text-center"}
           >
-            <li class="num">
+            <li className="num">
               <a href="/">Home</a>
             </li>
-            <li class="num">
+            <li className="num">
               <a href="/about1">About Us</a>
             </li>
-            <li class="num">
+            <li className="num">
               <a href="/Room">Room</a>
             </li>
-            <li class="num">
+            <li className="num">
               <a href="/contact">Contact Us</a>
             </li>
-            <li class="num">
+            <li className="num">
               <a href="/amenities">Amenities</a>
             </li>
             <button
               type="button"
-              class="button_style--modify"
+              className="button_style--modify"
               onClick={() => setUsers(null)}
             >
               BLUEMOON HOMESTAY
@@ -242,11 +242,11 @@ export default Header;
 //   return (
 //     <div>
 //     <div className="header">
-//         <div class="d-flex justify-content-center ">
+//         <div className="d-flex justify-content-center ">
 //           <img src={blueMoonIMG} alt="bluemoon img" style={{ width: "10%" }} />
 
-//           <div class="list">
-//             <ul class="unoderlist d-flex align-items-center mt-5">
+//           <div className="list">
+//             <ul className="unoderlist d-flex align-items-center mt-5">
 //               <li>
 //               {/* {/ <a href="">Home</a> /} */}
 //               <NavLink style={handleStyle}>Home</NavLink>
@@ -267,23 +267,23 @@ export default Header;
 //               <li>
 //                 <a href="">Amenities</a>
 //               </li>
-//               <button type="submit" class="button_style--modify">
+//               <button type="submit" className="button_style--modify">
 //                 BLUEMOON HOMESTAY
 //               </button>
 //             </ul>
 //           </div>
 //         </div>
 //       </div>
-//       <div class="d-none header2 ">
-//         <div class="d-flex justify-content-between p-2">
+//       <div className="d-none header2 ">
+//         <div className="d-flex justify-content-between p-2">
 //           <img
 //             src={blueMoonIMG}
 //             alt="bluemoon img"
-//             class="rounded"
+//             className="rounded"
 //             style={{ width: "30%" }}
 //           />
 
-//           <div class="toggle mt-4">
+//           <div className="toggle mt-4">
 //             <button
 //               type="submit"
 //               className="button_style p-1"
@@ -298,26 +298,26 @@ export default Header;
 //             </button>
 //           </div>
 //         </div>
-//         <div class="list">
+//         <div className="list">
 //           <ul
-//             class={state ? "unoderlist text-center" : "orderlist text-center"}
+//             className={state ? "unoderlist text-center" : "orderlist text-center"}
 //           >
-//             <li class="num">
+//             <li className="num">
 //               <a href="">Home</a>
 //             </li>
-//             <li class="num">
+//             <li className="num">
 //               <a href="">About Us</a>
 //             </li>
-//             <li class="num">
+//             <li className="num">
 //               <a href="">Room</a>
 //             </li>
-//             <li class="num">
+//             <li className="num">
 //               <a href="">Contact Us</a>
 //             </li>
-//             <li class="num">
+//             <li className="num">
 //               <a href="">Amenities</a>
 //             </li>
-//             <button type="button" class="button_style--modify">
+//             <button type="button" className="button_style--modify">
 //               BLUEMOON HOMESTAY
 //             </button>
 //           </ul>

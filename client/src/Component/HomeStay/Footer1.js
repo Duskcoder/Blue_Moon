@@ -114,7 +114,7 @@ function Footer1() {
               <div className=" col-lg-4   cvbcnc font-30 ">
                 <button className="direction fw-bold">
                   <strong>
-                    <i class="fa fa-solid fa-diamond-turn-right"></i>
+                    <i className="fa fa-solid fa-diamond-turn-right"></i>
                     <a href="#!">Get Direction</a>
 
                   </strong>

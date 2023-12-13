@@ -8,14 +8,14 @@ export const AboutUs1 = () => {
         <div className="container mt-5">
           <div className="row">
             <div id="aboutwhite"
-              class="card  hello2  mt-5  col-12"
+              className="card  hello2  mt-5  col-12"
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              <div class="card-body ">
+              <div className="card-body ">
                 <div className="hello22 mt-5" data-aos-duration="1000"></div>
                 <h2
-                  class="card-title text-center mt-5"
+                  className="card-title text-center mt-5"
                   data-aos="fade-right"
                   data-aos-duration="500"
                   style={{ color: "#2a919d" }}
@@ -23,7 +23,7 @@ export const AboutUs1 = () => {
                   {" "}
                   About Us
                 </h2>
-                <h3 class="card-subtitle mt-4 text-center">
+                <h3 className="card-subtitle mt-4 text-center">
                   Experience A Stay
                   <br /> Like Never Before
                 </h3>
@@ -32,7 +32,7 @@ export const AboutUs1 = () => {
                   data-aos="fade-right"
                   data-aos-duration="500"
                 >
-                  <p class="card-text">
+                  <p className="card-text">
                     We will help your experience life in its true sense{" "}
                   </p>
                   <p>With us. from living among the residents you are </p>
@@ -48,16 +48,16 @@ export const AboutUs1 = () => {
             </div>
 
             <div
-              class="card hello1   col-12 "
+              className="card hello1   col-12 "
               data-aos="fade-left"
               data-aos-duration="1500"
             >
               <div
-                class="card-body card-bodys mt-5 mb-5 text-center"
+                className="card-body card-bodys mt-5 mb-5 text-center"
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                <p class="card-text1 mt-5">
+                <p className="card-text1 mt-5">
                   We are a well renowned, providing a sensational
                 </p>
                 <p>staying experience eith prolific services. We give </p>
@@ -75,15 +75,15 @@ export const AboutUs1 = () => {
         <div className=" pt-5">
          
             <div id="aboutwhite "
-              class="card  hello2  mt-5  "
+              className="card  hello2  mt-5  "
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              <div class="">
+              <div className="">
                 <div className="card-body">
                   <div className="hello22 mt-5" data-aos-duration="1000"></div>
                   <h2
-                    class="card-title text-center mt-5"
+                    className="card-title text-center mt-5"
                     data-aos="fade-right"
                     data-aos-duration="500"
                     style={{ color: "#2a919d" }}
@@ -91,7 +91,7 @@ export const AboutUs1 = () => {
                     {" "}
                     About Us
                   </h2>
-                  <h3 class="card-subtitle mt-4 text-center">
+                  <h3 className="card-subtitle mt-4 text-center">
                     Experience A Stay
                     <br /> Like Never Before
                   </h3>
@@ -100,7 +100,7 @@ export const AboutUs1 = () => {
                     data-aos="fade-right"
                     data-aos-duration="500"
                   >
-                    <p class="card-text">
+                    <p className="card-text">
                       We will help your experience life in its true sense{" "}
                     </p>
                     <p>With us. from living among the residents you are </p>
@@ -119,16 +119,16 @@ export const AboutUs1 = () => {
 
        
           <div
-            class="card hello1    "
+            className="card hello1    "
             data-aos="fade-left"
             data-aos-duration="1500"
           >
             <div
-              class="card-body card-bodys mt-5 mb-5 text-center"
+              className="card-body card-bodys mt-5 mb-5 text-center"
               data-aos="fade-left"
               data-aos-duration="1000"
             >
-              <p class="card-text1 mt-5">
+              <p className="card-text1 mt-5">
                 We are a well renowned, providing a sensational
               </p>
               <p>staying experience eith prolific services. We give </p>

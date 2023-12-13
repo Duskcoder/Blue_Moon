@@ -358,9 +358,9 @@ function Adminpanel(props) {
 
           <h2>Dashboard</h2>
 
-          <div class="dropdown">
+          <div className="dropdown">
             <button
-              class="btn btn-primary dropdown-toggle"
+              className="btn btn-primary dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-mdb-toggle="dropdown"
@@ -368,9 +368,9 @@ function Adminpanel(props) {
             >
               Dropdown button
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item text-dark" href="#">BLUEMOON BANGALOW</a></li>
-              <li><a class="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY</a></li>
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a className="dropdown-item text-dark" href="#">BLUEMOON BANGALOW</a></li>
+              <li><a className="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY</a></li>
               </ul>
           </div>
         </Box>

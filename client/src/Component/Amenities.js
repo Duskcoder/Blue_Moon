@@ -49,57 +49,57 @@ export const Amenities = () => {
                 <div className="d-flex justify-content-center text-primary">
                     {/* <h3>Amenities & Facilities</h3> */}
                 </div>
-                <div class="row mt-4">
-                    <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                <div className="row mt-4">
+                    <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                                 <img className='img-butha' src={require('../images/white1.jpg')} alt="" width='100%' height='100%' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>Selfie Spot</h4>
-                                <p class="card-text">
+                                <p className="card-text">
                                     Cherish Each and every moment and make those moments memorable.
                                 </p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                    <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                                 <img className='img-butha' src={require('../images/champ.jpg')} alt="" width='100%' height='100%' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>Camp Fire</h4>
-                                <p class="card-text">
+                                <p className="card-text">
                                     Gather wood, Build a fire, and Stay up all night with fire & stars. The fire is the main comfort of the camp.
                                 </p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                    <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                                 <img className='img-butha' src={require('../images/white.jpg')} alt="" width='100%' height='100%' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>Hut</h4>
-                                <p class="card-text">
+                                <p className="card-text">
                                     A space for solitude seekers peace lovers and nature lovers.
                                 </p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                    <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                                 <img className='image-responsive' src={require('../images/butha.jpg')} alt="" width='100%' height='195px' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>Water Fountain</h4>
-                                <p class="card-text">
+                                <p className="card-text">
                                     A kind heart is a fountain of gladness, making everything in its vicinity freshen into smiles.
                                 </p>
 
@@ -110,28 +110,28 @@ export const Amenities = () => {
             </div>
             <div className='container mt-5 mb-4'>
                 <div className='row'>
-                    <div class="col-sm-12 col-lg-6 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                    <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                             <img className='img-butha1' src={require('../images/bath-tub.jpg')} alt="" width='100%' height='100%' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>Deep Soaking Bath-tub</h4>
-                                <p class="card-text">
+                                <p className="card-text">
                                     Take a dip into these special bath-tubs to soak into a refereshing vacation mode that you've wanted.
                                 </p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                    <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                             <img className='img-butha1 hover-zoom' src={require('../images/white1.jpg')} alt="" width='100%' height='100%' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>24 Hours Hot Water Facility</h4>
-                                <p class="card-text">
+                                <p className="card-text">
                                     We offer 24 hours hot water Facility. In each and every room has power backup and unlimited internet, LED tv with Ott (Prime & Hotstar).
                                 </p>
 
@@ -160,51 +160,51 @@ export const Amenities = () => {
                 <div className="d-flex justify-content-center text-primary">
                     {/* <h3>Amenities & Facilities</h3> */}
                 </div>
-                <div class="row mt-4" style={{ color: '#294f70' }}>
-                    <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                <div className="row mt-4" style={{ color: '#294f70' }}>
+                    <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                             <img className='img-butha' src={require('../images/kitchen(1).jpg')} alt="" width='100%' height='100%' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>Kitchen</h4>
 
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                    <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                             <img className='img-butha' src={require('../images/dinning.jpg')} alt="" width='100%' height='100%' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>Dinning Table</h4>
 
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                    <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='card-image'>
                             <img className='img-butha' src={require('../images/side.jpg')} alt="" width='100%' height='195px' />
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>Parking Area</h4>
 
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0">
-                        <div class="card card-amen">
+                    <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
+                        <div className="card card-amen">
                             <div className='hover-zoom'>
                                 <div className='card-image'>
                                 <img className='img-butha hover-zoom' src={require('../images/front.jpg')} alt="" width='100%' height='50%' />
                                 </div>
                             </div>
-                            <div class="card-body text-center">
+                            <div className="card-body text-center">
                                 <h4>CCTV survelliance</h4>
 
 
