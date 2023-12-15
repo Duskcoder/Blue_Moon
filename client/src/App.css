@@ -807,6 +807,7 @@ color: white !important;
     body{
       padding: 0;
       margin: 0;
+      /* overflow: hidden; */
      }
     
     .wrapper{
@@ -1389,6 +1390,8 @@ color: white !important;
     color: black;
     background-attachment: fixed;
     opacity: 0.8;
+  
+   
 }
 #contactus1 {
   background-image: url(./images/night.jpeg);
@@ -1630,4 +1633,483 @@ li a {
 
 /*  About page*/
 
+@media ( min-width:700px){
+.aboutb{
+  display: none;
+}
+}
+@media ( max-width:500px){
+  .abouta{
+    display: none;
+  }
+
+  .hello2 {
+
+    margin: auto;
+    width: 100% !important;
+    margin-right: 10px !important;
+    left: 0px !important;
+    
+    
+    
+      }
+      .hello1{
+        margin: auto;
+        width: 100% !important;
+        margin-right: 10px !important;
+        left: 0px !important;
+    
+      }
+      #cancelp{
+       
+        font-size: 18px;
+      }
+      .htagsMob{
+   justify-content: center;
+   margin: auto;
+      
+       
+      }
+    
+  }
+
+
+
+  /* GallerNew animation */
+
+
+.gallerynew{
+
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+}
+
+
+
+
+.bg-gallery {
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgallery;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+@keyframes newgallery {
+  0%, 100% {
+    background-image: url('./images/homestaya.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestayb.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestayc.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestayd.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.gallerynew:hover .bg-gallery {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-galleryb {
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgalleryb;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+.gallerynew:hover .bg-galleryb {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes newgalleryb {
+  0%, 100% {
+    background-image: url('./images/homestayb.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestayc.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestaya.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestayd.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.bg-galleryc {
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgalleryc;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+@keyframes newgalleryc {
+  0%, 100% {
+    background-image: url('./images/homestayc.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestayd.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestayf.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestayf.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.gallerynew:hover .bg-galleryc {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+.bg-galleryd {
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgalleryd;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+@keyframes newgalleryd {
+  0%, 100% {
+    background-image: url('./images/homestayd.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestayf.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestaya.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestayf.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.gallerynew:hover .bg-galleryd {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-gallerye {
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgallerye;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+@keyframes newgallerye {
+  0%, 100% {
+    background-image: url('./images/homestayd.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestayf.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestayb.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestaya.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.gallerynew:hover .bg-gallerye {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-galleryf {
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgalleryf;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+@keyframes newgalleryf {
+  0%, 100% {
+    background-image: url('./images/homestayf.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestaya.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestayc.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestayb.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.gallerynew:hover .bg-galleryf{
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.bg-galleryg {
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgalleryg;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+@keyframes newgalleryg {
+  0%, 100% {
+    background-image: url('./images/homestayb.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestaya.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestayf.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestayc.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.gallerynew:hover .bg-galleryg {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-galleryh{
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgalleryi;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+@keyframes newgalleryh {
+  0%, 100% {
+    background-image: url('./images/homestayc.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestayb.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestayf.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestayd.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.gallerynew:hover .bg-galleryh {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-galleryi {
+  height: 300px !important;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: center;
+  animation-name: newgalleryh;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+@keyframes newgalleryi {
+  0%{
+    background-image: url('./images/homestayb.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background-image: url('./images/homestayc.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background-image: url('./images/homestaya.jpg ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  15% {
+    background-image: url('./images/homestayf.jpg  ');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.gallerynew:hover .bg-galleryi {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
 

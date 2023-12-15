@@ -65,7 +65,7 @@ function Footer() {
                     <a
                       href=""
                       className="text-white text-decoration-none footer-textsize"
-                      onClick={()=>navigate('/')}
+                      onClick={()=>navigate('/Cancellation')}
                     >
                       Cancellation policy
                     </a>

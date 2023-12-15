@@ -24,8 +24,10 @@ import UpdateRoom from "./Component/Admin/UpdateRoom";
 import StandardRoom from "./Component/Booking/standardRoom";
 import SignIn from "./Component/loginValidation/login_Form";
 import Gallery1 from "./Component/Gallery/Gallery1";
+import GallerNew from "./Component/Gallery/GallerNew";
 import { About } from "./Component/About/About";
 import { About1 } from "./Component/About/About1";
+import Cancellation from "./Component/Cancellation/Cancellation";
 
 function App() {
   return (
@@ -40,11 +42,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/stay" element={<RoomStay />} />
         <Route path="/gallery" element={<CardBox/>} />
+        <Route path="/gallerynews" element={<GallerNew/>} />
         <Route path="/homestay" element={<HomeStay />} />
         <Route path="/viewdev" element={<ViewDev />} />
         <Route path="/login_Form" element={<SignIn />} />
         <Route path="/contact1" element={<ContactUs1 />} />
         <Route path="/HomeStayHome" element={<HomeStayHome />} />
+        <Route path="/Cancellation" element={<Cancellation/>}/>
         <Route path="/about1" element={<AboutUs1 />} />
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/Admin" element={<Adminpanel />} />

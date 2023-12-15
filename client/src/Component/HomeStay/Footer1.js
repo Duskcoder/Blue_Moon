@@ -3,10 +3,12 @@ import '../../Component/HomeStay/HomeStay.css'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 // import footerimg from "../images/blue moon bungalow logo1.jpg";
 
 function Footer1() {
+  const navigate = useNavigate()
   return (
     <div className=" text-white overflow-hidden  mt-5">
 
@@ -27,50 +29,51 @@ function Footer1() {
                 <ul className="list-unstyled mt-5">
                   <li className="mb-2">
                     <a
-                      href="#!"
-                      className="text-whites text-decoration-none footer-textsize"
+                      href=""
+                      className="text-white text-decoration-none footer-textsize"
+                      onClick={() => navigate('/homeStayHome')}
                     >
                       Home
                     </a>
                   </li>
                   <li className="mb-2">
                     <a
-                      href="#!"
-                      className="text-whites text-decoration-none footer-textsize"
+                      href=""
+                      className="text-white text-decoration-none footer-textsize"
+                      onClick={() => navigate('/aboutus')}
+
                     >
                       About Us
                     </a>
                   </li>
                   <li className="mb-2">
                     <a
-                      href="#!"
-                      className="text-whites text-decoration-none footer-textsize"
+                      href=""
+                      className="text-white text-decoration-none footer-textsize"
+                      onClick={() => navigate('/stay')}
+
                     >
                       Rooms
                     </a>
                   </li>
                   <li className="mb-2">
                     <a
-                      href="#!"
-                      className="text-whites text-decoration-none footer-textsize"
+                      href=""
+                      className="text-white text-decoration-none footer-textsize"
+                      onClick={() => navigate('/aboutus')}
+
                     >
                       Contact Us
                     </a>
                   </li>
                   <li className="mb-2">
                     <a
-                      href="#!"
-                      className="text-whites text-decoration-none footer-textsize"
+                      href=""
+                      className="text-white text-decoration-none footer-textsize"
+                      onClick={() => navigate('/Cancellation')}
+
                     >
                       Cancellation policy
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a
-                      href="#!"
-                      className="text-whites text-decoration-none footer-textsize"
-                    >
-                      Important Information
                     </a>
                   </li>
                 </ul>
@@ -85,8 +88,10 @@ function Footer1() {
                   </h3>
                   <li className="mb-2 col-lg-9 w-auto">
                     <a
-                      href="#!"
-                      className="text-whites text-decoration-none footer-textsize"
+                      href=""
+                      className="text-white text-decoration-none footer-textsize"
+                      onClick={() => navigate('/homeStayHome')}
+
                     >
                       No.3, Bhagat Singh Street,
                       <br />
@@ -100,14 +105,6 @@ function Footer1() {
                   <li className="mt-3">
 
                   </li>
-
-
-
-
-
-
-
-
                 </ul>
               </div>
 
@@ -115,19 +112,48 @@ function Footer1() {
                 <button className="direction fw-bold">
                   <strong>
                     <i className="fa fa-solid fa-diamond-turn-right"></i>
-                    <a href="#!">Get Direction</a>
+                    <a
+                      href=""
+                      onClick={() => navigate('/homeStayHome')}
+                    >Get Direction</a>
 
                   </strong>
 
                 </button>
                 <div className="col-lg-4 col-sm-12 pt-5 mx-2">
                   <a
-                    href="#!"
-                    className="text-whites text-decoration-none footer-textsize-follow d-block"
+                    href=""
+                    className="text-white text-decoration-none footer-textsize-follow d-block"
                   >
                     Follow Us
                   </a>
-                  <FaFacebook className="footericon" />&nbsp;<FaInstagram className="footericon" />&nbsp;<RiTwitterXLine className="footericon" />
+                  <div>
+                    <a
+                      href="https://www.facebook.com/bluemoonhomestaypondy/"
+                      className="me-3"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaFacebook className="footericon" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/bluemoonhomestaypondy/"
+                      className="me-3"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaInstagram className="footericon" />
+                    </a>
+                    <a
+                      href="https://twitter.com/bluemonhomestay"
+                      className="me-3"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <RiTwitterXLine className="footericon" />
+                    </a>
+                  </div>
+
 
 
                 </div>

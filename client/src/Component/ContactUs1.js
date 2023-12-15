@@ -30,7 +30,7 @@ export const ContactUs1 = () => {
             data-aos-duration="500"
           >
             <p>
-              Do you want to enquire about our pricing, current offers and
+              Do you want to enquire about our pricing, current offers and 
               <br />
               arrangements we can help you with? Give us a call or send in your
               <br />
