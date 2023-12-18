@@ -81,7 +81,7 @@
     }
 
     25% {
-        background-image: url('../../images/jupb.jpg');
+        background-image: url('../../images/bathroom.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -89,7 +89,7 @@
     }
 
     50% {
-        background-image: url('../../images/jupc.jpg');
+        background-image: url('../../images/balcony.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -97,7 +97,7 @@
     }
 
     75% {
-        background-image: url('../../images/jupd.jpg');
+        background-image: url('../../images/yellowbed.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -105,287 +105,16 @@
     }
 
     100% {
-        background-image: url('../../images/jupa.jpg');
+        background-image: url('../../images/heater.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
         /* No repetition */
     }
 }
+
+
 .Mercury {
-    /* background-image: url("../../images/rooma.jpg"); */
-
-    animation-name: examplem;
-    animation-duration: 25s;
-
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes examplem {
-    0% {
-        background-image: url('../../images/mera.jpg');
-        background-size: 90% 90%;
-        /* Initial size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    25% {
-        background-image: url('../../images/merb.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    50% {
-        background-image: url('../../images/merc.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    75% {
-        background-image: url('../../images/mera.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    100% {
-        background-image: url('../../images/merb.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-}
-.Mars {
-    /* background-image: url("../../images/rooma.jpg"); */
-
-    animation-name: examplem;
-    animation-duration: 25s;
-
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes examplem {
-    0% {
-        background-image: url('../../images/marsa.jpg');
-        background-size: 90% 90%;
-        /* Initial size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    25% {
-        background-image: url('../../images/marsb.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    50% {
-        background-image: url('../../images/marsc.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    75% {
-        background-image: url('../../images/marsd.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    100% {
-        background-image: url('../../images/marse.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-}
-
-
-.Saturn {
-    /* background-image: url("../../images/rooma.jpg"); */
-
-    animation-name: examplesat;
-    animation-duration: 25s;
-
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes examplesat {
-    0% {
-        background-image: url('../../images/sata.jpg');
-        background-size: 90% 90%;
-        /* Initial size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    25% {
-        background-image: url('../../images/satb.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    50% {
-        background-image: url('../../images/satb.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    75% {
-        background-image: url('../../images/sata.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    100% {
-        background-image: url('../../images/satb.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-}
-
-
-
-.Uranus {
-    /* background-image: url("../../images/rooma.jpg"); */
-
-    animation-name: exampleur;
-    animation-duration: 25s;
-
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes exampleur {
-    0% {
-        background-image: url('../../images/satc.jpg');
-        background-size: 90% 90%;
-        /* Initial size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    25% {
-        background-image: url('../../images/satd.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    50% {
-        background-image: url('../../images/satc.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    75% {
-        background-image: url('../../images/satd.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    100% {
-        background-image: url('../../images/satc.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-}
-
-
-
-.Neptune {
-    /* background-image: url("../../images/rooma.jpg"); */
-
-    animation-name: examplenep;
-    animation-duration: 25s;
-
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes examplenep {
-    0% {
-        background-image: url('../../images/nepa.jpg');
-        background-size: 90% 90%;
-        /* Initial size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    25% {
-        background-image: url('../../images/nepb.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    50% {
-        background-image: url('../../images/nepc.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    75% {
-        background-image: url('../../images/nepd.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    100% {
-        background-image: url('../../images/nepa.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-}
-
-
-
-
-
-.rooma {
     /* background-image: url("../../images/rooma.jpg"); */
 
     animation-name: examples;
@@ -398,7 +127,7 @@
 
 @keyframes examples {
     0% {
-        background-image: url('../../images/standardroom1\ \(2\).jpg');
+        background-image: url('../../images/mercurya.png');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
@@ -406,7 +135,7 @@
     }
 
     25% {
-        background-image: url('../../images/std2\ \(1\).jpg');
+        background-image: url('../../images/mercuryb.png');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -414,7 +143,7 @@
     }
 
     50% {
-        background-image: url('../../images/std3\ \(1\).jpg');
+        background-image: url('../../images/mercury.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -422,7 +151,7 @@
     }
 
     75% {
-        background-image: url('../../images/std4\ \(1\).jpg');
+        background-image: url('../../images/sunflower.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -430,7 +159,7 @@
     }
 
     100% {
-        background-image: url('../../images/std5\ \(2\).jpg');
+        background-image: url('../../images/mercurya.png');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -438,12 +167,11 @@
     }
 }
 
-.roomb {
+.Mars {
     /* background-image: url("../../images/rooma.jpg"); */
 
     animation-name: examplec;
     animation-duration: 25s;
-    height: auto;
 
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -453,7 +181,7 @@
 @keyframes examplec {
 
     0% {
-        background-image: url('../../images/std2a.jpeg');
+        background-image: url('../../images/lefts.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -461,7 +189,7 @@
     }
 
     50% {
-        background-image: url('../../images/std2b.jpeg');
+        background-image: url('../../images/balc.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -469,7 +197,7 @@
     }
 
     75% {
-        background-image: url('../../images/std2c.jpeg');
+        background-image: url('../../images/rights.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -477,7 +205,7 @@
     }
 
     100% {
-        background-image: url('../../images/std2d.jpeg');
+        background-image: url('../../images/lefts.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -486,8 +214,52 @@
 
 }
 
+.Saturn {
+    /* background-image: url("../../images/rooma.jpg"); */
 
-.roomc {
+    animation-name: exampled;
+    animation-duration: 25s;
+
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes exampled {
+    0% {
+        background-image: url('../../images/saturna.jpeg');
+        background-size: 90% 90%;
+        /* Initial size */
+        background-repeat: no-repeat;
+        /* No repetition */
+    }
+
+    50% {
+        background-image: url('../../images/saturnc.jpeg');
+        background-size: 90% 90%;
+        /* Final size */
+        background-repeat: no-repeat;
+        /* No repetition */
+    }
+
+    75% {
+        background-image: url('../../images/saturnd.jpeg');
+        background-size: 90% 90%;
+        /* Final size */
+        background-repeat: no-repeat;
+        /* No repetition */
+    }
+
+    100% {
+        background-image: url('../../images/saturna.jpeg');
+        background-size: 90% 90%;
+        /* Final size */
+        background-repeat: no-repeat;
+        /* No repetition */
+    }
+}
+
+.Uranus {
     /* background-image: url("../../images/rooma.jpg"); */
 
     animation-name: examplee;
@@ -500,7 +272,7 @@
 
 @keyframes examplee {
     0% {
-        background-image: url('../../images/std3a\ \(2\).jpg');
+        background-image: url('../../images/uranusa.jpeg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
@@ -508,7 +280,7 @@
     }
 
     25% {
-        background-image: url('../../images/std3b\ \(1\).jpg');
+        background-image: url('../../images/uranausb.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -516,7 +288,7 @@
     }
 
     50% {
-        background-image: url('../../images/std3d\'\ \(1\).jpg');
+        background-image: url('../../images/uranusc.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -524,7 +296,7 @@
     }
 
     75% {
-        background-image: url('../../images/std3e\ \(1\).jpg');
+        background-image: url('../../images/uranusd.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -532,7 +304,7 @@
     }
 
     100% {
-        background-image: url('../../images/std3d\ \(1\).jpg');
+        background-image: url('../../images/uranusa.jpeg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -540,59 +312,7 @@
     }
 }
 
-.roomx {
-    /* background-image: url("../../images/rooma.jpg"); */
-
-    animation-name: examplex;
-    animation-duration: 25s;
-
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes examplex {
-    0% {
-        background-image: url('../../images/floora.jpg');
-        background-size: 90% 90%;
-        /* Initial size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    25% {
-        background-image: url('../../images/floorb.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    50% {
-        background-image: url('../../images/floorc.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    75% {
-        background-image: url('../../images/floorc.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-
-    100% {
-        background-image: url('../../images/floora.jpg');
-        background-size: 90% 90%;
-        /* Final size */
-        background-repeat: no-repeat;
-        /* No repetition */
-    }
-}
-.roomd {
+.Neptune {
     /* background-image: url("../../images/rooma.jpg"); */
 
     animation-name: examplef;
@@ -605,7 +325,7 @@
 
 @keyframes examplef {
     0% {
-        background-image: url('../../images/ground1.jpg');
+        background-image: url('../../images/blue.jpeg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
@@ -613,7 +333,7 @@
     }
 
     25% {
-        background-image: url('../../images/ground2.jpg');
+        background-image: url('../../images/neptunea.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -621,7 +341,7 @@
     }
 
     50% {
-        background-image: url('../../images/ground3.jpg');
+        background-image: url('../../images/Neptune.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -629,7 +349,7 @@
     }
 
     100% {
-        background-image: url('../../images/ground4.jpg');
+        background-image: url('../../images/neptunea.jpg');
         background-size: 90% 90%;
         /* Final size */
         background-repeat: no-repeat;
@@ -672,17 +392,6 @@ p {
     font-family: 'EB Garamond', sans-serif;
     font-weight: 500;
     font-size: 33px;
-    color: #117CA1;
- 
-   
-    align-items: center;
-    
-
-}
-.htagr {
-    font-family: 'EB Garamond', sans-serif;
-    font-weight: 500;
-    font-size: 103px;
     color: #117CA1;
  
    
@@ -829,18 +538,6 @@ align-items: center;
     margin-top: 20px;
     }
 
-    @media(max-width:500px)  {
-        .dataSys{
-            display: none !important;
-        }
-        
-    }
-    @media(min-width:700px){
-        .dataMob{
-            display: none !important;
-        }
-   
-    }
     @media (max-width: 500px) {
         button {
             display: flex !important;
