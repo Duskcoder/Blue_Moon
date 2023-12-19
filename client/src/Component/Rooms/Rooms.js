@@ -52,7 +52,9 @@ function Rooms() {
         </div>
         </div>
         {Rooms.length === 0 ? (
-          <p>lo</p>
+          <p>
+           
+          </p>
         ) : (
          
           Rooms.map((item) => (

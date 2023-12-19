@@ -23,6 +23,11 @@ import Details1 from "./Component/Admin/Details1";
 import UpdateRoom from "./Component/Admin/UpdateRoom";
 import StandardRoom from "./Component/Booking/standardRoom";
 import SignIn from "./Component/loginValidation/login_Form";
+import ViewRoom from "./Component/Admin/ViewRoom";
+import UpdateHomeStay from "./Component/Admin/updateHomeStay";
+import ViewHomeStay from "./Component/Admin/viewHomeStay";
+import DetailsHomeStay from "./Component/Admin/DetailsHomeStay";
+import AdminpanelHomeStay from "./Component/Admin/adminpanelhomestay";
 
 function App() {
   return (
@@ -37,7 +42,7 @@ function App() {
         <Route path='/stay' element={<RoomStay />} />
         <Route path='/homestay' element={<HomeStay />} />
         <Route path='/viewdev' element={<ViewDev />} />
-
+        <Route path="/admin_homestay" element={<AdminpanelHomeStay/>}/>
         <Route path='/login_Form' element={<SignIn/>} />
         <Route path='/contact1' element={<ContactUs1/>}/>
         <Route path="/HomeStayHome" element={<HomeStayHome/>}/>
@@ -48,6 +53,10 @@ function App() {
         <Route path="/updateroom/:id" element={<UpdateRoom/>}/>
         <Route path="/addrooms" element={<Addrooms/>}/>
         <Route path="/booknow" element={<StandardRoom/>}/>
+        <Route path="/view/:id" element ={<ViewRoom/>}/>
+        <Route path="/update/homestay/:id" element={<UpdateHomeStay/>}/>
+        <Route path="/view/homestay/:id" element={<ViewHomeStay/>}/>
+        <Route path="/addrooms/homestay" element={<DetailsHomeStay/>}/>
         {/* <Route path="/details" element={<Details/>}/> */}
         {/* <Footer/> */}
       </Routes>
