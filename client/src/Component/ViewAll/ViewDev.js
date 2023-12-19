@@ -15,10 +15,10 @@ function ViewDev() {
                         </div>
                     </div>
                     <div className='parentned col-lg-4 col-md-12'>
-                        <div className='child bg-one'></div>
+                        <div className='child bg-one'>Standard Room 1</div>
                     </div>
                     <div className='parentned col-lg-4 col-md-12'>
-                        <div className='child bg-two'></div>
+                        <div className='child bg-two'>Double BedRoom Apartment ground Floor</div>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ function ViewDev() {
                         <div className='use col-lg-4 col-md-12'>
                             <div className='tiger'>
                                 <h2 className='mt-5'>Rooms</h2>
-                                <button className=''>View All</button>
+                                <button className='btn w-auto' onClick={()=>navigate('/stay')}>View All</button>
                             </div>
                         </div>
                         <div className='parentned col-lg-4 col-md-12'>

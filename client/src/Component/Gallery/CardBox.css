@@ -1,238 +1,243 @@
-.bg-one{
-    height: 300px !important;
-      object-fit: cover;
-  
-      background-size: cover !important;
-      background-position: center;
-      animation-name: hunt;
-      animation-duration: 40s;
-  
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
-      transition: step-end;
-      width: 37%;
-      background-size: cover;
-      transition: all 1.1s;
-      
-  }
-  
-  .bg-two{
-    height: 300px !important;
-      object-fit: cover;
-  
-      background-size: cover !important;
-      background-position: center;
-      animation-name: hunt0;
-      animation-duration: 40s;
-  
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
-      transition: step-end;
-      background-size: cover;
-      transition: all 1.1s;
-  
-  
-  
-  }
-  
-  .bg-three{
-  
-    height: 300px !important;
-      object-fit: cover;
-  
-      background-size: cover !important;
-      background-position: center;
-      animation-name: hunt1;
-      animation-duration: 40s;
-  
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
-      transition: step-end;
-      background-size: cover;
-      transition: all 1.1s;
-  
-  }
-  .parent:hover .child{
-    transform: scale(1.2);
-  }
-  
-  .parents:hover .child{
-    transform: scale(1.2);
-  }
-  
-  .parents0:hover .child{
-    transform: scale(1.2);
-  }
-  
-  .parents1:hover .child{
-    transform: scale(1.2);
-  }
-  
-  .parentr:hover .child{
-    transform: scale(1.2);
-  }
-  
-  .parentr0:hover .child{
-    transform: scale(1.2);
-  }
-  
-  .parentr1:hover .child{
-    transform: scale(1.2);
-  }
-  
-  .parentned:hover .child{
-    transform: scale(1.2);
-  }
-  .tiger h2{
-    color: #117CA1;
-  }
-  .tiger button{
-    color: #CCD4D7;
-    background-color: white;
-    /* overflow: hidden; */
-  
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-    border: none;
-    width: 30%;
-    padding: 10px;
-  }
-  .parent{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  .parent{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  
-  .parent{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  
-  .parents{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  .parents0{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  
-  .parents1{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  
-  .parentr{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  .parentr0{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  
-  .parentr1{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  .child{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    transition: all 1.1s;
-  }
-  body{
-    padding: 0;
-    margin: 0;
-   }
-  
-  .wrapper{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .parentned{
-    width: 37%;
-    margin: 20px;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-  }
-  
-  @keyframes hunt{
+.bg-one {
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  /* animation-name: hunt; */
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  width: 37%;
+  background-size: cover;
+  transition: all 1.1s;
+
+}
+
+.bg-two {
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  animation-name: hunt0;
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  background-size: cover;
+  transition: all 1.1s;
+
+
+
+}
+
+.bg-three {
+
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  animation-name: hunt1;
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  background-size: cover;
+  transition: all 1.1s;
+
+}
+
+.parent:hover .child {
+  transform: scale(1.2);
+}
+
+.parents:hover .child {
+  transform: scale(1.2);
+}
+
+.parents0:hover .child {
+  transform: scale(1.2);
+}
+
+.parents1:hover .child {
+  transform: scale(1.2);
+}
+
+.parentr:hover .child {
+  transform: scale(1.2);
+}
+
+.parentr0:hover .child {
+  transform: scale(1.2);
+}
+
+.parentr1:hover .child {
+  transform: scale(1.2);
+}
+
+.parentned:hover .child {
+  transform: scale(1.2);
+}
+
+.tiger h2 {
+  color: #117CA1;
+}
+
+.tiger button {
+  color: #CCD4D7;
+  background-color: white;
+  /* overflow: hidden; */
+
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 30%;
+  padding: 10px;
+}
+
+.parent {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.parent {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+
+.parent {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+
+.parents {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.parents0 {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+
+.parents1 {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+
+.parentr {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.parentr0 {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+
+.parentr1 {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parentned {
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* @keyframes hunt{
     0%, 100% {
         background-image: url('../../images/gallerya.jpg');
         background-size: 50% 50%;
@@ -253,9 +258,9 @@
         background-size: 50% 50%;
         background-repeat: no-repeat;
       }
-      }
-  
-      @keyframes hunt0 {
+      } */
+
+/* @keyframes hunt0 {
         75% {
           background-image: url('../../images/galleryl.jpg');
           background-size: 50% 50%;
@@ -276,10 +281,10 @@
           background-size: 50% 50%;
           background-repeat: no-repeat;
         }
-      }
-      
-  
-      @keyframes hunt1 {
+      } */
+
+
+/* @keyframes hunt1 {
         50% {
           background-image: url('../../images/galleryk.jpg');
           background-size: 50% 50%;
@@ -300,372 +305,377 @@
           background-size: 50% 50%;
           background-repeat: no-repeat;
         }
-      }
-      
-  .bg-four{
-    height: 300px !important;
-    object-fit: cover;
-  
-    background-size: cover !important;
-    background-position: center;
-    animation-name: hunt00;
-    animation-duration: 40s;
-  
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    transition: step-end;
-    background-size: cover;
-    transition: all 1.1s;
-  }
-  
-  .bg-five{
-    height: 300px !important;
-    object-fit: cover;
-  
-    background-size: cover !important;
-    background-position: center;
-    animation-name: hunt10;
-    animation-duration: 40s;
-  
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    transition: step-end;
-    background-size: cover;
-    transition: all 1.1s;
-  }
-  .bg-six{
-    height: 300px !important;
-    object-fit: cover;
-  
-    background-size: cover !important;
-    background-position: center;
-    animation-name: hunt11;
-    animation-duration: 40s;
-  
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    transition: step-end;
-    background-size: cover;
-    transition: all 1.1s;
-  }
-  
-  
-  
-  
-  
-  .bg-seven{
-    height: 300px !important;
-    object-fit: cover;
-  
-    background-size: cover !important;
-    background-position: center;
-    animation-name: gun;
-    animation-duration: 40s;
-  
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    transition: step-end;
-    background-size: cover;
-    transition: all 1.1s;
-  }
-  
-  .bg-eight{
-    height: 300px !important;
-    object-fit: cover;
-  
-    background-size: cover !important;
-    background-position: center;
-    animation-name: gun1;
-    animation-duration: 40s;
-  
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    transition: step-end;
-    background-size: cover;
-    transition: all 1.1s;
-  }
-  .bg-nine{
-    height: 300px !important;
-    object-fit: cover;
-  
-    background-size: cover !important;
-    background-position: center;
-    animation-name: gun0;
-    animation-duration: 40s;
-  
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    transition: step-end;
-    background-size: cover;
-    transition: all 1.1s;
-  }
-  .even{
-    display: none;
-  }
-  
-  @keyframes hunt00{
+      } */
+
+.bg-four {
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  animation-name: hunt00;
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+.bg-five {
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  animation-name: hunt10;
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+.bg-six {
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  animation-name: hunt11;
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+
+
+
+
+.bg-seven {
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  animation-name: gun;
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+.bg-eight {
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  animation-name: gun1;
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+.bg-nine {
+  height: 300px !important;
+  object-fit: cover;
+
+  background-size: cover !important;
+  background-position: center;
+  animation-name: gun0;
+  animation-duration: 40s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  transition: step-end;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+.even {
+  display: none;
+}
+
+/* @keyframes hunt00{
     0%,
       100% {
           background-image: url('../../images/galleryb.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
+          
           background-repeat: no-repeat;
       }
   
       25% {
           background-image: url('../../images/galleryc.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
+         
           background-repeat: no-repeat;
       }
   
       50% {
           background-image: url('../../images/gallerye.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
+         
           background-repeat: no-repeat;
       }
   
       75% {
           background-image: url('../../images/gallerya.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
+         
           background-repeat: no-repeat;
       }
-  }
-  
-  @keyframes hunt10{
+  } */
+
+/* @keyframes hunt10{
     0%,
       100% {
           background-image: url('../../images/galleryd.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       25% {
           background-image: url('../../images/galleryf.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       50% {
           background-image: url('../../images/galleryl.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       75% {
           background-image: url('../../images/gallerym.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
-  }
-  
-  
-  @keyframes hunt11{
+  } */
+
+
+/* @keyframes hunt11{
     0%,
       100% {
           background-image: url('../../images/gallerya.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       25% {
           background-image: url('../../images/galleryf.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       50% {
           background-image: url('../../images/gallerye.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       75% {
           background-image: url('../../images/galleryk.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
-  }
-  
-  @keyframes gun{
+  } */
+
+/* @keyframes gun{
     0%,
       100% {
           background-image: url('../../images/galleryg.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       25% {
           background-image: url('../../images/galleryo.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       50% {
           background-image: url('../../images/galleryl.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       75% {
           background-image: url('../../images/galleryd.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
-  }
-  
-  @keyframes gun0{
+  } */
+
+/* @keyframes gun0{
     0%,
       100% {
           background-image: url('../../images/galleryk.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       25% {
           background-image: url('../../images/galleryl.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       50% {
           background-image: url('../../images/galleryi.jpeg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       75% {
           background-image: url('../../images/gallerya.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
-  }
-  
-  
-  @keyframes gun1{
+  } */
+
+
+/* @keyframes gun1{
     0%,
       100% {
           background-image: url('../../images/galleryn.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       25% {
           background-image: url('../../images/galleryl.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       50% {
           background-image: url('../../images/galleryd.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
   
       75% {
           background-image: url('../../images/gallerye.jpg');
           background-size: 50% 50%;
-          /* / Initial size / */
           background-repeat: no-repeat;
       }
+  } */
+
+/* cardBox mobile responsive code */
+@media only screen and (max-width:600px) {
+  .even {
+    display: block !important;
   }
-  
-  /* cardBox mobile responsive code */
-  @media only screen and (max-width:600px){
-    .even{
-      display: block!important;
-    }
-    .add{
-      display: none;
-    } 
-    .tiger h2{
-      text-align: center;
-    }
-    .tiger button{
-      margin: auto;
-      display: flex;
-    }
-   .parentned{
+
+  .add {
+    display: none;
+  }
+
+  .tiger h2 {
+    text-align: center;
+  }
+
+  .tiger button {
+    margin: auto;
+    display: flex;
+  }
+
+  .parentned {
     width: 100%;
     margin: auto;
   }
-  .parentned{
+
+  .parentned {
     width: 100%;
     margin: auto;
     margin-top: 40px;
   }
-  .use{
+
+  .use {
     width: 100%;
     margin: auto;
     margin-top: 40px;
   }
-  .sound{
-    display:  block !important;
+
+  .sound {
+    display: block !important;
   }
-  
-  .wrapper{
-    display:  block !important;
-    
+
+  .wrapper {
+    display: block !important;
+
   }
+
   .sound {
     display: block;
   }
+
   .use {
-    display: block!important;
+    display: block !important;
   }
-  .parent{
+
+  .parent {
     width: 100%;
     margin: auto;
   }
-  .parents{
+
+  .parents {
     width: 100%;
     margin: auto;
   }
-  .parents0{
+
+  .parents0 {
     width: 100%;
     margin: auto;
   }
-  .parents1{
+
+  .parents1 {
     width: 100%;
     margin: auto;
   }
-  .parentr{
-  width: 100%;
-  margin: auto;
-  }
-  .parentr0{
+
+  .parentr {
     width: 100%;
     margin: auto;
   }
-  .parentr1{
+
+  .parentr0 {
     width: 100%;
     margin: auto;
   }
+
+  .parentr1 {
+    width: 100%;
+    margin: auto;
   }
+}
+
+/* mobile view for icons */
+
+#amenities {
+  background-color: red;
+}

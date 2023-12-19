@@ -433,7 +433,7 @@ p {
         font-size: 20px;
 
        
-        font-family: 'EB Garamond', sans-serif;
+        Important: 'EB Garamond', sans-serif;
 
         color: #0c617d;
 
@@ -521,4 +521,19 @@ p {
     color: #117CA1 !important;
     
   }
+/* footer1 */
+.footericon{
+    font-size: 30px ;
+    
+}
+.head{
+justify-content: center;
+margin: auto;
+display: flex;
+align-items: center;
 
+}
+.room .htagp{
+    font-size:46px;
+    margin-top: 20px;
+    }

@@ -78,56 +78,7 @@ function StandardRoom() {
     setcount(newObj)
   }
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   console.log("Current Data:", data);
-
-  //   if (
-  //     !data.check_in ||
-  //     !data.check_out ||
-  //     !data.room_name ||
-  //     !data.adults ||
-  //     !data.name ||
-  //     !data.email ||
-  //     !data.phone ||
-  //     !data.address
-  //   ) {
-  //     // Handle validation error, set appropriate state or show an error message
-  //     return console.log("error insert data");
-  //   } else {
-  //     const jsonData = {
-  //       check_in: data.check_in,
-  //       check_out: data.check_out,
-  //       room_name: data.room_name,
-  //       adults: data.adults,
-  //       name: data.name,
-  //       email: data.email,
-  //       phone: data.phone,
-  //       address: data.address,
-  //     };
-
-  //     console.log("JSON Data:", jsonData);
-
-  //     const config = {
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     };
-
-  //     try {
-  //       const response = await axios.post(
-  //         "http://localhost:5000/api/new/book",
-  //         jsonData,
-  //         config
-  //       );
-  //       console.log(response, "ergaer");
-  //     } catch (error) {
-  //       console.error("Error submitting data:", error.response);
-  //     }
-  //   }
-  // };
-
+ 
 
 
   return (
@@ -150,7 +101,7 @@ function StandardRoom() {
         </div>
 
         <div className='section d-flex mt-3'>
-          <h5>Blue Moon Homestay <i class="bi bi-chevron-right"></i> </h5>
+          <h5>Blue Moon Homestay <i className="bi bi-chevron-right"></i> </h5>
           <h5 className='ms-5'>Home</h5>
           <h5 className='ms-5'>Room </h5>
         </div>
@@ -161,18 +112,18 @@ function StandardRoom() {
           <div className='row fruit d-flex justify-content-evenly shadow-lg p-3 mb-5 bg-body rounded'>
             <div className='col-lg-3 col-md-6 seed mt-3 text-center'>
               <FloatingLabel controlId="floatingSelect" label="Check -in Date">
-                <input type="date" class="form-control" id="meeting-date" name="check_in" required />
+                <input type="date" className="form-control" id="meeting-date" name="check_in" required />
 
               </FloatingLabel>
             </div>
             <div className='col-lg-3 col-md-6 seed  mt-3'>
               <FloatingLabel controlId="floatingSelect" label="Check -out Date">
-                <input type="date" class="form-control " id="meeting-date" name="check_out" required />
+                <input type="date" className="form-control " id="meeting-date" name="check_out" required />
               </FloatingLabel>
             </div>
             <div className='col-lg-2 col-md-6 seed  mt-3'>
               <FloatingLabel controlId="floatingSelect" label="Guest">
-                <input type="number" class="form-control" name="adults" required />
+                <input type="number" className="form-control" name="adults" required />
 
 
               </FloatingLabel>
