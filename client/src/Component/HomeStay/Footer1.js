@@ -18,7 +18,7 @@ function Footer1() {
             {/* <img src={footerimg} alt="" height={70} width={70} /> */}
           </div>
           <div className="mt-4 ">
-            <h2 className="footer-header">Bluemoon Bungalow</h2>
+       
           </div>
 
           <section className="text-white mt-4 justify-content-center m-auto ">

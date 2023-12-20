@@ -1,3 +1,4 @@
+
 .btn-head:hover {
   background-color: #7ac2ff !important;
 }
@@ -51,7 +52,7 @@ ul li a {
 }
 
 #footer-bg-img {
-  background-image: url("../src//images/footer_img.png");
+  background-image: url("../src//images/stepsshadow.png");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1.2;
@@ -107,7 +108,7 @@ a {
 .footer-textsize-follow {
   font-size: xx-large;
   font-weight: bold;
-  font-family: 'fontaswome';
+fontFamily: 'Helvetica, Arial, sans-serif'; 
 }
 
 .font-40 {
@@ -119,7 +120,7 @@ a {
 }
 
 * {
-  font-family: 'fontaswome';
+fontFamily: 'Helvetica, Arial, sans-serif'; 
 }
 
 .home-bg {
@@ -131,7 +132,6 @@ a {
 }
 
 @keyframes animate2 {
-
   100% {
     background-size: 100% 100% !important;
     background-image: url('../src/images/hall1.jpg');
@@ -153,6 +153,54 @@ a {
   }
 }
 
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .home-bg {
+    /* width: 100%; */
+    height: 50vh;
+    animation: animate2 16s ease-in-out infinite;
+  
+  
+  }
+
+  .home-bg .from{
+    font-size: xx-large !important;
+   margin-bottom:130% !important;
+     }
+     .home-bg .your{
+      font-size: xx-large !important;
+    
+
+     
+       }
+  
+
+  
+
+  @keyframes animate2 {
+    100% {
+      background-size: auto!important;
+      background-image: url('../src/images/smallmobhall1.png');
+    }
+
+    25% {
+      background-size: cover !important;
+      background-image: url('../src/images/smallmobstairs.png');
+    }
+
+    50% {
+      background-size: cover !important;
+      background-image: url("../src/images/stairs3mob.png  ");
+    }
+
+    75% {
+      background-size: cover !important;
+      background-image: url("../src/images/smallmobhall3.png");
+    }
+  }
+}
+
+
 .hello22 {
 
   border: 1px solid #2a919d;
@@ -166,7 +214,7 @@ a {
   top: 25vh;
   width: 35% !important;
   height: 100% !important;
-  color: #294f70 !important;
+  color: #117CA1 !important;
 }
 
 .hello1 {
@@ -315,7 +363,7 @@ card-text1{
 
 .card-amen {
   border: none !important;
-  color: #294f70 !important;
+  color: #117CA1 !important;
 }
 
 .card-image {
@@ -518,7 +566,7 @@ color: white !important;
 
 .card-amen {
   border: none !important;
-  color: #294f70 !important;
+  color: #117CA1 !important;
 }
 
 .card-image {
@@ -1574,11 +1622,11 @@ li a {
 /* Footer homestay */
 #direction{
 
-  width: auto;
-
-  color: #0c617d !important;
+padding: 7px;
+color: white;
+ background-color: #117CA1 !important;
   box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+font-size:smaller;
   text-align: center;
 
   margin-right: auto
@@ -2117,6 +2165,17 @@ li a {
 
 
 
+.trun{
+  color: #117CA1;
+}
 
 
+.iconss{
+color: red;
+background-color: red;
 
+}
+.away{
+  color: #00D1FF !important;
+  font-size: 70px !important;
+}

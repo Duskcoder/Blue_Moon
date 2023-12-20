@@ -23,7 +23,7 @@ export const Amenities = () => {
             <div className='container 'id='systemamen'>
                 <div className='mt-5 d-flex align-items-center justify-content-between'>
                     <div >
-                        <h2 style={{ color: '#294f70' }}>Amenities</h2>
+                        <h2 style={{ color: '#117CA1' }}>Amenities</h2>
                     </div>
                     <div className='w-20'>
                         <button className='amen-btn'
@@ -35,7 +35,7 @@ export const Amenities = () => {
             <div className='container ' id='mobileamen'>
                 <div className='d-flex  justify-content-between'>
                     <div >
-                        <h2 style={{ color: '#294f70' }}>Amenities</h2>
+                        <h2 style={{ color: '#117CA1' }}>Amenities</h2>
                     </div>
                     <div className='w-20 mt-5'>
                         <button className='amen-btn'
@@ -143,7 +143,7 @@ export const Amenities = () => {
             <div className='container mb-4'>
                 <div className='enquiry
                 mt-5'>
-                    <div style={{ color: '#294f70' }}>
+                    <div style={{ color: '#117CA1' }}>
                         <h2 >Others Perks & Facilities</h2>
                         <p className='col-lg-6'>Looking for now? Well, we believe that every guest walks into our homestay for the best experince. And, we are determined to do that. </p>
 
@@ -160,7 +160,7 @@ export const Amenities = () => {
                 <div className="d-flex justify-content-center text-primary">
                     {/* <h3>Amenities & Facilities</h3> */}
                 </div>
-                <div className="row mt-4" style={{ color: '#294f70' }}>
+                <div className="row mt-4" style={{ color: '#117CA1' }}>
                     <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
                         <div className="card card-amen">
                             <div className='card-image'>

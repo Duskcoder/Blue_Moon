@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
+import { FaDirections } from "react-icons/fa";
 
 function Footer() {
   const navigate=useNavigate()
@@ -16,7 +17,7 @@ function Footer() {
             <img src={footerimg} alt="" height={70} width={70} />
           </div>
           <div className="mt-4 ">
-            <h2 className="footer-header" style={{ color: '#0343FC' }}>Bluemoon Bungalow</h2>
+            <h2 className="footer-header" style={{ color: '#117CA1' }}>Bluemoon Bungalow</h2>
           </div>
           <section className="text-white mt-4">
             <div className="row justify-content-start">
@@ -145,18 +146,19 @@ function Footer() {
                       href="#!"
                       className="text-white m-l-10px footer-textsize"
                     >
-                      <i className="fa fa-instagram font-40"></i>
+                      <i className="fa fa-instagram font-40 "></i>
                       <i className="fa-brands fa fa-facebook font-40"></i>
-                      <i className="fa-brands fa fa-twitter font-40"></i>
+                      <i className="fa-brands fa fa-twitter font-40 "></i>
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className=" col-lg-2 font-30 d-flex align-items-center  ">
+              <div className=" col-lg-3  font-30 d-flex align-items-center  ">
                 <button className="direction fw-bold" id='direction'>
                   <strong>
-                    <i className="fa fa-solid fa-diamond-turn-right"></i>
-                    <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9" target="_blank"  rel="noreferrer">Get Direction</a>
+                  <FaDirections  className="fs-4"/>
+
+     <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9"  style={{ color: '#117CA1' }} target="_blank"  rel="noreferrer"className="text-white">Get Direction</a>
                   </strong>
                 </button>
               </div>

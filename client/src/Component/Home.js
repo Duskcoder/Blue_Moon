@@ -22,17 +22,17 @@ function Home() {
     <>
       <Header />
       <div className="overflow-hidden">
-        <div className="home-bg  col-12 overflow-hidden ">
+        <div className="home-bg  col-12 overflow-hidden">
           <div className="container position-relative text-white home-text-center">
             <div className="text-align-center">
               <div data-aos="fade-right" data-aos-duration="1000">
-                <h1>YOUR HOME</h1>
+                <h1 className="your ">YOUR HOME</h1>
               </div>
               <div data-aos="zoom-in" data-aos-duration="1000">
-                <h3>Away</h3>
+                <h3 className="away">Away</h3>
               </div>
               <div data-aos="fade-left" data-aos-duration="1000">
-                <h1>FROM HOME</h1>
+                <h1 className="from">FROM HOME</h1>
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@ function Home() {
         </div>
 
         <div className="container mt-5">
-          <h2 className="trun mb-5 text-center text-info">
+          <h2 className="trun mb-5 text-center ">
             <b>Blue moon bungalow gallery </b>
           </h2>
           <div className="row ">
