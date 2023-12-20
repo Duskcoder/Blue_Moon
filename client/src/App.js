@@ -28,6 +28,8 @@ import GallerNew from "./Component/Gallery/GallerNew";
 import { About } from "./Component/About/About";
 import { About1 } from "./Component/About/About1";
 import Cancellation from "./Component/Cancellation/Cancellation";
+import Header from "./Component/Header";
+
 
 function App() {
   return (

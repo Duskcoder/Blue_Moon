@@ -10,8 +10,12 @@
   text-align: center;
   justify-content: center;
   border: none;
+}
 
-
+.viewallheader {
+  color: white !important;
+  text-decoration: underline !important;
+  font-size: 29px !important;
 }
 
 @media (max-width: 767px) {
@@ -54,5 +58,13 @@ margin-left: 20px;
   }
   #mobileheading{
     display: none !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 766px){
+  .viewallheader {
+    color: white !important;
+    text-decoration: underline !important;
+    font-size: 29px !important;
   }
 }
