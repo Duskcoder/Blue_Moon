@@ -354,7 +354,7 @@ function Adminpanel(props) {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Box sx={{display:'flex',gap:'50px'}}>
+        <Box sx={{ display: 'flex', gap: '50px' }}>
 
           <h2>Dashboard</h2>
 
@@ -371,7 +371,7 @@ function Adminpanel(props) {
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <li><a className="dropdown-item text-dark" href="#">BLUEMOON BANGALOW</a></li>
               <li><a className="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY</a></li>
-              </ul>
+            </ul>
           </div>
         </Box>
         <button

@@ -1,3 +1,12 @@
+body, *{
+  font-family: Helvetica !important;
+  }
+  .font-family-hoz p, h1,h2,h3,h4,h5,h6, button, ul, li{
+    font-family: 'Helvetica', sans-serif !important;
+  }
+
+
+
 .btn-head:hover {
   background-color: #7ac2ff !important;
 }

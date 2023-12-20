@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../Component/Rooms/Rooms.css";
+import "../../Component/Rooms/Room.css";
 import Header1 from '../Header1'
 import Footer1 from '../HomeStay/Footer1'
 function Cancellation() {

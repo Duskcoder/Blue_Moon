@@ -26,13 +26,13 @@ function Home() {
           <div className="container position-relative text-white home-text-center">
             <div className="text-align-center">
               <div data-aos="fade-right" data-aos-duration="1000">
-                <h1>YOUR HOME</h1>
+                <h1 className="font-family-hoz">YOUR HOME</h1>
               </div>
               <div data-aos="zoom-in" data-aos-duration="1000">
-                <h3>Away</h3>
+                <h3 className="font-family-hoz">Away</h3>
               </div>
               <div data-aos="fade-left" data-aos-duration="1000">
-                <h1>FROM HOME</h1>
+                <h1 className="font-family-hoz">FROM HOME</h1>
               </div>
             </div>
           </div>
@@ -43,14 +43,14 @@ function Home() {
             <div className="systembutton">
               <h4
               
-                className=" justify-content-center d-flex"
+                className=" justify-content-center d-flex font-family-hoz"
                 style={{ color: "#0c617d" }}
               >
                 Rooms
               </h4>
 
               <button
-                className="mt-2 col-lg-4   mb-2 view "
+                className="mt-2 col-lg-4   mb-2 view font-family-hoz"
                 onClick={() => navigate("/room")}
                 data-aos="fade-right"
                 data-aos-duration="3000"
@@ -61,14 +61,14 @@ function Home() {
 
             <div className="mobilebutton">
               <h4 id="mobileheading"
-                className=" justify-content-center d-flex"
+                className=" justify-content-center d-flex font-family-hoz"
                 style={{ color: "#0c617d" }}
               >
                 Rooms
               </h4>
 
               <button
-                className="mt-2 col-lg-4   mb-2"id="mobileview"
+                className="mt-2 col-lg-4   mb-2"id="mobileview font-family-hoz"
                 onClick={() => navigate("/room")}
                 data-aos="fade-right"
                 data-aos-duration="3000"
@@ -78,12 +78,12 @@ function Home() {
             </div>
           </div>
           <div className="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
-            <p className="mt-40px d-flex justify-content-center">
+            <p className="mt-40px d-flex justify-content-center font-family-hoz">
               Mercury Room
             </p>
           </div>
           <div className="col-lg-4 col-12  text-white  fs-2 home-rooms">
-            <p className="mt-40px d-flex justify-content-center">Uranus Room</p>
+            <p className="mt-40px d-flex justify-content-center font-family-hoz">Uranus Room</p>
           </div>
         </div>
 

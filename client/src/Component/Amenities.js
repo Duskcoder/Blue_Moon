@@ -1,18 +1,17 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 
 export const Amenities = () => {
 
     const navigate = useNavigate();
-    
+
 
     return (
         <>
-        <Header/>
+            <Header />
             <div id='Amenities' className='d-flex align-items-center'>
                 <div className='container  '>
                     <h1 className='htaga' data-aos='fade-left' data-aos-duration='1000'>Amenities & Facilities</h1>
@@ -20,14 +19,14 @@ export const Amenities = () => {
                 </div>
 
             </div>
-            <div className='container 'id='systemamen'>
+            <div className='container ' id='systemamen'>
                 <div className='mt-5 d-flex align-items-center justify-content-between'>
                     <div >
                         <h2 style={{ color: '#294f70' }}>Amenities</h2>
                     </div>
                     <div className='w-20'>
                         <button className='amen-btn'
-                        
+
                         ><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Bookings</a></button>
                     </div>
                 </div>
@@ -39,12 +38,12 @@ export const Amenities = () => {
                     </div>
                     <div className='w-20 mt-5'>
                         <button className='amen-btn'
-                        
+
                         ><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Bookings</a></button>
                     </div>
                 </div>
             </div>
-            
+
             <div className="container mt-4 mb-5">
                 <div className="d-flex justify-content-center text-primary">
                     {/* <h3>Amenities & Facilities</h3> */}
@@ -71,7 +70,7 @@ export const Amenities = () => {
                             </div>
                             <div className="card-body text-center">
                                 <h4>Camp Fire</h4>
-                                <p className="card-text">
+                                <p className="card-text font-family-hoz">
                                     Gather wood, Build a fire, and Stay up all night with fire & stars. The fire is the main comfort of the camp.
                                 </p>
 
@@ -84,8 +83,8 @@ export const Amenities = () => {
                                 <img className='img-butha' src={require('../images/white.jpg')} alt="" width='100%' height='100%' />
                             </div>
                             <div className="card-body text-center">
-                                <h4>Hut</h4>
-                                <p className="card-text">
+                                <h4 className='font-family-hoz'>Hut</h4>
+                                <p className="card-text font-family-hoz">
                                     A space for solitude seekers peace lovers and nature lovers.
                                 </p>
 
@@ -98,8 +97,8 @@ export const Amenities = () => {
                                 <img className='image-responsive' src={require('../images/butha.jpg')} alt="" width='100%' height='195px' />
                             </div>
                             <div className="card-body text-center">
-                                <h4>Water Fountain</h4>
-                                <p className="card-text">
+                                <h4 className='font-family-hoz'>Water Fountain</h4>
+                                <p className="card-text font-family-hoz">
                                     A kind heart is a fountain of gladness, making everything in its vicinity freshen into smiles.
                                 </p>
 
@@ -113,11 +112,11 @@ export const Amenities = () => {
                     <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0">
                         <div className="card card-amen">
                             <div className='card-image'>
-                            <img className='img-butha1' src={require('../images/bath-tub.jpg')} alt="" width='100%' height='100%' />
+                                <img className='img-butha1' src={require('../images/bath-tub.jpg')} alt="" width='100%' height='100%' />
                             </div>
                             <div className="card-body text-center">
-                                <h4>Deep Soaking Bath-tub</h4>
-                                <p className="card-text">
+                                <h4 className='font-family-hoz'>Deep Soaking Bath-tub</h4>
+                                <p className="card-text font-family-hoz">
                                     Take a dip into these special bath-tubs to soak into a refereshing vacation mode that you've wanted.
                                 </p>
 
@@ -127,7 +126,7 @@ export const Amenities = () => {
                     <div className="col-sm-12 col-lg-6 mb-3 mb-sm-0">
                         <div className="card card-amen">
                             <div className='card-image'>
-                            <img className='img-butha1 hover-zoom' src={require('../images/white1.jpg')} alt="" width='100%' height='100%' />
+                                <img className='img-butha1 hover-zoom' src={require('../images/white1.jpg')} alt="" width='100%' height='100%' />
                             </div>
                             <div className="card-body text-center">
                                 <h4>24 Hours Hot Water Facility</h4>
@@ -149,7 +148,7 @@ export const Amenities = () => {
 
                     </div>
                     <div className='w-20 mb-5'>
-                    {/* <Link to="https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0" className='amen-btn mb-4'>
+                        {/* <Link to="https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0" className='amen-btn mb-4'>
                     Get Enquiry
                     </Link> */}
                         <button className='amen-btn mb-4'><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Enquiry</a></button>
@@ -164,7 +163,7 @@ export const Amenities = () => {
                     <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
                         <div className="card card-amen">
                             <div className='card-image'>
-                            <img className='img-butha' src={require('../images/kitchen(1).jpg')} alt="" width='100%' height='100%' />
+                                <img className='img-butha' src={require('../images/kitchen(1).jpg')} alt="" width='100%' height='100%' />
                             </div>
                             <div className="card-body text-center">
                                 <h4>Kitchen</h4>
@@ -176,7 +175,7 @@ export const Amenities = () => {
                     <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
                         <div className="card card-amen">
                             <div className='card-image'>
-                            <img className='img-butha' src={require('../images/dinning.jpg')} alt="" width='100%' height='100%' />
+                                <img className='img-butha' src={require('../images/dinning.jpg')} alt="" width='100%' height='100%' />
                             </div>
                             <div className="card-body text-center">
                                 <h4>Dinning Table</h4>
@@ -188,7 +187,7 @@ export const Amenities = () => {
                     <div className="col-sm-12 col-lg-3 mb-3 mb-sm-0">
                         <div className="card card-amen">
                             <div className='card-image'>
-                            <img className='img-butha' src={require('../images/side.jpg')} alt="" width='100%' height='195px' />
+                                <img className='img-butha' src={require('../images/side.jpg')} alt="" width='100%' height='195px' />
                             </div>
                             <div className="card-body text-center">
                                 <h4>Parking Area</h4>
@@ -201,7 +200,7 @@ export const Amenities = () => {
                         <div className="card card-amen">
                             <div className='hover-zoom'>
                                 <div className='card-image'>
-                                <img className='img-butha hover-zoom' src={require('../images/front.jpg')} alt="" width='100%' height='50%' />
+                                    <img className='img-butha hover-zoom' src={require('../images/front.jpg')} alt="" width='100%' height='50%' />
                                 </div>
                             </div>
                             <div className="card-body text-center">
@@ -213,7 +212,7 @@ export const Amenities = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
