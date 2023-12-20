@@ -83,7 +83,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
-function Adminpanel(props) {
+function AdminpanelHomeStay(props) {
 
   const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
@@ -92,7 +92,7 @@ function Adminpanel(props) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/new/showroom")
+      .get("http://localhost:5000/api/homestay/showrooms")
       .then((res) => {
         setRooms(res.data)
         console.log(res.data, "sdajsdgajsdgahsdhgjhasdhgjasd")
@@ -211,7 +211,7 @@ function Adminpanel(props) {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/new/room/delete/${id}`);
+      await axios.delete(`http://localhost:5000/api/homestay/room/deletes/${id}`);
       console.log("Deleted successfully");
 
       // Update state or trigger data refetch here
@@ -334,9 +334,9 @@ function Adminpanel(props) {
                   navigate("/admin");
                 }}
               >
-                {/* <h4 className="dashboard-h4">
+                <h4 className="dashboard-h4">
                   <b className="text-white">Dashboard</b>
-                </h4> */}
+                </h4>
               </ListItemIcon>
               <ListItemText />
             </ListItemButton>
@@ -360,31 +360,13 @@ function Adminpanel(props) {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Box sx={{ display: 'flex', gap: '50px' }}>
 
-          <h2>Dashboard</h2>
-
-          <div className="dropdown">
-            <button
-              className="btn btn-primary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown button
-            </button>
-            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a className="dropdown-item text-dark" href="#">BLUEMOON BANGALOW</a></li>
-              <li><a className="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY</a></li>
-            </ul>
-          </div>
-        </Box>
+        <h2>Dashboard</h2>
         <button
           className="btn btn-success btn-xs ms-3 mb-3"
           data-toggle="modal"
           onClick={() => {
-            navigate("/addrooms");
+            navigate("/addrooms/homestay");
           }}
         >
           Add
@@ -469,7 +451,7 @@ function Adminpanel(props) {
                           data-title="Edit"
                           data-toggle="modal"
                           data-target="#edit"
-                          onClick={() => navigate(`/updateroom/${items.id}`)}
+                          onClick={() => navigate(`/update/homestay/${items.id}`)}
                         >
                           <CreateIcon fontSize="small" color="primary" />
                         </button>
@@ -485,7 +467,7 @@ function Adminpanel(props) {
                         <button
                           className="btn btn-info btn-xs ms-3 mt-2"
                           onClick={() => {
-                            navigate(`/view/${items.id}`);
+                            navigate(`/view/homestay/${items.id}`);
                           }}
                         >
                           <VisibilityIcon fontSize="small" color="primary" />
@@ -503,4 +485,4 @@ function Adminpanel(props) {
   );
 }
 
-export default Adminpanel;
+export default AdminpanelHomeStay;
