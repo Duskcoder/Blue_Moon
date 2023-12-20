@@ -15,7 +15,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import { Navigate, json, useLocation, useNavigate } from "react-router-dom";
+import { Navigate, json, useLocation, useNavigate, useParams } from "react-router-dom";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell, { tableCellClasses } from "@mui/material/TableCell";
@@ -84,6 +84,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 function Adminpanel(props) {
+
   const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
 
@@ -202,20 +203,25 @@ function Adminpanel(props) {
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
+  // import { useParams } from "react-router-dom";
 
-  const location = window.location;
-  const handeldelete = (id) => {
-    axios
-      .delete(`${process.env.REACT_APP_API_BASE_URL}/adminpanel/delete/${id}`)
-      .then((res) => {
-        location.reload();
-        console.log(res, "john");
-        console.log("deleted succussfully");
-      })
-      .catch((err) => {
-        console.log(err, "williams");
-      });
+  // ...
+
+  // const { id } = useParams();
+
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:5000/api/new/room/delete/${id}`);
+      console.log("Deleted successfully");
+
+      // Update state or trigger data refetch here
+
+    } catch (error) {
+      console.error("Error deleting item:", error);
+      // Handle error (e.g., show an error message to the user)
+    }
   };
+
 
   const handleFilter = (event) => {
     const query = event.target.value.toLowerCase();
@@ -354,7 +360,7 @@ function Adminpanel(props) {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Box sx={{display:'flex',gap:'50px'}}>
+        <Box sx={{ display: 'flex', gap: '50px' }}>
 
           <h2>Dashboard</h2>
 
@@ -371,7 +377,7 @@ function Adminpanel(props) {
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <li><a className="dropdown-item text-dark" href="#">BLUEMOON BANGALOW</a></li>
               <li><a className="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY</a></li>
-              </ul>
+            </ul>
           </div>
         </Box>
         <button
@@ -383,6 +389,7 @@ function Adminpanel(props) {
         >
           Add
         </button>
+      
         <TableContainer component={Paper}>
           <input
             type="text"
@@ -471,14 +478,14 @@ function Adminpanel(props) {
                           data-title="Delete"
                           data-toggle="modal"
                           data-target="#delete"
-                          onClick={() => handeldelete(items.id)}
+                          onClick={handleDelete}
                         >
                           <DeleteIcon fontSize="small" color="secondary" />
                         </button>
                         <button
                           className="btn btn-info btn-xs ms-3 mt-2"
                           onClick={() => {
-                            navigate(`view/${items.id}`);
+                            navigate(`/view/${items.id}`);
                           }}
                         >
                           <VisibilityIcon fontSize="small" color="primary" />

@@ -30,16 +30,18 @@
     display: none !important;
   }
 
-  #mobileview {
-    width: 140%;
+  .mobileview {
+    display: flex !important;
+    margin: auto;
     margin-bottom: 13px;
-    color: #0c617d !important;
+    background-color: #ffffff !important;
+    color: #0c617d;
+    width: 100%;
     box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border: none;
     text-align: center;
     justify-content: center;
-    margin-right: auto/* Adjust this value as needed */
+    border: none;
 }
 #mobileheading{
 margin-left: 20px;

@@ -91,6 +91,7 @@ function Header() {
                       return  { 
                         textDecoration: isActive? 'none':'none',
                         color : isActive ? 'rgb(39, 187, 216)' : 'rgb(39, 187, 216)'
+
                       };
                     }}
                   >
@@ -106,6 +107,7 @@ function Header() {
                       return  { 
                         textDecoration: isActive? 'none':'none',
                         color : isActive ? 'rgb(39, 187, 216)' : 'rgb(39, 187, 216)'
+                        
                       };
                     }}
                   >About Us</NavLink>

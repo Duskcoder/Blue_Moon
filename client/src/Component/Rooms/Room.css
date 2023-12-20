@@ -1,11 +1,11 @@
-.head {
+#RoomsHeader {
 
     height: 600px !important;
     object-fit: cover;
 
     background-size: cover !important;
     background-position: center;
-    animation-name: animate;
+    animation-name: animateRoom;
     animation-duration: 20s;
 
     animation-timing-function: ease-in-out;
@@ -27,32 +27,32 @@
 
 
 
-@keyframes animate {
+@keyframes animateRoom {
 
     0%,
     100% {
-        background-image: url('../../images/stdf.jpeg');
+        background-image: url('../../images/jupa.jpg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
     }
 
     25% {
-        background-image: url('../../images/open.jpg');
+        background-image: url('../../images/bed-room.jpg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
     }
 
     50% {
-        background-image: url('../../images/red.jpg');
+        background-image: url('../../images/yellowbed.jpg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;
     }
 
     75% {
-        background-image: url('../../images/blue.png');
+        background-image: url('../../images/heater.jpeg');
         background-size: 90% 90%;
         /* Initial size */
         background-repeat: no-repeat;

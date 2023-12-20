@@ -63,11 +63,11 @@ function Header1() {
   const [open, setOpen] = useState(false);
   const navigate=useNavigate()
   const [state, setState] = useState(false);
-  // const [user, setUsers] = useState("test");
+  const [user, setUsers] = useState("test");
 
-  // if (!user) {
-  //   return <Navigate to="/homeStayHome" replace={true} />;
-  // }
+  if (!user) {
+    return <Navigate to="/" replace={true} />;
+  }
   const handleToggle = () => {
     setState(!state);
   };
@@ -151,7 +151,7 @@ function Header1() {
                 <button
                   type="submit"
                   className="button_style--modify"
-                  onClick={()=>navigate(-1)}
+                  onClick={()=>navigate('/')}
                 >
                   BLUEMOON Bungalow
                 </button>

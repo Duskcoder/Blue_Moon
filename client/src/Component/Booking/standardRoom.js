@@ -13,7 +13,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function StandardRoom() {
 
-
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -78,11 +77,12 @@ function StandardRoom() {
     setcount(newObj)
   }
 
- 
+
 
 
   return (
     <div className='container'>
+      <h2>Booking Form</h2>
       <form onSubmit={formik.handleSubmit}>
         <div className='header-h'>
           <div className='row'>
@@ -139,77 +139,77 @@ function StandardRoom() {
             </div>
           </div>
         </div>
-       
-          <div className='row d-flex mt-5 d-flex justify-content-evenly'>
-            <h2 className='mt-2 mb-5 text-center quees'>Enter Your Details</h2>
-            <div className='mum col-lg-6 col-md-12'>
-              {/* <h5> Name</h5> */}
-              <FloatingLabel
-                controlId="floatingInput"
-                label="Name"
-                className="mb-3"
 
-              >
-                <Form.Control type="text" placeholder="Name" name="name" onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.name}
-                />
-                {formik.touched.name && formik.errors.name ? (<div style={{color:'red'}}>{formik.errors.name}</div>) : ""}
-              </FloatingLabel>
-            </div>
-            <div className='col-lg-6  col-md-12'>
-              {/* <h5 className='mum'>Phone Number</h5> */}
-              <FloatingLabel controlId="floatingPhone Number" label="Phone Number">
-                <Form.Control type="Phone Number" placeholder="Phone Number" name="phone" onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.phone}
-                />
-                {formik.touched.phone && formik.errors.phone ? (<div style={{color:'red'}}>{formik.errors.phone}</div>) : ""}
-              </FloatingLabel>
+        <div className='row d-flex mt-5 d-flex justify-content-evenly'>
+          <h2 className='mt-2 mb-5 text-center quees'>Enter Your Details</h2>
+          <div className='mum col-lg-6 col-md-12'>
+            {/* <h5> Name</h5> */}
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Name"
+              className="mb-3"
 
-            </div>
+            >
+              <Form.Control type="text" placeholder="Name" name="name" onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.name}
+              />
+              {formik.touched.name && formik.errors.name ? (<div style={{ color: 'red' }}>{formik.errors.name}</div>) : ""}
+            </FloatingLabel>
           </div>
-
-          <div className='row d-flex mt-5 d-flex justify-content-evenly'>
-            <div className='mum col-lg-6 col-md-12'>
-              {/* <h5>Email Address</h5> */}
-
-              <FloatingLabel
-                controlId="floatingInput"
-                label="Email Address"
-                className="mb-3"
-              >
-                <Form.Control type="Email Address" placeholder="Email Address" name="email" onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                />
-                {formik.touched.email && formik.errors.email ? (<div style={{color:'red'}}>{formik.errors.email}</div>) : ""}
-              </FloatingLabel>
-            </div>
-            <div className='mum col-lg-6 col-md-12'>
-              {/* <h5 > Address</h5> */}
-              <FloatingLabel controlId="floatingAddress" label=" Address">
-                <Form.Control type="Address" placeholder="Address" name="address" onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.address}
-                />
-                {formik.touched.address && formik.errors.address ? (<p style={{color:'red'}}>{formik.errors.address}</p>) : ""}
-              </FloatingLabel>
-
-            </div>
-
-
+          <div className='col-lg-6  col-md-12'>
+            {/* <h5 className='mum'>Phone Number</h5> */}
+            <FloatingLabel controlId="floatingPhone Number" label="Phone Number">
+              <Form.Control type="Phone Number" placeholder="Phone Number" name="phone" onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.phone}
+              />
+              {formik.touched.phone && formik.errors.phone ? (<div style={{ color: 'red' }}>{formik.errors.phone}</div>) : ""}
+            </FloatingLabel>
 
           </div>
-          <div className='row mt-5 col-12 mb-5'>
-            <div className="d-grid ">
-              <Button  variant="success" size="lg" type='submit' >
-                Submit
-              </Button>
-            </div>
+        </div>
+
+        <div className='row d-flex mt-5 d-flex justify-content-evenly'>
+          <div className='mum col-lg-6 col-md-12'>
+            {/* <h5>Email Address</h5> */}
+
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Email Address"
+              className="mb-3"
+            >
+              <Form.Control type="Email Address" placeholder="Email Address" name="email" onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.email}
+              />
+              {formik.touched.email && formik.errors.email ? (<div style={{ color: 'red' }}>{formik.errors.email}</div>) : ""}
+            </FloatingLabel>
           </div>
-        </form>
-        {/* <FootSection /> */}
+          <div className='mum col-lg-6 col-md-12'>
+            {/* <h5 > Address</h5> */}
+            <FloatingLabel controlId="floatingAddress" label=" Address">
+              <Form.Control type="Address" placeholder="Address" name="address" onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.address}
+              />
+              {formik.touched.address && formik.errors.address ? (<p style={{ color: 'red' }}>{formik.errors.address}</p>) : ""}
+            </FloatingLabel>
+
+          </div>
+
+
+
+        </div>
+        <div className='row mt-5 col-12 mb-5'>
+          <div className="d-grid ">
+            <Button variant="success" size="lg" type='submit' >
+              Submit
+            </Button>
+          </div>
+        </div>
+      </form>
+      {/* <FootSection /> */}
     </div>
 
 

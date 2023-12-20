@@ -7,7 +7,7 @@ exports.NewRoom = async (req,res)=>{
         const imageName = req.file.filename;
         const rooms = await Rooms.create({
             name,description,beds,restrooms,  bathtub, adults,status,  price,
-            cover_img:imageName,
+            cover_img:imageName, 
             
         });
         console.log(req.body,'ergeg'); 
@@ -114,14 +114,16 @@ exports.country = async (req, res) => {
 
 
 
-exports.delRoom = async (req,res)=>{
-  try {
-    const {id} = req.params;
-    const result = await Rooms.delete({where:{id:id}})
-    res.status(200).json(result)
-    
-   } catch(error){
-    console.error('Error stack trace:', error);
-    res.status(500).json({ error: 'Internal server error' });
-   }
-}
+  exports.delRoom = async (req, res) => {
+    try {
+      const { id } = req.params;
+      console.log(id,"gufkwetghwr")
+      const result = await Rooms.destroy({ where: { id: id } });
+      console.log(result,'aeghasrthvghytvhrhq');
+      res.status(200).json(result);
+    } catch (error) {
+      console.error('Error stack trace:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  };
+  

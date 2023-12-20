@@ -36,12 +36,12 @@ export const AboutUs = () => {
                   data-aos="fade-right"
                   data-aos-duration="500"
                 >
-                  <p className="card-text">
+                  <p className="card-text text-dark">
                     We will help your experience life in its true sense{" "}
                   </p>
-                  <p>With us. from living among the residents you are </p>
-                  <p> sure to walk home with memories and wonderful </p>
-                  <p> moments.</p>
+                  <p className="text-dark">With us. from living among the residents you are </p>
+                  <p className="text-dark">text-dark sure to walk home with memories and wonderful </p>
+                  <p className="text-dark"> moments.</p>
                 </div>
                 <div
                   className="hello22 mt-5 mb-5"
@@ -61,16 +61,16 @@ export const AboutUs = () => {
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                <p className="card-text1 mt-5">
+                <p className="card-text1 mt-5 text-white">
                   We are a well renowned, providing a sensational
                 </p>
-                <p>staying experience eith prolific services. We give </p>
-                <p>you the warmest of welcome and all the personal</p>
-                <p>attention at our homestay to ensure your</p>
-                <p>comfort and contentment. We are the first choice </p>
-                <p>option for the one who are looking to explore </p>
-                <p>the local areas and beautiful places in</p>
-                <p>Puducherry.</p>
+                <p className=" text-white">staying experience eith prolific services. We give </p>
+                <p className=" text-white">you the warmest of welcome and all the personal</p>
+                <p className=" text-white">attention at our homestay to ensure your</p>
+                <p className=" text-white">comfort and contentment. We are the first choice </p>
+                <p className=" text-white">option for the one who are looking to explore </p>
+                <p className=" text-white">the local areas and beautiful places in</p>
+                <p className=" text-white">Puducherry.</p>
               </div>
             </div>
           </div>
