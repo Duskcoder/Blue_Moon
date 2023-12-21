@@ -18,14 +18,11 @@ function RoomStay() {
     <Header1/>
       <div className="overflow-hidden">
         <div className="system">
-          <div className="head  ">
+          <div className="head1 ">
             <div className="room col-6 col-lg-12 htagsMob mx-5">
               <h1 className="text-white htagr text-center">HomeStay</h1>
               <h1 className="text-white htagr text-center">Rooms</h1>
             </div>
-            
-          
-          
           </div>
           <div className=" container stay mt-5">
             <div className="row">

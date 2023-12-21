@@ -1,4 +1,4 @@
-const nodeMailer = require('nodemailer');
+const nodeMailer = require("nodemailer");
 
   const transporter = nodeMailer.createTransport({
     service:"gmail",
@@ -37,5 +37,5 @@ const sendEmail = async (check_in,check_out,customer_name,room_name,email) => {
   };
 
 module.exports = {
-    sendEmail,
-  };
+  sendEmail,
+};

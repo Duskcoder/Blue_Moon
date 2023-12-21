@@ -194,56 +194,14 @@ function HomeStayHome() {
             </div>
           </div>
           <ViewDev />
-          <AboutUs1 />
+   
           <CardBox />
           <div>
             <Footer1 />
           </div>
         </div>
 
-        <div className="systems">
-          <div className="head  ">
-            <div className="room col-6 col-lg-12  mx-5">
-              <h1
-                className="htagp text-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                Welcome to
-              </h1>
-              <h1
-                className="text-white htags text-center"
-                data-aos="zoom-in"
-                data-aos-duration="3000"
-              >
-                BLUEMOON HOMESTAY
-              </h1>
-              <p
-                className="text-white d-flex text-center justify-content-center ptag"
-                data-aos="zoom-in"
-                data-aos-duration="3000"
-              >
-                Homestay in ilango Nagar
-              </p>
-
-              <button
-                className="btn btn-white shadow btns m-auto d-flex"
-                onClick={() => navigate("/stay")}
-                data-aos="fade-right"
-                data-aos-duration="3000"
-              >
-                {" "}
-                Book Now
-              </button>
-            </div>
-          </div>
-          <ViewDev />
-          <AboutUs1 />
-          <CardBox />
-          <div>
-            <Footer1 />
-          </div>
-        </div>
+     
       </div>
     </>
   );

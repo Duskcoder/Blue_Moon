@@ -1,4 +1,4 @@
-.head {
+.head1 {
 
     height: 600px !important;
     object-fit: cover;
@@ -734,15 +734,12 @@ p {
         display: flex !important;
         margin: auto;
         margin-bottom: 13px;
-
     }
 
     p {
-
         color: #0c617d;
         text-align: center;
         font-size: 15px;
-        
 
     }
 
@@ -815,6 +812,7 @@ p {
 /* footer1 */
 .footericon{
     font-size: 30px ;
+    color: white;
     
 }
 .head{

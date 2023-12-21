@@ -18,7 +18,7 @@ function Footer1() {
             {/* <img src={footerimg} alt="" height={70} width={70} /> */}
           </div>
           <div className="mt-4 ">
-            <h2 className="footer-header">Bluemoon Bungalow</h2>
+       
           </div>
 
           <section className="text-white mt-4 justify-content-center m-auto ">
@@ -88,10 +88,8 @@ function Footer1() {
                   </h3>
                   <li className="mb-2 col-lg-9 w-auto">
                     <a
-                      href=""
+                      href="https://maps.app.goo.gl/EriAvXj7U8atMhsUA"
                       className="text-white text-decoration-none footer-textsize"
-                      onClick={() => navigate('/homeStayHome')}
-
                     >
                       No.3, Bhagat Singh Street,
                       <br />
@@ -113,8 +111,8 @@ function Footer1() {
                   <strong>
                     <i className="fa fa-solid fa-diamond-turn-right"></i>
                     <a
-                      href=""
-                      onClick={() => navigate('/homeStayHome')}
+                      href="https://maps.app.goo.gl/EriAvXj7U8atMhsUA"
+                      // onClick={() => navigate('/homeStayHome')}
                     >Get Direction</a>
 
                   </strong>

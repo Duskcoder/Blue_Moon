@@ -22,17 +22,17 @@ function Home() {
     <>
       <Header />
       <div className="overflow-hidden">
-        <div className="home-bg  col-12 overflow-hidden ">
-          <div className="container position-relative text-white home-text-center">
-            <div className="text-align-center">
+        <div className="home-bg  col-12 overflow-hidden">
+          <div className="container position-relative home-text-center ">
+            <div className="text-align-center  " style={{background:'#17161670',width:'60%', top:"40px"}}>
               <div data-aos="fade-right" data-aos-duration="1000">
-                <h1>YOUR HOME</h1>
+                <h1 className="your text-white  ">YOUR HOME</h1>
               </div>
               <div data-aos="zoom-in" data-aos-duration="1000">
-                <h3>Away</h3>
+                <h3 className="away  ">Away</h3>
               </div>
               <div data-aos="fade-left" data-aos-duration="1000">
-                <h1>FROM HOME</h1>
+                <h1 className="from text-white ">FROM HOME</h1>
               </div>
             </div>
           </div>
@@ -43,47 +43,47 @@ function Home() {
             <div className="systembutton">
               <h4
               
-                className=" justify-content-center d-flex"
+                className=" justify-content-center d-flex font-family-hoz"
                 style={{ color: "#0c617d" }}
               >
                 Rooms
               </h4>
 
               <button
-                className="mt-2 col-lg-4   mb-2 view "
+                className="mt-2 col-lg-4   mb-2 view font-family-hoz"
                 onClick={() => navigate("/room")}
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-                View ALL
+                Book Now
               </button>
             </div>
 
             <div className="mobilebutton">
               <h4 id="mobileheading"
-                className=" justify-content-center d-flex"
+                className=" justify-content-center d-flex font-family-hoz"
                 style={{ color: "#0c617d" }}
               >
                 Rooms
               </h4>
 
               <button
-                className="mt-2 col-lg-4   mb-2"id="mobileview"
+                className="mt-2 col-lg-4 mobileview    mb-2"id="font-family-hoz"
                 onClick={() => navigate("/room")}
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-                View ALL
+                Book Now
               </button>
             </div>
           </div>
           <div className="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
-            <p className="mt-40px d-flex justify-content-center">
+            <p className="mt-40px d-flex justify-content-center font-family-hoz viewallheader">
               Mercury Room
             </p>
           </div>
           <div className="col-lg-4 col-12  text-white  fs-2 home-rooms">
-            <p className="mt-40px d-flex justify-content-center">Uranus Room</p>
+            <p className="mt-40px d-flex justify-content-center font-family-hoz viewallheader ">Uranus Room</p>
           </div>
         </div>
 
@@ -162,7 +162,7 @@ function Home() {
                     src={require("../images/butha.jpg")}
                     alt=""
                     width="100%"
-                    height="195px"
+                    height="230px"
                   />
                 </div>
                 <div className="card-body text-center">
@@ -178,7 +178,7 @@ function Home() {
         </div>
 
         <div className="container mt-5">
-          <h2 className="trun mb-5 text-center text-info">
+          <h2 className="trun mb-5 text-center ">
             <b>Blue moon bungalow gallery </b>
           </h2>
           <div className="row ">

@@ -103,7 +103,7 @@ export const AboutUs1 = () => {
                  data-aos-duration="500"
                >
                  <p className="card-text">
-                   We will help your experience life in its true sense{" "}
+                   We willssas help your experience life in its true sense{" "}
                  </p>
                  <p>With us. from living among the residents you are </p>
                  <p> sure to walk home with memories and wonderful </p>
