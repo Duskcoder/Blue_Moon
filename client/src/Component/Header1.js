@@ -1,54 +1,3 @@
-// import React from "react";
-// // import Logo from '../images/blue moon7.jpg'
-// import { Link } from "react-router-dom";
-// import Button from "react-bootstrap/Button";
-// import Container from "react-bootstrap/Container";
-// import Form from "react-bootstrap/Form";
-// import Nav from "react-bootstrap/Nav";
-// import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
-// import blueMoonIMG from "../images/blue moon7.jpg";
-// import { useNavigate } from "react-router-dom";
-// const Header1 = () => {
-
-// const navigate=useNavigate()
-
-//   return (
-//     <div className="hello">
-//       <Navbar expand="lg" className="bg-body-tertiary">
-//         <Container className="justify-content-lg-center">
-//         <div className="d-lg-flex " >
-//           <Navbar.Brand href="#" >
-//             <img src={blueMoonIMG} alt="" width={80} height={80} />
-//           </Navbar.Brand>
-//           <Navbar.Toggle aria-controls="" />
-//           <Navbar.Collapse id="">
-//             <Nav
-//               className="me-auto my-2 my-lg-0"
-//               style={{ maxHeight: "100px" }}
-              
-//             >
-//               <Nav.Link href="/homeStayHome">Home</Nav.Link>
-//               <Nav.Link href="/aboutus">About Us</Nav.Link>
-//               <Nav.Link href="/stay">Rooms</Nav.Link>
-//               <Nav.Link href="/Gallery1">Gallery</Nav.Link>
-//               <Nav.Link href="/aboutus">Contact Us</Nav.Link>
-    
-//             </Nav>
-//             <Form >
-//               <Button variant="outline-success" onClick={()=>navigate('/')}>BLUEMOON BANGALOW</Button>
-//               {/* <Link to='/'>BLUEMOON BANGALOW</Link> */}
-//             </Form>
-//           </Navbar.Collapse>
-//           </div>
-//         </Container>
-//       </Navbar>
-//     </div>
-//   );
-// };
-
-// export default Header1;
-
 import React, { useState } from "react";
 import blueMoonIMG from "../images/blue moon7.jpg";
 import { IoMenu } from "react-icons/io5";
@@ -60,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 
 function Header1() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const navigate=useNavigate()
   const [state, setState] = useState(false);
   const [user, setUsers] = useState("test");
@@ -79,12 +28,12 @@ function Header1() {
   return (
     <>
       <div>
-        <div className="header">
+        <div className="header" style={{position:"absolute",backgroundColor:"#00000057", width: "100%", zIndex:'1000'}}>
           <div className="d-flex justify-content-center m-auto p-0">
             <img src={blueMoonIMG} alt="bluemoon img" style={{  padding: "2px", marginLeft: "154px" }} width={80} height={80} />
 
-            <div className="list m-auto p-0">
-              <div className="unoderlist header-color d-flex align-items-center  text-dark">
+            <div className="list m-auto p-0" id="header-list">
+              <div className="unoderlist header-color d-flex align-items-center">
               
                   {/* {/ <a href="">Home</a> /} */}
                   <NavLink
@@ -93,8 +42,7 @@ function Header1() {
                     style={({ isActive }) => {
                       return  { 
                         textDecoration: isActive? 'none':'none',
-                        color : isActive ? 'rgb(39, 187, 216)' : 'rgb(39, 187, 216)'
-                      };
+                        color : isActive ? '#2BB8EE' : 'rgb(255, 255, 255)'                      };
                     }}
                   >
                     Home
@@ -108,8 +56,7 @@ function Header1() {
                   style={({ isActive }) => {
                       return  { 
                         textDecoration: isActive? 'none':'none',
-                        color : isActive ? 'rgb(39, 187, 216)' : 'rgb(39, 187, 216)'
-                      };
+                        color : isActive ? '#2BB8EE' : 'rgb(255, 255, 255)'                      };
                     }}
                   >About Us</NavLink>
               
@@ -120,7 +67,7 @@ function Header1() {
                   style={({ isActive }) => {
                       return  { 
                         textDecoration: isActive? 'none':'none',
-                        color : isActive ? 'rgb(39, 187, 216)' : 'rgb(39, 187, 216)'
+                        color : isActive ? '#2BB8EE' : 'rgb(255, 255, 255)'
                       };
                     }}
                   >Room</NavLink>
@@ -132,18 +79,18 @@ function Header1() {
                   style={({ isActive }) => {
                       return  { 
                         textDecoration: isActive? 'none':'none',
-                        color : isActive ? 'rgb(39, 187, 216)' : 'rgb(39, 187, 216)'
+                        color : isActive ? '#2BB8EE' : 'rgb(255, 255, 255)'
                       };
                     }}
                   >Gallery</NavLink>
               
              
                   {/* <a href="">Amenities</a> */}
-                  <NavLink to={"/aboutus"}
+                  <NavLink to={"/contact"}
                   style={({ isActive }) => {
                       return  { 
                         textDecoration: isActive? 'none':'none',
-                        color : isActive ? 'rgb(39, 187, 216)' : 'rgb(39, 187, 216)'
+                        color : isActive ? '#2BB8EE' : 'rgb(255, 255, 255)'
                       };
                     }}
                   >Contact Us</NavLink>
@@ -160,7 +107,7 @@ function Header1() {
           </div>
         </div>
       </div>
-      <div className=" header2 ">
+      <div className=" header2" style={{backgroundColor:"#00000057",position:'absolute',zIndex:'1000'}}>
         <div className="d-flex justify-content-between p-2">
           <img
             src={blueMoonIMG}
@@ -173,7 +120,7 @@ function Header1() {
             <button
               type="submit"
               className="button_style p-1"
-              style={{ borderRadius: "20px", outline: "none" }}
+              style={{ borderRadius: "20px", outline: "none", position:'absolute',right:"26px" }}
               onClick={handleToggle}
             >
               {state ? (
@@ -187,6 +134,7 @@ function Header1() {
         <div className="list">
           <ul
             className={state ? "unoderlist text-center" : "orderlist text-center"}
+            style={{backgroundColor:"#00000057", width: "100%", height: "276px"}}
           >
             <li className="num">
               <a href="/homeStayHome">Home</a>
