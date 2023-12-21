@@ -49,6 +49,7 @@ function App() {
         <Route path="/viewdev" element={<ViewDev />} />
         <Route path="/login_Form" element={<SignIn />} />
         <Route path="/contact1" element={<ContactUs1 />} />
+        {/* <Route path="/contactUS" element={<ContactUs />} /> */}
         <Route path="/HomeStayHome" element={<HomeStayHome />} />
         <Route path="/Cancellation" element={<Cancellation/>}/>
         <Route path="/about1" element={<AboutUs1 />} />

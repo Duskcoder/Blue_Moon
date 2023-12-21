@@ -24,7 +24,7 @@ function Home() {
       <div className="overflow-hidden">
         <div className="home-bg  col-12 overflow-hidden">
           <div className="container position-relative home-text-center ">
-            <div className="text-align-center  " style={{background:'#17161670',width:'60%'}}>
+            <div className="text-align-center  " style={{background:'#17161670',width:'60%', top:"40px"}}>
               <div data-aos="fade-right" data-aos-duration="1000">
                 <h1 className="your text-white  ">YOUR HOME</h1>
               </div>
