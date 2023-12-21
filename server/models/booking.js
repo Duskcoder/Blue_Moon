@@ -23,7 +23,7 @@ const Booking = sequelize.define('Booking', {
     allowNull: true,
     
   },
-  name: {
+  customer_name: {
     type: DataTypes.STRING,
     allowNull: true,
   },

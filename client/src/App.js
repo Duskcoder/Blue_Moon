@@ -28,7 +28,11 @@ import GallerNew from "./Component/Gallery/GallerNew";
 import { About } from "./Component/About/About";
 import { About1 } from "./Component/About/About1";
 import Cancellation from "./Component/Cancellation/Cancellation";
-
+import ViewRoomDetails from "./Component/Admin/ViewRoom"
+import AdminpanelHomeStay from "./Component/Admin/adminpanelhomestay";
+import Levelhomestay from "./Component/Admin/Levelhomestay";
+import AddRoomsHomestay from "./Component/Admin/AddRoomsHomestay";
+import UpdateHomeStay from "./Component/Admin/updateHomeStay";
 function App() {
   return (
     <div>
@@ -58,9 +62,12 @@ function App() {
         <Route path="/addrooms" element={<Addrooms />} />
         <Route path="/room" element={<Rooms />}/>
         <Route path="/Gallery1" element={<Gallery1/>} />
-         
-        
+        <Route path="/ViewRoomDetails/:id" element={<ViewRoomDetails/>} />
+        <Route path="/adminpanel" element={<AdminpanelHomeStay/>} />
+        <Route path="/LevelHomeStay" element={<Levelhomestay/>} />
         <Route path="/booknow" element={<StandardRoom />} />
+        <Route path="/AddRoom/HomeStay" element ={<AddRoomsHomestay/>}/>
+        <Route path="/update/homestay/:id" element ={<UpdateHomeStay/>}/>
         {/* <Route path="/details" element={<Details/>}/> */}
         {/* <Footer/> */}
       </Routes>

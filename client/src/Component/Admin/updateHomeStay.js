@@ -85,7 +85,7 @@ const UpdateHomeStay = () => {
                 data
             );
 
-            navigate('/admin');
+            navigate('/adminpanel');
             console.log(response, "ergaer3eeeee");
         } catch (error) {
             console.error("Error submitting data:", error.response);

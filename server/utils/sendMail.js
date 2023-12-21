@@ -1,6 +1,7 @@
 const nodeMailer = require('nodemailer');
 
   const transporter = nodeMailer.createTransport({
+    service:"gmail",
     host: 'smtp.gmail.com',
     port: 587,
     secure: false,  //true for 465 port // false for 587
@@ -10,14 +11,22 @@ const nodeMailer = require('nodemailer');
     }
   });
 
-const sendEmail = async (to, subject, message) => {
+const sendEmail = async (check_in,check_out,customer_name,room_name,email) => {
+  const subject={
+    check_in:check_in,
+    check_out:check_out,
+    room_name:room_name,
+  }
+  const from =email;
+  const to = "venuvcodewonders@gmail.com";
+  const customer=customer_name;
     try {
         const mailOptions = {
-            from: 'duskcodertec@gmail.com', // sender address
+            from: from, // sender address
             to: to, // list of receivers
-            subject: 'OTP', // Subject line
+            subject: subject, // Subject line
             text: `Hello ${to.split('@')[0]}`, // plain text body
-            html: `This your OTP <b>${subject}</b><br>Thanks and Regards<br>DCrownMart` // html body
+            html: `${subject.room_name} room   is booked by ${customer} from ${check_in} to ${check_out} ` // html body
           };
   
       await transporter.sendMail(mailOptions);
