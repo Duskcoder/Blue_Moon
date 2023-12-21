@@ -55,7 +55,7 @@ function Home() {
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-           Book now
+                Book Now
               </button>
             </div>
 
@@ -73,17 +73,17 @@ function Home() {
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-           Book now
+                Book Now
               </button>
             </div>
           </div>
           <div className="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
-            <p className="mt-40px d-flex justify-content-center font-family-hoz">
+            <p className="mt-40px d-flex justify-content-center font-family-hoz viewallheader">
               Mercury Room
             </p>
           </div>
           <div className="col-lg-4 col-12  text-white  fs-2 home-rooms">
-            <p className="mt-40px d-flex justify-content-center font-family-hoz">Uranus Room</p>
+            <p className="mt-40px d-flex justify-content-center font-family-hoz viewallheader ">Uranus Room</p>
           </div>
         </div>
 

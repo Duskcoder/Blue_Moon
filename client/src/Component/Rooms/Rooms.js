@@ -314,7 +314,7 @@ function Rooms() {
                   />
                 </div>
                 <div
-                  className="col-12 col-lg-6 saturn m-auto  "
+                  className="col-6 col-lg-6 saturn m-auto  "
                   data-aos="fade-up"
                 >
                   <h3 className="htag ">

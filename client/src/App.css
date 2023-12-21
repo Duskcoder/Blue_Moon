@@ -1,20 +1,14 @@
 body,
 * {
   font-family: Helvetica !important;
-}
-
-.font-family-hoz p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-button,
-ul,
-li {
-  font-family: 'Helvetica', sans-serif !important;
-}
+  
+  }
+  body{
+    background-color : transparent !important;
+  }
+  .font-family-hoz p, h1,h2,h3,h4,h5,h6, button, ul, li{
+    font-family: 'Helvetica', sans-serif !important;
+  }
 
 
 
@@ -1575,7 +1569,11 @@ body {
 #dropdownMenuButton {
   box-shadow: 5px 5px 10px #888888;
 }
-
+#header-list{
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
 .header2 {
   display: none;
 }
@@ -1591,7 +1589,10 @@ body {
   text-decoration: none;
   justify-content: space-around;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  position: absolute !important;
+  color: black  ;
+  /* background-color:black; */
+
 
 }
 
@@ -1599,12 +1600,11 @@ li a {
   text-decoration: none;
 
 }
-
-.button_style--modify {
-  background-color: #2BB8EE;
-  padding: 5px;
-  color: white;
-  border: 3px solid #2BB8EE;
+.button_style--modify{
+  background-color: #ffffff;
+  padding: 10px;
+  color: black;
+  /* border: 3px solid black; */
   border-radius: 15px;
 }
 
@@ -1635,8 +1635,9 @@ li a {
   }
 
   .orderlist {
-    display: none;
-
+      display: none;
+      transition: all 0.3s;
+      position: absolute !important;
   }
 
   .num {
@@ -1653,7 +1654,11 @@ li a {
     display: none;
   }
 
-  .button_style--modify {
+  .list{
+    background: black !important ;
+  }
+
+  .button_style--modify{
     background-color: #2BB8EE;
   }
 
@@ -1675,16 +1680,16 @@ li a {
   }
 
   .orderlist {
-    display: none;
+      display: none;
+      transition: 0.4ms linear;
 
   }
-
-  .num {
+  
+  .num{
     padding: 10px;
   }
-
-  .num a {
-    color: rgb(39, 187, 216) !important;
+  .num a{
+    color:rgb(255, 255, 255) !important;
 
   }
 
