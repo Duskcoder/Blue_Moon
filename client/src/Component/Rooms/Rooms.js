@@ -15,6 +15,7 @@ function Rooms() {
   const [Rooms, setRooms] = useState([]);
   const navigate = useNavigate()
 
+  console.log(Rooms, "balaguru")
   // const handleClose = () => setShowModal(false);
   // const [currentpage, setCurrentPage] = useState(1);
   // const recordsPerPage = 10;
@@ -63,6 +64,11 @@ function Rooms() {
   const details3 = Rooms.slice(4, 5);
   const details4 = Rooms.slice(5, 6);
 
+  const mobileview = Rooms.slice(0, 1)
+  const mobileview1 = Rooms.slice(1, 2)
+  const mobileview2 = Rooms.slice(3, 4);
+  const mobileview3 = Rooms.slice(4, 5);
+  const mobileview4 = Rooms.slice(5, 6);
 
 
 
@@ -83,15 +89,15 @@ function Rooms() {
                   while you are on a holiday
                 </p>
               </div>
-              <div className="container stay mt-5">
-                <div className="row">
-                  <div className="col-sm-12 come">
-                    <h3 className="htag">Come & Stay with Us</h3>
-                    <p className="ptag">
-                      Pick any of our rooms to experience the delightful decor,
-                      complemented with modern amenties for a comfortable stay
-                    </p>
-                  </div>
+            </div>
+            <div className="container stay mt-5">
+              <div className="row">
+                <div className="col-sm-12 come">
+                  <h3 className="htag">Come & Stay with Us</h3>
+                  <p className="ptag">
+                    Pick any of our rooms to experience the delightful decor,
+                    complemented with modern amenties for a comfortable stay
+                  </p>
                 </div>
               </div>
             </div>
@@ -486,10 +492,224 @@ function Rooms() {
 
                   ))
                 }
+
+              </div>
+            </div>
+          </div >
+          <div className="mobsys">
+            <div className="head  ">
+
+              <div className="room col-12 col-lg-12 htagsMob mx-5 px-4">
+                <h1 className="text-white htagr ">Rooms</h1>
+                <p className="ptag text-white">
+                  If you are looking for a home away from home, just walk in
+                  here.
+                  <br /> You can get both, an incredible and relaxing experience
+                  while you are on a holiday
+                </p>
               </div>
             </div>
 
-          </div >
+
+            {
+              mobileview.map((items) => (
+
+                <div className=" container stay mt-5" key={items.id}>
+                  <div className="row">
+                    {/* <div className="col-sm-12 come">
+                      <h3 className="htag">Come & Stay with Us</h3>
+                      <p className="ptag">
+                        Pick any of our rooms to experience the delightful decor,
+                        complemented with modern amenties for a comfortable stay
+                      </p>
+                    </div> */}
+                    <div className="col-12 col-lg-6 Jupiter mx-3 ">
+                      <img
+                        className=" invisible imgs m-auto"
+                        src={require("../../images/rooma.jpg")}
+                        alt=""
+                        width="100%"
+                      />
+                    </div>
+                    <div
+                      className="col-12 col-lg-6 jupiter m-auto  "
+                      data-aos="fade-up"
+                    >
+                      <h3 className=" htag">{items.name}</h3>
+                      <p className="ptag ">
+                        {/* Queen Beds(2) Bathtub with hand shower free WIFI and Tower Cupboard table, and chair water bottles */}
+                        {items.description}
+                      </p>
+                      <p>Beds: {items.beds}</p>
+                      <p>
+                        Adults:<span className="text-secondary">{items.adults} </span>
+                      </p>
+                      <Button variant="primary" onClick={handleShow}>
+                        Book Now
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+
+            {
+              mobileview1.map((items) => (
+
+                <div className=" container stay mt-5" key={items.id}>
+                  <div className="row">
+                    {/* <div className="col-sm-12 come">
+                      <h3 className="htag">Come & Stay with Us</h3>
+                      <p className="ptag">
+                        Pick any of our rooms to experience the delightful decor,
+                        complemented with modern amenties for a comfortable stay
+                      </p>
+                    </div> */}
+                    <div className="col-12 col-lg-6 Jupiter mx-3 ">
+                      <img
+                        className="img-responsive invisible imgs "
+                        src={require("../../images/rooma.jpg")}
+                        alt=""
+                        width="100%"
+                      />
+                    </div>
+                    <div
+                      className="col-12 col-lg-6 jupiter m-auto  "
+                      data-aos="fade-up"
+                    >
+                      <h3 className=" htag">{items.name}</h3>
+                      <p className="ptag ">
+                        {/* Queen Beds(2) Bathtub with hand shower free WIFI and Tower Cupboard table, and chair water bottles */}
+                        {items.description}
+                      </p>
+                      <p>Beds: {items.beds}</p>
+                      <p>
+                        Adults:<span className="text-secondary">{items.adults} </span>
+                      </p>
+                      <Button variant="primary" onClick={handleShow}>
+                        Book Now
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+            {
+              mobileview2.map((items) => (
+
+                <div className=" container stay mt-5" key={items.id}>
+                  <div className="row">
+
+                    <div className="col-12 col-lg-6 Jupiter mx-3 ">
+
+                      <img
+                        className="img-responsive invisible imgs  "
+                        src={require("../../images/rooma.jpg")}
+                        alt=""
+                        width="100%"
+                      />
+
+                    </div>
+                  </div>
+                  <div
+                    className="col-12 col-lg-6 jupiter m-auto  "
+                    data-aos="fade-up"
+                  >
+                    <h3 className=" htag">{items.name}</h3>
+                    <p className="ptag ">
+                      {/* Queen Beds(2) Bathtub with hand shower free WIFI and Tower Cupboard table, and chair water bottles */}
+                      {items.description}
+                    </p>
+                    <p>Beds: {items.beds}</p>
+                    <p>
+                      Adults:<span className="text-secondary">{items.adults} </span>
+                    </p>
+                    <Button variant="primary" onClick={handleShow}>
+                      Book Now
+                    </Button>
+                  </div>
+                </div>
+
+              ))
+            }
+            {
+              mobileview3.map((items) => (
+
+                <div className=" container stay mt-5" key={items.id}>
+                  <div className="row">
+
+                    <div className="col-12 col-lg-6 Jupiter mx-3 ">
+                      <img
+                        className="img-responsive invisible imgs  "
+                        src={require("../../images/rooma.jpg")}
+                        alt=""
+                        width="100%"
+                      />
+                    </div>
+                    <div
+                      className="col-12 col-lg-6 jupiter m-auto  "
+                      data-aos="fade-up"
+                    >
+                      <h3 className=" htag">{items.name}</h3>
+                      <p className="ptag ">
+                        {/* Queen Beds(2) Bathtub with hand shower free WIFI and Tower Cupboard table, and chair water bottles */}
+                        {items.description}
+                      </p>
+                      <p>Beds: {items.beds}</p>
+                      <p>
+                        Adults:<span className="text-secondary">{items.adults} </span>
+                      </p>
+                      <Button variant="primary" onClick={handleShow}>
+                        Book Now
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+            {
+              mobileview4.map((items) => (
+
+                <div className=" container stay mt-5" key={items.id}>
+                  <div className="row">
+                    {/* <div className="col-sm-12 come">
+                      <h3 className="htag">Come & Stay with Us</h3>
+                      <p className="ptag">
+                        Pick any of our rooms to experience the delightful decor,
+                        complemented with modern amenties for a comfortable stay
+                      </p>
+                    </div> */}
+                    <div className="col-12 col-lg-6 Jupiter mx-3 ">
+                      <img
+                        className="img-responsive invisible imgs   "
+                        src={require("../../images/rooma.jpg")}
+                        alt=""
+                        width="100%"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="col-12 col-lg-6 jupiter m-auto  "
+                    data-aos="fade-up"
+                  >
+                    <h3 className=" htag">{items.name}</h3>
+                    <p className="ptag ">
+                      {/* Queen Beds(2) Bathtub with hand shower free WIFI and Tower Cupboard table, and chair water bottles */}
+                      {items.description}
+                    </p>
+                    <p>Beds: {items.beds}</p>
+                    <p>
+                      Adults:<span className="text-secondary">{items.adults} </span>
+                    </p>
+                    <Button variant="primary" onClick={handleShow}>
+                      Book Now
+                    </Button>
+                  </div>
+                </div>
+
+              ))
+            }
+          </div>
         </div >
       </form >
       <Footer />
