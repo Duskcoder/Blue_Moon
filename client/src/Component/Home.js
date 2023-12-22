@@ -24,7 +24,8 @@ function Home() {
       <div className="overflow-hidden">
         <div className="home-bg  col-12 overflow-hidden">
           <div className="container position-relative home-text-center ">
-            <div className="text-align-center  " style={{background:'#17161670',width:'60%', top:"40px"}}>
+
+            <div className="text-align-center col-lg-6 " style={{ background: '#17161670', width: '60%', top: "40px" }}>
               <div id="home-mobile" data-aos="fade-right" data-aos-duration="1000">
                 <h1 className="your text-white">YOUR HOME</h1>
               </div>
@@ -35,14 +36,30 @@ function Home() {
                 <h1 className="from text-white ">FROM HOME</h1>
               </div>
             </div>
+
           </div>
+          <div className="container homes-text-center">
+            <div className="col-lg-6 col-12 text-align-center justify-content m-auto " style={{ background: '#17161670', width: '50%', height: '100%' }}>
+              <div data-aos="fade-right" data-aos-duration="1000">
+                <h1 className="your text-white fs-2 mt-5 ">YOUR HOME</h1>
+              </div>
+              <div data-aos="zoom-in " data-aos-duration="1000">
+                <h3 className="away fs-2">Away</h3>
+              </div>
+              <div data-aos="fade-left" data-aos-duration="1000">
+                <h1 className="from text-white fs-2">FROM HOME</h1>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
-        <div className="row justify-content-evenly  mb-5  mt-5 room-booking">
-          <div className="col-3 m-auto">
+        <div className="row justify-content-evenly  mb-5  mt-5  room-booking">
+          <div className="col-5 col-lg-3 m-auto">
             <div className="systembutton">
               <h4
-              
+
                 className=" justify-content-center d-flex font-family-hoz"
                 style={{ color: "#0c617d" }}
               >
@@ -68,7 +85,7 @@ function Home() {
               </h4>
 
               <button
-                className="mt-2 col-lg-4 mobileview    mb-2"id="font-family-hoz"
+                className="mt-2 col-lg-4 mobileview    mb-2" id="font-family-hoz"
                 onClick={() => navigate("/room")}
                 data-aos="fade-right"
                 data-aos-duration="3000"
@@ -188,16 +205,16 @@ function Home() {
                 src={kitchen}
                 alt=""
                 width="70%"
-        
+
               />
             </div>
             <div className="rooters col-12 col-lg-6 mt-5 mt-md-2">
               <img
                 className="img-responsive"
-              src={reception2}
+                src={reception2}
                 alt=""
-             
-            
+
+
               />
             </div>
           </div>

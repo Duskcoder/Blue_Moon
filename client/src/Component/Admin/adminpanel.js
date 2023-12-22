@@ -36,7 +36,7 @@ import MenuItem from "@mui/material/MenuItem";
 import axios from "axios";
 import Pagination from "react-js-pagination"; // Import Pagination component
 import "../../Component/Admin/adminpanel.css";
-
+import {Link} from 'react-router-dom'
 const drawerWidth = 240;
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -334,9 +334,9 @@ function Adminpanel(props) {
                   navigate("/admin");
                 }}
               >
-                {/* <h4 className="dashboard-h4">
+                <h4 className="dashboard-h4">
                   <b className="text-white">Dashboard</b>
-                </h4> */}
+                </h4>
               </ListItemIcon>
               <ListItemText />
             </ListItemButton>
@@ -375,8 +375,8 @@ function Adminpanel(props) {
               Dropdown button
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a className="dropdown-item text-dark" href="#">BLUEMOON BANGALOW</a></li>
-              <li><a className="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY</a></li>
+              <li><Link to='/Admin' className="dropdown-item text-dark" href="#">BLUEMOON BANGALOW</Link></li>
+              <li><Link  to='/adminpanel'  className="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY</Link></li>
             </ul>
           </div>
         </Box>
@@ -389,7 +389,7 @@ function Adminpanel(props) {
         >
           Add
         </button>
-      
+
         <TableContainer component={Paper}>
           <input
             type="text"
@@ -485,7 +485,7 @@ function Adminpanel(props) {
                         <button
                           className="btn btn-info btn-xs ms-3 mt-2"
                           onClick={() => {
-                            navigate(`/view/${items.id}`);
+                            navigate(`/ViewRoomDetails/${items.id}`);
                           }}
                         >
                           <VisibilityIcon fontSize="small" color="primary" />

@@ -28,9 +28,16 @@ import GallerNew from "./Component/Gallery/GallerNew";
 import { About } from "./Component/About/About";
 import { About1 } from "./Component/About/About1";
 import Cancellation from "./Component/Cancellation/Cancellation";
-import Header from "./Component/Header";
-// import { Switch } from "@mui/base";
 
+import ViewRoomDetails from "./Component/Admin/ViewRoom"
+import AdminpanelHomeStay from "./Component/Admin/adminpanelhomestay";
+import Levelhomestay from "./Component/Admin/Levelhomestay";
+import AddRoomsHomestay from "./Component/Admin/AddRoomsHomestay";
+import UpdateHomeStay from "./Component/Admin/updateHomeStay";
+
+import Header from "./Component/Header";
+// import { Contactnew } from "./Component/contactnew ";
+import { ContactNew } from "./Component/ContactNews";
 
 function App() {
   return (
@@ -41,6 +48,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/about1" element={<About1 />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contactnew" element={<ContactNew />} />
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/" element={<Home />} />
         <Route path="/stay" element={<RoomStay />} />
@@ -67,6 +75,14 @@ function App() {
         {/* <Switch> */}
 
         {/* </Switch> */}
+        <Route path="/room" element={<Rooms />}/>
+        <Route path="/Gallery1" element={<Gallery1/>} />
+        <Route path="/ViewRoomDetails/:id" element={<ViewRoomDetails/>} />
+        <Route path="/adminpanel" element={<AdminpanelHomeStay/>} />
+        <Route path="/LevelHomeStay" element={<Levelhomestay/>} />
+        <Route path="/booknow" element={<StandardRoom />} />
+        <Route path="/AddRoom/HomeStay" element ={<AddRoomsHomestay/>}/>
+        <Route path="/update/homestay/:id" element ={<UpdateHomeStay/>}/>
         {/* <Route path="/details" element={<Details/>}/> */}
         {/* <Footer/> */}
       </Routes>

@@ -15,7 +15,7 @@ export const Amenities = () => {
             <div id='Amenities' className='d-flex align-items-center'>
                 <div className='container  '>
                     <h1 className='htaga' data-aos='fade-left' data-aos-duration='1000'>Amenities & Facilities</h1>
-                    <h5 className='col-sm-4 fs-4 ptaga' data-aos='fade-right' data-aos-duration='1000'>We do not give you just rooms to stay.we give you an environment so you can experience the best while on a holiday with us.Walk into our homestay and enjoy a refreshing,rejuvenating, day off with us. </h5>
+                    <h5 className='col-sm-4  ptaga' data-aos='fade-right' data-aos-duration='1000'>We do not give you just rooms to stay.we give you an environment so you can experience the best while on a holiday with us.Walk into our homestay and enjoy a refreshing,rejuvenating, day off with us. </h5>
                 </div>
 
             </div>
@@ -27,7 +27,7 @@ export const Amenities = () => {
                     <div className='w-20'>
                         <button className='amen-btn'
 
-                        ><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Bookings</a></button>
+                        ><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0' className='text-white'>Get Bookings</a></button>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ export const Amenities = () => {
                     <div className='w-20 mt-5'>
                         <button className='amen-btn'
 
-                        ><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Bookings</a></button>
+                        ><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0' className='text-white'>Get Bookings</a></button>
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@ export const Amenities = () => {
                         {/* <Link to="https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0" className='amen-btn mb-4'>
                     Get Enquiry
                     </Link> */}
-                        <button className='amen-btn mb-4'><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0'>Get Enquiry</a></button>
+                        <button className='amen-btn mb-4'><a href='https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0' className='text-white'>Get Enquiry</a></button>
                     </div>
                 </div>
             </div>

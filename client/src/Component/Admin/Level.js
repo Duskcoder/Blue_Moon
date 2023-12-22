@@ -30,7 +30,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import axios from "axios";
 import Pagination from "react-js-pagination"; // Import Pagination component
-
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
@@ -327,7 +327,7 @@ function Level(props) {
                 <List>
                     <ListItem disablePadding>
                         <ListItemButton>
-                        <ListItemIcon onClick={() => { navigate("/admin") }}>
+                            <ListItemIcon onClick={() => { navigate("/admin") }}>
                                 <h4 className="dashboard-h4">
                                     <b>Dashboard</b>
                                 </h4>
@@ -347,14 +347,33 @@ function Level(props) {
                         </ListItemButton>
 
                     </ListItem>
-                
+
                 </List>
                 <Divider />
             </Drawer>
             <Main open={open}>
                 <DrawerHeader />
 
-                <h2>Rooms</h2>
+                <Box sx={{ display: 'flex', gap: '50px' }}>
+
+                    <h2>Room</h2>
+
+                    <div className="dropdown">
+                        <button
+                            className="btn btn-primary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Room
+                        </button>
+                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><Link to='/Level' className="dropdown-item text-dark" href="#">BLUEMOON BANGALOW ROOMS</Link></li>
+                            <li><Link to='/LevelHomeStay' className="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY ROOMS</Link></li>
+                        </ul>
+                    </div>
+                </Box>
                 <TableContainer component={Paper}>
                     <input
                         type="text"
@@ -417,13 +436,13 @@ function Level(props) {
                                         <StyledTableCell align="center">
                                             {items.address}
                                         </StyledTableCell>
-                                      
 
-                                       <StyledTableCell align="center">
+
+                                        <StyledTableCell align="center">
                                             <button
                                                 className="btn btn-primary btn-xs ms-1"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            
+
                                             >
                                                 <i className="fas fa-pencil-alt me-2"></i>Accept
                                             </button>

@@ -392,7 +392,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-
+import Details1 from "./Details1";
 const drawerWidth = 240;
 
 function Addrooms(props) {
@@ -494,6 +494,7 @@ function Addrooms(props) {
       <main
         sx={{
           flexGrow: 1,
+          
           p: 3,
           transition: "margin .5s",
           marginLeft: `-${drawerWidth}px`,
@@ -504,6 +505,7 @@ function Addrooms(props) {
       >
         <Toolbar />
         <h2>AddRooms</h2>
+        <Details1/>
       </main>
     </Box>
   );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import "../../Component/Rooms/Rooms.css";
+// import "../../Component/Rooms/Rooms.css";
 
 function ViewRoom() {
   const [room, setRoom] = useState({});
@@ -12,6 +12,8 @@ function ViewRoom() {
       .get(`http://localhost:5000/api/new/showroom/${id}`)
       .then((res) => setRoom(res.data))
       .catch((err) => console.log(err));
+      console.log(id,"sfguywtfgiuwgfiug")
+      // console.log(res.data,"sfguywtfgiuwgfiug")
   }, [id]);
 
   return (
@@ -21,22 +23,23 @@ function ViewRoom() {
           {/* <div className="head  "> */}
             <div className="room col-6 col-lg-12 htagsMob mx-5   ">
               <h1 className="text-white htagr">Rooms</h1>
+              
             </div>
           {/* </div> */}
         </div>
 
         <div key={room.id} className="container stay mt-5 ">
           <div className="row">
-            <div className="col-12 col-lg-6 Mercury m-auto" data-aos="fade-right">
+            <div className="col-12 col-lg-6  m-auto" data-aos="fade-right">
               <img
                 className="mt-3"
                 src={`http://localhost:5000/${room.cover_img}`}
                 alt="loading"
                 width="100%"
-                height="70%"
+                height="50%"
               />
             </div>
-            <div className="col-12 col-lg-6 Mercury m-auto" data-aos="fade-right">
+            <div className="col-12 col-lg-6  m-auto" data-aos="fade-right">
               <h3 className="htag">Room name: {room.name}</h3>
               <p>Description: {room.description}</p>
               <p>Bed: {room.beds}</p>

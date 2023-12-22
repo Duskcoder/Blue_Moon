@@ -12,7 +12,7 @@ import { useNavigate, Link } from 'react-router-dom'
 
 export const Mark = createContext(null);
 function Rooms() {
-    const [Rooms, setRooms] = useState([]);
+  const [Rooms, setRooms] = useState([]);
   const navigate = useNavigate()
 
   // const handleClose = () => setShowModal(false);
@@ -46,11 +46,11 @@ function Rooms() {
 
     fetchData();
   }, []);
-   
-console.log(Rooms)
-   
- 
- const handleShow = (id) => {
+
+  console.log(Rooms)
+
+
+  const handleShow = (id) => {
     navigate(`/booknow/${id}`);
   };
 
@@ -68,32 +68,30 @@ console.log(Rooms)
 
   return (
     <>
-      
+
       <Header />
       <form>
         <div className="overflow-hidden">
-          <div className="system">
-            <div className="" id="RoomsHeader">
-              <div>
-                <div className="room col-6 col-lg-12 htagsMob mx-5 px-4">
-                  <h1 className="text-white htagr ">Rooms</h1>
-                  <p className="ptag text-white">
-                    If you are looking for a home away from home, just walk in
-                    here.
-                    <br /> You can get both, an incredible and relaxing experience
-                    while you are on a holiday
-                  </p>
-                </div>
+          <div className="systemRoom">
+            <div className="head  ">
+              <div className="room col-6 col-lg-6  htagsMob mx-5 px-4">
+                <h1 className="text-white htagr ">Rooms</h1>
+                <p className="ptag text-white">
+                  If you are looking for a home away from home, just walk in
+                  here.
+                  <br /> You can get both, an incredible and relaxing experience
+                  while you are on a holiday
+                </p>
               </div>
-            </div>
-            <div className="container stay mt-5">
-              <div className="row">
-                <div className="col-sm-12 come">
-                  <h3 className="htag">Come & Stay with Us</h3>
-                  <p className="ptag">
-                    Pick any of our rooms to experience the delightful decor,
-                    complemented with modern amenties for a comfortable stay
-                  </p>
+              <div className="container stay mt-5">
+                <div className="row">
+                  <div className="col-sm-12 come">
+                    <h3 className="htag">Come & Stay with Us</h3>
+                    <p className="ptag">
+                      Pick any of our rooms to experience the delightful decor,
+                      complemented with modern amenties for a comfortable stay
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -130,9 +128,9 @@ console.log(Rooms)
                               Adults:<span className="text-secondary">{item.adults} </span>
                             </p>
                             {/* <Link to={`/booknow/${encodeURIComponent(item.name)}`}> */}
-                              <Button variant="primary" onClick={()=>handleShow(item.id)}>
-                                Book Now
-                              </Button>
+                            <Button variant="primary" onClick={() => handleShow(item.id)}>
+                              Book Now
+                            </Button>
                             {/* </Link> */}
 
 
@@ -193,7 +191,7 @@ console.log(Rooms)
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={()=>handleShow(items.id)}>
+                          <Button variant="primary" onClick={() => handleShow(items.id)}>
                             Book Now
                           </Button>
 
@@ -268,7 +266,7 @@ console.log(Rooms)
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={()=>handleShow(itemss.id)}>
+                          <Button variant="primary" onClick={() => handleShow(itemss.id)}>
                             Book Now
                           </Button>
                         </div>
@@ -331,7 +329,7 @@ console.log(Rooms)
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={()=>handleShow(items.id)}>
+                          <Button variant="primary" onClick={() => handleShow(items.id)}>
                             Book Now
                           </Button>
 
@@ -405,7 +403,7 @@ console.log(Rooms)
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={()=>handleShow(item.id)}>
+                          <Button variant="primary" onClick={() => handleShow(item.id)}>
                             Book Now
                           </Button>
                         </div>
@@ -468,7 +466,7 @@ console.log(Rooms)
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={()=>handleShow(items.id)}>
+                          <Button variant="primary" onClick={() => handleShow(items.id)}>
                             Book Now
                           </Button>
 
@@ -491,11 +489,9 @@ console.log(Rooms)
               </div>
             </div>
 
-          </div>
-
-
-        </div>
-      </form>
+          </div >
+        </div >
+      </form >
       <Footer />
     </>
 

@@ -1,17 +1,19 @@
- const book = require('../models/booking')
+ const book = require('../models/booking');
+const { sendEmail } = require('../utils/sendMail');
 
 
  exports.Booking = async (req,res)=>{
     try {
-        const {check_in,check_out,adults,room_name,name,email,phone,address} = req.body;
+        const {check_in,check_out,adults,room_name,customer_name,email,phone,address} = req.body;
         const rooms = await book.create({
-            check_in,check_out,adults,name,email,phone,address,room_name
+            check_in,check_out,adults,customer_name,email,phone,address,room_name
             
             
         });
-        console.log(req.body,'ergeg');
-       
+        // console.log(req.body,'ergeg');
+       console.log(rooms,'wsviuwgvweiufgtwuetgf')
         res.status(200).json(rooms);
+        sendEmail(check_in,check_out,room_name,customer_name,email)
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
