@@ -25,13 +25,13 @@ function Home() {
         <div className="home-bg  col-12 overflow-hidden">
           <div className="container position-relative home-text-center ">
             <div className="text-align-center  " style={{background:'#17161670',width:'60%', top:"40px"}}>
-              <div data-aos="fade-right" data-aos-duration="1000">
-                <h1 className="your text-white  ">YOUR HOME</h1>
+              <div id="home-mobile" data-aos="fade-right" data-aos-duration="1000">
+                <h1 className="your text-white">YOUR HOME</h1>
               </div>
               <div data-aos="zoom-in" data-aos-duration="1000">
-                <h3 className="away  ">Away</h3>
+                <h3 className="away " id="home-mobile-away">Away</h3>
               </div>
-              <div data-aos="fade-left" data-aos-duration="1000">
+              <div data-aos="fade-left" data-aos-duration="1000" id="home-mobile-from">
                 <h1 className="from text-white ">FROM HOME</h1>
               </div>
             </div>

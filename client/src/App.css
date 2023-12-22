@@ -1703,7 +1703,27 @@ li a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  #header2-mobile{
+    height: 12% !important;
+  }
 
+  #header2-mobile img{
+    width: 11% !important;
+  }
+  #toggle-btn-mobile{
+    margin-top: 0.5rem !important;
+  }
+  #home-mobile{
+    padding-top: 8px !important;
+  }
+  #home-mobile-away{
+    font-size: 55px !important;
+  }
+  #home-mobile-from{
+    padding-bottom: 10px !important;
+  }
+}
 
 
 @media screen and (max-width: 300px) {
