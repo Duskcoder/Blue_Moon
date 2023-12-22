@@ -216,9 +216,18 @@ function AdminpanelHomeStay(props) {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/homestay/room/deletes/${id}`);
+      const response=await axios.delete(`http://localhost:5000/api/homestay/room/deletes/${id}`);
       console.log("Deleted successfully");
-
+       
+      // Check the status and handle success/failure accordingly
+      if (response.status === 200) {
+        console.log("Deleted successfully");
+        window.location.reload();
+        // Update state or trigger data refetch here
+      } else {
+        console.error("Error deleting item:", response.data);
+        // Handle error (e.g., show an error message to the user)
+      }
       // Update state or trigger data refetch here
 
     } catch (error) {
@@ -482,7 +491,7 @@ function AdminpanelHomeStay(props) {
                           data-title="Delete"
                           data-toggle="modal"
                           data-target="#delete"
-                          onClick={handleDelete}
+                          onClick={() => handleDelete(items.id)}
                         >
                           <DeleteIcon fontSize="small" color="secondary" />
                         </button>

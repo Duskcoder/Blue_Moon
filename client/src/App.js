@@ -34,8 +34,10 @@ import AdminpanelHomeStay from "./Component/Admin/adminpanelhomestay";
 import Levelhomestay from "./Component/Admin/Levelhomestay";
 import AddRoomsHomestay from "./Component/Admin/AddRoomsHomestay";
 import UpdateHomeStay from "./Component/Admin/updateHomeStay";
+// import Header from "./Component/Header";
+import ViewHomeStay from "./Component/Admin/viewHomeStay"
 
-import Header from "./Component/Header";
+// import Header from "./Component/Header";
 // import { Contactnew } from "./Component/contactnew ";
 import { ContactNew } from "./Component/ContactNews";
 
@@ -83,6 +85,7 @@ function App() {
         <Route path="/booknow" element={<StandardRoom />} />
         <Route path="/AddRoom/HomeStay" element ={<AddRoomsHomestay/>}/>
         <Route path="/update/homestay/:id" element ={<UpdateHomeStay/>}/>
+        <Route path="/view/homestay/:id" element={<ViewHomeStay/>}/>
         {/* <Route path="/details" element={<Details/>}/> */}
         {/* <Footer/> */}
       </Routes>
