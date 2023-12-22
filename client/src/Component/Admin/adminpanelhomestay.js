@@ -36,7 +36,7 @@ import MenuItem from "@mui/material/MenuItem";
 import axios from "axios";
 import Pagination from "react-js-pagination"; // Import Pagination component
 import "../../Component/Admin/adminpanel.css";
-
+import { Link } from "react-router-dom";
 const drawerWidth = 240;
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -101,6 +101,9 @@ function AdminpanelHomeStay(props) {
 
       .catch((err) => console.log(err));
   }, []);
+  const HandleDash=()=>{
+    navigate('/adminpanel')
+  }
   // console.log(Rooms.cover_img[0], "gjhg");
 
   // useEffect(() => {
@@ -117,6 +120,8 @@ function AdminpanelHomeStay(props) {
   //     console.log("error fetching data:", error);
   //   }
   // };
+
+ 
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
@@ -330,9 +335,7 @@ function AdminpanelHomeStay(props) {
           <ListItem disablePadding>
             <ListItemButton className="bg-panel-color ">
               <ListItemIcon
-                onClick={() => {
-                  navigate("/admin");
-                }}
+                onClick={HandleDash}
               >
                 <h4 className="dashboard-h4">
                   <b className="text-white">Dashboard</b>
@@ -345,7 +348,7 @@ function AdminpanelHomeStay(props) {
             <ListItemButton className="bg-panel-color">
               <ListItemIcon
                 onClick={() => {
-                  navigate("/Level");
+                  navigate("/LevelHomeStay");
                 }}
               >
                 <h4 className="dashboard-h4">
@@ -361,12 +364,31 @@ function AdminpanelHomeStay(props) {
       <Main open={open}>
         <DrawerHeader />
 
-        <h2>Dashboard</h2>
+        <Box sx={{ display: 'flex', gap: '50px' }}>
+
+<h2>Dashboard</h2>
+
+<div className="dropdown">
+  <button
+    className="btn btn-primary dropdown-toggle"
+    type="button"
+    id="dropdownMenuButton"
+    data-mdb-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Dropdown button
+  </button>
+  <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><Link to='/Admin' className="dropdown-item text-dark" href="#">BLUEMOON BANGALOW</Link></li>
+    <li><Link  to='/adminpanel'  className="dropdown-item text-dark" href="#">BLUEMOON HOMESTAY</Link></li>
+  </ul>
+</div>
+</Box>
         <button
           className="btn btn-success btn-xs ms-3 mb-3"
           data-toggle="modal"
           onClick={() => {
-            navigate("/addrooms/homestay");
+            navigate("/AddRoom/HomeStay");
           }}
         >
           Add

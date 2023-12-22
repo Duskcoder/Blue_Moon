@@ -28,11 +28,19 @@ import GallerNew from "./Component/Gallery/GallerNew";
 import { About } from "./Component/About/About";
 import { About1 } from "./Component/About/About1";
 import Cancellation from "./Component/Cancellation/Cancellation";
+<<<<<<< HEAD
+import ViewRoomDetails from "./Component/Admin/ViewRoom"
+import AdminpanelHomeStay from "./Component/Admin/adminpanelhomestay";
+import Levelhomestay from "./Component/Admin/Levelhomestay";
+import AddRoomsHomestay from "./Component/Admin/AddRoomsHomestay";
+import UpdateHomeStay from "./Component/Admin/updateHomeStay";
+=======
 import Header from "./Component/Header";
 // import { Contactnew } from "./Component/contactnew ";
 import { ContactNew } from "./Component/ContactNews";
 
 
+>>>>>>> 90db9f7d3f3ab97b2f38fe76cd37e3774fde23b4
 function App() {
   return (
     <div>
@@ -52,6 +60,7 @@ function App() {
         <Route path="/viewdev" element={<ViewDev />} />
         <Route path="/login_Form" element={<SignIn />} />
         <Route path="/contact1" element={<ContactUs1 />} />
+        {/* <Route path="/contactUS" element={<ContactUs />} /> */}
         <Route path="/HomeStayHome" element={<HomeStayHome />} />
         <Route path="/Cancellation" element={<Cancellation/>}/>
         <Route path="/about1" element={<AboutUs1 />} />
@@ -63,9 +72,12 @@ function App() {
         <Route path="/addrooms" element={<Addrooms />} />
         <Route path="/room" element={<Rooms />}/>
         <Route path="/Gallery1" element={<Gallery1/>} />
-         
-        
+        <Route path="/ViewRoomDetails/:id" element={<ViewRoomDetails/>} />
+        <Route path="/adminpanel" element={<AdminpanelHomeStay/>} />
+        <Route path="/LevelHomeStay" element={<Levelhomestay/>} />
         <Route path="/booknow" element={<StandardRoom />} />
+        <Route path="/AddRoom/HomeStay" element ={<AddRoomsHomestay/>}/>
+        <Route path="/update/homestay/:id" element ={<UpdateHomeStay/>}/>
         {/* <Route path="/details" element={<Details/>}/> */}
         {/* <Footer/> */}
       </Routes>

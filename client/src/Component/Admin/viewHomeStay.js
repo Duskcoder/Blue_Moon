@@ -32,7 +32,7 @@ function ViewHomeStay() {
                 className="mt-3"
                 src={`http://localhost:5000/${room.cover_img}`}
                 alt="loading"
-                width="100%"
+                width="50%"
                 height="70%"
               />
             </div>
