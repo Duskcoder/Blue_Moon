@@ -158,9 +158,9 @@ function HomeStayHome() {
     <>
       <Header1 />
       <div className="overflow-hidden">
-        <div className="system">
+        <div className="system ">
           <div className="head  ">
-            <div className="room col-6 col-lg-12 pt-5 mx-5">
+            <div className="room col-12 col-lg-6  mx-5">
               <h1
                 className="htagp text-center"
                 data-aos="fade-up"
@@ -184,7 +184,7 @@ function HomeStayHome() {
               </p>
 
               <button
-                className="btn btn-white shadow btns m-auto d-flex"
+                className="btn btn-white shadow btns m-auto d-flex mb-3"
                 onClick={() => navigate("/stay")}
                 data-aos="fade-right"
                 data-aos-duration="3000"
@@ -193,6 +193,7 @@ function HomeStayHome() {
               </button>
             </div>
           </div>
+       
           <ViewDev />
    
           <CardBox />

@@ -11,7 +11,7 @@ const nodeMailer = require("nodemailer");
     }
   });
 
-const sendEmail = async (check_in,check_out,customer_name,room_name,email) => {
+const sendEmail = async (check_in,check_out,name,room_name,email) => {
   const subject={
     check_in:check_in,
     check_out:check_out,
@@ -19,7 +19,7 @@ const sendEmail = async (check_in,check_out,customer_name,room_name,email) => {
   }
   const from =email;
   const to = "venuvcodewonders@gmail.com";
-  const customer=customer_name;
+  const customer=name;
   try {
     const mailOptions = {
       from: from,

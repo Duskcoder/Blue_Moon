@@ -108,7 +108,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className=" header2 " style={{backgroundColor:"#00000057",position:'absolute',zIndex:'1000'}}>
+      <div className=" header2 " id="header2-mobile" style={{backgroundColor:"#00000057",position:'absolute',zIndex:'1000'}}>
         <div className="d-flex justify-content-between p-2">
           <img
             src={blue}
@@ -117,7 +117,7 @@ function Header() {
             style={{ width: "30%" }}
           />
 
-          <div className="toggle mt-4">
+          <div className="toggle mt-4" id="toggle-btn-mobile">
             <button
               type="submit"
               className="button_style p-1" 

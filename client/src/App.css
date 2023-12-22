@@ -183,17 +183,7 @@ a {
 
   }
 
-  .home-bg .from {
-    font-size: xx-large !important;
-    margin-bottom: 130% !important;
-  }
 
-  .home-bg .your {
-    font-size: xx-large !important;
-
-
-
-  }
 
 
 
@@ -278,12 +268,38 @@ card-text1{
 }
 
 .home-text-center h1 {
-  font-size: 100px;
+  font-size: 70px;
 }
 
 .home-text-center h3 {
   font-size: 47px;
   color: sandybrown;
+  
+}
+.homes-text-center h1 {
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.homes-text-center h3 {
+  font-size: 47px;
+  text-align: center;
+  color: sandybrown;
+}
+@media(max-width:400px){
+  .home-text-center{
+    display: none !important;
+  }
+  .homes-text-center{
+    width: 100%;
+    margin-top: 110px !important;
+  }
+}
+@media(min-width:400px){
+  .homes-text-center{
+    display: none !important;
+  }
 }
 
 .card-text1 {
@@ -292,6 +308,26 @@ card-text1{
 
 #contactus {
   background-image: url(./images/IMG_20220810_110120.jpg);
+  height: 120vh;
+  background-size: cover;
+  color: black;
+
+  /* background-attachment: fixed; */
+  opacity: 1.2;
+
+}
+.contactt{
+  margin-top: 30px;
+}
+
+@media(max-width:500px){
+  .contactt{
+  padding-top: 40px;
+
+  }
+}
+.contactnew {
+  background-image: url(./images/night.jpeg);
   height: 120vh;
   background-size: cover;
   color: black;
@@ -1337,7 +1373,7 @@ body {
   .parentned {
     width: 100%;
     margin: auto;
-    margin-top: 40px;
+   
   }
 
   .use {
@@ -1703,7 +1739,27 @@ li a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  #header2-mobile{
+    height: 12% !important;
+  }
 
+  #header2-mobile img{
+    width: 11% !important;
+  }
+  #toggle-btn-mobile{
+    margin-top: 0.5rem !important;
+  }
+  #home-mobile{
+    padding-top: 8px !important;
+  }
+  #home-mobile-away{
+    font-size: 55px !important;
+  }
+  #home-mobile-from{
+    padding-bottom: 10px !important;
+  }
+}
 
 
 @media screen and (max-width: 300px) {
@@ -1724,6 +1780,18 @@ li a {
 
   margin-right: auto
 }
+#directions {
+
+  padding: 7px;
+  float: left !important;
+  color: white;
+  background-color: #117CA1 !important;
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: smaller;
+
+
+
+}
 
 
 /* Amenities page */
@@ -1736,6 +1804,14 @@ li a {
 .htaga {
   color: rgb(255, 255, 255);
   font-size: 45px;
+ 
+}
+@media (max-width:500px){
+  .ptaga {
+    color: rgb(255, 255, 255);
+    font-size: 15px !important;
+   
+  }
 }
 
 @media (max-width: 500px) {
@@ -2310,4 +2386,91 @@ li a {
 .away {
   color: sandybrown !important;
   font-size: 70px !important;
+}
+
+
+/* Rooms mobile responsive */
+
+@media (min-width:500px){
+  .mobsys{
+    display: none !important;
+  }
+}
+
+@media (max-width:700px){
+  .systemRoom{
+    display: none !important;
+  }
+}
+
+
+/* amenities page */
+
+.amen-btn{
+  
+  background-color:#117CA1 ;
+}
+
+/* homestay home */
+.room{
+  background-color: rgba(23, 22, 22, 0.44);
+align-items: center;
+}
+
+@media (max-width:700px){
+.child  {
+
+ 
+}
+}
+
+
+
+/* Stay */
+
+@media (max-width:500px){
+  .roomx {
+    margin-left: 20px;
+  }
+  .rooms{
+  
+    padding-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.footerstay {
+font-size:20px
+}
+
+@media (min-width:500px) {
+  #directions {
+    display: none !important;
+  
+  }
+}
+
+@media (max-width:500px){
+  #direction{
+display: none !important;
+  }
+}
+
+
+/* RoomHomestay */
+
+@media(max-width:500px){
+
+  .systemSys{
+    display: none !important;
+  }
+}
+@media(min-width:700px){
+  .systemMob{
+    display: none !important;
+  }
+ 
 }

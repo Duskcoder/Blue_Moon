@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import { useState } from "react";
 import '../Rooms/Room.css'
 
@@ -7,74 +7,91 @@ import { Modal, Button } from "react-bootstrap";
 import { useEffect } from "react";
 import axios from "axios";
 import Footer from "../Footer";
+import { useNavigate, Link } from 'react-router-dom'
 
+
+export const Mark = createContext(null);
 function Rooms() {
-
-  const [showModal, setShowModal] = useState(false);
-
   const [Rooms, setRooms] = useState([]);
+  const navigate = useNavigate()
 
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
-  const [currentpage, setCurrentPage] = useState(1);
-  const recordsPerPage = 10;
-  const firstIndex = (currentpage - 1) * recordsPerPage;
-  const lastIndex = currentpage * recordsPerPage;
+  // const handleClose = () => setShowModal(false);
+  // const [currentpage, setCurrentPage] = useState(1);
+  // const recordsPerPage = 10;
+  // const firstIndex = (currentpage - 1) * recordsPerPage;
+  // const lastIndex = currentpage * recordsPerPage;
 
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:5000/api/new/showroom")
+  //     .then((res) => {
+  //       setRooms(res.data)
+
+
+  //     })
+
+  //     .catch((err) => console.log(err));
+  // }, []);
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/new/showroom")
-      .then((res) => {
-        setRooms(res.data)
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("http://localhost:5000/api/new/showroom");
+        const details = await res.data
+        setRooms(details)
+      } catch (err) {
+        console.error('Error fetching data:', err);
 
+      }
+    };
 
-      })
-
-      .catch((err) => console.log(err));
+    fetchData();
   }, []);
 
-  // const whatsappLink =
+  console.log(Rooms)
+
+
+  const handleShow = (id) => {
+    navigate(`/booknow/${id}`);
+  };
+
+
+  // const whatsappLink = 
   //   "https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0";
   const details = Rooms.slice(0, 1)
   const details1 = Rooms.slice(1, 2)
   const details2 = Rooms.slice(3, 4);
-  const details3 = Rooms.slice(4,5);
-  const details4 = Rooms.slice(5,6);
+  const details3 = Rooms.slice(4, 5);
+  const details4 = Rooms.slice(5, 6);
 
-  console.log(details, 'oo')
-  console.log(details1, "ll")
-  console.log(details2, 'ghjkk');
-  console.log(details3, "bala");
-  console.log(details4, "guru");
+
 
 
   return (
     <>
+
       <Header />
       <form>
         <div className="overflow-hidden">
-          <div className="system">
-            <div className="" id="RoomsHeader">
-              <div>
-                <div className="room col-6 col-lg-12 htagsMob mx-5 px-4">
-                  <h1 className="text-white htagr ">Rooms</h1>
-                  <p className="ptag text-white">
-                    If you are looking for a home away from home, just walk in
-                    here.
-                    <br /> You can get both, an incredible and relaxing experience
-                    while you are on a holiday
-                  </p>
-                </div>
+          <div className="systemRoom">
+            <div className="head  ">
+              <div className="room col-6 col-lg-6  htagsMob mx-5 px-4">
+                <h1 className="text-white htagr ">Rooms</h1>
+                <p className="ptag text-white">
+                  If you are looking for a home away from home, just walk in
+                  here.
+                  <br /> You can get both, an incredible and relaxing experience
+                  while you are on a holiday
+                </p>
               </div>
-            </div>
-            <div className="container stay mt-5">
-              <div className="row">
-                <div className="col-sm-12 come">
-                  <h3 className="htag">Come & Stay with Us</h3>
-                  <p className="ptag">
-                    Pick any of our rooms to experience the delightful decor,
-                    complemented with modern amenties for a comfortable stay
-                  </p>
+              <div className="container stay mt-5">
+                <div className="row">
+                  <div className="col-sm-12 come">
+                    <h3 className="htag">Come & Stay with Us</h3>
+                    <p className="ptag">
+                      Pick any of our rooms to experience the delightful decor,
+                      complemented with modern amenties for a comfortable stay
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,9 +127,11 @@ function Rooms() {
                             <p>
                               Adults:<span className="text-secondary">{item.adults} </span>
                             </p>
-                            <Button variant="primary" onClick={handleShow}>
+                            {/* <Link to={`/booknow/${encodeURIComponent(item.name)}`}> */}
+                            <Button variant="primary" onClick={() => handleShow(item.id)}>
                               Book Now
                             </Button>
+                            {/* </Link> */}
 
 
                           </div>
@@ -172,7 +191,7 @@ function Rooms() {
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={handleShow}>
+                          <Button variant="primary" onClick={() => handleShow(items.id)}>
                             Book Now
                           </Button>
 
@@ -247,7 +266,7 @@ function Rooms() {
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={handleShow}>
+                          <Button variant="primary" onClick={() => handleShow(itemss.id)}>
                             Book Now
                           </Button>
                         </div>
@@ -258,7 +277,7 @@ function Rooms() {
                 }
                 {
                   details2.map((items) => (
-                    <div className=" container stay ">
+                    <div className=" container stay " key={items.id}>
                       <div className="row">
                         <div
                           className="col-12 col-lg-6 saturn m-auto  "
@@ -310,7 +329,7 @@ function Rooms() {
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={handleShow}>
+                          <Button variant="primary" onClick={() => handleShow(items.id)}>
                             Book Now
                           </Button>
 
@@ -384,7 +403,7 @@ function Rooms() {
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={handleShow}>
+                          <Button variant="primary" onClick={() => handleShow(item.id)}>
                             Book Now
                           </Button>
                         </div>
@@ -447,7 +466,7 @@ function Rooms() {
                             </tr>
                           </table>
 
-                          <Button variant="primary" onClick={handleShow}>
+                          <Button variant="primary" onClick={() => handleShow(items.id)}>
                             Book Now
                           </Button>
 
@@ -470,12 +489,10 @@ function Rooms() {
               </div>
             </div>
 
-          </div>
-
-
-        </div>
-      </form>
-      <Footer/>
+          </div >
+        </div >
+      </form >
+      <Footer />
     </>
 
   );

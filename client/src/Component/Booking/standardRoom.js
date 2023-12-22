@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -10,16 +10,26 @@ import axios from 'axios';
 // import FootSection from './footSection';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useParams } from 'react-router-dom';
+import Header from '../Header';
+import Footer from '../Footer';
+import  '../Booking/Booking.css';
+
 
 function StandardRoom() {
-
+  const [room, setRoom] = useState('');
+  const { id } = useParams();
+ 
+  
   const formik = useFormik({
     initialValues: {
       name: '',
       email: '',
       address: '',
       phone: '',
-      // Add other fields as needed
+      check_in: '',
+      check_out: '',
+
     },
     validationSchema: Yup.object({
       name: Yup.string()
@@ -35,107 +45,97 @@ function StandardRoom() {
           'Invalid email format'
         ),
       address: Yup.string().required('Address is required'),
-      phone: Yup.string()
-        .required('Phone Number is required')
-        .matches(
-          /^\+(?:[0-9] ?){6,14}[0-9]$/,
-          'Invalid phone number format'
-        ),
-      // Add other validations for additional fields
+      phone:  Yup.string()
+      .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
+      .required('Phone number is required'),
+      check_in: Yup.string().required('Date is Required').nullable(),
+      check_out: Yup.string().required('Date is Required').nullable(),
+    
+
     }),
-    onSubmit: async (values) => {
-      console.log('Form submitted:', values);
-      // Add your form submission logic here
+    onSubmit:  (values) => {
+      const data={...values,adults: room.adults,
+        room_name: room.name }
+   
+      axios.post("http://localhost:5000/api/new/book", data)
+        .then(res => console.log(res.data,'kkk'))
+        .catch(err => console.log(err))
     },
   });
 
+ 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`http://localhost:5000/api/new/showroom/${id}`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
 
+        const data = await response.json();
+       
+        setRoom(data);
+      } catch (error) {
+        console.error('Error fetching room data:', error);
+      }
+    };
 
-
-
-  const { state } = useLocation();
-
-  const [data, setcount] = useState({
-    check_in: "",
-    check_out: "",
-    room_name: state.name,
-    adults: "",
-    name: "",
-    email: "",
-    phone: "",
-    address: "",
-  });
-
-
-
-
-
-  const handleChange = (e) => {
-    // setcount(e.target.value)
-    // console.log(e.target.value, "efeuhe")
-    const newObj = { ...data, [e.target.name]: e.target.value }
-    setcount(newObj)
-  }
-
-
+    fetchData();
+  }, [id]);
 
 
   return (
     <div className='container'>
+      <Header />
       <h2>Booking Form</h2>
       <form onSubmit={formik.handleSubmit}>
         <div className='header-h'>
           <div className='row'>
             <div className='paper col-md-6 col-lg-12'>
               <h1 className='text-light'>STANDARDROOM <br /><p className=''>Room </p></h1>
-              {/* <div className='d-flex wow'>
-          <div className='col-6 text-center text-light'>
-            <h2>Adults-2</h2>
-          </div>
-          <div className='col-6 text-light'>
-            <h2>Queen Beds-1</h2>
-          </div>
-        </div> */}
             </div>
           </div>
         </div>
 
-        <div className='section d-flex mt-3'>
+        {/* <div className='section d-flex mt-3'>
           <h5>Blue Moon Homestay <i className="bi bi-chevron-right"></i> </h5>
           <h5 className='ms-5'>Home</h5>
           <h5 className='ms-5'>Room </h5>
-        </div>
+        </div> */}
 
         <div className=' mt-5  '>
           <h2 className='quees mb-5 text-center'>Your Booking Details</h2>
-
           <div className='row fruit d-flex justify-content-evenly shadow-lg p-3 mb-5 bg-body rounded'>
             <div className='col-lg-3 col-md-6 seed mt-3 text-center'>
               <FloatingLabel controlId="floatingSelect" label="Check -in Date">
-                <input type="date" className="form-control" id="meeting-date" name="check_in" required />
-
+                <input type="date" className="form-control" id="meeting-date" name="check_in" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.check_in} />
+                {formik.errors.check_in && formik.touched.check_in ? (<div style={{ color: 'red' }}>{formik.errors.check_in}</div>) : ''}
               </FloatingLabel>
             </div>
             <div className='col-lg-3 col-md-6 seed  mt-3'>
               <FloatingLabel controlId="floatingSelect" label="Check -out Date">
-                <input type="date" className="form-control " id="meeting-date" name="check_out" required />
+                <input type="date" className="form-control" id="meeting-date" name="check_out" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.check_out} />
+                {formik.errors.date1 && formik.touched.check_out ? (<div style={{ color: 'red' }}>{formik.errors.check_out}</div>) : ''}
               </FloatingLabel>
             </div>
             <div className='col-lg-2 col-md-6 seed  mt-3'>
               <FloatingLabel controlId="floatingSelect" label="Guest">
-                <input type="number" className="form-control" name="adults" required />
+                <input type="number" className="form-control" name="guest" value={room.adults}/>
+  
 
 
               </FloatingLabel>
             </div>
             <div className='col-lg-2 col-md-6  '>
               <h3>Room Name</h3>
-              <p>{state.name}</p>
-              <input type="hidden" name="room_name" value={state.name} />
+              {/* <p>{b.name}</p> */}
+              <p>{room.name}</p>
+
+              <input type="hidden" name="room_name" />
             </div>
             <div className='col-lg-2 col-md-6  '>
               <h2>Price</h2>
-              <p>{state.price}</p>
+              <p>{room.price}</p>
             </div>
           </div>
         </div>
@@ -209,11 +209,11 @@ function StandardRoom() {
           </div>
         </div>
       </form>
+
+      <Footer />
+
       {/* <FootSection /> */}
     </div>
-
-
-
 
   )
 }

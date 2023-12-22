@@ -10,8 +10,8 @@ export const
         <div id='contactus' className='contactus overflow-hidden'>
 
           <div className='contact col-sm-12'>
-            <div className=''>
-              <h1 className='text-center' style={{ color: ' #1E5F75' }} data-aos='fade-left' data-aos-duration='500'>Contact Us</h1>
+            <div className='contactt'>
+              <h1 className='text-center pt-5 ' style={{ color: ' #1E5F75' }} data-aos='fade-left' data-aos-duration='500'>Contact Us</h1>
             </div>
             <div className=' line' data-aos='fade-left' data-aos-duration='500'></div>
             <div className='mt-4 text-center' style={{ color: ' #1E5F75' }} data-aos='fade-right' data-aos-duration='500'>
@@ -23,14 +23,14 @@ export const
 
           <div className='mobile ' id='sysmail' >
             <div className='detail  pt-5  '>
-              <p className='number text-center' data-aos='fade-left' data-aos-duration='1000' style={{ color: ' #1E5F75' }}>+91 8754041119</p>
-              <h5 className='text-center' data-aos='fade-right' data-aos-duration='1000'>bluemoonbungalow2022@gmail.com</h5>
+              <p className='number text-center' data-aos='fade-left' data-aos-duration='1000' style={{ color: ' white' }}>+91 8015522535</p>
+              <h5 className='text-center' data-aos='fade-right' data-aos-duration='1000'>bluemoonbungalow19@gmail.com</h5>
             </div>
           </div>
           <div className='mobile' id='mobmail' >
             <div className='detai align-items-center  '>
-              <p className='number text-center' data-aos='fade-left' data-aos-duration='1000' style={{ color: ' #1E5F75' }}>+91 8754041119</p>
-              <h5 className='text-center  ' style={{fontSize:'17px'}} data-aos='fade-right' data-aos-duration='1000'>bluemoonbungalow2022@gmail.com</h5>
+              <p className='number text-center' data-aos='fade-left' data-aos-duration='1000' style={{ color: ' white' }}>+91  8015522535</p>
+              <h5 className='text-center  ' style={{fontSize:'17px'}} data-aos='fade-right' data-aos-duration='1000'>bluemoonbungalow19@gmail.com</h5>
             </div>
           </div>
 

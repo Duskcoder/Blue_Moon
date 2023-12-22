@@ -21,7 +21,7 @@ function Footer() {
           <section className="text-white mt-4">
             <div className="row justify-content-start  ">
               <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase  mb-4 fs-5">Menu</h5>
+              <h5 className="text-uppercase footer-header mb-4 ">MENU</h5>
                 <ul className="list-unstyled mt-5  ">
                   <li className="mb-2">
                     <a
@@ -159,12 +159,19 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className=" col-lg-3  font-30 d-flex align-items-center  ">
+              <div className=" col-lg-3 col-10  font-30 d-flex align-items-center  ">
                 <button className="direction fw-bold" id='direction'>
                   <strong>
                   <FaDirections  className="fs-4"/>
 
-     <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9"  style={{ color: '#117CA1' }} target="_blank"  rel="noreferrer"className="text-white">Get Direction</a>
+     <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9"  style={{ color: 'blue' }} target="_blank"  rel="noreferrer"className="text-white">Get Direction</a>
+                  </strong>
+                </button>
+                <button className="direction fw-bold mb-5  " id='directions'>
+                  <strong>
+                  <FaDirections  className="fs-4"/>
+
+     <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9"  style={{ color: 'blue' }} target="_blank"  rel="noreferrer"className="text-white">Get Direction</a>
                   </strong>
                 </button>
               </div>

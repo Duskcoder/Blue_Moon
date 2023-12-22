@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route,Switch  } from "react-router-dom";
 // import Header from "./Component/Header";
 import { AboutUs } from "./Component/AboutUs";
 // import  AboutUs from "./Component/AboutUs"
@@ -28,42 +28,55 @@ import GallerNew from "./Component/Gallery/GallerNew";
 import { About } from "./Component/About/About";
 import { About1 } from "./Component/About/About1";
 import Cancellation from "./Component/Cancellation/Cancellation";
+
 import ViewRoomDetails from "./Component/Admin/ViewRoom"
 import AdminpanelHomeStay from "./Component/Admin/adminpanelhomestay";
 import Levelhomestay from "./Component/Admin/Levelhomestay";
 import AddRoomsHomestay from "./Component/Admin/AddRoomsHomestay";
 import UpdateHomeStay from "./Component/Admin/updateHomeStay";
-import Header from "./Component/Header";
+// import Header from "./Component/Header";
 import ViewHomeStay from "./Component/Admin/viewHomeStay"
+
+// import Header from "./Component/Header";
+// import { Contactnew } from "./Component/contactnew ";
+import { ContactNew } from "./Component/ContactNews";
 
 function App() {
   return (
     <div>
       {/* <Header /> */}
       <Routes>
-        <Route path="*" element={<Home />} />
+        <Route path="*" exact  element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/about1" element={<About1 />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contactnew" element={<ContactNew />} />
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/" element={<Home />} />
         <Route path="/stay" element={<RoomStay />} />
-        <Route path="/gallery" element={<CardBox/>} />
-        <Route path="/gallerynews" element={<GallerNew/>} />
+        <Route path="/gallery" element={<CardBox />} />
+        <Route path="/gallerynews" element={<GallerNew />} />
         <Route path="/homestay" element={<HomeStay />} />
         <Route path="/viewdev" element={<ViewDev />} />
         <Route path="/login_Form" element={<SignIn />} />
         <Route path="/contact1" element={<ContactUs1 />} />
         {/* <Route path="/contactUS" element={<ContactUs />} /> */}
         <Route path="/HomeStayHome" element={<HomeStayHome />} />
-        <Route path="/Cancellation" element={<Cancellation/>}/>
+        <Route path="/Cancellation" element={<Cancellation />} />
         <Route path="/about1" element={<AboutUs1 />} />
-        <Route path="/aboutus" element={<AboutUs/>} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/Admin" element={<Adminpanel />} />
         <Route path="/level" element={<Level />} />
         <Route path="/details" element={<Details1 />} />
         <Route path="/updateroom/:id" element={<UpdateRoom />} />
         <Route path="/addrooms" element={<Addrooms />} />
+        <Route path="/room" element={<Rooms />} />
+        <Route path="/Gallery1" element={<Gallery1 />} />
+
+          <Route path="/booknow/:id" element={<StandardRoom />} />
+        {/* <Switch> */}
+
+        {/* </Switch> */}
         <Route path="/room" element={<Rooms />}/>
         <Route path="/Gallery1" element={<Gallery1/>} />
         <Route path="/ViewRoomDetails/:id" element={<ViewRoomDetails/>} />
