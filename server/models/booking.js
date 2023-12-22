@@ -4,12 +4,12 @@ const sequelize = require('../config');
 
 const Booking = sequelize.define('Booking', {
   check_in: {
-    type: DataTypes.STRING,
+    type: DataTypes.DATE,
     allowNull: true,
     
   },
   check_out: {
-    type: DataTypes.STRING,
+    type: DataTypes.DATE,
     allowNull: true,
 
   },
@@ -23,9 +23,9 @@ const Booking = sequelize.define('Booking', {
     allowNull: true,
     
   },
-  customer_name: {
+  name: {
     type: DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   email: {
     type: DataTypes.STRING,
