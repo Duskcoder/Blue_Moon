@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import "../../Component/Rooms/Rooms.css";
+import "../Rooms/Room.css";
 
 function ViewRoom() {
   const [room, setRoom] = useState({});

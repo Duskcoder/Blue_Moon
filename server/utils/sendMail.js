@@ -20,18 +20,29 @@ const sendEmail = async (check_in,check_out,customer_name,room_name,email) => {
   const from =email;
   const to = "venuvcodewonders@gmail.com";
   const customer=customer_name;
-    try {
-        const mailOptions = {
-            from: from, // sender address
-            to: to, // list of receivers
-            subject: subject, // Subject line
-            text: `Hello ${to.split('@')[0]}`, // plain text body
-            html: `${subject.room_name} room   is booked by ${customer} from ${check_in} to ${check_out} ` // html body
-          };
-  
-      await transporter.sendMail(mailOptions);
-      console.log('Email sent successfully');
-    } catch (error) {
+  try {
+    const mailOptions = {
+      from: from,
+      to: to,
+      subject: `Booking Confirmation - ${subject.room_name} - ${customer}`,
+      text: `Hello Admin, ${customer} has booked the ${subject.room_name} room from ${check_in} to ${check_out}.`,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #3498db;">Booking Confirmation</h2>
+          <p>
+            <strong>${customer}</strong> has booked the ${subject.room_name} room from ${check_in} to ${check_out}.
+          </p>
+          
+          <p>
+            Customer's Email: ${from}
+          </p>
+        </div>
+      `
+    }  
+     await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully');
+  }
+    catch (error) {
       console.error('Error sending email:', error);
     }
   };

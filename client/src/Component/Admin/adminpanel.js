@@ -143,25 +143,6 @@ function Adminpanel(props) {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await axios.get(
-          `${process.env.REACT_APP_API_BASE_URL}/users/users`
-        ); // Replace with your API endpoint
-        if (response.status === 200) {
-          const jsonData = response.data;
-          setData(jsonData);
-          setFilteredData(jsonData);
-          console.log(jsonData);
-        }
-      } catch (err) {
-        console.error("Error:", err);
-      }
-    }
-
-    fetchData();
-  }, []);
 
   const theme = useTheme();
 
@@ -199,27 +180,33 @@ function Adminpanel(props) {
   const recordsPerPage = 10;
   const firstIndex = (currentpage - 1) * recordsPerPage;
   const lastIndex = currentpage * recordsPerPage;
-
+  
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
-  // import { useParams } from "react-router-dom";
-
-  // ...
-
-  // const { id } = useParams();
+ 
+  const  id  = useParams();
 
   const handleDelete = async (id) => {
+    console.log(id,"wsfhuiwi")
     try {
-      await axios.delete(`http://localhost:5000/api/new/room/delete/${id}`);
-      console.log("Deleted successfully");
-
-      // Update state or trigger data refetch here
-
+      const response = await axios.delete(`http://localhost:5000/api/new/room/delete/${id}`);
+      console.log("Server Response:", response);
+    
+      // Check the status and handle success/failure accordingly
+      if (response.status === 200) {
+        console.log("Deleted successfully");
+        window.location.reload();
+        // Update state or trigger data refetch here
+      } else {
+        console.error("Error deleting item:", response.data);
+        // Handle error (e.g., show an error message to the user)
+      }
     } catch (error) {
       console.error("Error deleting item:", error);
       // Handle error (e.g., show an error message to the user)
     }
+    
   };
 
 
@@ -478,7 +465,7 @@ function Adminpanel(props) {
                           data-title="Delete"
                           data-toggle="modal"
                           data-target="#delete"
-                          onClick={handleDelete}
+                          onClick={() => handleDelete(items.id)}
                         >
                           <DeleteIcon fontSize="small" color="secondary" />
                         </button>

@@ -112,7 +112,7 @@ function Level(props) {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get("http://localhost:5000/api/homestay/showrooms"); // Replace with your API endpoint
+                const response = await axios.get("http://localhost:5000/api/homestay/customerhomeestay"); // Replace with your API endpoint
                 if (response.status === 200) {
                     const jsonData = response.data;
                     setData(jsonData);
