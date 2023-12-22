@@ -24,9 +24,9 @@ function Home() {
       <div className="overflow-hidden">
         <div className="home-bg  col-12 overflow-hidden">
           <div className="container position-relative home-text-center ">
-            <div className="text-align-center  " style={{background:'#17161670',width:'60%'}}>
+            <div className="text-align-center col-lg-6 " style={{background:'#17161670',width:'60%'}}>
               <div data-aos="fade-right" data-aos-duration="1000">
-                <h1 className="your text-white  ">YOUR HOME</h1>
+                <h1 className="your text-white ">YOUR HOME</h1>
               </div>
               <div data-aos="zoom-in" data-aos-duration="1000">
                 <h3 className="away  ">Away</h3>
@@ -35,11 +35,27 @@ function Home() {
                 <h1 className="from text-white ">FROM HOME</h1>
               </div>
             </div>
+            
           </div>
+          <div className="container homes-text-center">
+  <div className="col-lg-6 col-12 text-align-center justify-content m-auto " style={{ background: '#17161670', width: '50%',height:'100%' }}>
+    <div data-aos="fade-right" data-aos-duration="1000">
+      <h1 className="your text-white fs-2 mt-5 ">YOUR HOME</h1>
+    </div>
+    <div data-aos="zoom-in " data-aos-duration="1000">
+      <h3 className="away fs-2">Away</h3>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1000">
+      <h1 className="from text-white fs-2">FROM HOME</h1>
+    </div>
+  </div>
+</div>
+
+          
         </div>
 
-        <div className="row justify-content-evenly  mb-5  mt-5 room-booking">
-          <div className="col-3 m-auto">
+        <div className="row justify-content-evenly  mb-5  mt-5  room-booking">
+          <div className="col-5 col-lg-3 m-auto">
             <div className="systembutton">
               <h4
               

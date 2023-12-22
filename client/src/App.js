@@ -29,6 +29,8 @@ import { About } from "./Component/About/About";
 import { About1 } from "./Component/About/About1";
 import Cancellation from "./Component/Cancellation/Cancellation";
 import Header from "./Component/Header";
+// import { Contactnew } from "./Component/contactnew ";
+import { ContactNew } from "./Component/ContactNews";
 
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/about1" element={<About1 />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contactnew" element={<ContactNew />} />
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/" element={<Home />} />
         <Route path="/stay" element={<RoomStay />} />

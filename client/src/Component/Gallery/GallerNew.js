@@ -17,13 +17,13 @@ function GallerNew() {
                 <div className="row d-flex justify-content-evenly">
           <div className="wrapper">
             <h2 className="htag">Gallery</h2>
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-gallery"></div>
             </div>
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-galleryb"></div>
             </div>
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-galleryc"></div>
             </div>
          
@@ -34,13 +34,13 @@ function GallerNew() {
         <div className="row d-flex justify-content-evenly">
           <div className="wrapper">
             
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-galleryd"></div>
             </div>
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-gallerye"></div>
             </div>
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-galleryf"></div>
             </div>
          
@@ -51,13 +51,13 @@ function GallerNew() {
         <div className="row d-flex justify-content-evenly">
           <div className="wrapper">
             
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-galleryg"></div>
             </div>
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-galleryh"></div>
             </div>
-            <div className="gallerynew col-lg-3 col-md-12" >
+            <div className="gallerynew col-lg-3 col-md-12 mt-4" >
               <div className="child bg-galleryi"></div>
             </div>
          

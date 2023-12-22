@@ -86,7 +86,7 @@ function Header1() {
               
              
                   {/* <a href="">Amenities</a> */}
-                  <NavLink to={"/contact"}
+                  <NavLink to={"/contactnew"}
                   style={({ isActive }) => {
                       return  { 
                         textDecoration: isActive? 'none':'none',
@@ -149,7 +149,7 @@ function Header1() {
               <a href="/Gallery1">Gallery</a>
             </li>
             <li className="num">
-              <a href="/aboutus">Contact Us</a>
+              <a href="/contactnew">Contact Us</a>
             </li>
             <button
               type="button"
