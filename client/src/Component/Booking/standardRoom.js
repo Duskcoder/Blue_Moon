@@ -13,14 +13,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import Footer from '../Footer';
-import  '../Booking/Booking.css';
+import '../Booking/Booking.css';
 
 
 function StandardRoom() {
   const [room, setRoom] = useState('');
   const { id } = useParams();
- 
-  
+
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -45,25 +45,27 @@ function StandardRoom() {
           'Invalid email format'
         ),
       address: Yup.string().required('Address is required'),
-      phone:  Yup.string()
-      .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
-      .required('Phone number is required'),
+      phone: Yup.string()
+        .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
+        .required('Phone number is required'),
       check_in: Yup.string().required('Date is Required').nullable(),
       check_out: Yup.string().required('Date is Required').nullable(),
-    
+
 
     }),
-    onSubmit:  (values) => {
-      const data={...values,adults: room.adults,
-        room_name: room.name }
-   
+    onSubmit: (values) => {
+      const data = {
+        ...values, adults: room.adults,
+        room_name: room.name
+      }
+
       axios.post("http://localhost:5000/api/new/book", data)
-        .then(res => console.log(res.data,'kkk'))
+        .then(res => console.log(res.data, 'kkk'))
         .catch(err => console.log(err))
     },
   });
 
- 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -73,7 +75,7 @@ function StandardRoom() {
         }
 
         const data = await response.json();
-       
+
         setRoom(data);
       } catch (error) {
         console.error('Error fetching room data:', error);
@@ -120,8 +122,8 @@ function StandardRoom() {
             </div>
             <div className='col-lg-2 col-md-6 seed  mt-3'>
               <FloatingLabel controlId="floatingSelect" label="Guest">
-                <input type="number" className="form-control" name="guest" value={room.adults}/>
-  
+                <input type="number" className="form-control" name="guest" value={room.adults} />
+
 
 
               </FloatingLabel>

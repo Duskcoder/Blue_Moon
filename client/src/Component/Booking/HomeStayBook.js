@@ -20,8 +20,8 @@ function HomeStayBook() {
             email: '',
             address: '',
             phone: '',
-            date: '',
-            date1: '',
+            check_in: '',
+            check_out: '',
 
 
 
@@ -43,8 +43,8 @@ function HomeStayBook() {
             phone: Yup.string()
                 .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
                 .required('Phone number is required'),
-            date: Yup.string().required('Date is Required').nullable(),
-            date1: Yup.string().required('Date is Required').nullable(),
+                check_in: Yup.string().required('Date is Required').nullable(),
+                check_out: Yup.string().required('Date is Required').nullable(),
 
 
         }),
@@ -54,7 +54,7 @@ function HomeStayBook() {
                 room_name: room.name,
             }
 
-            axios.post("http://localhost:5000/api/new/book", data)
+            axios.post("http://localhost:5000/api/homestay/bookhomestay", data)
                 .then(res => console.log(res.data, 'kkk'))
                 .catch(err => console.log(err))
         },
@@ -64,7 +64,7 @@ function HomeStayBook() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/new/showroom/${id}`);
+                const response = await fetch(`http://localhost:5000/api/homestay/showrooms/${id}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
@@ -105,22 +105,19 @@ function HomeStayBook() {
                     <div className='row fruit d-flex justify-content-evenly shadow-lg p-3 mb-5 bg-body rounded'>
                         <div className='col-lg-3 col-md-6 seed mt-3 text-center'>
                             <FloatingLabel controlId="floatingSelect" label="Check -in Date">
-                                <input type="date" className="form-control" id="meeting-date" name="date" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.date} />
-                                {formik.errors.date && formik.touched.date ? (<div style={{ color: 'red' }}>{formik.errors.date}</div>) : ''}
+                                <input type="date" className="form-control" id="meeting-date" name="check_in" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.check_in} />
+                                {formik.errors.date && formik.touched.check_in ? (<div style={{ color: 'red' }}>{formik.errors.check_in}</div>) : ''}
                             </FloatingLabel>
                         </div>
                         <div className='col-lg-3 col-md-6 seed  mt-3'>
                             <FloatingLabel controlId="floatingSelect" label="Check -out Date">
-                                <input type="date" className="form-control" id="meeting-date" name="date1" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.date1} />
-                                {formik.errors.date1 && formik.touched.date1 ? (<div style={{ color: 'red' }}>{formik.errors.date1}</div>) : ''}
+                                <input type="date" className="form-control" id="meeting-date" name="check_out" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.check_out} />
+                                {formik.errors.check_out && formik.touched.check_out ? (<div style={{ color: 'red' }}>{formik.errors.check_out}</div>) : ''}
                             </FloatingLabel>
                         </div>
                         <div className='col-lg-2 col-md-6 seed  mt-3'>
                             <FloatingLabel controlId="floatingSelect" label="Guest">
                                 <input type="number" className="form-control" name="guest" value={room.adults} />
-
-
-
                             </FloatingLabel>
                         </div>
                         <div className='col-lg-2 col-md-6  '>

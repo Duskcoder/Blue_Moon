@@ -3,11 +3,11 @@ import { useState } from "react";
 import '../Rooms/Room.css'
 
 import Header from "../Header";
-import { Modal, Button } from "react-bootstrap";
+import {  Button } from "react-bootstrap";
 import { useEffect } from "react";
 import axios from "axios";
 import Footer from "../Footer";
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 export const Mark = createContext(null);
@@ -15,24 +15,8 @@ function Rooms() {
   const [Rooms, setRooms] = useState([]);
   const navigate = useNavigate()
 
-  console.log(Rooms, "balaguru")
-  // const handleClose = () => setShowModal(false);
-  // const [currentpage, setCurrentPage] = useState(1);
-  // const recordsPerPage = 10;
-  // const firstIndex = (currentpage - 1) * recordsPerPage;
-  // const lastIndex = currentpage * recordsPerPage;
+  // console.log(Rooms, "balaguru")
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:5000/api/new/showroom")
-  //     .then((res) => {
-  //       setRooms(res.data)
-
-
-  //     })
-
-  //     .catch((err) => console.log(err));
-  // }, []);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -48,16 +32,16 @@ function Rooms() {
     fetchData();
   }, []);
 
-  console.log(Rooms)
+  // console.log(Rooms)
 
 
   const handleShow = (id) => {
     navigate(`/booknow/${id}`);
   };
 
-
   // const whatsappLink = 
   //   "https://api.whatsapp.com/message/LZP5RQYXTGMHM1?autoload=1&app_absent=0";
+
   const details = Rooms.slice(0, 1)
   const details1 = Rooms.slice(1, 2)
   const details2 = Rooms.slice(3, 4);
@@ -70,8 +54,7 @@ function Rooms() {
   const mobileview3 = Rooms.slice(4, 5);
   const mobileview4 = Rooms.slice(5, 6);
 
-
-
+  // console.log(details, "stay mobile")
   return (
     <>
 
@@ -513,7 +496,6 @@ function Rooms() {
 
             {
               mobileview.map((items) => (
-
                 <div className=" container stay mt-5" key={items.id}>
                   <div className="row">
                     {/* <div className="col-sm-12 come">
@@ -544,7 +526,7 @@ function Rooms() {
                       <p>
                         Adults:<span className="text-secondary">{items.adults} </span>
                       </p>
-                      <Button variant="primary" onClick={handleShow}>
+                      <Button variant="primary" onClick={() => handleShow(items.id)}>
                         Book Now
                       </Button>
                     </div>
@@ -555,7 +537,6 @@ function Rooms() {
 
             {
               mobileview1.map((items) => (
-
                 <div className=" container stay mt-5" key={items.id}>
                   <div className="row">
                     {/* <div className="col-sm-12 come">
@@ -586,7 +567,7 @@ function Rooms() {
                       <p>
                         Adults:<span className="text-secondary">{items.adults} </span>
                       </p>
-                      <Button variant="primary" onClick={handleShow}>
+                      <Button variant="primary" onClick={() => handleShow(items.id)}>
                         Book Now
                       </Button>
                     </div>
@@ -596,7 +577,6 @@ function Rooms() {
             }
             {
               mobileview2.map((items) => (
-
                 <div className=" container stay mt-5" key={items.id}>
                   <div className="row">
 
@@ -624,7 +604,7 @@ function Rooms() {
                     <p>
                       Adults:<span className="text-secondary">{items.adults} </span>
                     </p>
-                    <Button variant="primary" onClick={handleShow}>
+                    <Button variant="primary" onClick={() => handleShow(items.id)}>
                       Book Now
                     </Button>
                   </div>
@@ -634,7 +614,6 @@ function Rooms() {
             }
             {
               mobileview3.map((items) => (
-
                 <div className=" container stay mt-5" key={items.id}>
                   <div className="row">
 
@@ -659,7 +638,7 @@ function Rooms() {
                       <p>
                         Adults:<span className="text-secondary">{items.adults} </span>
                       </p>
-                      <Button variant="primary" onClick={handleShow}>
+                      <Button variant="primary" onClick={() => handleShow(items.id)}>
                         Book Now
                       </Button>
                     </div>
@@ -669,7 +648,6 @@ function Rooms() {
             }
             {
               mobileview4.map((items) => (
-
                 <div className=" container stay mt-5" key={items.id}>
                   <div className="row">
                     {/* <div className="col-sm-12 come">
@@ -701,7 +679,7 @@ function Rooms() {
                     <p>
                       Adults:<span className="text-secondary">{items.adults} </span>
                     </p>
-                    <Button variant="primary" onClick={handleShow}>
+                    <Button variant="primary" onClick={() => handleShow(items.id)}>
                       Book Now
                     </Button>
                   </div>

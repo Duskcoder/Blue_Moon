@@ -40,6 +40,7 @@ import ViewHomeStay from "./Component/Admin/viewHomeStay"
 // import Header from "./Component/Header";
 // import { Contactnew } from "./Component/contactnew ";
 import { ContactNew } from "./Component/ContactNews";
+import HomeStayBook from "./Component/Booking/HomeStayBook";
 
 function App() {
   return (
@@ -74,9 +75,6 @@ function App() {
         <Route path="/Gallery1" element={<Gallery1 />} />
 
           <Route path="/booknow/:id" element={<StandardRoom />} />
-        {/* <Switch> */}
-
-        {/* </Switch> */}
         <Route path="/room" element={<Rooms />}/>
         <Route path="/Gallery1" element={<Gallery1/>} />
         <Route path="/ViewRoomDetails/:id" element={<ViewRoomDetails/>} />
@@ -86,6 +84,7 @@ function App() {
         <Route path="/AddRoom/HomeStay" element ={<AddRoomsHomestay/>}/>
         <Route path="/update/homestay/:id" element ={<UpdateHomeStay/>}/>
         <Route path="/view/homestay/:id" element={<ViewHomeStay/>}/>
+        <Route path="/HomeStayBooking/:id" element={<HomeStayBook/>}/>
         {/* <Route path="/details" element={<Details/>}/> */}
         {/* <Footer/> */}
       </Routes>
