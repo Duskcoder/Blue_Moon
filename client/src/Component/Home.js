@@ -7,7 +7,7 @@ import butha from "../images/butha.jpg";
 import reception from "../images/reception.jpg";
 import kitchen from "../images/kitchen.jpg";
 import Header from "./Header";
-import reception2 from '../images/reception2.png'
+import reception2 from "../images/reception2.png";
 import Footer from "./Footer";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -15,6 +15,10 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { About } from "./About/About";
 import "../Component/Home.css";
 import { useNavigate } from "react-router-dom";
+import Saturn from "../images/Saturn.jpg";
+import Uranus from "../images/Uranus.jpg";
+import mercury from "../images/mercury.jpg";
+import Neptune from "../images/Neptune.jpg";
 
 function Home() {
   const navigate = useNavigate();
@@ -24,22 +28,36 @@ function Home() {
       <div className="overflow-hidden">
         <div className="home-bg  col-12 overflow-hidden">
           <div className="container position-relative home-text-center ">
-
-            <div className="text-align-center col-lg-6 " style={{ background: '#17161670', width: '60%', top: "40px" }}>
-              <div id="home-mobile" data-aos="fade-right" data-aos-duration="1000">
+            <div
+              className="text-align-center col-lg-6 "
+              style={{ background: "#17161670", width: "60%", top: "40px" }}
+            >
+              <div
+                id="home-mobile"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <h1 className="your text-white">YOUR HOME</h1>
               </div>
               <div data-aos="zoom-in" data-aos-duration="1000">
-                <h3 className="away " id="home-mobile-away">Away</h3>
+                <h3 className="away " id="home-mobile-away">
+                  Away
+                </h3>
               </div>
-              <div data-aos="fade-left" data-aos-duration="1000" id="home-mobile-from">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                id="home-mobile-from"
+              >
                 <h1 className="from text-white ">FROM HOME</h1>
               </div>
             </div>
-
           </div>
           <div className="container homes-text-center">
-            <div className="col-lg-6 col-12 text-align-center justify-content m-auto " style={{ background: '#17161670', width: '50%', height: '100%' }}>
+            <div
+              className="col-lg-6 col-12 text-align-center justify-content m-auto "
+              style={{ background: "#17161670", width: "50%", height: "100%" }}
+            >
               <div data-aos="fade-right" data-aos-duration="1000">
                 <h1 className="your text-white fs-2 mt-5 ">YOUR HOME</h1>
               </div>
@@ -51,15 +69,12 @@ function Home() {
               </div>
             </div>
           </div>
-
-
         </div>
 
         <div className="row justify-content-evenly  mb-5  mt-5  room-booking">
           <div className="col-5 col-lg-3 m-auto">
             <div className="systembutton">
               <h4
-
                 className=" justify-content-center d-flex font-family-hoz"
                 style={{ color: "#0c617d" }}
               >
@@ -77,7 +92,8 @@ function Home() {
             </div>
 
             <div className="mobilebutton">
-              <h4 id="mobileheading"
+              <h4
+                id="mobileheading"
                 className=" justify-content-center d-flex font-family-hoz"
                 style={{ color: "#0c617d" }}
               >
@@ -85,7 +101,8 @@ function Home() {
               </h4>
 
               <button
-                className="mt-2 col-lg-4 mobileview    mb-2" id="font-family-hoz"
+                className="mt-2 col-lg-4 mobileview    mb-2"
+                id="font-family-hoz"
                 onClick={() => navigate("/room")}
                 data-aos="fade-right"
                 data-aos-duration="3000"
@@ -94,13 +111,104 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="col-lg-4  col-12 text-white fs-2 roos-home-card   home-room">
-            <p className="mt-40px d-flex justify-content-center font-family-hoz viewallheader">
-              Mercury Room
+          <div className="col-lg-4  col-12 text-white fs-2 ">
+            <div
+              id="carouselExampleFade"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src={Saturn} class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src={Uranus} class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src={mercury} class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src={Neptune} class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <p style={{ color: "black" }} className="text-center mercury">
+              Mercury Rooms
             </p>
           </div>
-          <div className="col-lg-4 col-12  text-white  fs-2 home-rooms">
-            <p className="mt-40px d-flex justify-content-center font-family-hoz viewallheader ">Uranus Room</p>
+          <div className="col-lg-4 col-12  text-white  fs-2 ">
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src={mercury} class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src={Saturn} class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src={Neptune} class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src={Uranus} class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p style={{ color: "black" }} className="text-center mercury">
+              Uranus Rooms
+            </p>
           </div>
         </div>
 
@@ -205,17 +313,10 @@ function Home() {
                 src={kitchen}
                 alt=""
                 width="70%"
-
               />
             </div>
             <div className="rooters col-12 col-lg-6 mt-5 mt-md-2">
-              <img
-                className="img-responsive"
-                src={reception2}
-                alt=""
-
-
-              />
+              <img className="img-responsive" src={reception2} alt="" />
             </div>
           </div>
         </div>
