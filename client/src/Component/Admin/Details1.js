@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Input from "@mui/material/Input";
 import axios from "axios";
 import Typography from "@mui/material/Typography";
 import "../Admin/Details.css";
-import { shadows } from "@mui/system";
+import { useNavigate } from 'react-router-dom';
 
 const Details1 = () => {
+    const navigate = useNavigate();
     const [data, setData] = useState({
         name: "",
         description: "",
@@ -70,6 +70,7 @@ const Details1 = () => {
                 config
             );
             console.log(response, "ergaer");
+            navigate('/admin')
         } catch (error) {
             console.error("Error submitting data:", error.response);
         }

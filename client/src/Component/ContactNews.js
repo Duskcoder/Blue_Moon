@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
+import Footer1 from './HomeStay/Footer1';
 
 export const
   ContactNew = () => {
@@ -39,7 +39,7 @@ export const
 
         </div>
 
-        <Footer />
+        <Footer1 />
       </div>
     )
   }

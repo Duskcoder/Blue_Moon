@@ -19,13 +19,13 @@ function Footer1() {
             {/* <img src={footerimg} alt="" height={70} width={70} /> */}
           </div>
           <div className="mt-4 ">
-       
+
           </div>
 
           <section className="text-white mt-4 justify-content-center m-auto ">
             <div className="row justify-content-start footerstay">
               <div className="col-lg-4 col-md-6 mb-4 mb-md-0 ">
-              <h5 className="text-uppercase footer-header mb-4 ">MENU</h5>
+                <h5 className="text-uppercase footer-header mb-4 ">MENU</h5>
 
                 <ul className="list-unstyled mt-5 ">
                   <li className="mb-2">
@@ -61,7 +61,7 @@ function Footer1() {
                     <a
                       href=""
                       className="text-white text-decoration-none footer-textsize fs-5 "
-                      onClick={() => navigate('/aboutus')}
+                      onClick={() => navigate('/contactnew')}
 
                     >
                       Contact Us
@@ -108,22 +108,22 @@ function Footer1() {
               </div>
 
               <div className=" col-lg-4 col-10  cvbcnc font-30 ">
-              <div className=" col-lg-12 font-30 d-flex align-items-center  ">
-                <button className="direction fw-bold" id='direction'>
-                  <strong>
-                  <FaDirections  className="fs-4"/>
+                <div className=" col-lg-12 font-30 d-flex align-items-center  ">
+                  <button className="direction fw-bold" id='direction'>
+                    <strong>
+                      <FaDirections className="fs-4" />
 
-     <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9"  style={{ color: 'blue' }} target="_blank"  rel="noreferrer"className="text-white">Get Direction</a>
-                  </strong>
-                </button>
-                <button className="direction fw-bold mb-5  " id='directions'>
-                  <strong>
-                  <FaDirections  className="fs-4"/>
+                      <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9" style={{ color: 'blue' }} target="_blank" rel="noreferrer" className="text-white">Get Direction</a>
+                    </strong>
+                  </button>
+                  <button className="direction fw-bold mb-5  " id='directions'>
+                    <strong>
+                      <FaDirections className="fs-4" />
 
-     <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9"  style={{ color: 'blue' }} target="_blank"  rel="noreferrer"className="text-white">Get Direction</a>
-                  </strong>
-                </button>
-              </div>
+                      <a href="https://maps.app.goo.gl/cT9y5hXsh4x8ha2M9" style={{ color: 'blue' }} target="_blank" rel="noreferrer" className="text-white">Get Direction</a>
+                    </strong>
+                  </button>
+                </div>
                 <div className="col-lg-4  col-sm-12 pt-5 mx-2">
                   <a
                     href=""

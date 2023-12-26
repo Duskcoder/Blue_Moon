@@ -1,14 +1,12 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState,  useEffect } from 'react'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { useLocation } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import NavItem from 'react-bootstrap/esm/NavItem';
 import axios from 'axios';
 // import FootSection from './footSection';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useParams } from 'react-router-dom';
 import Header from '../Header';
@@ -60,7 +58,13 @@ function StandardRoom() {
       }
 
       axios.post("http://localhost:5000/api/new/book", data)
-        .then(res => console.log(res.data, 'kkk'))
+        .then(res => {
+          console.log(res.data, 'kkk')
+          toast.success('your booking success fully your contact admin wait please',{
+            position: "top-right",
+            autoClose: 5000,
+          })
+        })
         .catch(err => console.log(err))
     },
   });
@@ -71,7 +75,8 @@ function StandardRoom() {
       try {
         const response = await fetch(`http://localhost:5000/api/new/showroom/${id}`);
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
+          throw new Error(`HTTP error! Status: 
+          ${response.status}`);
         }
 
         const data = await response.json();
@@ -90,7 +95,7 @@ function StandardRoom() {
     <div className='container'>
       <Header />
       <h2>Booking Form</h2>
-      <form onSubmit={formik.handleSubmit}>
+      <form onSubmit={formik.handleSubmit} className='mt-5'>
         <div className='header-h'>
           <div className='row'>
             <div className='paper col-md-6 col-lg-12'>

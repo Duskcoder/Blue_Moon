@@ -17,6 +17,7 @@ const nodeMailer = require("nodemailer");
       to: to.join(', '), // Join the array of recipients into a comma-separated string
       subject,
       html,
+      
     };
   
     transporter.sendMail(mailOptions, (error, info) => {
