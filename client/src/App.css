@@ -2,9 +2,11 @@ body,
 * {
   font-family: Helvetica !important;
 }
+
 body {
   background-color: transparent !important;
 }
+
 .font-family-hoz p,
 h1,
 h2,
@@ -138,8 +140,9 @@ a {
   /* height: 100vh; */
   animation: animate2 16s ease-in-out infinite;
 }
-.home-bg {
-}
+
+.home-bg {}
+
 @keyframes animate2 {
   100% {
     background-size: 100% 100% !important;
@@ -252,6 +255,7 @@ card-text1{
   font-size: 47px;
   color: sandybrown;
 }
+
 .homes-text-center h1 {
   font-size: 30px;
   text-align: center;
@@ -262,15 +266,18 @@ card-text1{
   text-align: center;
   color: sandybrown;
 }
+
 @media (max-width: 400px) {
   .home-text-center {
     display: none !important;
   }
+
   .homes-text-center {
     width: 100%;
     margin-top: 110px !important;
   }
 }
+
 @media (min-width: 400px) {
   .homes-text-center {
     display: none !important;
@@ -290,6 +297,7 @@ card-text1{
   /* background-attachment: fixed; */
   opacity: 1.2;
 }
+
 .contactt {
   margin-top: 30px;
 }
@@ -299,6 +307,7 @@ card-text1{
     padding-top: 40px;
   }
 }
+
 .contactnew {
   background-image: url(./images/night.jpeg);
   height: 120vh;
@@ -420,6 +429,7 @@ card-text1{
 } */
 
 @keyframes animatesroom {
+
   0%,
   100% {
     background-image: url("../src/images/Saturn.jpg");
@@ -511,6 +521,7 @@ color: white !important;
 }
 
 @keyframes animatesroomshome {
+
   0%,
   100% {
     background-image: url("../src/images/Neptune.jpg");
@@ -528,6 +539,7 @@ color: white !important;
     background-image: url("../src/images/Saturn.jpg");
   }
 }
+
 .mercury {
   background: linear-gradient(to right, rgba(0, 168, 253), #e00a95);
   background-size: 200% auto;
@@ -536,13 +548,16 @@ color: white !important;
   animation: gradiant 3s linear infinite;
   font-weight: bold;
 }
+
 @keyframes gradiant {
   0% {
     background-position: 0% 75%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 70%;
   }
@@ -897,6 +912,7 @@ body {
 }
 
 @keyframes hunt {
+
   0%,
   100% {
     background-image: url("./images/stdd.jpg");
@@ -928,6 +944,7 @@ body {
 }
 
 @keyframes hunt0 {
+
   0%,
   100% {
     background-image: url("./images/carner.jpg");
@@ -959,6 +976,7 @@ body {
 }
 
 @keyframes hunt1 {
+
   0%,
   100% {
     background-image: url("./images/room.jpg");
@@ -1096,6 +1114,7 @@ body {
 }
 
 @keyframes hunt00 {
+
   0%,
   100% {
     background-image: url("./images/y.jpg");
@@ -1127,6 +1146,7 @@ body {
 }
 
 @keyframes hunt10 {
+
   0%,
   100% {
     background-image: url("./images/room.jpg");
@@ -1158,6 +1178,7 @@ body {
 }
 
 @keyframes hunt11 {
+
   0%,
   100% {
     background-image: url("./images/r.jpg");
@@ -1189,6 +1210,7 @@ body {
 }
 
 @keyframes gun {
+
   0%,
   100% {
     background-image: url("./images/y.jpg");
@@ -1220,6 +1242,7 @@ body {
 }
 
 @keyframes gun0 {
+
   0%,
   100% {
     background-image: url("./images/room.jpg");
@@ -1251,6 +1274,7 @@ body {
 }
 
 @keyframes gun1 {
+
   0%,
   100% {
     background-image: url("./images/o.jpg");
@@ -1433,6 +1457,7 @@ body {
 }
 
 @keyframes papaer {
+
   0%,
   100% {
     background-image: url("./images/room.jpg");
@@ -1492,7 +1517,7 @@ body {
   border-radius: 3px;
 }
 
-.file-input + .file-label {
+.file-input+.file-label {
   margin-left: 10px;
 }
 
@@ -1508,12 +1533,12 @@ body {
   text-align: center;
 }
 
-.dropdown:hover > .dropdown-menu {
+.dropdown:hover>.dropdown-menu {
   display: block;
   box-shadow: 5px 5px 10px #888888;
 }
 
-.dropdown > .dropdown-toggle:active {
+.dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
 }
@@ -1521,11 +1546,13 @@ body {
 #dropdownMenuButton {
   box-shadow: 5px 5px 10px #888888;
 }
+
 #header-list {
   align-items: center !important;
   display: flex !important;
   justify-content: center !important;
 }
+
 .header2 {
   display: none;
 }
@@ -1548,6 +1575,7 @@ body {
 li a {
   text-decoration: none;
 }
+
 .button_style--modify {
   background-color: #ffffff;
   padding: 10px;
@@ -1598,7 +1626,7 @@ li a {
   }
 
   .list {
-    background: black !important ;
+    background: black !important;
   }
 
   .button_style--modify {
@@ -1607,10 +1635,13 @@ li a {
 
   .header2 {
     display: block !important;
+    width: 100% !important;
+    height: 16% !important;
   }
 
   .header2 img {
     text-align: center;
+    width: 12% !important;
   }
 
   .showmenu {
@@ -1629,6 +1660,7 @@ li a {
   .num {
     padding: 10px;
   }
+
   .num a {
     color: rgb(255, 255, 255) !important;
   }
@@ -1648,15 +1680,19 @@ li a {
   #header2-mobile img {
     width: 11% !important;
   }
+
   #toggle-btn-mobile {
     margin-top: 0.5rem !important;
   }
+
   #home-mobile {
     padding-top: 8px !important;
   }
+
   #home-mobile-away {
     font-size: 55px !important;
   }
+
   #home-mobile-from {
     padding-bottom: 10px !important;
   }
@@ -1679,6 +1715,7 @@ li a {
 
   margin-right: auto;
 }
+
 #directions {
   padding: 7px;
   float: left !important;
@@ -1699,6 +1736,7 @@ li a {
   color: rgb(255, 255, 255);
   font-size: 45px;
 }
+
 @media (max-width: 500px) {
   .ptaga {
     color: rgb(255, 255, 255);
@@ -1778,8 +1816,7 @@ li a {
   }
 }
 
-.htags {
-}
+.htags {}
 
 /* GallerNew animation */
 
@@ -1812,6 +1849,7 @@ li a {
 }
 
 @keyframes newgallery {
+
   0%,
   100% {
     background-image: url("./images/homestaya.jpg ");
@@ -1865,6 +1903,7 @@ li a {
 }
 
 @keyframes newgalleryb {
+
   0%,
   100% {
     background-image: url("./images/homestayb.jpg ");
@@ -1908,6 +1947,7 @@ li a {
 }
 
 @keyframes newgalleryc {
+
   0%,
   100% {
     background-image: url("./images/homestayc.jpg ");
@@ -1956,6 +1996,7 @@ li a {
 }
 
 @keyframes newgalleryd {
+
   0%,
   100% {
     background-image: url("./images/homestayd.jpg ");
@@ -2004,6 +2045,7 @@ li a {
 }
 
 @keyframes newgallerye {
+
   0%,
   100% {
     background-image: url("./images/homestayd.jpg ");
@@ -2052,6 +2094,7 @@ li a {
 }
 
 @keyframes newgalleryf {
+
   0%,
   100% {
     background-image: url("./images/homestayf.jpg ");
@@ -2100,6 +2143,7 @@ li a {
 }
 
 @keyframes newgalleryg {
+
   0%,
   100% {
     background-image: url("./images/homestayb.jpg ");
@@ -2148,6 +2192,7 @@ li a {
 }
 
 @keyframes newgalleryh {
+
   0%,
   100% {
     background-image: url("./images/homestayc.jpg ");
@@ -2267,8 +2312,7 @@ li a {
 }
 
 @media (max-width: 700px) {
-  .child {
-  }
+  .child {}
 }
 
 /* Stay */
@@ -2277,6 +2321,7 @@ li a {
   .roomx {
     margin-left: 20px;
   }
+
   .rooms {
     padding-top: 100px;
     position: absolute;
@@ -2308,9 +2353,32 @@ li a {
   .systemSys {
     display: none !important;
   }
+
+  .UranusRooms {
+    font-size: 30px !important;
+    margin-left: 57px !important;
+
+  }
 }
+
+@media (min-width: 420px) {
+
+  .UranusRooms {
+    font-size: 30px !important;
+    margin-left: 100px !important;
+
+  }
+
+}
+
 @media (min-width: 700px) {
   .systemMob {
     display: none !important;
+  }
+
+  .UranusRooms {
+    font-size: 30px !important;
+    margin-left: 95px !important;
+
   }
 }

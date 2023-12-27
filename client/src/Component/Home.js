@@ -1,17 +1,17 @@
 import React from "react";
 // import { AboutUs } from "./AboutUs";
-import White1 from "../images/white1.jpg";
-import whitever from "../images/white eversest gold logo1.jpg";
-import white from "../images/white.jpg";
-import butha from "../images/butha.jpg";
-import reception from "../images/reception.jpg";
+// import White1 from "../images/white1.jpg";
+// import whitever from "../images/white eversest gold logo1.jpg";
+// import white from "../images/white.jpg";
+// import butha from "../images/butha.jpg";
+// import reception from "../images/reception.jpg";
 import kitchen from "../images/kitchen.jpg";
 import Header from "./Header";
 import reception2 from "../images/reception2.png";
 import Footer from "./Footer";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { RiTwitterXLine } from "react-icons/ri";
+// import { FaFacebook } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa";
+// import { RiTwitterXLine } from "react-icons/ri";
 import { About } from "./About/About";
 import "../Component/Home.css";
 import { useNavigate } from "react-router-dom";
@@ -22,6 +22,9 @@ import Neptune from "../images/Neptune.jpg";
 
 function Home() {
   const navigate = useNavigate();
+  const handleStyle={
+    color: "white", position: "absolute", zIndex: "53", marginLeft: "100px", textDecoration: "underline" 
+  }
   return (
     <>
       <Header />
@@ -112,12 +115,16 @@ function Home() {
             </div>
           </div>
           <div className="col-lg-4  col-12 text-white fs-2 ">
+
             <div
               id="carouselExampleFade"
               class="carousel slide carousel-fade"
               data-bs-ride="carousel"
             >
-              <div class="carousel-inner">
+              <p style={handleStyle} className="text-center UranusRooms">
+                Mercury Rooms
+              </p>
+              <div class="carousel-inner ">
                 <div class="carousel-item active">
                   <img src={Saturn} class="d-block w-100" alt="..." />
                 </div>
@@ -155,11 +162,9 @@ function Home() {
                 ></span>
                 <span class="visually-hidden">Next</span>
               </button>
+
             </div>
 
-            <p style={{ color: "black" }} className="text-center mercury">
-              Mercury Rooms
-            </p>
           </div>
           <div className="col-lg-4 col-12  text-white  fs-2 ">
             <div
@@ -167,6 +172,9 @@ function Home() {
               class="carousel slide"
               data-bs-ride="carousel"
             >
+              <p style={handleStyle} className="text-center UranusRooms">
+                Uranus Rooms
+              </p>
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                   <img src={mercury} class="d-block w-100" alt="..." />
@@ -206,9 +214,7 @@ function Home() {
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <p style={{ color: "black" }} className="text-center mercury">
-              Uranus Rooms
-            </p>
+
           </div>
         </div>
 
